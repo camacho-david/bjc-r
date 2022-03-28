@@ -3,11 +3,11 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-    <title>Unit 8 Lab 2: Sorting, Page 2</title>
+    <title>Unidad 8 Laboratorio 2: Clasificación, página 2</title>
     </head>
     
     <body>
-        <h2>Selection Sort</h2>
+        <h2>Ordenación de selección</h2>
         <div class="todo">
             <p>PG: Scrap. Scrap all. Two reasons. (1) While sorting algorithms is an important and traditional CS topic, it's not obvious to me why they have any important role in an attract-them-in course. These are TiF for interested kids. (2) If our reason for this unit is to teach recursion, sorting is a distraction, and harder than we need to be. If anything at all, it's a culmination, not a start. I'd be happier showing kids how to march down a list and act on it. With HoFs or recursion. Power and utility. That's currently in Lab 4. Maybe earlier even than this unit?</p>
             <p>BH: Maybe insertion sort?  It's more useful.</p>
@@ -15,11 +15,11 @@
         </div>
         
 
-        <p>One of the most commonly used sorts is called a <strong>selection sort</strong>. Here's how it works:
+        <p> Una de las clasificaciones más utilizadas se llama <strong>Ordenación por selección</strong>. Así es como funciona:
             <ul>
-                <li><div class="sidenote">The earliest item might be the first name in alphabetical order, or the smallest number in a list.</div><strong>Step 1.</strong> In an unsorted list, find a way to select the item that should come earliest in the sort.</li>
-                <li><strong>Step 2.</strong> Pull the selected item out of the list and place it in the first position.</li>
-                <li><strong>Step 3.</strong> With the remaining items, use a selection sort to put them in order. If there are no remaining items, you're done.</li>
+                <li><div class="sidenote">El elemento más antiguo puede ser el primer nombre en orden alfabético o el número más pequeño de una lista.</div><strong>Paso 1.</strong> En una lista desordenada, encuentre una manera de seleccionar el elemento que debe aparecer más temprano en la ordenación.</li>
+                <li><strong>Paso 2.</strong> Extraiga el elemento seleccionado de la lista y colóquelo en la primera posición.</li>
+                <li><strong>Paso 3.</strong> Con los elementos restantes, utilice una ordenación por selección para ordenarlos. Si no quedan elementos, ya terminaste.</li>
             </ul>
         </p>
         <!--
@@ -29,8 +29,8 @@
         
         <div class="forYouToDo" id="first">
             <ol>
-                <li> Explore the selection sort before writing any code. With your class, stand up and form a line. Then, follow the selection sort process to put everyone in sorted, alphabetical order by first name.</li>
-                <li>How is a selection sort an example of recursion? What is the base case?</li>
+                <li>Explore el ordenamiento por selección antes de escribir cualquier código. Con tu clase, ponte de pie y forma una fila. Luego, siga el proceso de ordenación de selección para ordenar a todos en orden alfabético por nombre.</li>
+                <li>¿Cómo es un tipo de selección un ejemplo de recursividad? ¿Cuál es el caso base?</li>
             </ol>
         </div>
 <!--        
@@ -38,32 +38,36 @@
 
 <div class="todo">AC suggestion: give opportunity to write sort NOW instead of waiting until after the helper functions are developed. Leaving as is for now.</div>
 		
-        <p>To write a <code>selection sort</code> block in Snap<em>!</em>, you'll need code for a base case, and code that follows the steps of the selection sort.</p>
+        <p>Para escribir un bloque de <code>clasificación de selección</code> en Snap<em>!</em>, necesitará código para un caso base y código que siga los pasos de la ordenación de selección.</p>
         
         <div class="forYouToDo">        
             <ol start="3">
                 <li>
-                    Write the <code>earliest in</code> block. For names, this returns the first name alphabetically in a list:<br />
+                    Escribe el bloque <code>primero en</code>. Para los nombres, esto devuelve el primer nombre alfabéticamente en una lista:<br />
+                     <!--
+                        TODO: trnalsate images, first image says LENGTH in English. Second image says EARLIEST IN.
+                    </li> -->
+        
                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/unsortednames.png" alt="{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}" title="{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}" />
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/earliestin.png" alt="earliest in(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting Abigail" title="earliest in(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting Abigail" />
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/earliestin.png" alt="más temprano en(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting Abigail" title="más temprano en(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting Abigail" />
                 </li>
                 <div class="todo">ST-4/12/18 Tim Matthies <a href="https://piazza.com/class/h8yx482idav52y?cid=2053" taget="_blank">Piazza request</a> for visuals here in #4 and #5.</div>
-                <li>Write code that finds the <em>index</em> of the earliest item. This value is 8 for the list of names above. (You may not need this step, depending on your algorithm. See if you can do the next step without it.)</li>
+                <li>Escriba código que encuentre el <em>índice</em> del elemento más antiguo. Este valor es 8 para la lista de nombres anterior. (Es posible que no necesite este paso, dependiendo de su algoritmo. Intenté a ver puede si puede hacer el siguiente paso sin él).</li>
                 <li>
                     <div class="comment">Need to correct link after new U5 labs are finished. --MF, 3/29/19</div>
-                    <div class="sidenote">You may find some of your work in <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/old/2-improving-search.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Analyzing and Improving Searches">Unit 5 Lab 1 Page 2: Analyzing and Improving Searches</a> helpful.</div>
-                    Write code that creates a new list with the earliest item deleted. There is more than one way to do this!
-                </li>
+                    <div class="sidenote">Puede encontrar parte de su trabajo en <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/old/2-improving-search.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Analyzing and Improving Searches">Unidad 5 Práctica de laboratorio 1, página 2: Análisis y mejora de búsquedas</a> helpful.</div>
+                    Escriba un código que cree una nueva lista con el primer elemento eliminado. ¡Hay más de una manera de hacer esto!
+                </li> 
                 <li>
-                    Build the recursive reporter <code>selection sort</code>.<br />
+                    Cree el reportero recursivo <code>clasificación de selección</code>.<br />
                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/selectionresult.png" alt="selection sort(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting {Abigail, Ava, Emily, Emma, Isabella, Mia, Olivia, Sophia}" title="selection sort(list{Emma, Olivia, Sophia, Isabella, Ava, Mia, Emily, Abigail}) reporting {Abigail, Ava, Emily, Emma, Isabella, Mia, Olivia, Sophia}"/>
                 </li>
-                <li>How many times does <code>selection sort</code> call itself?</li>
+                <li>¿Cuántas veces se llama a sí mismo <code>ordenación de selección</code>?</li>
             </ol>
 			<div class="saveAs"><span class="text">"U8L2-SelSort"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U7L2-SelSort" title="save your work as U8L2-SelSort" /></div>        
         </div>
 
-        <div class="takeNote">Like recursive commands, recursive reporters can feel like magic, because part of the code tells the recursive reporter to call itself. Recursive reporters work because each time, the new call gives a <em>smaller</em> input to the same reporter, eventually reaching a base case. After the base case is reached, the final result is built up piece by piece as each call reports a value to its caller.</div >
+        <div class="takeNote">Al igual que los comandos recursivos, los reporteros recursivos pueden parecer mágicos, porque parte del código le dice al reportero recursivo que se llame a sí mismo. Los reporteros recursivos funcionan porque cada la nueva llamada proporciona una entrada <em>más pequeña</em> al mismo reportero cada vez. Eventualmente llega a un caso base. Una vez que se alcanza el caso base, el resultado final se construye pieza por pieza a medida que cada llamada informa un valor a la persona que llama.</div >
         
         <div class="takeItFurther">
             <ol type="A">
