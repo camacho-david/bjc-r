@@ -3,25 +3,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 8 Lab 3: Recursive Reporter Projects, Page 7</title>
+        <title>Unidad 8 Práctica de laboratorio 3: Proyectos de reportero recursivo, página 7</title>
     </head>
 
     <body>
-        <h2>Subsets and Efficiency</h2>
+        <h2>Subconjuntos y Eficiencia</h2>
         <div class="todo">
             <p>MF: Scrap. Fold into the Subsets OP at the end.</p>
         </div>
         
         <p>
-            Here is one solution for the <code>subsets</code> block:<br />
+            Aquí hay una solución para el bloque <code>subsets</code>:<br />
             <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-slow.png" alt="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" title="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" />
         </p>
         
-        <p>This solution should remind you of the <code>pascal</code> block you have seen in <a href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/2-pascal-efficiency.html?topic=nyc_bjc%2F8-recursive-reporters.topic&course=bjc4nyc.html&novideo&noassignment" title="Pascal's Triangle and Efficiency">Unit 8 Lab 3 Page 2: Pascal's Triangle and Efficiency</a>, which makes two recursive calls and adds the results. The <code>pascal</code> block makes two recursive calls <em>with different inputs</em>. This version of <code>subsets</code> makes <em>the same</em> recursive call twice, an inefficiency that can be corrected.</p>
+        <p>Esta solución debería recordarle el bloque <code>pascal</code> que ha visto en <a href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/2-pascal-efficiency.html?topic=nyc_bjc%2F8-recursive-reporters.topic&course=bjc4nyc.html&novideo&noassignment" title="Pascal's Triangle and Efficiency"> Unidad 8 Lab 3 Página 2: Triángulo de Pascal y Eficiencia</a>, que realiza dos llamadas recursivas y suma los resultados. El bloque <code>pascal</code> realiza dos llamadas recursivas <em>con diferentes entradas</em>. Esta versión de <code>subsets</code> hace <em>la misma</em> llamada recursiva dos veces, una ineficiencia que se puede corregir.</p>
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Using a <code>count</code> variable, as you did for the <code>pascal</code> block, count how many recursive calls are made to find the 64 subsets of a six-element list.</li>
-                <li>Figure out how to reduce the number of recursive calls by avoiding redundant calls.</li>
+                <li>Usando una variable <code>count</code>, como lo hizo con el bloque <code>pascal</code>, cuente cuántas llamadas recursivas se realizan para encontrar los 64 subconjuntos de una lista de seis elementos.</li>
+                <li>Averigüe cómo reducir la cantidad de llamadas recursivas evitando llamadas redundantes.</li>
             </ol>
         </div>
         
