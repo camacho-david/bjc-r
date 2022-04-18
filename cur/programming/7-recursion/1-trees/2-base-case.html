@@ -72,42 +72,42 @@
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-partial.jpg" height="100" alt="drawing of tree 3 after the first tree 2 is called" title="drawing of tree 3 after the first tree 2 is called" /></div>
             <div><span>Alphie:</span> Sí. Y luego el <code>árbol 3</code> el guion gira a la derecha 60&deg; y usa todo el script <code>árbol 2</code> nuevamente para crear el otro lado. Luego retrocederá 35&deg;. y retroceder hasta el principio.</div>
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-complete.jpg" alt="drawing of tree3 after the second tree 2 is called" title="drawing of tree 3 after the second tree 2 is called" /></div>
-            <div><span>Betsy:</span> Así es como <code>árbol 3</code> finishes. Now, about that "base case" thing for the recursive <code>árbol</code> script... The base case is the lowest level of the recursion, so that's like the <code>tree 1</code>. </div>
-            <div><span>Alphie:</span> Yeah, the <code>árbol 1</code> just draws a line and doesn't try to make another árbol.</div>
-            <div><span>Betsy:</span> So, we need our <em>recursive</em> <code>tree</code> block to draw a line at level 1 instead of making more little trees forever.</div>
+            <div><span>Betsy:</span> Así es como <code>árbol 3</code> se acaba. hora, sobre ese "caso base" para el script <code>árbol</code> recursivo... El caso base es el nivel más bajo de la recursividad, así que es como el <code>árbol 1</code>. </div>
+            <div><span>Alphie:</span> Sí, el <code>árbol 1</code> solo dibuja una línea y no intenta hacer otro árbol.</div>
+            <div><span>Betsy:</span> Por lo tanto, necesitamos nuestro bloque <em>recursivo</em> <code>árbol</code> para dibujar una línea en el nivel 1 en lugar de hacer más árboles pequeños para siempre.</div>
 		</div>
 
 		<div class="forYouToDo" id="first">
             <ol>
                 <li>
-                    Correct your recursive <code>tree</code> block so it includes a base case to stop the script from calling itself forever. Here are  two ways you could do that, and there are more. Use whatever makes most sense to you.<br />
+                    Corrija su bloque recursivo <code>árbol</code> para que incluya un caso base para evitar que el script se llame a sí mismo para siempre. Aquí hay dos formas en que podrías hacer eso, y hay más. Usa lo que tenga más sentido para ti.<br />
                 <img src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v1.png" width="405" height="363" alt="if(level=1){move(size) steps; move(-1*size) steps}else{...Build more branches...}" title="if(level=1){move(size) steps; move(-1*size) steps}else{...Build more branches...}">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v2.png" width="405" height="339" alt="move(size) steps; if(level>1){...Build more branches...}; move(-1*size) steps" title="move(size) steps; if(level>1){...Build more branches...}; move(-1*size) steps"></li>
                 <li>
-                	Run <code>tree level: 9 size: 50</code>. If it is now working properly, you should get a result like this:<br />
+                	Ejecute <code>nivel de árbol: 9 tamaño: 50</code>. Si ahora funciona correctamente, debería obtener un resultado como este:<br />
 					<img class="indent" src="/bjc-r/img/7-recursion/tree-level9.jpg" alt="Tree with trunk and 8 levels of branches" title="Tree with trunk and 8 levels of branches"/>
                 </li>
-                <li>The time it takes to draw the tree increases <em>very</em> quickly with the number of levels, so we don't recommend trying 20 levels. But try timing level 8 through level 12.</li>
-			</ol>
+                <li>El tiempo que lleva dibujar el árbol aumenta <em>muy</em> rápidamente con la cantidad de niveles, por lo que no recomendamos probar 20 niveles. Pero intente medir el tiempo del nivel 8 al nivel 12.</li>
+            </ol>
 		</div>
 
         <div class="takeItFurther">
             <ol type="A">
-            	<li><strong>Analyze:</strong> <code>tree 1</code> produces just one stick. How many <em>new</em> sticks (branches) are produced by <code>tree 2</code>? Then, how many <em>new</em> ones are produced by <code>tree 3</code>?  By <code>tree 4</code>? Figure out how many new twigs are added at level 10. You can now see why it would take a long time to draw level 20.</li>
+            	<li><strong>Analizar:</strong> <code>árbol 1</code> produce solo un palo. ¿Cuántos palos (ramas) <em>nuevos</em> produce el <code>árbol 2</code>? Entonces, ¿cuántos <em>nuevos</em> produce el <code>árbol 3</code>? ¿Por <code>árbol 4</code>? Calcule cuántas ramitas nuevas se agregan en el nivel 10. Ahora puede ver por qué llevaría mucho tiempo dibujar el nivel 20.</li>
             </ol>
         </div>
         
         <div class="takeNote">
         	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-            <p><em>Recursive</em> scripts call themselves. In order for them to stop, there must be some special case when they <em>don't</em> call themselves. We call that  the <strong>base case</strong>, a simpler version of the script that <em>doesn't call the block itself</em>.</p>
-            <p>There is usually a <em>conditional</em> (like <code>if-else</code>) with two cases: a <em>base case</em> for the lowest level that stops the recursion from going on forever and a <strong>recursive case</strong> that calls the script itself again and again at lower levels until it reaches the base case.</p>
-            <p>When a script <em>does</em> keep recursively calling itself forever (as when the sprite was just spinning around in one place), that's a bug, and we say the program is stuck in an <strong>infinite loop</strong>.</p>
+            <p><em>Los scripts recursivos</em> se llaman a sí mismos. Para que se detengan, debe haber algún caso especial en el que <em>no</em> se llamen a sí mismos. Lo llamamos el <strong>caso base</strong>, una versión más simple del script que <em>no llama al bloque en sí mismo</em>.</p>
+            <p>Por lo general, hay un <em>condicional</em> (como <code>if-else</code>) con dos casos: un <em>caso base</em> para el nivel más bajo que detiene la recurrencia para siempre y un <strong>caso recursivo</strong> que llama al propio script una y otra vez en niveles inferiores hasta que llega al caso base.</p>
+            <p>Cuando un script <em>sigue</em> llamándose recursivamente a sí mismo para siempre (como cuando el sprite estaba dando vueltas en un solo lugar), eso es un error, y decimos que el programa está atascado en un <strong>bucle infinito</strong>.</p>
         </div>
         
         <div class="forYouToDo">
             <ol start="4">
       <!--          <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Look at your corrected recursive <code>tree</code> script. Identify the <em>base case</em> and the <em>recursive case</em>, and discuss how recursion works in this script. </li>    -->
                 <li>
-                    Add a global <var>count</var> variable, incremented first thing in the <code>tree</code> block, to record the number of times that  <code>tree</code>  is called when running different levels. Make a table. What pattern do you find?
+                    Agrega una variable global <var>count</var>, incrementada primero en el bloque <code>árbol</code>, para registrar el número de veces que se llama a <code>árbol</code> cuando se ejecutan diferentes niveles. Haz una mesa. ¿Qué patrón encuentras?
                     <table class="center bordered" summary="table showing the number of times that TREE runs (this number is labeled 'count') for a TREE of a given level">
                         <tr>
                             <th scope="col" style="font-weight:normal;"><var>level</var></th>
@@ -143,7 +143,7 @@
                         </tr>
                     </table>
                 </li>
-                <div class="endnote">This is an example of exponential growth. This kind of growth for an algorithm is considered to take <em>unreasonable time</em> as you saw in <a href="/bjc-r/cur/programming/5-algorithms/old/3-timing-experiments/3-classifying-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Classifying Algorithms">Unit 5 Lab 3: Classifying Algorithms</a>. This is why we suggested <em>against</em> trying 20 levels. </div>
+                <div class="endnote">Este es un ejemplo de crecimiento exponencial. Se considera que este tipo de crecimiento para un algoritmo toma <em>un tiempo irrazonable</em> como vio en <a href="/bjc-r/cur/programming/5-algorithms/old/3-timing-experiments/3-classifying-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Classifying Algorithms">Unidad 5 Práctica de laboratorio 3: Algoritmos de clasificación</a>. Es por eso que sugerimos <em>contra</em> probar 20 niveles. </div>
             </ol>
         </div>
         
