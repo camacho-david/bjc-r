@@ -3,11 +3,11 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 7 Lab 1: Trees in a Forest, Page 1</title>
+		<title>Unidad 7 Laboratorio 1: Árboles en un bosque, Página 1</title>
 	</head>
 
 	<body>
-		<h2>Recursive Tree</h2>	
+		<h2>Árbol recursivo</h2>	
         <div class="todo">Brian's Notes from late July 2016:
         	<ul>
             	<li>Think about adding to 6.1.1 the sentence "TREE 4 100 should do the same thing as TREE4 100" because we're really not clear enough about what the level input means.</li>
@@ -18,28 +18,28 @@
             <p>We need to add pink boxes to this whole unit. --MF, 4/3/19</p>
         </div>
         
-        <p>The branching pattern on many plants has <strong>fractal</strong> structure: the smaller parts are like miniature copies of the whole plant. <br />
-            <div class="sidenoteBig">A <strong>fractal</strong> is an infinite repeating pattern made up of copies (or slight variations) of the same shape. In this picture, the green branch is (essentially) the same shape as the entire picture.</div>
+        <p>El patrón de ramificación de muchas plantas tiene una estructura <strong>fractal</strong>: las partes más pequeñas son como copias en miniatura de la planta completa. <br />
+            <div class="sidenoteBig">Un <strong>fractal</strong> es un patrón repetido infinito formado por copias (o ligeras variaciones) de la misma forma. En esta imagen, la rama verde tiene (esencialmente) la misma forma que la imagen completa.</div>
             <img class="noshadow" src="/bjc-r/img/7-recursion/greentree.gif" alt="fractal tree" title="fractal tree" /><br />
-            In this lab, you will build a tree using <em>blocks within blocks</em> to create the branches. Each branch will be a smaller copy of essentially the same tree.
+            En esta práctica de laboratorio, construirá un árbol usando <em>bloques dentro de bloques</em> para crear las ramas. Cada rama será una copia más pequeña de esencialmente el mismo árbol.
         </p>
 
         <div class="forYouToDo" id="first">
             <ol>	
                 <div class="newProject">	<span class="text">"U7L1-Tree"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U7L1-Tree" title="Start a New Project called U7L1-Tree" /></div>
                 <li>
-                    Building the first level:
+                    Construyendo el primer nivel:
                       <ol>
                         <li>
-                            Build this <img src="/bjc-r/img/7-recursion/tree-1.png" alt="tree 1 size:()" title="tree 1 size:()"> block: <br />
+                            Cree este <img src="/bjc-r/img/7-recursion/tree-1.png" alt="tree 1 size:()" title="tree 1 size:()"> bloque: <br />
                             <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="tree 1 size:(size#){move(size) steps; move(-1*size) steps}" title="tree 1 size:(size#){move(size) steps; move(-1*size) steps}" /><br /> <div class="comment">PG: suggest redoing images so that the title is <code>tree 1 size: (size)</code>, so that it later changes the hard coded numbers into a variable <code>tree (level) size: (size)</code>. Then text needs to be brought in line.</div>
-                             This looks ridiculously simple, but it'll get more interesting soon.
+                            Esto parece ridículamente simple, pero pronto se volverá más interesante.
                         </li>
                         <li>                    
-                        	Point the sprite up, put the pen down, and run <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="tree 1 size:(50)" title="tree 1 size:(50)">. You should get a result like this: <br />
+                        	Apunta el sprite hacia arriba, baja la pluma y corre. <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="tree 1 size:(50)" title="tree 1 size:(50)">. Deberías obtener un resultado como este: <br />
 							<img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="tree1 result: Trunk of tree drawn" title="tree1 result: Trunk of tree drawn" />
                     	</li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Where does your sprite start? In what direction is it facing? Where does it stop?</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> ¿Dónde comienza tu sprite? ¿En qué dirección está mirando? ¿Dónde se detiene?</li>
                     </ol>
                 </li>
                 <!-- <li> 
@@ -59,36 +59,36 @@
 </ol></li></ol></div>
                         <div class="takeItFurther"><ol type="A">
                           <li>How many blocks would you need to write <code>tree3a</code> out of Motion blocks similarly to how we wrote <code>tree2a</code>? How about <code>tree4a</code>?</li></ol></div> 
-<div class="forYouToDo"><ol  start="3">                   --> 		<div class="sidenote">Using <code>tree 1</code> to draw the branches in <code>tree 2</code> is using <em>abstraction</em>.</div>
+<div class="forYouToDo"><ol  start="3">                   --> 		<div class="sidenote">Usar <code>árbol 1</code> para dibujar las ramas en <code>árbol 2</code> es usar <em>abstracción</em>.</div>
                             
-<li>Build <img src="/bjc-r/img/7-recursion/tree-2.png"alt="tree 2 size:()" title="tree 2 size:()"> that uses <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="tree 1 size:(50)" title="tree 1 size:(50)"> as its branches.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png" alt="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}"/>                      </li>
-						<li>Describe exactly the position and direction of the sprite when the first <code>tree 1</code> stops running. Why is that essential for <code>tree 2</code> to work?</li>
+<li>Build <img src="/bjc-r/img/7-recursion/tree-2.png"alt="tree 2 size:()" title="tree 2 size:()"> que usa <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Tamaño del árbol 1:(50)" title="Tamaño del árbol 1:(50)"> como sus ramas.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png" alt="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}"/>                      </li>
+						<li>Describe exactamente la posición y la dirección del sprite cuando el primer <code>árbol 1</code> deja de ejecutarse. ¿Por qué es esencial para que funcione <code>árbol 2</code>?</li>
                     </ol>
 </div>
 		
-        <div class="takeNote"><strong>State transparency</strong>—putting everything (sprite, pen, etc.) back exactly as it was when you started—is important when blocks depend on other blocks. Usually, this means returning the sprite to the same position and direction, and the pen to the same color and size, as they were.</div>
+        <div class="takeNote"><strong>Transparencia del estado</strong>: volver a poner todo (sprite, lápiz, etc.) exactamente como estaba cuando comenzaste, es importante cuando los bloques dependen de otros bloques. Por lo general, esto significa devolver el sprite a la misma posición y dirección, y el lápiz al mismo color y tamaño que tenían.</div>
 <div class="comment">Paul and Mary want to use copy and paste here.</div>        
         <div class="forYouToDo">
             <ol start="4">
                 
-                <li>Make a <code>tree 3</code> block that uses the <code>tree 2</code> block as branches.</li>
+                <li>Haz un bloque <code>árbol 3</code> que use el bloque <code>árbol 2</code> como ramas.</li>
                 
-              <li>Make a <code>tree 4</code> block that uses the <code>tree 3</code> block as branches.</li>
+              <li>Haz un bloque <code>árbol 4</code> que use el bloque <code>árbol 3</code> como ramas.</li>
               <!--                <div class="endnote">
                 	Right-click (or control-click on a Mac) a block to "duplicate" or "relabel" blocks to make these tasks much faster.<br />
                     <p class="center"><img src="/bjc-r/img/6-recursion/dup-and-relabel.gif" alt="duplicate and relabel menu options" title="duplicate and relabel menu options" /></p>
                 </div>
 -->
                 <li>
-                    If you like, make a <code>tree 5</code> block that uses the <code>tree 4</code> block. Running <img src="/bjc-r/img/7-recursion/tree-5(50).png"  alt="tree 5 size:(50)" title="tree 5 size:(50)"> should produce a result like this:<br />
+                    Si lo desea, cree un bloque <code>árbol 5</code> que use el bloque <code>árbol 4</code>. Corriendo<img src="/bjc-r/img/7-recursion/tree-5(50).png"  alt="tree 5 size:(50)" title="tree 5 size:(50)"> debería producir un resultado como este:<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree5.png" alt="tree5 result: Tree with trunk and branches" title="tree5 result: Tree with trunk and branches" /> 
         			<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
                 </li>
             </ol>
     	</div>
 		
-        <p>These blocks all look essentially the same except that <code>tree 5</code> uses <code>tree 4</code>, while <code>tree 4</code> uses <code>tree 3</code>, and so on. So it makes sense to wonder if we can  replace all these blocks with a single <code>tree</code> block, using a variable for the number that changes. </p>
-		<div class="takeNote">Using a block inside of itself is called <strong>recursion</strong>.</div>
+        <p>Todos estos bloques se ven esencialmente iguales excepto que <code>árbol 5</code> usa <code>árbol 4</code>,mientras que <code>árbol 4</code> usa <code>árbol 3</code>, y así sucesivamente. Entonces tiene sentido preguntarse si podemos reemplazar todos estos bloques con un solo bloque <code>tree</code>, usando una variable para el número que cambia.</p>
+		<div class="takeNote">Usar un bloque dentro de sí mismo se llama <strong>recursividad</strong>.</div>
 
 
 		<!--<div class="forYouToDo">
@@ -115,14 +115,14 @@
 		<div class="forYouToDo">
             <ol start="7">
                 <li>
-                    This is the general idea for the <em>recursive</em> version of <code>tree</code>.  Build it:<br />
+                    Esta es la idea general para la versión <em>recursiva</em> de <code>árbol</code>. Constrúyelo:<br />
             		<img class="indent" src="/bjc-r/img/7-recursion/tree-nobase.png" alt="tree level:(level#) size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree level:(level-1) size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree level:(level-1) size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree level:(level#) size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree level:(level-1) size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree level:(level-1) size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" />
                 </li>
                 <li>
-                	Now run <code>tree level: 9 size: 50</code>. It doesn't work yet. All you see is: <br />
+                	Ahora ejecuta <code>árbol nivel: 9 tamaño: 50</code>. Aún no funciona. Todo lo que ves es:<br />
 			<img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Tree drawing never terminates, stuck at a single branch" title="Tree drawing never terminates, stuck at a single branch" />
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Try to debug the script. What's going wrong?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Intente depurar el script. ¿Qué está yendo mal?</li>
             </ol>
         </div> 
         

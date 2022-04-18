@@ -3,19 +3,19 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 7 Lab 1: Trees in a Forest, Page 2</title>
+		<title>Unidad 7 Laboratorio 1: Árboles en un bosque, página 2</title>
 	</head>
 
 	<body>
-		<h2>The Base Case</h2>	
+		<h2>El caso base</h2>	
         <div class="todo">
             <p>PG: Change. I also really dispute leading people down the garden path. This is a common error, but we should not mandate it. If we're going to be didactic, we should not didact in the wrong direction.</p>
             <p>I agree with Paul. This is not good pedagogy. I'd be find to have Alpha, Betsy, and Gamal run into and discuss this bug, but it's not ok to handhold kids into doing the wrong thing. --MF, 4/3/19</p>
         </div>
         
-        <div class="sidenote">A script that contains itself is <em>recursive</em> .</div>
+        <div class="sidenote">Un script que se contiene a sí mismo es <em>recursivo</em> .</div>
         <p>
-            It seemed to make sense to replace all the look-alike numbered tree scripts with a single recursive script with the same structure:<br />
+            Parecía tener sentido reemplazar todas las secuencias de comandos de árbol numeradas similares con una única secuencia de comandos recursiva con la misma estructura:<br />
             <img src="/bjc-r/img/7-recursion/tree-2-script.png" height="267" alt="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}">&nbsp; 
             <img src="/bjc-r/img/7-recursion/tree-3-script.png" height="267" alt="tree 3 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 2 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 2 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree 3 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 2 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 2 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="/bjc-r/img/7-recursion/recursiveTree-wo-base.png" height="267"  alt="tree level:(level#) size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree level:(level-1) size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree level:(level-1) size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree level:(level#) size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree level:(level-1) size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree level:(level-1) size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" >
@@ -24,56 +24,56 @@
         <img class="indent" src="/bjc-r/img/6-recursion/tree-recursive-call.png" alt="tree level: (level - 1) size: (size × 0.65)" title="tree level: (level - 1) size: (size × 0.65)" />
         </p>    -->
         <p>
-            But it didn't work:<br />
+            Pero no funcionó:<br />
             <!--<img class="indent" src="/bjc-r/img/6-recursion/tree-nobase.png" alt="buggy tree block definition" title="buggy tree block definition" />  -->
             <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Tree drawing never terminates, stuck at a single branch" title="Tree drawing never terminates, stuck at a single branch" />
         </p>
         <div class="dialogue">
         	<div>
-                <span>Betsy:</span>  <strong>Aaarghhh!  What's going wrong?!!</strong> 
+                <span>Betsy:</span>  <strong>¡Aaarghhh! ¿Qué está yendo mal?!!</strong> 
             </div>
         	<div>
-                <span>Alphie:</span> It never stops! 
+                <span>Alphie:</span> ¡Nunca se detiene! 
             </div>
         	<div>
-                <span>Gamal:</span> After it turns to the left, it should make a smaller tree, but then it's <em>supposed</em> to finish and turn to the right and do a tree, there, too. 
+                <span>Gamal:</span> Después de girar a la izquierda, debería formar un árbol más pequeño, pero luego <em>se supone</em> para terminar y girar a la derecha y hacer un árbol, allí también. 
 			</div>
         	<div>
-                <span>Betsy:</span> Oh, <em>right</em>, Gamal! It's not going <em>right</em>!
+                <span>Betsy:</span> Oh, <em>cierto</em>, Gamal! No va <em>bien</em>!
             </div>
         	<div>
-                <span>Gamal:</span> Yeah, in each recursive call to <code>tree</code>, the sprite draws smaller and smaller left branches until it seems to be just spinning around in one place. It never draws a right branch to finish the tree it's working on.
+                <span>Gamal:</span> Sí, en cada llamada recursiva a <code>árbol</code>, el sprite dibuja ramas izquierdas cada vez más pequeñas hasta que parece estar girando en un solo lugar. Nunca dibuja una rama derecha para terminar el árbol en el que está trabajando.
 			</div>
         	<div>
-                <span>Alphie:</span> I get it. The original numbered <code>tree 1</code>, <code>tree 2</code>, etc. blocks <em>aren't</em> all the same. The first one, <code>tree 1</code>, is different; it just draws a line, <em>no branches</em>, and puts the sprite back where it started.
+                <span>Alphie:</span> Lo entiendo. el original numerado <code>árbol 1</code>, <code>árbol 2</code>, etc. bloques <em>no son</em> todos iguales. El primero, <code>árbol 1</code>,es diferente; simplemente dibuja una línea, <em>sin ramas</em>, y vuelve a poner el sprite donde empezó.
                 <p> 
-                	<em>Alphie points to the <code>tree 1</code> code and to the figure it draws.</em><br />
+                	<em>Alphie señala el <code>árbol 1</code> código y a la figura que dibuja.</em><br />
                 	<img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="tree 1 size:(size#){move(size) steps; move(-1*size) steps}" title="tree 1 size:(size#){move(size) steps; move(-1*size) steps}"  />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="tree1 result: Trunk of tree drawn" title="tree1 result: Trunk of tree drawn"  />
                 </p>
             </div>
         	<div>
-                <span>Betsy:</span> <strong>So our recursive <code>tree</code> block has to do something <em>different</em> when the <var>level = 1</var>!</strong>
+                <span>Betsy:</span> <strong>¡Así que nuestra recursivo <code>árbol</code> bloque tiene que hacer algo <em>diferente</em> cuando el <var>nivel = 1</var>!</strong>
             </div>
         	<div>
-                <span>Gamal:</span> Yup! It has to draw just a line without adding another branch.
+                <span>Gamal:</span> ¡Sí! Tiene que dibujar solo una línea sin agregar otra rama.
             </div>
 
-			<div class="takeNote">This different version for the lowest level of a recursive script is called the <strong>base case</strong>.</div>
+			<div class="takeNote">Esta versión diferente para el nivel más bajo de un script recursivo se denomina <strong>caso base</strong>.</div>
 
             <div>
-                <span>Betsy:</span> Let's think through a simple tree to figure out how this "base case" needs to work. Let's look at <code>tree 3</code> with size 40.<br />
+                <span>Betsy:</span> Pensemos en un árbol simple para descubrir cómo debe funcionar este "caso base". Veamos el<code> árbol 3</code> con tamaño 40.<br />
                 <img src="/bjc-r/img/7-recursion/tree-3-script.png" alt="tree 3 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 2 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 2 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" title="tree 3 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 2 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 2 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}">
                 <img class="indent" src="/bjc-r/img/7-recursion/tree3-call.png" alt="clear; point in direction (0); pen down; tree 3 size:(40)" title="clear; point in direction (0); pen down; tree 3 size:(40)"  />
             </div>
-            <div><span>Alphie:</span> Ok, after clearing the stage, pointing up, and putting the pen down, the sprite will move 40 steps and then turn 25&deg; left. And then it will call <code>tree 2</code> with a smaller size.</div>
-            <div><span>Betsy:</span> Right. And <code>tree 2</code>, which is almost the same,  will move, turn, and then call <code>tree 1</code>, which <em>just draws a line and goes back</em>. Then, <code>tree 2</code> tells the sprite to turn right 60&deg; and draw another little <code>tree 1</code> and.... </div>
-            <div> <span>Gamal:</span> Yeah, and because <code>tree 1</code> finishes, <em>that lets <code>tree 2</code> finish!</em> So, it'll look like this when <code>tree 2</code> finishes:</div>
+            <div><span>Alphie:</span> Bien, después de despejar el escenario, apuntar hacia arriba y dejar el bolígrafo, el sprite se moverá 40 pasos y luego girará 25.&deg; izquierda. Y luego llamará <code>árbol 2</code> con un tamaño más pequeño.</div>
+            <div><span>Betsy:</span> Corecto. Y<code>árbol 2</code>, que es casi lo mismo, se moverá, girará y luego llamará <code>árbol 1</code>, quw <em>simplemente dibuja una línea y vuelve</em>. Entonces, <code>árbol 2</code> le dice al sprite que gire a la derecha 60&deg; y dibuja otro pequeño <code>árbol 1</code> y....</div>
+            <div> <span>Gamal:</span> Si, y porque <code>árbol 1</code> acaba, <em>eso permite <code>árbol 2</code> que acabe!</em> Entonces, se verá así cuando <code>árbol 2</code> acabe:</div>
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-partial.jpg" height="100" alt="drawing of tree 3 after the first tree 2 is called" title="drawing of tree 3 after the first tree 2 is called" /></div>
-            <div><span>Alphie:</span> Yup. And then the <code>tree 3</code> script turns right 60&deg; and uses the whole <code>tree 2</code> script again to create the other side. Then it'll turn back 35&deg; and move backwards to the very beginning.</div>
+            <div><span>Alphie:</span> Sí. Y luego el <code>árbol 3</code> el guion gira a la derecha 60&deg; y usa todo el script <code>árbol 2</code> nuevamente para crear el otro lado. Luego retrocederá 35&deg;. y retroceder hasta el principio.</div>
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-complete.jpg" alt="drawing of tree3 after the second tree 2 is called" title="drawing of tree 3 after the second tree 2 is called" /></div>
-            <div><span>Betsy:</span> So that's how <code>tree 3</code> finishes. Now, about that "base case" thing for the recursive <code>tree</code> script... The base case is the lowest level of the recursion, so that's like the <code>tree 1</code>. </div>
-            <div><span>Alphie:</span> Yeah, the <code>tree 1</code> just draws a line and doesn't try to make another tree.</div>
+            <div><span>Betsy:</span> Así es como <code>árbol 3</code> finishes. Now, about that "base case" thing for the recursive <code>árbol</code> script... The base case is the lowest level of the recursion, so that's like the <code>tree 1</code>. </div>
+            <div><span>Alphie:</span> Yeah, the <code>árbol 1</code> just draws a line and doesn't try to make another árbol.</div>
             <div><span>Betsy:</span> So, we need our <em>recursive</em> <code>tree</code> block to draw a line at level 1 instead of making more little trees forever.</div>
 		</div>
 

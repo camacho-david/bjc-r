@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 8 Lab 1: Recursive Reporters, Page 2</title>
-        <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
-    </head>
 
-    <body>
-        <h2>Working with Recursive Reporters</h2>
-        <div class="todo">
-            <p>PG: Drastic change, based on whatever we do with "counting branches" (not trees—there's only one tree), this should change. The reporter is so special-purpose, whereas a n^m block is both /less/ complex (more straightforward) and /more/ generally useful, e.g., for counting the triangle's children.</p>
-            <ul><li>I had written n^m into <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/2-math-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">U2 Math Tools</a>, but it's now a primative. --MF, 4/5/19</li></ul>
-            <p>MF: Need to adjust for changes throughout curriculum</p>
-        </div>
-        
-        <p>Here's Betty's code for the <code>segments in tree</code> function:</p>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+    <title>Unidad 8 Lab 1: Reporteadores Recursivos, Pagina 2</title>
+    <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
+</head>
 
-        <div class="comment">Image should be redone with plain prototype labels. --MF, 9/26/18</div>
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/bettycode.png" alt="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}"  title="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}" />
-        <div class="takeNote">The <code>report</code> block only connects to the blocks <em>above</em> it. That's because <code>report</code> returns the result of its input slot, immediately, as the output of the <code>segments in tree</code> reporter block. No further code is executed in a reporter after a <code>report</code> block.</div>
-        
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is the base case in the script above? Why is it necessary? How does it work in this script?</li>
-                <li>The <code>tree</code> command had two recursive calls, but this code has only one. Why?</li>
+<body>
+    <h2>Trabajando con reporteros recursivos</h2>
+    <div class="todo">
+        <p>PG: Drastic change, based on whatever we do with "counting branches" (not trees—there's only one tree), this
+            should change. The reporter is so special-purpose, whereas a n^m block is both /less/ complex (more
+            straightforward) and /more/ generally useful, e.g., for counting the triangle's children.</p>
+        <ul>
+            <li>I had written n^m into <a
+                    href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/2-math-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">U2
+                    Math Tools</a>, but it's now a primative. --MF, 4/5/19</li>
+        </ul>
+        <p>MF: Need to adjust for changes throughout curriculum</p>
+    </div>
+
+    <p>Aquí está el código de Betty para la función <code>segments in tree</code>:</p>
+
+    <div class="comment">Image should be redone with plain prototype labels. --MF, 9/26/18</div>
+    <img class="indent" src="/bjc-r/img/8-recursive-reporters/bettycode.png"
+        alt="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}"
+        title="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}" />
+    <div class="takeNote"> El bloque <code>report</code> solo se conecta a los bloques <em>sobre</em> ellos.Eso es
+        porque
+        <code>report</code> devuelve el resultado de su ranura de entrada, inmediatamente, como la salida del
+        <code>segments in tree</code> bloque reportero. No se ejecuta más código en un reportero después de un
+        bloque <code>report</code>.
+    </div>
+
+    <div class="forYouToDo" id="first">
+        <ol>
+            <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner"
+                    title="Talk with Your Partner" /> ¿Cuál es el caso base en el código anterior? ¿Por qué es
+                necesario?
+                ¿Cómo funciona en este código?</li>
+            <li>El comando <code>tree</code> tenía dos llamadas recursivas, pero este código solo tiene una. ¿Por qué?
+            </li>
             <!--</ol>
         </div>
         
@@ -32,12 +50,18 @@
         
         <div class="forYouToDo">
             <ol start="3">-->
-                <li>
-                    <div class="sidenoteBig">Re-read the code for the triangle fractal, and use it to help you build this recursive reporter.</div>
-                	<a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Triangle Fractal">In Unit 7</a>, you built a <code>triangle fractal</code> block. Build a block that reports the <em>total number of triangles</em> formed in a level <var>n</var> triangle fractal:<br />
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png" alt="triangles in level (5) fractal reporting 121" title="triangles in level (5) fractal reporting 121"/>
-                </li>
-                <!--            <div class="sidenote" style="position:relative;top:730px;">What exactly is Tony's <code>map</code> block doing?</div>
+            <li>
+                <div class="sidenoteBig">Vuelve a leer el código del fractal triangular y úsalo para ayudarte a
+                    construir este reportero recursivo.</div>
+                <a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment"
+                    title="Triangle Fractal">En Unidad 7</a>, construiste <code>fractal triangular</code> bloque.
+                Construya un bloque que informe el <em>número total de triángulos</em> ormados en un fractal triangular
+                de nivel <var>n</var>:<br />
+                <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png"
+                    alt="triangles in level (5) fractal reporting 121"
+                    title="triangles in level (5) fractal reporting 121" />
+            </li>
+            <!--            <div class="sidenote" style="position:relative;top:730px;">What exactly is Tony's <code>map</code> block doing?</div>
                 <div class="sidenote" style="position:relative;top:1000px;">
                 <strong>Derman:</strong> Yours is more complicated.<br /> 
                 <strong>Sasha:</strong> But that pattern was easier to spot (for me).
@@ -78,7 +102,7 @@
                 </li>
                 </ol>
                 </div>  -->
-				<!--
+            <!--
                 <li>
                     Load and experiment with these two blocks, using short input lists, to see what they do:<br />
                     <div class="todo">
@@ -99,7 +123,7 @@ MF and BH both feel that the rest of this page should be removed, so I'm doing i
                 <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
 				<li>Describe the major differences between the two blocks above.</li>
 <!--				<div class="todo">It sounds like we are asking for <em>one right answer</em> here ("the biggest difference"). If so, we should word it differently. I'm not sure what the right answer is: "one is a command and the other a reporter" or "one uses <code>stop</code> and the other uses <code>report</code>" or "one has a terminating block only in the base case, but the other has it in either case"? My question to us is: what are we trying to highlight and how can we get them to focus on that? --MF (+1 --bh) Reasonably addressed? BK</div> -->
-           <!--     <li>What are some similarities between the two blocks?</li>
+            <!--     <li>What are some similarities between the two blocks?</li>
                 <li>What does <code>all but first of</code> do?</li>
                 <li>
                     Fill in the empty parts of the following recursive reporter so that the block reports a sentence containing all the whole numbers from <code>a</code> to <code>b</code>.  <strong>Note that this question does <em>not</em> involve a list.</strong> The inputs are <em>numbers</em>; the reported value is a <em>text string</em> (a sentence). What should the block report in the base case? Where does the recursive call go?<br />
@@ -108,5 +132,6 @@ MF and BH both feel that the rest of this page should be removed, so I'm doing i
                 </li>
             </ol>
         </div> -->
-    </body>
+</body>
+
 </html>
