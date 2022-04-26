@@ -3,35 +3,34 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 4 Lab 1: Computer Networks, Page 3</title>
+		<title>Unidad 4 Laboratorio 1: Redes informáticas, página 3</title>
 	</head>
     
     <body>
-        <h2>Internet Abstractions and Open Protocols</h2>
+        <h2>Abstracciones de Internet y protocolos abiertos</h2>
         <div class="learn">
-            <p><strong>On this page,</strong> you will learn about the communication standards used on the Internet and how they work together.</p>
+            <p><strong>En esta página,</strong> aprenderá sobre los estándares de comunicación utilizados en Internet y cómo funcionan juntos.</p>
         </div>
         <div class="vocabBig">
             <div class="todo">CSN-1.B.3, CSN-1.C.1</div>
             <ul>
-                <li>A <strong>protocol</strong> is set of rules that specify the behavior of a system.</li>
-                <li>An <strong>IP address</strong> is a unique number assigned to each device on a computer network.</li>
-                <li>A <strong>packet</strong> is a small chunk of any kind of data (text, numbers, lists, etc) and metadata (information about the data) that is passed through the Internet as a data stream.</li>
-                <li><strong>Packet switching</strong> means that the Internet sends short bursts of information, not long continuous strings.</li>
+                <li>Un <strong>protocolo</strong> es un conjunto de reglas que especifican el comportamiento de un sistema.</li>
+                <li>Una <strong>dirección IP</strong> es un número único asignado a cada dispositivo en una red informática.</li>
+                <li>Un <strong>paquete</strong> es una pequeña porción de cualquier tipo de datos (texto, números, listas, etc.) y metadatos (información sobre los datos) que se transmite a través de Internet como un flujo de datos.</li>
+                <li><strong>La conmutación de paquetes</strong> significa que Internet envía breves ráfagas de información, no largas cadenas continuas.</li>
             </ul>
         </div>
-        <p>There are billions of devices connected to the Internet and hundreds of different kinds of devices: laptops, tablets, phones, smart refrigerators, handheld credit card readers, and so on. How do they all know how to find and talk to each other? <em>Protocols</em> (communication standards) ensure that the variety of devices interact with each other smoothly.</p>
-        <p>Every device on the Internet has a unique <em>Internet Protocol (IP) address</em> (or more than one, if it's a router), like a postal or email address. The <em>Internet Protocol</em> specifies how a router handles a request for a different IP address. Each router knows the layout of its specific neighborhood of the Internet and knows which way to send each message to get it a little bit closer to where it's going. The fact that each router doesn't have to know the addresses of the complete Internet improves scalability.</p>
-        <p>When you stream data over the Internet, the IP program in your computer divides the data into <em>packets</em> that it sends individually. This process is what makes the Internet a <em>packet switching</em> network.</p>
+        <p>Hay miles de millones de dispositivos conectados a Internet y cientos de diferentes tipos de dispositivos: computadoras portátiles, tabletas, teléfonos, refrigeradores inteligentes, lectores de tarjetas de crédito portátiles, etc. ¿Cómo saben todos cómo encontrar y hablar entre sí? Los <em>protocolos</em> (estándares de comunicación) garantizan que la variedad de dispositivos interactúen entre sí sin problemas.</p>
+        <p>Cada dispositivo en Internet tiene una <em>dirección de Protocolo de Internet (PI)</em> única (o más de una, si es un enrutador), como una dirección postal o de correo electrónico. El <em>Protocolo de Internet</em> especifica cómo un enrutador maneja una solicitud de una dirección IP diferente. Cada enrutador conoce el diseño de su vecindario específico de Internet y sabe de qué manera enviar cada mensaje para acercarlo un poco más a su destino. El hecho de que cada router no tenga que conocer las direcciones de Internet completa mejora la escalabilidad.</p>
+        <p>Cuando transmite datos a través de Internet, el programa IP de su computadora divide los datos en <em>paquetes</em> que envía individualmente. Este proceso es lo que hace que Internet sea una red de <em>conmutación de paquetes</em>.</p>
         <div class="comment">CSN-1.C.2, CSN-1.C.3</div>
-        <p>The Internet is fairly reliable, but every once in a while a packet will be lost, and devices on the Internet need to tolerate these faults. One way to tolerate faults is not to care (if you lose one frame of video, it doesn't matter). Another way (called <em>TCP</em> for Transmission Control Protocol) is to keep sending packets until they are acknowledged as having been received correctly. Since packets can travel by different paths, they may arrive out of order; and despite the redundancy of the Internet, it's possible some won't arrive at all. TCP guarantees <em>reliable</em> data transmission by keeping track of which packets have been received successfully, resending any that have been lost or damaged, and specifying the order for reassembling the data on the other end. </p>
-        
+        <p>Internet es bastante confiable, pero de vez en cuando se pierde un paquete y los dispositivos en Internet deben tolerar estas fallas. Una forma de tolerar las fallas es no preocuparse (si pierde un cuadro de video, no importa). Otra forma (llamada <em>PCT</em> por Protocolo de control de transmisión) es seguir enviando paquetes hasta que se reconozca que se recibieron correctamente. Dado que los paquetes pueden viajar por diferentes caminos, pueden llegar desordenados; ya pesar de la redundancia de Internet, es posible que algunos no lleguen. PCT garantiza una transmisión de datos <em>confiable</em> haciendo un seguimiento de los paquetes que se han recibido correctamente, reenviando los que se han perdido o dañado y especificando el orden para reensamblar los datos en el otro extremo. </p>
         <div class="vocabFullWidth">
             <p>
-                <strong>TCP/IP</strong> is a pair of protocols that provide an abstraction: 
+                <strong>PCT/PI</strong> es un par de protocolos que proporcionan una abstracción:
                 <ul>
-                    <li><strong>IP</strong> (Internet Protocol) lets your computer pretend it has a <em>direct</em> connection to another computer. The routers at every connection point on the Internet run IP, which transmits packets from one IP address to another.</li>
-                    <li><strong>TCP</strong> (Transmission Control Protocol) lets your computer pretend it has a <em>reliable</em> connection to the other computer. The computers (including servers) at the two endpoints of a communication run TCP, which guarantees data arrives successfully.</li>
+                    <li><strong>PI</strong> (Protocolo de Internet) le permite a su computadora fingir que tiene una conexión <em>directa</em> a otra computadora. Los enrutadores en cada punto de conexión en Internet ejecutan PI, que transmite paquetes de una dirección PI a otra.</li>
+                    <li><strong>PCT</strong> (Protocolo de control de transmisión) le permite a su computadora fingir que tiene una conexión <em>confiable</em> con la otra computadora. Las computadoras (incluidos los servidores) en los dos puntos finales de una comunicación ejecutan PCT, lo que garantiza que los datos lleguen con éxito..</li>
                 </ul>
             </p>
         </div>
@@ -41,65 +40,65 @@
 				<div class="comment">CSN-1.C</div>
                 <li>
                     <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                    Describe how data are sent through the Internet via packets.
+                    Describir cómo se envían los datos a través de Internet a través de paquetes.
                     <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" />
                 </li>
 			</ol>
 		</div>
     
-        <h3>Internet Abstraction Hierarchy</h3>
+        <h3>Jerarquía de abstracción de Internet</h3>
         <div class="comment">CSN-1.D.2 (under "Application Layer Protocols")</div>
 		<div class="sidenoteBig">
             <div class="todo">CSN-1.C-4</div>
-            <h4>Example protocols for each layer:</h4>
-            <p><strong>Application layer:</strong> Browsers use HTTP (HyperText Transfer Protocol) to interpret HTML instructions for web page formatting. DNS (Domain Name System) converts user-friendly host names (like edc.org or berkeley.edu) into IP addresses. Your email application may use SMTP (Simple Mail Transfer Protocol) to send and IMAP (Internet Message Access Protocol) to read email.</p>
-            <p><strong>Transport layer:</strong> TCP (Transmission Control Protocol) <em>simulates</em> a reliable, long-term connection between two computers by only displaying data once all packets have arrived. When speed is more important than accuracy, such as for real-time video streaming, people use UDP (User Datagram Protocol).</p>
-            <p><strong>Internet layer :</strong> Every device on the Internet needs an IP address so other devices can find it. Routers use Internet layer protocols to detect and work around network congestion.</p>
-            <p><strong>Network interface hardware:</strong> You may connect to the Internet with an <em>Ethernet</em> cable or perhaps a <em>WiFi</em> radio antenna inside the case of your computer. Either connects computers to a local network router which then connects to an Internet service provider (ISP). Cell phones use a longer-range <em>cellular</em> connection to a phone carrier.</p>
+            <h4>Protocolos de ejemplo para cada capa:</h4>
+            <p><strong>Capa de aplicación:</strong> los navegadores usan HTTP (protocolo de transferencia de hipertexto) para interpretar las instrucciones HTML para formatear páginas web. SND (Sistema de nombres de dominio) convierte nombres de host fáciles de usar (como edc.org o berkeley.edu) en direcciones PI. Su aplicación de correo electrónico puede usar PSTC (Protocolo simple de transferencia de correo) para enviar e PAMI (Protocolo de acceso a mensajes de Internet) para leer el correo electrónico.</p>
+            <p><strong>Capa de transporte:</strong> PCT (Protocolo de control de transmisión) <em>simula</em> una conexión confiable a largo plazo entre dos computadoras al mostrar los datos solo una vez que han llegado todos los paquetes. Cuando la velocidad es más importante que la precisión, como en la transmisión de video en tiempo real, las personas usan PDU (Protocolo de datagramas de usuario).</p>
+            <p><strong>Capa de Internet:</strong> cada dispositivo en Internet necesita una dirección PI para que otros dispositivos puedan encontrarlo. Los enrutadores utilizan protocolos de capa de Internet para detectar y solucionar la congestión de la red.</p>
+            <p><strong>Hardware de interfaz de red:</strong> puede conectarse a Internet con un cable <em>Ethernet</em> o quizás con una antena de radio <em>WiFi</em> dentro de la carcasa de su computadora. Cualquiera conecta las computadoras a un enrutador de red local que luego se conecta a un proveedor de servicios de Internet (PSI). Los teléfonos móviles utilizan una conexión <em>celular</em> de mayor alcance con un operador de telefonía.</p>
         </div>
-        <p>There are a <em>lot</em> of protocols! The Internet was designed with several layers of <em>abstraction</em> that sort the protocols according to what part of the process they support. This <em>hierarchy of abstractions</em> manages the complexity of the Internet by hiding the details of lower levels of the system: </p>	
+        <p>¡Hay <em>muchos</em> de protocolos! Internet se diseñó con varias capas de <em>abstracción</em> que clasifican los protocolos según la parte del proceso que admiten. Esta <em>jerarquía de abstracciones</em> gestiona la complejidad de Internet ocultando los detalles de los niveles inferiores del sistema: </p>	
         <div>
             <ul>
-                <li><strong>Application Layer Protocols</strong> (such as HTTP) are the highest level of abstraction because they<em> manage how data is interpreted and displayed</em> to users. These protocols <em>give meaning to the bits</em> sent by lower-level protocols; user and server computers must agree on what the bits mean, and application protocols offer this.</li>
-                <li><strong>Transport Layer Protocols</strong> (such as TCP) manage the <em>breakdown of a message into packets</em> to be transmitted by lower level protocols and also the  <em>reconstruction of the message from the packets</em> upon arrival.</li>
-                <li><strong>Internet Layer Protocols</strong> (such as IP) <em>manage the pathways that the data packets travel</em> across networks. These protocols provide an abstraction of the Internet as one large network even though the physical reality on the lower level is one of many  subnetworks.</li>
-                <li><strong>Network Interface Hardware</strong> (Link Layer Protocols such as WiFi): manage the connection between an Internet device and its  local network. These local protocols are the least abstract because they deal directly with your physical hardware.</li>
+                <li><strong>Los protocolos de capa de aplicación</strong> (como HTTP) son el nivel más alto de abstracción porque <em> administran cómo se interpretan y muestran los datos</em> a los usuarios. Estos protocolos <em>dan significado a los bits</em> enviados por protocolos de nivel inferior; Las computadoras del usuario y del servidor deben estar de acuerdo con el significado de los bits, y los protocolos de aplicación lo ofrecen.</li>
+                <li><strong>Los protocolos de la capa de transporte</strong> (como TCP) gestionan la <em>desglose de un mensaje en paquetes</em> para ser transmitidos por protocolos de nivel inferior y también la <em>reconstrucción del mensaje a partir de los paquetes</em > a su llegada.</li>
+                <li><strong>Los protocolos de capa de Internet</strong> (como PI) <em>gestionan las rutas por las que viajan los paquetes de datos</em> a través de las redes. Estos protocolos proporcionan una abstracción de Internet como una gran red, aunque la realidad física en el nivel inferior es una de muchas subredes.</li>
+                <li><strong>Hardware de interfaz de red</strong> (protocolos de capa de enlace como WiFi): gestiona la conexión entre un dispositivo de Internet y su red local. Estos protocolos locales son los menos abstractos porque tratan directamente con su hardware físico.</li>
             </ul>
 		</div>
         
         <div class="comment">CSN-1.B.4 (paragraph about "open standards")</div>
-        <div class="takeNote">These are all <em>open standards</em>: anyone can look up a protocol and code with it to make new hardware or software without anyone's permission. The Internet is probably the largest and most complicated artifact in human history, and it relies on <em>cooperation</em>. Despite some governments' attempts to censor the net, the big picture is one of strong cooperative spirit.</div>
+        <div class="takeNote">Todos estos son <em>estándares abiertos</em>: cualquiera puede buscar un protocolo y codificar con él para crear nuevo hardware o software sin el permiso de nadie. Internet es probablemente el artefacto más grande y complicado de la historia humana y depende de la <em>cooperación</em>. A pesar de los intentos de algunos gobiernos de censurar la red, el panorama general es de un fuerte espíritu cooperativo.</div>
 		<div class="endnote">
-        	<a href="#hint-open" data-toggle="collapse" title="Why care about open standards?">Why care about open standards?</a>
+        	<a href="#hint-open" data-toggle="collapse" title="Why care about open standards?">¿Por qué preocuparse por los estándares abiertos??</a>
             <div id="hint-open" class="collapse">
                 <ul>
-                    <li>Your T-Mobile cell phone can talk to your friend's Verizon phone.</li>
-                    <li>You can send email to someone in a country that's considered an enemy of your country (from the US to Iran, for example).</li>
-                    <li>An engineer at Microsoft can read a web page at Apple even though their companies are competitors.</li>
+                    <li>Su teléfono celular T-Mobile puede comunicarse con el teléfono Verizon de su amigo.</li>
+                    <li>Puede enviar un correo electrónico a alguien en un país que se considera enemigo de su país (desde EE. UU. hasta Irán, por ejemplo).</li>
+                    <li>Un ingeniero de Microsoft puede leer una página web en Apple aunque sus empresas sean competidoras.</li>
                 </ul>
-                <p>Before the Internet, there were several different network protocols that were secrets belonging to particular manufacturers. So if you had a particular brand of computer or router, it could talk only to other computers of the same brand.</p>
+                <p>Antes de Internet, había varios protocolos de red diferentes que eran secretos que pertenecían a fabricantes particulares. Entonces, si tuviera una marca particular de computadora o enrutador, solo podría comunicarse con otras computadoras de la misma marca.</p>
             </div>
 		</div>
         
         <div class="forYouToDo">
             <ol start="2">
                 <li>
-                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Explain how each of these protocols is an abstraction. What details does each one hide?
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Explique cómo cada uno de estos protocolos es una abstracción. ¿Qué detalles esconde cada uno?
                     <ul>
-                        <li>HTTP (HyperText Transfer Protocol)&mdash;the protocol that your browser uses to <em>access an HTML web page</em></li>
-                        <li>TCP (Transmission Control Protocol)&mdash;the protocol that <em>assures reliable transmission</em> of data</li>
-						<li>IP (Internet Protocol)&mdash;the hierarchical addressing protocol that <em>manages routing</em> of data between computers</li>
+                        <li>HTTP (protocolo de transferencia de hipertexto): el protocolo que utiliza su navegador para <em>acceder a una página web HTML</em></li>
+                        <li>TCP (Protocolo de control de transmisión): el protocolo que <em>garantiza una transmisión confiable</em> de datos</li>
+						<li>IP (Protocolo de Internet): el protocolo de direccionamiento jerárquico que <em>administra el enrutamiento</em> de datos entre computadoras</li>
                     </ul>
                 </li>
                 <div class="comment">CSN-1.B</div>
-                <li>Locate your descriptions of how people connect to the Internet (from page 1), how devices within a network are connected (from page 2), how and why the Internet is fault tolerant (from page 2), and how TCP/IP works (from page 3). Combine your descriptions into a short paper on how the Internet works.</li>
+                <li>Localice sus descripciones de cómo las personas se conectan a Internet (de la página 1), cómo se conectan los dispositivos dentro de una red (de la página 2), cómo y por qué Internet es tolerante a fallas (de la página 2) y cómo funciona TCP/IP ( de la página 3). Combine sus descripciones en un documento breve sobre cómo funciona Internet.</li>
             </ol>
         </div>
     
         <div class="ifTime">
             <ol start="4">
-        		<li>Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=319" target="_blank" title="Blown to Bits: The Internet as System
-and Spirit "><em>Blown to Bits</em> pages 301-316</a>.</li>
+        		<li>Lee <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=319" target="_blank" title="Blown to Bits: The Internet as System
+and Spirit "><em>Volado en pedazos</em> páginas 301-316</a>.</li>
             </ol>
         </div>
         
