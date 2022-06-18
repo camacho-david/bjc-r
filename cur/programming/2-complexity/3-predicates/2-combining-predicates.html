@@ -6,16 +6,16 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unidad 2 Lab 3: Tomando Decisiones, Página 2</title>
+		<title>Unit 2 Lab 3: Making Decisions, Page 2</title>
 	</head>
 
 	<body>
-        <h2>Combinando Predicados</h2>
-        <div class="learn">En esta página, tú vas a combinar predicados utilizando funciones Booleanas para escribir en el escenario con tres colores.</div>
+        <h2>Combining Predicates</h2>
+        <div class="learn">On this page, you will combine predicates using Boolean functions to write on the stage in three colors.</div>
                 
-        <h3>Funciones Booleanas</h3>
+        <h3>Boolean Functions</h3>
         <p>
-            At the very lowest level, computer circuitry is made of wires, and each wire is either on or off. So the only operations that can be performed at that lowest level are those that <em>operate on single-bit values</em> (just ones and zeros, that is, just ons and offs). These are called <em>logical (or Boolean) functions</em>. There are three Boolean functions in the Operators palette:<br />
+            At the very lowest level, computer circuitry is made of wires, and each wire is either on or off. So the only operations that can be performed at that lowest level are those that <em>operate on single-bit values</em> (just ones and zeros, that is, just ons and offs). These are called <em>logical (or Boolean) functions</em>. (They're predicates, because their range is Booleans, but these are special in that their <em>domain</em> is also Booleans.) There are three Boolean functions in the Operators palette:<br />
             <img class="indent" src="/bjc-r/img/prog/Booleans.png" alt="and, or, not blocks" title="and, or, not blocks" /><br />
             <div class="comment">AAP-2.F.5, AAP-2.F.1</div>
             Notice that both the blocks themselves and the input slots in the blocks are hexagonal. Boolean functions take Boolean values (<code>True</code> or <code>False</code>) as inputs and report a new Boolean value as output. When you use Boolean functions in a program, though, the inputs will usually be expressions such as <img src="/bjc-r/img/2-complexity/var=3.png" alt="variable = 3" title="variable = 3" />.
@@ -91,6 +91,7 @@
                     </div>
                 </li>
                 <li>
+                	<div class="comment">AAP-2.E part b</div>
                     <!-- Question 6 -->
                     <div class="assessment-data" type="multiplechoice" identifier="What's equivalent to num less than or equal to 23?"
                         hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri1" shuffle="false">
@@ -163,10 +164,128 @@
             </ol>
         </div>
         
-        <div class="todo">
-            Proposed TIF: AND and OR are functions of two Boolean values that report a Boolean  result.  Unlike functions of numbers, there are only a small number of possible Boolean functions of two Booleans.  How many?
-            <p>I don't object to this idea for a TIF, but I don't find the question clear. --MF, 8/9/19</p>
+		<div class="takeItFurther">
+            <div class="todo">
+                <div class="comment">Brian, OK, I went a little over the top here, but some teachers might like to dig in too. Please review this table carefully; it would be easy to get something wrong. --MF, 1/14/20</div>
+                TG (for answer key): i) The <code>and</code> function can be represented as TFFF; ii-v) Answers will vary for parts ii and iii. The following table lists the 16 (part iv) possible two-input Boolean operators and their usefulness. The goal is for students to <em>think about usefulness</em>&mdash;not for them to accurately categorize each of the functions or even to learn the logic of each one. Unless you have a background in logic or computer science, even you (as teacher with the answer key) are likely to find some of these take a bit of thinking to wrap your mind around.
+                <table class="bordered standard" summary="table showing the 16 two-input Boolean operators and remarking on their usefulness">
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Useful?</th>
+                        <th scope="col">Why?</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">TTTT</th>
+                        <td>no</td>
+                        <td>always reports <code>true</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TTTF</th>
+                        <td>yes</td>
+                        <td>equivalent to <code>or</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TTFT</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Converse_implication" title="converse implication" target="_blank">converse implication</a> (false only when the first input is false but the second input is true; the second input being true implies the first input must be true)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TTFF</th>
+                        <td>no</td>
+                        <td>reports the value of the first input regardless of the second input, so you could just use the first input as the predicate instead of building this predicate function</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TFTT</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Material_conditional" title="implication" target="_blank">implication</a> (false only when the first input is true but the second input is false; the first input being true implies the second input must be true)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TFTF</th>
+                        <td>no</td>
+                        <td>reports the value of the second input regardless of the first input, so you could just use the second input as the predicate instead of building this predicate function</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TFFT</th>
+                        <td>yes</td>
+                        <td>checks whether two inputs are the same (equivalent to <code>=</code> and to <a href="https://en.wikipedia.org/wiki/XNOR_gate" title="XNOR" target="_blank">XNOR</a>, exclusive NOT OR)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">TFFF</th>
+                        <td>yes</td>
+                        <td>equivalent to <code>and</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FTTT</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/NAND_gate" title="NAND" target="_blank">NAND</a> (that is, <code>not (and)</code>)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FTTF</th>
+                        <td>yes</td>
+                        <td>checks whether two inputs are the different (equivalent to <code>not(=)</code> and to <a href="https://en.wikipedia.org/wiki/XOR_gate" title="XOR" target="_blank">XOR</a>, exclusive OR)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FTFT</th>
+                        <td>no</td>
+                        <td>reports the value of the opposite of the second input regardless of the first input, so you could just use the opposite of the second input as the predicate instead of building this predicate function</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FTFF</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Material_nonimplication" title="nonimplication" target="_blank">nonimplication</a> (true only when the first input is true but the second input is false; the first input being true implies the second input must be false)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FFTT</th>
+                        <td>no</td>
+                        <td>reports the value of the opposite of the first input regardless of the second input, so you could just use the opposite of the first input as the predicate instead of building this predicate function</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FFTF</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Converse_nonimplication" title="converse nonimplication" target="_blank">converse nonimplication</a> (true only when the first input is false but the second input is true; the second input being true implies the first input must be false)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FFFT</th>
+                        <td>yes</td>
+                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/NOR_gate" title="NOR" target="_blank">NOR</a> (that is, <code>not(or)</code>)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">FFFF</th>
+                        <td>no</td>
+                        <td>always reports <code>false</code></td>
+                    </tr>
+                </table>
+                vi) There are 256 three-input Boolean operators because there are eight combinations of inputs for a three-input Boolean operator and each of those combinations could report one of two values (T or F): <span class="katex">2^8=256</span>. (For comparison, there are 16 two-input Boolean operators because there are four combinations of inputs for a two-input operator and each can report one of two values (T or F): <span class="katex">2^4=16</span>.)
+            </div>
+            <ol type="A">
+                <li>
+                    Because there are only two Boolean values (<code>true</code> and <code>false</code>), there are only four combinations of inputs for a two-input Boolean operator. Here are the four combinations shown with the <code>or</code> operator:<br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/or-t-t.png" alt="or (true) (true)"><br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/or-t-f.png" alt="or (true) (false)"><br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/or-f-t.png" alt="or (false) (true)"><br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/or-f-f.png" alt="or (false) (false)">
+                    <ol style="list-style-type: lower-roman">
+                        <li>With <code>or</code>, the four combinations report <code>true</code>, <code>true</code>, <code>true</code>, and <code>false</code> in that order. (Check for yourself that this is true.) So, you can represent the <code>or</code> function as TTTF  (using T and F as abbreviations for <code>true</code> and <code>false</code>). What are the four letters for the <code>and</code> function? (Assume the same ordering of the inputs: TT, TF, FT, and FF as shown above with <code>or</code>.) </li>
+                        <li>
+                            Make up another set of four letters (such as TFTF), and build a predicate function with that behavior. Describe how the function behaves. 
+                            <div class="endnote">
+                                <a href="#hint-TFTF" data-toggle="collapse" title="Click to see an example showing and describing the behavior of TFTF.">Click to see an example showing and describing the behavior of TFTF.</a>
+                                <div id="hint-TFTF" class="collapse">
+                                    <img class="indent" src="/bjc-r/img/2-complexity/TFTF-TT-reporting.png" alt="(true) TFTF (true) reporting true" title="(true) TFTF (true) reporting true" /><br />
+                                    <img class="indent" src="/bjc-r/img/2-complexity/TFTF-TF-reporting.png" alt="(true) TFTF (false) reporting true" title="(true) TFTF (false) reporting true" /><br />
+                                    <img class="indent" src="/bjc-r/img/2-complexity/TFTF-FT-reporting.png" alt="(false) TFTF (true) reporting true" title="(false) TFTF (true) reporting true" /><br />
+                                    <img class="indent" src="/bjc-r/img/2-complexity/TFTF-FF-reporting.png" alt="(false) TFTF (false) reporting false" title="(false) TFTF (false) reporting false" />
+                                    The TFTF function reports true whenever the second input is true no matter what the first input is. It's not a useful function because you could just use the second input as the predicate instead of building this predicate function.
+                                </div>
+                            </div>
+                        </li>
+                        <li>Do the same thing with another set of four letters.</li>
+                        <li>How many possible two-input Boolean operators are there?</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Obviously, TTTF (the <code>or</code> function) is useful, but TTTT is not useful (why not?). Which of the possible two-input Boolean operators do you think would be useful? Discuss why.</li>
+                        <li>How many <em>three-</em>input Boolean operators are there?</li>
+                    </ol>
+                </li>
+            </ol>
         </div>
-
 	</body>
 </html>

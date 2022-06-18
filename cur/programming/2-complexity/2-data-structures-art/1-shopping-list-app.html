@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 	<head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -6,14 +6,14 @@
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-        <title>Unidad 2 Lab 2: Haciendo Listas, Página 1</title>
+        <title>Unit 2 Lab 2: Making Lists, Page 1</title>
 	</head>
 
 	<body>
-        <h2>Aplicación para Lista de Compras</h2>
+        <h2>Shopping List App</h2>
         <div class="learn">
-            <p><strong>En este laboratorio,</strong> tú vas a crear herramientas para guardar y acceder a datos.</p>
-            <p><strong>En esta página,</strong> tú vas a crear una aplicación para llevar la lista de compras. </p>
+            <p><strong>In this lab,</strong> you will create tools for storing and accessing data.</p>
+            <p><strong>On this page,</strong> you will create a shopping list app. </p>
         </div>
 
         <div class="sidenoteBig">Some programming languages use the word <em>array</em> instead of <em>list</em>. </div>
@@ -53,13 +53,13 @@
         </div>
         
         <div class="examFullWidth">
-            <div class="todo">Mary needs to add arrows to these APblocktran image and needs to make the arrows shorter in the other APblocktran images also. --MF, 8/23/19</div>
             <div class="comment">AAP-1.D.7 bullet 2</div>
             <div class="pseudop">The assignment instruction <img class="inline" src="/bjc-r/img/2-complexity/example-blank-list-assignment.png" alt="set (shopping list) to (list)" title="set (shopping list) to (list)" /> would be written as <pre class="inline">shoppingList &leftarrow; []</pre> or <img class="" src="/bjc-r/img/2-complexity/shoppinglist-empty-list-assignment-blocktran.png" alt="shoppingList ← []" title="shoppingList ← []" />.</div>
             <div class="comment">AAP-1.D.7 bullet 1</div>
             <div class="pseudop">The assignment instruction <img class="inline" src="/bjc-r/img/2-complexity/example-list-assignment.png" alt="set (shopping list) to {apples, bread, carrots, rice, pasta}" title="set (shopping list) to {apples, bread, carrots, rice, pasta}" /> would be written as <pre class="inline">shoppingList &leftarrow; [apples, bread, carrots, rice, pasta]</pre> or <img class="" src="/bjc-r/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" alt="shoppingList ← [apples, bread, carrots, rice, pasta]" title="shoppingList ← [apples, bread, carrots, rice, pasta]" />. (In this app, you'll want the <code>shopping list</code> to begin empty, and then the user will <code>add</code> or <code>insert</code> additional grocery items one at a time.)</div>
         </div>
         
+        <h3>Adding Items to a List</h3>
         <p>
             <div class="vocabBig">
                 <div class="commentBig">AAP-1.C.2</div>
@@ -75,11 +75,10 @@
         <p>Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.</p>
         
         <div class="examFullWidth">
-            <div class="todo">Mary needs to change both APblocktran images to have quotes around tomatoes. --MF, 8/23/19</div>
             <div class="comment">AAP-2.N.1 bullet 4</div>
-            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" alt="insert (tomatoes) at (2) of (shopping list)" title="insert (tomatoes) at (2) of (shopping list)" /> would be written as <pre class="inline">INSERT(shoppingList, 2, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/insert-blocktran.png" alt='INSERT(shoppingList, 2, "tomatoes")' title='INSERT(shoppingList, 2, "tomatoes")' />.</div>
+            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" alt="insert (tomatoes) at (2) of (shopping list)" title="insert (tomatoes) at (2) of (shopping list)" /> would be written as <pre class="inline">INSERT(shoppingList, 2, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/insert-blocktran.png" alt="INSERT(shoppingList, 2, 'tomatoes')" title="INSERT(shoppingList, 2, 'tomatoes')" />.</div>
             <div class="comment">AAP-2.N.1 bullet 5</div>
-            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/add-tomatoes-to-shopping-list.png" alt="add (tomatoes) to (shopping list)" title="add (tomatoes) to (shopping list)" /> would be written as <pre class="inline">APPEND(shoppingList, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/add-blocktran.png" alt='APPEND(shoppingList, "tomatoes")' title='APPEND(shoppingList, "tomatoes")' />.</div>
+            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/add-tomatoes-to-shopping-list.png" alt="add (tomatoes) to (shopping list)" title="add (tomatoes) to (shopping list)" /> would be written as <pre class="inline">APPEND(shoppingList, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/add-blocktran.png" alt="APPEND(shoppingList, 'tomatoes')" title="APPEND(shoppingList, 'tomatoes')" />.</div>
         </div>
         
         <div class="forYouToDo">
@@ -90,9 +89,16 @@
                     <p>You've worked with multiple sprites on <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
                 </div>
                 <li>
-                    Write a script for the "Add Item" button sprite so that when that sprite is clicked, it will <code>ask</code> the user for a new item, and then put the user's answer in the grocery list. 
+                    Write a script for the "Add Item" button sprite so that when that sprite is clicked, it will <code>ask</code> the user for a new item, and then put the user's <code>answer</code> in the grocery list. 
                 </li>
                 <li>Test your "Add Item" button several times and fix any problems.</li>
+            </ol>
+        </div>
+    
+    
+        <h3>Removing Items from a List</h3>
+        <div class="forYouToDo">
+			<ol start="5">
                 <li>Write a script for the "Clear List" button sprite that asks the user if they're sure and then sets <var>shopping list</var> back to an empty list.</li>
                 <li>Test your "Clear List" button and fix it if needed.</li>
 			</ol>
@@ -118,7 +124,7 @@
             <div class="pseudop">
                 The items in a list are <em>values</em>, so <strong>you can use <code>item of</code> anywhere you can use any other expression</strong>. For example:
                 <ul>
-                    <div class="comment">AAP-2.N.1 bullet 2</div>
+                    <div class="comment">AAP-2.N.1 bullets 2 and 3</div>
                     <li>
                         You can assign a list item to a variable. 
                         <a href="#hint-assigning-element-to-variable" data-toggle="collapse" title="You can assign a list item to a variable. On the exam...">On the exam...</a>
@@ -129,7 +135,6 @@
                         </div>
                     </li>
                     <li>
-                        <div class="comment">AAP-2.N.1 bullet 3</div>
                         You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). <a href="#hint-assigning-anything-to-element" data-toggle="collapse" title="You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). On the exam...">On the exam...</a>
                         <div id="hint-assigning-anything-to-element" class="collapse">
                             <ul>
@@ -156,10 +161,8 @@ set(shopping list 2) to (shopping list)
 add (carrot) to (shopping list)" />
                 <img class="indent" src="/bjc-r/img/2-complexity/example-list-by-reference-stage.png" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" /><br />
             </p>
-            <div class="comment">AAP-1.D.7 bullet 3</div>
+            <div class="comment">AAP-1.D.7 bullet 3, AAP-2.N.2</div>
             <div class="pseudop">However on the exam, the statement <pre class="inline">shoppingList2 &leftarrow; shoppingList</pre> makes a <em>copy</em> of the list. So modifying one of them <em>does not</em> modify the other.</div>
-            <div class="todo">Should we write in a reference back to <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">2.1.1</a>? --MF, 8/22/19</div>
-            <div class="comment">AAP-2.N.2</div>
             <p>The rules for how to use lists and how they behave differ depending on the programming language you are using.</p>
         </div>
 

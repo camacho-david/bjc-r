@@ -3,28 +3,28 @@
     <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-	    <title>Unidad 2 Lab 1: Juegos, Página 1</title>
+	    <title>Unit 2 Lab 1: Games, Page 1</title>
     </head>
 
     <body>
-        <h2>Empezando un Juego para Adivinar un Número</h2>
+        <h2>Starting a Number Guessing Game</h2>
         
         <div class="learn">
             <p>
-                <strong>En este laboratorio,</strong> tú vas a usar <em>variables</em> locales y globales para almacenar información.
+                <strong>In this lab,</strong> you will use local and global <em>variables</em> to store information.
                 <!--<ul>
                     <li><em>Script variables</em> (a kind of <em>local</em> variable) that can be used only within a single script, and</li>
                     <li><em>Global variables</em> that can be set, used, or changed anywhere in the program.</li>
                 </ul-->
             </p>
-            <p><strong>En esta página,</strong> tú vas a empezar a desarrollar un juego para adivinar un número que usa <em>variables locales</em> para llevar el registro del número secreto.</p>
+            <p><strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.</p>
         </div>
         
         <!--<h3>Using a Script Variable (a Local Variable)</h3>-->
         <div class="forYouToDo" id="first">
         	<ol>
             	<li><div class="newProject"><span class="text">"U2L1-NumberGuessing"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U2L1-NumberGuessing" title="Create a new project called U2L1-NumberGuessing" /></div></li>
-                <li>Start building a new command block called <code>Number guessing game</code> that will contain the code for the game. Leave the Block Editor open.</li>
+                <li>Start building a new command block called <code>number guessing game</code> that will contain the code for the game. Leave the Block Editor open.</li>
             </ol>
         </div>
         
@@ -35,7 +35,7 @@
         </p>
         <div class="vocabFullWidth">: <strong>Variable</strong>
             <div class="comment">AAP-1.A.1</div>
-            <p>A <strong>variable</strong> is like a box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p> 
+            <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p> 
             <div class="endnote">On <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.</div>
         </div>
         
@@ -70,16 +70,13 @@
             <div class="pseudop">
                 <img class="inline" src="/bjc-r/img/2-complexity/set-secret-number-to-7.png" alt="set (secret number) to (7)" title="set (secret number) to (7)" /> would be written as <pre class="inline">secretNumber &leftarrow; 7</pre> or <img class="nopadtb" src="/bjc-r/img/2-complexity/secret-number-assignment-blocktran.png" alt="a white rounded rectangle containing the text 'secretNumber &leftarrow; 7'" title="a white rounded rectangle containing the text 'secretNumber &leftarrow; 7'" />. 
             </div>
-            <div class="pseudop">In the language on the exam, the &leftarrow; operator actually makes a <em>copy</em> of the value it's assigning. So, for example, the statement <pre class="inline">secretWord &leftarrow; "supercalifragilisticexpialidocious"</pre> allocates memory for "supercalifragilisticexpialidocious" again; the word was already stored in the code statement, and now a copy is stored in the variable <pre class="inline">secretWord</pre>. This is not the case in Snap<em>!</em> and most other languages, where there is only one copy that the variable and the code share, which is a more efficient way for programming languages to operate.
-            <div class="todo">This isn't true.  First, the whole issue about copying arises only for mutable data, so really we should talk about this with respect to lists.  Second, Snap<em>!</em> actually <em>does</em> make a copy in the case of a literal list in the code, because if the program mutates the list that's been assigned to the variable, the programmer probably does <em>not</em> want the code itself to be changed!  If you assign to a variable the list-valued result of some expression <em>other than</em> just calling <code>list</code> with constant items, that's when we don't make a copy.  This is too hairy for me to fix tonight.</div>
-            </div>
         </div>        
 
         <p>
         	Script variables are a kind of <em>local variable</em>; they work only within the script where they're created. If you drag one into a different script, it won't work. You've seen two kinds of local variables before: inputs to blocks and <code>for</code> counters. 
         </p>
         <div class="endnote">
-            <p><a href="#hint-inputs" data-toggle="collapse" title="Show me examples I've seen before.">Show me examples I've seen before.</a></p>
+            <p><a href="#hint-inputs" data-toggle="collapse" title="Examples you've seen before.">Examples you've seen before.</a></p>
             <div id="hint-inputs" class="collapse">
                 <p>
                     You have created variables as inputs to blocks that you made:<br />
@@ -112,7 +109,8 @@
                     <div class="assessment-data" type="multiplechoice" identifier="What value will this code return?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
                         <div class="prompt">
-                            What value will this code display?<br />
+                            <div class="sidenote">Examples like this one are useful to test your understanding of assignment to variables, but you wouldn't use a sequence of assignments like this in an actual program.</div>
+							What value will this code display?<br />
                             <pre>a &leftarrow; 3
 b &leftarrow; a
 a &leftarrow; 4
@@ -146,6 +144,8 @@ DISPLAY(b)</pre>
                             <div class="correctResponse" identifier="c1"></div>
                         </div>
                     </div>
+				</li>
+				<li>
                     <!-- Question 2 -->
                     <div class="assessment-data" type="multiplechoice" identifier="What value will this script report?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">

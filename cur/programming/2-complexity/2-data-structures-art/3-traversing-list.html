@@ -6,18 +6,21 @@
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-        <title>Unidad 2 Lab 2: Haciendo Listas, Página 3</title>
+        <title>Unit 2 Lab 2: Making Lists, Page 3</title>
     </head> 
 
 	<body>
-        <h2>Revisando cada Pregunta del Cuestionario</h2>
-
+        <h2>Checking Each Quiz Answer</h2>
         <div class="learn">
             <p>
-                <strong>En esta página,</strong> tú vas a completar la aplicación de cuestionario utilizando un nuevo bloque que itera en una lista:<br />
+                <strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br />
                 <img class="indent" src="/bjc-r/img/2-complexity/for-each-(item)-of().png" height="68" alt="for-each-(item)-of(){}" title="for-each-(item)-of(){}">
             </p>
         </div>
+        
+        <div class="todo">This should be an FYTD. Is is everywhere else. --MF, 5/30/20</div>
+        <p>If it's not already open, open your project U2L2-Quiz.</p>
+
         
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
             <div class="stagedir">
@@ -26,22 +29,30 @@
             <div><span>Alphie:</span> We can use our <img class="" src="/bjc-r/img/2-complexity/question-selector.png" alt="question from quiz item: ()" title="question from quiz item: ()"/> and <img class="" src="/bjc-r/img/2-complexity/answer-selector.png" alt="answer from quiz item: ()" title="answer from quiz item: ()"/> selectors to get the question and answer for quiz item in our list. But how do we get the quiz item <em>out</em> of the list in the first place?</div>
             <div>
                 <span>Gamal:</span> Maybe we can use <code>item of</code> inside a <code>for</code> loop and use the index from the <code>for</code> loop as the first input to <code>item of</code>, like this:<br />
-                <div class="comment">Fix this picture (green selector).</div>
                 <img class="indent" src="/bjc-r/img/2-complexity/for-with-item-of.png" alt="for (i) = (1) to (4) {
     ask (question from (item (i) of (computer science quiz))) and wait
 }" title="for (i) = (1) to (4) {
     ask (question from (item (i) of (computer science quiz))) and wait
 }" />
             </div>
-            <div>
-                <span>Betsy:</span> Yeah, we could, but that's a little hard to read with that index variable to keep track of, and if we add more questions, we'll have to update the number 4 that tells us when to end the loop. I bet we can use <img src="/bjc-r/img/2-complexity/for-each-(item)-of().png" height="68" alt="for each (item) of 'list input slot' {}" title="for each (item) of 'list input slot' {}"> to <em>traverse</em> the list. We could even rename <var>item</var> something logical like <var>quiz item</var>. Then the code inside will run once for each quiz item in our list.
+            <div class="vocabFullWidth">
+                <p>Using the result from <code>item</code> as the input to <code>address from contact</code> is called <strong>composition</strong> of functions.</p>
             </div>
-            <div><span>Alphie:</span> And the code will be more readable when we want to do something like asking the question or checking the answer from a pair!</div>
+            <div>
+                <span>Betsy:</span> Yeah, we could, but that's a little hard to read with that index variable, <var>i</var>, to keep track of. And if we add more questions, we'll have to update that number 4 that tells us when to end the loop. I bet we can use <code>for each</code> to <em>traverse</em> the list.
+            </div>
+            <div class="stagedir">
+                Betsy drags <code>for each</code> into the scripting area.<br />
+                <img src="/bjc-r/img/2-complexity/for-each-(item)-of().png" height="68" alt="for each (item) of 'list input slot' {}" title="for each (item) of 'list input slot' {}">
+            </div>
+            <div>
+                <span>Gamal:</span> We could even rename <var>item</var> something logical like <var>quiz item</var>. Then the code inside will run once for each quiz item in our list.
+            </div>
         </div>
 
         <div class="vocabFullWidth">: <strong>Traversing a List</strong>
             <div class="comment">AAP-2.O.2</div>
-            <p><strong>Traversing</strong> a list means looking at each item of the list. <code>For each</code> is iterative (that is, it's repetitive, like <code>for</code>, which can also traverse a list). But unlike <code>for</code>, <code>for each</code> traverses the list <em>without using index numbers</em>.</p>
+            <p><strong>Traversing</strong> a list means looking at each item of the list. <code>For each</code> is iterative. That is, it's repetitive, like <code>for</code>, which can also traverse a list. But unlike <code>for</code>, <code>for each</code> traverses the list <em>without using index numbers</em>.</p>
         </div>
 
         <div class="forYouToDo">
@@ -122,26 +133,27 @@
         <div class="examFullWidth AP-only">
             <div class="comment">AAP-2.O.3</div>
             <div class="pseudop">
+                <div class="sidenote">The procedure <pre class="inline">goto()</pre> isn't built in to the AP's language so it is written in lower case like other programmer-defined procedures.</div>
                 The script 
                 <img class="inline" src="/bjc-r/img/2-complexity/example-for-each-point.png" alt="for each (point) of (my drawing) (go to (point))" title="for each (point) of (my drawing) (go to (point))" />
                 would be written as
-                <div class="comment">Where did we come up with <pre class="inline">GoTo()</pre>? Shouldn't it have some yellow-box commentary? --MF, 8/22/19</div>
                 <div class="pre-container"><pre class="inline">FOR EACH point IN myDrawing
 {
-    GoTo(point)
+    goto(point)
 }</pre></div> or <img class="inline" src="/bjc-r/img/2-complexity/for-each-blocktran.png" alt="FOR EACH point IN myDrawing
 {
-    GoTo(point)
+    goto(point)
 }" title="FOR EACH point IN myDrawing
 {
-    GoTo(point)
+    goto(point)
 }" />.
             </div>
         </div>
 
         <div class="forYouToDo">
+			<p>These questions are similar to those you will see on the AP CSP exam.</p>
 			<ol start="6">
-                <li>These questions are similar to those you will see on the AP CSP exam.
+                <li>
                     <!-- Question 2 -->
                     <div class="assessment-data" type="multiplechoice" identifier="FOR EACH positive and square over 4"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
@@ -187,7 +199,8 @@ FOR EACH item IN inputList
                             <div class="correctResponse" identifier="c4"></div>
                         </div>
                     </div>
-                    
+				</li>
+				<li>
                     <!-- Question 3 -->
                     <div class="assessment-data" type="multiplechoice" identifier="Mystery Procedure"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="true">
@@ -246,7 +259,7 @@ Mystery(myMathGrades, 60)
                     Before telling the user the right answer, give them three tries to get it right.
                 </li>
                 <li>
-                    Users might answer questions that are close enough but not exactly the answer you expected. For example, someone might answer "What kind of variable is available only in the part of the program where it is defined?" with "a local variable," "local variable," or just "local," or the same possibilities for "script variable." So your <code>question answer</code> ADT could take a <em>list</em> of keywords in the second slot and accept any answer that includes any of the keywords (so in this case, the list would be {local, script} and would accept "a local one"). Use <img class="inline" src="/bjc-r/img/blocks/contains-empty.png" alt="() contains ()" title="() contains ()" /> to adapt your code.
+                    Users might give answers that are close enough but not exactly the answer you expected. For example, someone might answer "What kind of variable is available only in the part of the program where it is defined?" with "a local variable," "local variable," or just "local," or the same possibilities for "script variable." So your <code>question answer</code> ADT could take a <em>list</em> of keywords in the second slot and accept any answer that includes any of the keywords (so in this case, the list would be {local, script} and would accept "a local one"). Use <img class="inline" src="/bjc-r/img/blocks/contains-empty.png" alt="'list input slot' contains ()" title="'list input slot' contains ()" /> to adapt your code.
                 </li>
             </ol>
         </div>

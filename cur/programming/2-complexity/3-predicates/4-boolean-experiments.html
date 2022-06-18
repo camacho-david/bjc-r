@@ -6,13 +6,13 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unidad 2 Lab 3: Tomando Decisiones, Página 4</title>
+		<title>Unit 2 Lab 3: Making Decisions, Page 4</title>
 	</head>
 
 	<body>
-        <h2>Experimentando con Expresiones Booleanas</h2>
+        <h2>Boolean Expression Experiments</h2>
         <div class="learn">
-            <p><strong>En esta página,</strong> tú vas a hacer coincidir expresiones Booleanas con las figuras que ayudan a crear.</p>
+            <p><strong>On this page,</strong> you will match Boolean expressions with the pictures they help create.</p>
         </div>
 		        
         <div class="forYouToDo">
@@ -48,10 +48,9 @@ forever {
 					Discuss why the expression <img src="/bjc-r/img/2-complexity/apple-script.png" alt="(x position > 0) and (distance to apple > 100)" title="(x position > 0) and (distance to apple > 100)" /> generates this picture:<br />
 					<img class="indent" src="/bjc-r/img/2-complexity/apple.png" alt="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." title="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." />
 				</li>
-                <div class="comment">AAP-2.F part b, AAP.-2.C</div>
+                <div class="comment">AAP-2.E part b, AAP.-2.C</div>
 				<li>
 					Match the Boolean expressions with the pictures.  There are more expressions than pictures.<br />
-                    <div class="todo">I would like to sort out why this CSS horizontal list is breaking so bizarrely. --MF, 8/8/19</div>
                     <div style="display: grid; grid-template-columns: auto auto;">
                         <div>
                             <ol type="A">
@@ -62,7 +61,7 @@ forever {
                                 <li><img src="/bjc-r/img/2-complexity/x+y-lt--100-script.png" alt="y position < (-100 - x position)" title="y position < (-100 - x position)" /></li>
                                 <li><img src="/bjc-r/img/2-complexity/y-lt--100-script.png" alt="y position < -100" title="y position < -100" /></li>
                                 <li><img src="/bjc-r/img/2-complexity/dist-gt-100-script.png" alt="distance to apple > 100" title="distance to apple > 100" /></li>
-                                <li><img src="/bjc-r/img/2-complexity/x-gt-100-script.png" alt="x position > 100" title="x position > 100" /></li>
+                                <li><img src="/bjc-r/img/2-complexity/x-gt--100-script.png" alt="x position > -100" title="x position > -100" /></li>
                                 <li><img src="/bjc-r/img/2-complexity/x+y-gt-100-script.png" alt="y position > (100 - x position)" title="y position > (100 - x position)" /></li>
                                 <li><img src="/bjc-r/img/2-complexity/xy-gt-0-script.png" alt="(x position * y position) > 0" title="(x position * y position) > 0" /></li>
                                 <li><img src="/bjc-r/img/2-complexity/x+y-gt--100-script.png" alt="(x position + y position) > -100" title="(x position + y position) > -100" /></li>
@@ -94,7 +93,7 @@ forever {
                 <li>Compare answers with another pair and resolve any disagreements.</li>
 				<li>On paper, sketch the pictures for the expressions you didn't match with pictures in the previous problem (without using Snap<em>!</em>).</li>
 				<li>
-				    <a href="/bjc-r/prog/2-complexity/U2L3-dots.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
+				    <a href="/bjc-r/prog/2-complexity/U2L3-Dots.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
 				</li>
                 <div class="comment">AAP-2.F part a</div>
 				<li>
@@ -109,28 +108,7 @@ forever {
 			</ol>
 		</div>
 
-		<div class="takeItFurther">
-		    <ol type="A">
-			    <li>
-				    Invent Boolean expressions for these pictures:<br />
-					<ol class="horizontal">
-                        <li><img src="/bjc-r/img/2-complexity/x-div-100-mod-10.png" alt=" The stage is almost entirely orange, except for five thin vertical purple stripes evenly spaced." title=" The stage is almost entirely orange, except for five thin vertical purple stripes evenly spaced." /></li>
-                        <li><img src="/bjc-r/img/2-complexity/div-100-mod-2-x=y.png" alt="A checkerboard pattern or purple and orange. Around the x axis are five squares, with purple at the left and right edges and at the center. Around the y axis, there are three full squares and two partial squares at the edges; the partial squares and the center square are purple, and the remaining two squares are orange. The two colors alternate over the entire area like a checkerboard." title="A checkerboard pattern or purple and orange. Around the x axis are five squares, with purple at the left and right edges and at the center. Around the y axis, there are three full squares and two partial squares at the edges; the partial squares and the center square are purple, and the remaining two squares are orange. The two colors alternate over the entire area like a checkerboard." /></li>
-                        <li><img src="/bjc-r/img/2-complexity/div-100-mod-3-x=y.png" alt="A checkerboard like ii, except that in each row the squares alternate two orange, one purple. So the top (partial) row is orange, purple, orange, orange, purple. The second row is purple, orange, orange, purple, orange. The middle row is orange, orange, purple, orange, orange. The fourth row is orange, purple, orange, orange, purple. And the bottom partial row is purple, orange, orange, purple, orange." title="A checkerboard like ii, except that in each row the squares alternate two orange, one purple. So the top (partial) row is orange, purple, orange, orange, purple. The second row is purple, orange, orange, purple, orange. The middle row is orange, orange, purple, orange, orange. The fourth row is orange, purple, orange, orange, purple. And the bottom partial row is purple, orange, orange, purple, orange." /></li>
-                        <li><img src="/bjc-r/img/2-complexity/dir-div-20-mod-2.png" alt="There's an apple at the center. Radiating out from the center are 18 wedges, alternating orange and purple in color." title="There's an apple at the center. Radiating out from the center are 18 wedges, alternating orange and purple in color." /></li>
-                        <li><img src="/bjc-r/img/2-complexity/dist-div-20-mod-2.png" alt="There's an apple at the center. Behind the apple is a small orange circle. Then comes a small purple circular band around the orange circle. Then a small orange circular band, and so on working outward." title="There's an apple at the center. Behind the apple is a small orange circle. Then comes a small purple circular band around the orange circle. Then a small orange circular band, and so on working outward." /></li>
-                        <li><img src="/bjc-r/img/2-complexity/dist-gt-dir.png" alt="Imagine a line going straight down from an apple in the center of the stage. Also imagine a spiral that starts at the origin and spirals outward clockwise, through a little bit of the third quadrant, then the second quadrant, and finally hitting the right edge of the stage in the first quadrant. The area above and to the left of the line and spiral is purple; the area below and to the right is orange." title="Imagine a line going straight down from an apple in the center of the stage. Also imagine a spiral that starts at the origin and spirals outward clockwise, through a little bit of the third quadrant, then the second quadrant, and finally hitting the right edge of the stage in the first quadrant. The area above and to the left of the line and spiral is purple; the area below and to the right is orange." /></li>
-                    </ol>
-                    <div class="endnote" style="clear: both;">
-                        <a href="#hint-tif" data-toggle="collapse" title="Click for a hint.">Click for a hint.</a>
-                        <div id="hint-tif" class="collapse">
-                            Some of these include expressions of the form <img src="/bjc-r/img/2-complexity/hint-script.png" alt="((round (() / 20)) mod 2)" title="((round (() / 20)) mod 2)"> with something like <img src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" /> in the empty input slot, and maybe different numbers in place of 20 and 2.
-                        </div>
-				    </div>
-                </li>
-			</ol>
-		</div>
-					
+						
         
 	</body>
 </html>

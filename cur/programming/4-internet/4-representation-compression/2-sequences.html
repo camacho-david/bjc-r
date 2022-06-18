@@ -36,7 +36,7 @@
         <p>That shows just 449 bits. A 16GB cell phone has 16 gigabytes (about 16 billion bytes) of storage with each byte containing 8 bits. That's 128,000,000,000 bits. Printed on paper as ones and zeros, the 16GB phone's memory would take nearly 40,000,000 pages. The information in storage—whether it is a text message, a photograph, a song, a computer program, or a list of phone numbers—all looks the same, like a sequence of bits that are either On or Off (one or zero), a <em>binary sequence</em>.</p>
         
         <div class="endnote">
-            <p><a href="#hint-size-table" data-toggle="collapse" title="How much information fits in a gigbyte?">How much information fits in a gigbyte?</a></p>
+            <p><a href="#hint-size-table" data-toggle="collapse" title="How much information fits in a gigbyte?">How much information fits in a gigabyte?</a></p>
             <div id="hint-size-table" class="collapse">
                 <p>Here are a few rough examples of what kind of data would fit in how much memory:</p>
                 <table class="byte indent" summary="table of common data sizes">
@@ -171,12 +171,16 @@
         </div>
                     
         <div class="comment">DAT-1.A.6</div>
-        <p>"Binary sequence" is a very broad category, and often, several layers of abstraction are built on it. For example, you can include a picture in an email or text message, in which case, the <em>message</em> includes a <em>picture</em>, which is a kind of <em>file</em>, which is a kind of <em>bitstream</em>.</p>
+        <p>"Binary sequence" is a very broad category, and often, several layers of abstraction are built on it. For example, you can include a picture in an email or text message, in which case, the <em>message</em> includes a <em>picture</em>, which is a kind of <em>file</em>, which is a kind of <em>binary sequence</em>.</p>
 
         <div class="forYouToDo" id="first">
 			<ol>
 				<li>
-                    <a class="run" href="/bjc-r/prog/6-computers/U6L1-TranslatingBinary.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
+                    <div class="todo">
+                        <p>It's unclear what to do here. It might be better to give them some strings to translate. --MF, 6/1/20</p>
+                        <p>Brian has more or less convinced Mary to change the block names from "convert decimal to binary" to "convert number to binary" and vice versa AND they both agreed to drop the recursion inside the <code>convert number to binary</code> block. The starter project, solutions, and references to it in the page will all need edits. We haven't decided if changes are needed on the Binary Representation page. --MF, 6/5/20</p>
+                    </div>
+<a class="run" href="/bjc-r/prog/4-internet/U4L4-TranslatingBinary.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
                     <p>
                         Take a look at these 3 custom blocks that you will use to explore binary sequences:
                         <ul>
@@ -196,8 +200,6 @@
                         </ul>
                     </p>
                 </li>
-		<div class="todo">I'm afraid I'm adding rather than removing comments.  This whole process is a kludge.  Put the bitstream in a watcher, export it, open a text editor, copy it...  Why not just write the bitstream-to-whatever blocks to ignore the quotation marks, and then just put the variable in the bitstream input slot -- or not even bother with a variable, just put text-to-bin in the input slot of bin-to-picture. -bh<p>I'm happy to look at a proposal for this. The whole page is too long: too much reading and too much to do. --MF, 8/7/19</p>
-		<p>As of 5.0, pictures are first class; we have primitives to turn an array of RGB values into a costume.  So we can simplify the command block above. -bh</p></div>
 				<li>
                 	Translate a short text string into a binary sequence. 
                 	<ul>
@@ -208,7 +210,7 @@
 						</li>
                         <li>
                             Access the output by right-clicking (or control-clicking) on the OUTPUT watcher on the stage and choosing "export..." The binary sequence will download as a text file. Copy the binary sequence out of the file, but not the quotes.<br />
-                            <img class="indent" src="/bjc-r/img/6-computers/exporting-output-watcher.png" alt="image of output watcher on stage storing a binary sequence with the dropdown menu open and  'export...' option selected" title="image of output watcher on stage storing a binary sequence with the dropdown menu open and  'export...' option selected" />
+                            <img class="indent" src="/bjc-r/img/6-computers/exporting-output-watcher.png" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" />
                         </li>
                     </ul>
                 </li>
@@ -249,7 +251,7 @@
             <p><strong>Sampling</strong> means measuring values, called <strong>samples</strong>, of an analog signal at regular intervals.</p>
 	    <p>The <strong>sampling rate</strong> is the number of samples measured per second.</p>
         </div>
-        <p>Not all data are naturally digital.  (That is, they may not be individual values that can be represented in the form of binary sequences.)  Some real-world values (such as the pitch and volume of music, the colors of a painting, or the position of a sprinter during a race) change smoothly over time or position; they are <em>analog</em>. When analog data are encoded digitally (as bits on a computer), their values are approximated. This is an example of abstraction. The continuously changing air pressure of a sound, for example, is <em>sampled</em> (measured) thousands of times a second, and the sames are stored as bits.
+        <p>Not all data are naturally digital.  (That is, they may not be individual values that can be represented in the form of binary sequences.)  Some real-world values (such as the pitch and volume of music, the colors of a painting, or the position of a sprinter during a race) change smoothly over time or position; they are <em>analog</em>. When analog data are encoded digitally (as bits on a computer), their values are approximated. This is an example of abstraction. The continuously changing air pressure of a sound, for example, is <em>sampled</em> (measured) thousands of times a second, and the samples are stored as bits.</p>
         <div class="endnote">
             <a href="#hint-analog" data-toggle="collapse" title="More examples, please.">More examples, please.</a>
             <div id="hint-analog" class="collapse">
@@ -265,9 +267,9 @@
         
         <div class="comment">AAP-1.A.3 first sentence</div>
         <p>
-            But different languages use data types differently. In high-level languages, that data type code is attached to <em>the value itself.</em>  In lower-level languages, when you make a variable, you have to say what type of value it will contain, and the data type is attached to the <em>variable</em>, so you can't get exact answers when the values are integers and <em>also</em> be able to handle non-integer values of the same variable. So instead of seeing: <br />
+            But different languages use data types differently. In high-level languages, that data type code is attached to <em>the value itself.</em>  In lower-level languages, when you make a variable, you have to say what type of value it will contain, and the data type is attached to the <em>variable</em>, so you can't get exact answers when the values are integers and <em>also</em> be able to handle non-integer values of the same variable. So instead of seeing <br />
             <img class="indent" src="/bjc-r/img/4-internet/varfoo.png" alt="script variables (foo)" title="script variables (foo)" /><br />
-            you see things like:<br />
+            you see things like<br />
             <img class="indent" src="/bjc-r/img/4-internet/intfoo.png" alt="integer (foo)" title="integer (foo)" />
         </p>
         <div class="comment">AAP-1.A.4</div>
@@ -311,7 +313,6 @@
                 	Look inside the <code>translate text to binary sequence</code> and <code>translate binary sequence to text</code> reporters. <strong>Describe how these two reporters work.</strong> There are several custom blocks inside:
                     <ul>
                         <li><code>pack 8-bit byte</code> takes a binary sequence of 8 bits or less and add enough zeros to the front to make a whole byte. How is this used?</li>
-                        <li><code>translate decimal to binary</code> takes a decimal value (a normal number) as input and translates it to the binary representation of that number. This block uses recursion. Why is recursion helpful here?</li>
                         <li><code>translate text to Unicode list</code> takes a text string and outputs a list of each character's Unicode value. Why is a list output helpful here?</li>
                     </ul>
     			</li>
