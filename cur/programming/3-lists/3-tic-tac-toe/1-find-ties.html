@@ -3,52 +3,52 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 3 Lab 3: Tic-Tac-Toe, Page 1</title>
+		<title>Unidad 3 Laboratorio 3: Tic-Tac-Toe, Página 1</title>
     </head> 
     
     <body>
-	    <h2>Remembering the Moves and Possible Wins</h2>
+	    <h2>Recordando los Movimientos y Posibles Ganancias</h2>
 		
         <div class="learn">
-            <p><strong>In this lab</strong>, you will continue your <a href="/bjc-r/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Building a Tic-Tac-Toe Board">Tic-Tac-Toe project</a> to make the program <em>analyze</em> the game board to detect wins and ties.</p>
-            <p><strong>On this page</strong>, you'll prepare by allowing the program to record the moves that are made, and teach it the winning groups of three squares.</p>
+            <p><strong>En este laboratorio</strong>, continuará con su <a href="/bjc-r/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc% 2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Construyendo un tablero de Tic-Tac-Toe">Proyecto Tic-Tac-Toe</a> para hacer que el programa <em>analice</em> el tablero de juego para detectar triunfos y empates.</p>
+            <p><strong>En esta página</strong>, te prepararás permitiendo que el programa registre los movimientos que se realizan y enséñale los grupos ganadores de tres casillas.</p>
         </div>
         <p>
-            When you first wrote Tic Tac Toe, it was easy to detect illegal moves (moving to a square that's already wearing an X or O costume) because each sprite could test for that without knowing about the rest of the game board. But to detect wins and ties, the program needs a way to test the state of the <em>whole game board</em>, not just one individual piece. So, you'll use a <em>global variable</em>, <img src="/bjc-r/img/5-algorithms/board.png" alt="board" title="board">, to keep track of whether the square in each position is empty or filled with an X or an O.<br />
+            Cuando escribiste Tic Tac Toe por primera vez, era fácil detectar movimientos ilegales (moverse a un cuadrado que ya lleva un disfraz de X u O) porque cada sprite podía probar eso sin conocer el resto del tablero de juego. Pero para detectar victorias y empates, el programa necesita una forma de probar el estado del <em>tablero de juego completo</em>, no solo de una pieza individual. Entonces, usará una <em>variable global</em>, <img src="/bjc-r/img/5-algorithms/board.png" alt="board" title="board">, para haga un seguimiento de si el cuadrado en cada posición está vacío o lleno con una X o una O.<br />
             <div class="sidenote">
-                <p>You learned about <strong>global variables</strong> on <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-keeping-score.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.</p>
+                <p>Aprendió sobre <strong>variables globales</strong> en <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-keeping-score.html?topic=nyc_bjc%2F2 -conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unidad 2 Práctica de laboratorio 1, página 4: Llevar la puntuación con variables globales">Unidad 2 Práctica de laboratorio 1, página 4: Llevar la puntuación con variables globales</a>.</p>
             </div>
             <img class="indent noshadow" src="/bjc-r/img/3-lists/ttt-board-var.png" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" />
         </p>
 
         <div class="forYouToDo" id="first">
 			<ol>
-                <li>Open your <strong>U3L1-TicTacToe</strong> project, and save it as <strong>U3L3-TicTacToe</strong> so you'll still have your old version when you edit the new one.</li>
+                <li>Abra su proyecto <strong>U3L1-TicTacToe</strong> y guárdelo como <strong>U3L3-TicTacToe</strong> para que aún tenga su versión anterior cuando edite la nueva.</li>
                 <li>
-                    Make a global variable called <var>board</var> that, at the beginning of the game, contains a list with the numbers from 1 to 9.<br />
+                    Haz una variable global llamada <var>tablero</var> que, al comienzo del juego, contenga una lista con los números del 1 al 9.<br />
                </li>
             </ol>
         </div>
         
-        <p>Each sprite needs to know its own position on the board so that you can use the <code>item of</code> block to replace that position with an X or an O. So, you'll create a <em>sprite variable</em>, <img class="inline nopadtb" src="/bjc-r/img/3-lists/position-number.png" alt="position number" title="position number" />, and each clone will have its <em>own version</em> of this variable.</p>
+        <p>Cada sprite necesita conocer su propia posición en el tablero para que pueda usar el bloque <code>objeto de</code> para reemplazar esa posición con una X o una O. Entonces, creará una variable de sprite <em> </em>, <img class="inline nopadtb" src="/bjc-r/img/3-lists/position-number.png" alt="número de posición" title="número de posición" />, y cada clon tendrá su <em>propia versión</em> de esta variable.</p>
         
-        <div class="vocabFullWidth">: <strong>Sprite Variable</strong>
-            <p>A <strong>sprite variable</strong> is like a global variable in that it <em>doesn't</em> belong to a particular <em>script</em>, but it does belong to a particular <em>sprite.</em></p>
+        <div class="vocabFullWidth">: <strong>Variable Sprite</strong>
+            <p>Una <strong>variable sprite</strong> es como una variable global en el sentido de que <em>no</em> pertenece a un <em>script</em> en particular, pero sí pertenece a un <em>sprite en particular.</em></p>
         </div>
         
         <div class="forYouToDo">
 			<ol start="3">
                 <li>
                     <div class="sidenote">
-                        <p>You learned about <strong>initializing variables</strong> on <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables">Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables</a>.</p>
+                        <p>Aprendió sobre <strong>inicialización de variables</strong> en <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html?topic=nyc_bjc %2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unidad 2, laboratorio 1, página 1: Desarrollo de un juego de adivinanzas numéricas con variables de script">Unidad 2, laboratorio 1, página 1: Desarrollo de un juego de adivinanzas numéricas con variables de script</a>.</p>
                     </div>
-                    Create a sprite variable <var>position number</var>.
+                    Cree una variable de sprite <var>número de posición</var>.
                     <div class="narrower">
                         <p>
-                            You make a sprite variable similarly to how you make global variables: 
+                            Haces una variable de sprite de manera similar a como haces variables globales: 
                             <ul>
-                                <li>Click <img class="inline nopadtb noshadow" src="/bjc-r/img/1-introduction/make-a-variable.png" alt="make a variable button" title="make a variable button" /> in the Variables palette.</li>
-                                <li>Then, as you are typing the variable's name, select "for this sprite only" to make it a sprite variable.</li>
+                                <li>Haga clic en <img class="inline nopadtb noshadow" src="/bjc-r/img/1-introduction/make-a-variable.png" alt="hacer un botón variable" title="hacer un botón variable" /> en la paleta Variables.</li>
+                                <li>Luego, mientras escribe el nombre de la variable, seleccione "solo para este sprite" para convertirlo en una variable de sprite.</li>
                             </ul>
                         </p>
                         
@@ -56,23 +56,23 @@
                     </div>                    
                 </li>
                 <li>
-                    As you create the clones, set each one's <var>position number</var> to the appropriate value (1-9).<br />
+                    A medida que crea los clones, establezca el <var>número de posición</var> de cada uno en el valor apropiado (1-9).<br />
                     <div class="endnote">
-                        <a href="#hint-1" data-toggle="collapse" class="collapsed" title="Hint">Click for a hint on setting the <var>position number</var>.</a>
+                        <a href="#hint-1" data-toggle="collapse" class="collapsed" title="Hint">Haga clic para obtener una sugerencia sobre cómo configurar el <var>número de posición</var>.</a>
                         <div id="hint-1" class="collapse">
-                            In the loop that makes the clones, increase the parent sprite's variable by one for each new clone so that each clone will have a unique value.
+                            En el bucle que hace los clones, aumenta la variable del sprite principal en uno para cada nuevo clon para que cada clon tenga un valor único.
                         </div>
                     </div>
-					<div class="takeNote">Make sure that the parent's <var>position number</var> doesn't end up being a number 1-9 so that it doesn't conflict with a clone.</div>
+					<div class="takeNote">Asegúrese de que el <var>número de posición</var> del padre no termine siendo un número del 1 al 9 para que no entre en conflicto con un clon.</div>
                 </li>
-                <li>When a square is clicked, replace that square's entry in the <var>board</var> list with X or O as appropriate.</li>
-                <li>Watch the values stored in the <var>board</var> variable as you play a game of Tic Tac Toe. Make sure that it updates as you expect it to, and fix any bugs.</li>	
+                <li>Cuando se hace clic en un cuadrado, reemplace la entrada de ese cuadrado en la lista <var>tablero</var> con X u O según corresponda.</li>
+                <li>Observe los valores almacenados en la variable <var>tablero</var> mientras juega un juego de Tic Tac Toe. Asegúrese de que se actualice como espera y corrija cualquier error.</li>	
 			</ol>
 		</div>
 
-        <h3>Storing All the Ways to Win</h3>
+        <h3>Almacenamiento de todas las formas de ganar</h3>
 		<p>
-            To program a way to detect a win, you need to determine what counts as a win.  You'll store each possible winning triple as a list of three position numbers (a <em>triple</em>).  For example, this winning triple could be represented as <img src="/bjc-r/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br />
+            Para programar una forma de detectar una ganancia, debe determinar qué cuenta como ganancia. Almacenará cada posible triple ganador como una lista de tres números de posición (un <em>triple</em>). Por ejemplo, este triple ganador podría representarse como <img src="/bjc-r/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title= "list{3, 5, 7}"> porque la ganancia está en las posiciones 3<sup>rd</sup>, 5<sup>th</sup> y 7<sup>th</sup><br/>
             <img class="indent noshadow" src="/bjc-r/img/3-lists/winning-combo-357.png" alt="diagonal win bottom left to top right" title="diagonal win bottom left to top right"><br />
         </p>
         
@@ -80,24 +80,24 @@
 			<ol start="7">
                 <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     <ol>
-                        <li>How many winning triples are possible? </li>
-                        <li>Write down each of the possible winning triples.</li>
+                        <li>¿Cuántos triples ganadores son posibles?</li>
+                        <li>Anota cada uno de los posibles triples ganadores.</li>
                     </ol>
                 </li>
             </ol>
         </div>
         <p>
-            You <em>could</em> check for each possible win separately:<br />        
+            Usted <em>podría</em> verificar cada posible ganancia por separado:<br />        
             <img class="indent" src="/bjc-r/img/3-lists/silly-check-win.png" alt="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" title="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)">  
         </p>
                       
-        <p>But that's way too much code, especially because you'll have to do something very similar again, later on, when the computer actually plays against you. Instead, you'll create a list to store all of the possible winning triples so you can check it against the current state of the game stored by <var>board</var>.</p>
+        <p>Pero eso es demasiado código, especialmente porque tendrás que hacer algo muy similar más adelante, cuando la computadora juegue en tu contra. En su lugar, creará una lista para almacenar todos los posibles triples ganadores para que pueda compararla con el estado actual del juego almacenado por <var>tablero</var>.</p>
         
         <div class="forYouToDo">
 			<ol start="8">
                <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
                 <li>
-                    Create a reporter that outputs a list of all possible winning triples. It will look something like this:<br />
+                    Cree un reportero que genere una lista de todos los posibles triples ganadores. Se verá algo como esto:<br />
                     <img class="indent" src="/bjc-r/img/3-lists/winning-triples.png" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}"/>
                 </li>
 		<li>
