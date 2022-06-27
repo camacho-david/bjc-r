@@ -3,21 +3,22 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Laboratorio #: Nombre</title>
+		<title>Lab #: Name</title>
 	</head>
 
 	<body>
-		<h3>Programación Funcional</h3>
+		<h3>Functional Programming</h3>
 
-		<p>En el idioma utilizado en el examen, la única forma de generar datos de lista es con <em>comandos,</em> acciones que <em>cambian</em> el contenido de una lista: <code>Agregar</code>. <código>Insertar</código>. <código>Reemplazar</código>. <código>Eliminar</código>. Adoptan este enfoque porque creen que es el estilo de programación más fácil de entender y también para incluir Scratch, en el que estos comandos son el único mecanismo proporcionado para trabajar con listas. Pero hay una forma mejor, llamada <strong>programación funcional</strong>, en la que nunca modifica una estructura de datos, sino que crea una nueva para contener los nuevos valores.</p>
+		<p>In the language used on the exam, the only way to generate list data is with <em>commands,</em> actions that <em>change</em> the contents of a list: <code>Add</code>. <code>Insert</code>. <code>Replace</code>. <code>Delete</code>.  They take this approach because they think it's the easiest programming style for you to understand, and also to include Scratch, in which these commands are the only mechanism provided for working with lists.  But there's a better way, called <strong>functional programming</strong>, in which you never modify a data structure, but instead make a new one to hold the new values.</p>
+        
+        <div class="todo">I've yet to be convinced that it's <em>always</em> better. Certainly, in some cases it is, but sometimes, it's a big ugly confusing mess. Remember when you tried to prove that <code>draw square</code> could be done functionally? (Also, I'll need to tweak this language a bit for "they" and "easiest", and the reference to Scratch is unclear because many users won't know what that is.) --MF, 5/30/20</div>
 
-		<div class="todo">Todavía tengo que estar convencido de que es <em>siempre</em> mejor. Ciertamente, en algunos casos lo es, pero a veces, es un gran lío feo y confuso. ¿Recuerdas cuando intentaste probar que <code>dibujar un cuadrado</code> se podía hacer funcionalmente? (Además, tendré que modificar un poco este lenguaje para "ellos" y "más fácil", y la referencia a Scratch no está clara porque muchos usuarios no sabrán qué es). --MF, 30/5/20 </div>
         <div class="forYouToDo">
 			<ol start="10">
 				<div class="todo">We don't use the brackets for student-facing content very often if at all, and it's not the way the College Board notates lists. I'm pretty sure they use square brackets. --MF, 5/30/20</div>
-                <li>Tienes una lista de compras y quieres tener los plurales de todos los alimentos. (Vas a comprar algunas manzanas, no una manzana). El valor inicial de <var>lista de compras</var> es <code>{manzana, banana}</code>. Considere estos cinco guiones:
-					<div class="todo">Esta es una cantidad irrazonable de código para analizar y que distrae del objetivo de la página. Es mejor simplemente mostrar un NFP y un FP y hablarles sobre lo que quiere que noten (o hacerles preguntas significativas para ayudarlos a concluir lo que quiere). --MF, 30/5/20</div>
-					<ol type="A">
+                <li>You have a shopping list, and you want to have the plurals of all the foods.  (You're going to buy some apples, not one apple.)  The initial value of <var>shopping list</var> is <code>{apple, banana}</code>.  Consider these five scripts:
+				<div class="todo">This is an unreasonable amount of code to parse and that distracts from the goal of the page. Better to just show one NFP and one FP and talk them through what you want them to notice (or give them meaningful questions to help them conclude what you want). --MF, 5/30/20</div>
+                <ol type="A">
 					<li><img src="/bjc-r/img/2-complexity/plurals-1.png"></li>
 					<li><img src="/bjc-r/img/2-complexity/plurals-2.png"></li>
 					<li><img src="/bjc-r/img/2-complexity/plurals-3.png"></li>
@@ -25,31 +26,32 @@
 					    <img src="/bjc-r/img/2-complexity/plurals-4b.png"></li>
 					<li><img src="/bjc-r/img/2-complexity/plurals-5.png"></li>
 				</ol>
-					Aún no has conocido a <code>mapa</code>. Es una función de orden superior que crea una nueva lista, de la misma longitud que su lista de entrada, en la que cada elemento se calcula aplicando su función de entrada al elemento correspondiente de la lista de entrada.
-					<div class="todo">No podemos usar <code>maps</code> para cada FP antes de que sepan qué mapa es.</div>
+				You haven't met <code>map</code> yet.  It's a higher-order function that creates a new list, the same length as its input list, in which each item is computed by applying its input function to the corresponding item of the input list.
+                    <div class="todo">We can't use <code>map</code> to each FP before they know what map is.</div>
 			</li><li>
 				<ol type="a">
 				<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png">
-					<li>Después de cada uno de estos scripts, ¿cuál es el valor de la <var>lista de compras plural</var>?</li>
-					<li>Después de cada uno de estos scripts, ¿cuál es el valor de la <var>lista de compras</var>?</li>
+					<li>After each of these scripts, what is the value of <var>plural shopping list</var>?</li>
+					<li>After each of these scripts, what is the value of <var>shopping list</var>?</li>
 				</ol>
                 <div class="todo">OK, this is the start of what I mean by "meaningful questions to help them conclude what you want." Need to also ask something like "Would you want the value of shopping list to change and be the same as plurals of...?" or something like that. --MF, 5/30/20</div>
 			</li>
             </ol>
 		</div>
-		<p>El punto de ese ejercicio es que para los tres primeros scripts, los de <em>programación imperativa</em>, se necesita mucha atención para asegurarse de cuál es el valor final de la <var>lista de la compra</var> . (En un caso es lo mismo que antes; en un caso es lo mismo que <var>lista de compras en plural</var>; en un caso la respuesta depende de si estás programando en Snap<i>!</i> o en lenguaje AP (consulte el cuadro gris justo antes del encabezado "Programación funcional").</p>
-		<div class="todo">"imperative"? This world comes out of no where. If we are going to use it, it will need explanation such as in a vocab box. --MF, 5/30/20<p>I don't understand the end of that paragraph. Is it referring to something that doesn't exist?Also, if we want to walk through why it's different in Snap<em>!</em> than in APtran (which I don't think we should), then that text could work, but otherwise, it's confusing. --MF, 5/30/20</p></div>
-		<p>Por el contrario, en las dos últimas secuencias de comandos debería ser fácil ver que no se realiza ningún cambio en la <var>lista de la compra</var>. Esto se debe a que estos dos últimos scripts usan un estilo de programación funcional: crea una nueva lista sin instrucciones de <code>reemplazar</code> o <code>agregar</code>.</p>
-		<div class="todo">Don't say "easy" even on an easy page--which this is not. --MF, 5/30/20</div>
-		<p>Tienes que reconocer el estilo de programación imperativo para el examen. (No se le pedirá que <em>escriba</em> código en el examen). Pero también debe sentirse cómodo con el estilo funcional. en particular, esperamos que disfrute de la elegancia del quinto guión, una frase que crea la lista de plurales sin cambiar la lista original.</p>        <div class="todo">I'm going to stop picking this page apart. I have a lot of qualms. Mostly, it's too much and too little at the same time. I feel like it's confusingly complicated and hand-wavy and yet misses the core things we want kids to get. I believe we need a page (or at least content) like this, but we aren't there yet with this, and I'm not sure what to do at this late hour or where it belongs... --MF, 5/30/20</div>
-		<div class="takeNote">En un momento, los programadores "reales" veían la programación funcional como algo de interés solo para los profesores de informática. Pero hoy en día es una forma preferida de programar debido al hardware de procesamiento paralelo, ya sea con bastidores llenos de computadoras o con chips de procesador multinúcleo que incluyen cuatro u ocho procesadores dentro de un solo chip. La razón es que con varios procesos ejecutándose en paralelo, es posible que dos de ellos intenten modificar la misma variable al mismo tiempo, con malos resultados. Pero si el programa está escrito funcionalmente, nunca se modifica nada, por lo que eso no puede suceder. Hay <em>lenguajes funcionales</em> en los que no hay equivalentes a <code>set</code> o <code>replace</code>.<div class="todo">¿Por qué es esto una nota? ¿Es eso un error? De hecho, parece algo que debería ser una nota al final (y no solo porque debería estar separado en un cuadro). --MF, 30/5/20</div>
+		<p>The point of that exercise is that for the first three scripts, the <em>imperative programming</em> ones, it takes careful attention to be sure what the final value of <var>shopping list</var> is.  (In one case it's the same as before; in one case it's the same as <var>plural shopping list</var>; in one case the answer depends on whether you're programming in Snap<i>!</i> or in AP-language.  (See the gray box just before the "Functional Programming" header.)</p>
+        <div class="todo">"imperative"? This world comes out of no where. If we are going to use it, it will need explanation such as in a vocab box. --MF, 5/30/20<p>I don't understand the end of that paragraph. Is it referring to something that doesn't exist?Also, if we want to walk through why it's different in Snap<em>!</em> than in APtran (which I don't think we should), then that text could work, but otherwise, it's confusing. --MF, 5/30/20</p></div>
+		<p>By contrast, in the last two scripts it should be easy to see that no change is made to <var>shopping list</var>.  That's because these last two scripts use functional programming style:  You create a new list without any <code>replace</code> or <code>add</code> instructions.</p>
+        <div class="todo">Don't say "easy" even on an easy page--which this is not. --MF, 5/30/20</div>
+		<p>You have to recognize the imperative programming style for the exam.  (You will not be asked to <em>write</em> code on the exam.)  But you should also be comfortable with the functional style.  in particular, we hope you'll enjoy the elegance of the fifth script, a one-liner that creates the list of plurals without changing the original list.</p>
+        <div class="todo">I'm going to stop picking this page apart. I have a lot of qualms. Mostly, it's too much and too little at the same time. I feel like it's confusingly complicated and hand-wavy and yet misses the core things we want kids to get. I believe we need a page (or at least content) like this, but we aren't there yet with this, and I'm not sure what to do at this late hour or where it belongs... --MF, 5/30/20</div>
+		<div class="takeNote">At one time, functional programming was viewed by "real" programmers as something of interest only to computer science professors.  But today it's a favored way to program because of parallel-processing hardware, either with  racks full of computers or with multicore processor chips that include four or eight processors inside a single chip.  The reason is that with multiple processes running in parallel, it's possible for two of them to be trying to modify the same variable at the same time, with bad results.  But if the program is written functionally, nothing is ever modified, so that can't happen.  There are <em>functional languages</em> in which there are no equivalents to <code>set</code> or <code>replace</code>.<div class="todo">Why is this a takenote? Is that a mistake?  It actually seems like something that should be an endnote (and not just because it should be set apart in a box). --MF, 5/30/20</div>
 		</div>
 
         <div class="todo">When we talk, can you tell me what the solution is to this TIF? Does it have to be done functionally, or is having it here a hint that it's best to? --MF, 5/30/20</div>
         <div class="takeItFurther">
-            <div class="sidenoteBig">Ya hay un sprite de botón de búsqueda en su archivo. Puedes usar <img class="inline nopadtb" src="/bjc-r/img/blocks/show.png" alt="show" title="show" /> para verlo. </div>
+            <div class="sidenoteBig">There is a Search button sprite already in your file. You can use  <img class="inline nopadtb" src="/bjc-r/img/blocks/show.png" alt="show" title="show" /> to see it. </div>
             <ol type="A">
-                <li>Escriba un guión para el botón "Buscar" que le diga al usuario si un elemento ya está en la lista. Puedes usar<img class="inline nopadtb" src="/bjc-r/img/blocks/contains-empty.png" alt="'list input slot' contains ()" title="'list input slot' contains ()" /> para ver si un elemento ya está en la lista.</li>
+                <li>Write a script for the "Search" button that tells the user whether an item is already on the list.  You can use <img class="inline nopadtb" src="/bjc-r/img/blocks/contains-empty.png" alt="'list input slot' contains ()" title="'list input slot' contains ()" /> to see if an item is already on the list.</li>
             </ol>
             <p style="clear: both; height: 0px;"></p>
         </div>
