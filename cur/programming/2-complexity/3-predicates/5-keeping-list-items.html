@@ -6,45 +6,47 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unit 2 Lab 3: Making Decisions, Page 5</title>
+		<title>Unidad 2 Laboratorio 3: Tomar decisiones, página 5</title>
 	</head>
 
 	<body>
-        <h2><code>Keep</code>ing Items from a List</h2>
+        <h2><code>Manten</code>iendo elementos de una lista</h2>
         <div class="learn">
-			<p><strong>On this page</strong>, you will use predicates with the <code>keep</code> block to keep items in a list that have specific characteristics.</p>
+			<p><strong>En esta página</strong>, usarás predicados con el bloque <code>mantener</code> para mantener elementos en una lista que tienen características específicas.</p>
 		</div>
 
-		<p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items 'predicate input slot' from 'list input slot'" title="keep items 'predicate input slot' from 'list input slot'" /> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
-		
+        <p>Como tu ya sabes, los predicados se pueden usar con condicionales para decidir <em>cuándo</em> <em>hacer</em> algo; también se pueden usar con <code>mantener</code> para decidir <em>cuáles</em> elementos deben quedarse en la lista. Los bloques <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items 'predicate input slot' from 'list input slot'" title="keep items 'predicate input slot' from 'list input slot'" /> toman una lista y un predicado como entrada, e informa una nueva lista manteniendo solo los elementos de la lista de entrada que hacen que la condición del predicado sea verdadera.</p>
+
         <p>
-            For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br>
-			<img class="indent" src="/bjc-r/img/2-complexity/keep-example-6.png" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" title="keep items  ((letter(1) of ( )) = (v)) from (words list)">
+            Por ejemplo, la siguiente expresión encontrará palabras de la <var>lista de palabras</var> que tienen v como su primera letra. El <em>espacio de entrada en blanco</em> es donde va cada elemento de la lista para decidir si mantenerse.<br>
+            <img class="indent" src="/bjc-r/img/2-complexity/keep-example-6.png" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" title="keep items  ((letter(1) of ( )) = (v)) from (words list)">
 		</p>
-        
-        <div class="vocabFullWidth">: <strong>String</strong> and <strong>Index</strong>
+
+        <div class="vocabFullWidth">: <strong>Cadena</strong> y <strong>índice</strong>
             <ul>
                 <div class="comment">AAP-1.C.4</div>
-                <li>A <strong>string</strong> is an ordered sequence of characters.</li>
+                <li>Una <strong>cadena</strong> es una secuencia ordenada de caracteres.</li>
                 <div class="comment">AAP-1.C.3 (strings)</div>
-                <li><a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="You've already learned the word index">You've already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to <code>letter</code> is the index.</li>
+                <li><a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="You've already learned the word index">Ya has aprendido</a> la palabra <strong>índice</strong> para la posición de un elemento en una lista. La misma palabra se utiliza para la posición de un carácter en una cadena (por ejemplo, una letra en una palabra). Entonces, la primera entrada a <code>letra</code> es el índice.</li>
             </ul>
         </div>
 
         <div class="takeNote">
-            <p><strong>You write the predicate that does the checking, and <code>keep</code> applies the predicate to each item in the input list and then reports the list of items that make your predicate <code>true</code></strong>.</p>
-			<p>Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.</p>
-            <div class="endnote">The <code>letter</code> block in the palette looks like <img src="/bjc-r/img/blocks/letter-1-of-world.png" alt="letter (1) of (world)" title="letter (1) of (world)" />.  You have to delete the "world" so that there is a blank slot where you need it to be.</div>
+            <p><strong>Usted escribe el predicado que realiza la verificación, y <code>mantener</code> aplica el predicado a cada elemento en la lista de entradas y luego informa la lista de elementos que hacen que su predicado sea <code>verdadero</code></strong>.</p>
+            <p>Tenga en cuenta que el espacio de entrada en blanco en el predicado es <em>requerido</em>; aquí es donde va cada elemento de la lista cuando el predicado lo comprueba.</p>
+            <div class="endnote">El bloque <code>letra</code> en la paleta se parece a <img src="/bjc-r/img/blocks/letter-1-of-world.png" alt="letter (1) of (world)" title="letter (1) of (world)" />.  Tienes que eliminar el "mundo" para que hacer un espacio en blanco donde lo necesites.</div>
 		</div>
         
         <div class="forYouToDo" id="first">
 			<ol>
                 <li>
                     <a class="run" href="/bjc-r/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a> 
-                    <div class="endnote">This project contains two example <code>keep</code> expressions and an <code>initialize list</code> procedure (you can look inside it to see what it does).</div>
+                    <div class="endnote"> Este proyecto contiene dos ejemplos de expresiones <code>mantener</code> y un procedimiento <code>inicializar lista</code> (puedes mirar adentro para ver lo que hace).</div>
+
+
                 </li>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br />
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Experimenta con estos ejemplos de <code>mantener</code>. Discuta y luego explica <em>por escrito</em> qué significan estas expresiones.<br />
                     <img class="indent" src="/bjc-r/img/2-complexity/keep-example-4.png" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}"><br />
                     <img class="indent" src="/bjc-r/img/2-complexity/keep-example-7.png" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}">
                 </li>
@@ -56,18 +58,18 @@
 				
             </ol>
 		</div>
-        
-        <p>The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked "Is this item <em>not</em> a number?" and only the elements that are not numbers are reported.</p>
-        <p>There are two <code>length</code> blocks in Snap<em>!</em>. One (<img class="inline" src="/bjc-r/img/blocks/length-of-blank-operator.png" alt="length ()" title="length ()" />) is designed for strings, and the other (<img class="inline" src="/bjc-r/img/blocks/length-list.png" alt="length ()" title="length ()" />) is designed for lists.</p>
+
+        <p>El primer ejemplo mantiene entradas de cierta <em>longitud</em>; por cada palabra de la lista se le pregunta si su longitud es 5, y solo se mantienen las que tienen cinco letras. El segundo ejemplo mantiene entradas que <em>no son números</em>; a cada elemento de esta lista se le pregunta "¿Este elemento <em>no</em> es un número?" y solo se mantienen los elementos que no son números.</p>
+        <p>Hay dos bloques de <code>longitud</code> en Snap<em>!</em>. Una (<img class="inline" src="/bjc-r/img/blocks/length-of-blank-operator.png" alt="length ()" title="length ()" />) está diseñada para cuerdas, y la otra(<img class="inline" src="/bjc-r/img/blocks/length-list.png" alt="length ()" title="length ()" />) está diseñada para listas.</p>
         
         <div class="forYouToDo">
 			<ol start="3">
                 <li>
-					If you don't see a list of words on the stage, run <code>initialize list</code>. Then use  <code>keep</code> to answer these questions:
+                    Si no ves una lista de palabras en el escenario, ejecute <code>inicializar lista</code>. Luego usa <code>mantener</code> para responder estas preguntas:
                     <ol>
-						<li>How many 12-letter words are in <var>words list</var>?</li>
-						<li>How many 15-letter words are in <var>words list</var>?</li>
-						<li>How many 17-letter words are in <var>words list</var>?</li>
+						<li>¿Cuántas palabras de 12 letras hay en la <var>lista de palabras</var>?</li>
+                        <li>¿Cuántas palabras de 15 letras hay en la <var>lista de palabras</var>?</li>
+                        <li>¿Cuántas palabras de 17 letras hay en la <var>lista de palabras</var>?</li>
                     </ol>
                 </li>
             </ol>

@@ -6,34 +6,34 @@
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-        <title>Unit 2 Lab 3: Making Decisions, Page 1</title>
+        <title>Unidad 2 Laboratorio 3: Tomar decisiones, Página 1</title>
 	</head>
 
 	<body>
-        <h2>What's a Predicate?</h2>
+        <h2>¿Qué es un predicado?</h2>
         
         <div class="learn">
-			<p><strong>In this lab,</strong> you will develop tools to help solve word puzzles by searching for words that match specific characteristics.</p>
-            <p><strong>On this page</strong>, you will review predicates and build a few that you can use in other projects.</p>
+			<p><strong>En este laboratorio,</strong> desarrollarás herramientas para ayudar a resolver acertijos de palabras al buscar palabras que coincidan con características específicas.</p>
+            <p><strong>En esta página</strong>, revisarás los predicados y crearás algunos que puede usar en otros proyectos.</p>
 		</div>
                         
         <div class="comment">AAP-2.H.1</div>
-        <p>As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img class="inline nopadtb" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline nopadtb" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as <code>if</code>, <code>if else</code>, or <code>repeat until</code>) to decide when to do something.  </p>
+        <p>Como sabes, los predicados son bloques informadores (funciones) que siempre informan un <em>valor booleano</em> (solo informan los valores <img class="inline nopadtb" src="/bjc-r/img /blocks/true.png" alt="true" title="true" /> o <img class="inline nopadtb" src="/bjc-r/img/blocks/false.png" alt="false" title ="falso" />). En Snap<em>!</em>, los predicados se representan mediante bloques hexagonales. Calculan la <em>condición</em> utilizada por los <em>condicionales</em> (como <code>if</code>, <code>if else</code>, o <code>repetir hasta< /code>) para decidir cuándo hacer algo. </p>
         <div class="takeNote">
             <p>
-                So, the <em>input type</em> of a conditional is Booleans, and the <em>output type</em> of a predicate is also Booleans.
-                <div class="vocabFullWidth"><strong>: Domain and Range</strong>
+                Entonces, el <em>tipo de entrada</em> de un condicional es booleano, y el <em>tipo de salida</em> de un predicado también es booleano.
+                <div class="vocabFullWidth"><strong>: Dominio y rango</strong>
                     <ul>
-                        <li>The <strong>input type</strong> (often called <strong>domain</strong> by programmers) of a function is the type of data that it accepts as input.</li>
-                        <li>The <strong>output type</strong> (often called <strong>range</strong>) of a function is the type of data that it reports as output.</li>
+                        <li>El <strong>tipo de entrada</strong> (normalmente llamado <strong>dominio</strong> por los programadores) de una función es el tipo de datos que acepta como entrada.</li>
+                        <li>El <strong>tipo de salida</strong> (normalmente llamado <strong>rango</strong>) de una función es el tipo de datos que genera al final.</li>
                     </ul>
                 </div>
-                Along with &quot;abstraction,&quot; these two ideas are among the most important in computer science. If you get in the habit of using them in your thinking, you'll have many fewer bugs in your programs, because you'll automatically double-check that the output type of a reporter matches the input type of the block in which you're trying to use it.
+                Junto con &quot;abstracción&quot; estas dos ideas se encuentran entre las más importantes de la informática. Si desarrollas el hábito de usarlos en tu forma de pensar, tendrás muchos menos errores en tus programas, porque verificarás automáticamente que el tipo de salida de un reportero coincida con el tipo de entrada del bloque que estás tratando de usar.
             </p>
         </div>
-        <p>Predicates ask a true/false question such as "Is the random number 3?" or "Is this sprite touching the sprite called 'Leader'?"</p>
+        <p>Los predicados hacen una pregunta verdadera o falsa como '¿Es el número aleatorio un 3?' o '¿Es verdad que este sprite toca a un sprite llamado 'Líder'?'</p>
         <p>
-            Every <code>if else</code> block has two scripts inside of it, exactly one of which will be run depending on the value that the predicate reports. Then the computer continues with whatever comes after the <code>if else</code> block.<br />
+            Cada bloque <code>si mas</code> tiene dos scripts dentro, exactamente uno de los cuales se ejecutará según el valor que informe el predicado. Luego, la computadora continúa con lo que viene después del bloque <code>si mas</code>.<br />
             <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/5-if-else.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img class="indent" src="/bjc-r/img/2-complexity/more-complicated-who-conditional.png" alt="if (pick random (1) to (4)) = (3) {
     report (join (who) (', who') (does what) ( ) (who) (,))
 } else {
@@ -58,15 +58,15 @@ repeat until (touching (Leader)?)
         
         <div class="forYouToDo" id="first">
             <ol>
-                <li><div class="newProject"><span class="text">"U2L3-Predicates"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U2L3-Predicates" title="Create a new project called U2L3-Predicates" /></div></li>
+                <li><div class="newProject"><span class="text">"U2L3-Predicados"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U2L3-Predicates" title="Create a new project called U2L3-Predicates" /></div></li>
                 <li>
-                    In  <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Unit 1 Lab 5</a>, you made a script to get the sprite to follow the mouse. <br />
+                    En <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Unidad 1 Laboratorio 5</a>, hiciste un script para que el sprite siguiera al mouse. <br />
 					<img class="indent" src="/bjc-r/img/2-complexity/U2-follow-that-mouse.png" alt="go to (mouse-pointer)" title="go to (mouse-pointer)"><br />
-                    <div class="comment">AAP-2.E part a</div>
-                    Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse's position on the stage.<br />
+                    <div class="comment">AAP-2.E parte a</div>
+                    Ahora puedes usar uno o más de los siguientes <em>operadores relacionales</em> para crear un script que te permita usar el mouse para escribir en el escenario en dos colores dependiendo de la posición del mouse en el escenario.<br />
                     <img class="indent" src="/bjc-r/img/2-complexity/relations.jpg" alt="less than, equal to, and greater than predicate blocks" title="less than, equal to, and greater than predicate blocks" />
                     <div class="endnote">
-                        <a href="#hint-two-colors" data-toggle="collapse" title="Click for an example of writing on the stage in two colors.">Click for an example of writing on the stage in two colors.</a>
+                        <a href="#hint-two-colors" data-toggle="collapse" title="Click for an example of writing on the stage in two colors.">Haga clic para ver un ejemplo de alguien escribiendo en el escenario en dos colores.</a>
                         <div id="hint-two-colors" class="collapse">
                             <img class="indent" data-gifffer="/bjc-r/img/2-complexity/writing-mouse-on-stage.gif" alt="using the mouse to write 'mouse' on the stage" title="using the mouse to write 'mouse' on the stage" />
                         </div>
@@ -78,11 +78,11 @@ repeat until (touching (Leader)?)
         <div class="examFullWidth">
             <div class="comment">AAP-2.E.2</div>
             <div class="pseudop">
-                You may see these five relational operators: <pre class="inline">=, &gt;, &lt;, &ge;, &le;</pre> as well as a sixth: <pre class="inline">&ne;</pre>, which means "not-equal" and reports <code>false</code> if the two inputs are equal and otherwise reports <code>true</code> (if they are not equal). When you write the <img class="inline" src="/bjc-r/img/2-complexity/not-equal.png" alt="() not equal ()" title="() not equal ()" /> block, it will work like this:<br />
+                Puedes ver estos cinco operadores relacionales: <pre class="inline">=, &gt;, &lt;, &ge;, &le;</pre> así como un sexto: <pre class="inline">&ne;</pre>, que significa "no igual" y reporta <code>falso</code> si las dos entradas son iguales y, de lo contrario, informa <code>verdadero</code> (si no son iguales). Cuando escribes el bloque de <img class="inline" src="/bjc-r/img/2-complexity/not-equal.png" alt="() not equal ()" title="() not equal ()" /> , funcionará así:<br />
                 <img class="indent" src="/bjc-r/img/2-complexity/not-equal-reporting-true.png" alt="(3) not equal (4) reporting true" title="(3) not equal (4) reporting true" />
                 <img class="indent" src="/bjc-r/img/2-complexity/not-equal-reporting-false.png" alt="(3) not equal (3) reporting false" title="(3) not equal (3) reporting false" />
             </div>
-            <p>These six relational operators all report a Boolean value (<code>true</code> or <code>false</code>).</p>
+            <p>Estos seis operadores relacionales reportan un valor booleano (<code>verdadero</code> o <code>falso</code>).</p>
         </div>
 		
         
@@ -90,17 +90,17 @@ repeat until (touching (Leader)?)
 			<ol start="3">
                 <li>
                     <img class="imageRight" src="/bjc-r/img/2-complexity/draggable-check-box.png" alt="draggable box checked" title="draggable box checked">
-                    Make the sprite draw only if the mouse button is down, so that you can draw disconnected shapes. You'll need to uncheck the "draggable" box above the scripting area (shown right) before you try this (so that Snap<em>!</em> doesn't think you are trying to drag the sprite when you click).<br />
-					<div class="sidenote">You'll probably want to use the <img class="inline" src="/bjc-r/img/blocks/mouse-down.png" alt="mouse down? predicate block" title="mouse down? predicate block" /> block, which you can find in the Sensing palette.</div>
+                    Haz que el sprite dibuje solo si el botón del mouse está presionado, para que puedas dibujar formas desconectadas. Vas a tener que desmarcar la casilla "arrastrable" sobre el área de secuencias de comandos (que se muestra a la derecha) antes de intentar esto (para que Snap<em>!</em> no piense que estás tratando de arrastrar el sprite cuando haces clic).<br/>
+                    <div class="sidenote">Probablemente querrás usar el bloque de <img class="inline" src="/bjc-r/img/blocks/mouse-down.png" alt="mouse down? predicate block" title="mouse down? predicate block" />, que puedes encontrar en la paleta de Detección.</div>
                     <img class="indent" src="/bjc-r/img/2-complexity/bicolor-hello.png" style="height:200px;" alt="bicolor printed hello" title="bicolor printed hello">
                 </li>
             </ol>
         </div>
         
-        <div class="vocabFullWidth">: <strong>Sequencing, Selection, Iteration</strong>
-            <div class="comment">Selection: AAP-2.G.1; sequencing, selection, iteration: AAP-2.A.4</div>
-            <p><strong>Selection</strong> means deciding (selecting) which part of an algorithm to run based on whether a condition is true or false.</p>
-            <p>Every algorithm can be constructed using <strong>sequencing</strong> (following steps in order), <strong>selection</strong> (deciding), and <strong>iteration</strong> (repeating).</p>
+        <div class="vocabFullWidth">: <strong>Secuenciación, Selección, Iteración</strong>
+            <div class="comment">Selección: AAP-2.G.1; secuenciación, selección, iteración: AAP-2.A.4</div>
+            <p><strong>Selección</strong> decide (selecciona) qué parte de un algoritmo ejecutar basado si una condición es verdadera o falsa.</p>
+            <p>Cada algoritmo se puede construir usando <strong>secuenciación</strong> (siguiendo los pasos en orden),<strong>selección</strong> (decidir) e <strong>iteración</strong> (repetir).</p>
         </div>
 
 
