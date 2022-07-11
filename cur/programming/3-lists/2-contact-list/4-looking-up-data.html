@@ -6,124 +6,124 @@
         <script type="text/javascript">
 			window.hinttext='<img class="indent" src="/bjc-r/img/3-lists/phone-number-of-conditional-with-list-reporters.png" alt="...else (report (item (1) of (matches)))" title="...else (report (item (1) of (matches)))" />';
         </script>
-		<title>Unit 3 Lab 2: Contact List, Page 4</title>
+		<title>Unidad 3 Laboratorio 2: Lista de contactos, página 4</title>
     </head> 
     
     <body>
-        <h2>Selecting Specific Data</h2>
-		<div class="todo"><strong>Purpose (do/learn; why this/here):</strong> Create a "Find Contact" button that uses a <code>find contacts</code> block to <em>select</em> items from the <var>contact list</var> based on the contact's name. Students get practice with list processing, navigating abstract data types, and using the higher-order function, <code>keep</code>. </div>
+        <h2>Selección de datos específicos</h2>
+		<div class="todo"><strong>Propósito (hacer/aprender; por qué esto/aquí):</strong> Crear un botón "Buscar contacto" que use un bloque <code>buscar contactos</code> para <em> seleccionar </em> elementos de la <var >lista de contactos</var> basada en el nombre del contacto. Los estudiantes obtienen práctica con el procesamiento de listas, la navegación por tipos de datos abstractos y el uso de la función de orden superior, <code> conservar </code>. </div>
         <div class="todo">
-            <p>BH: Ditto. (I still want given and family names!  We can make it doable.)</p>
-            <ul><li>Mary and Brian agreed to do this as a TIF. BH will write it onto this page in a TIF, and Mary will review/edit. --MF, 4/9/19</li></ul>
+            <p>BH: Lo mismo. (¡Todavía quiero nombres de pila y apellidos! Podemos hacerlo factible).</p>
+            <ul><li>Mary y Brian acordaron hacer esto como un TIF. BH lo escribirá en esta página en formato TIF y Mary lo revisará/editará. --MF, 4/9/19</li></ul>
         </div>
         
         <div class="learn">
             <p>
-                <strong>On this page,</strong> you will develop code for a "Find Contact" button to locate contacts in the list<!--develop An "Find Contact" button for accessing specific contacts in your <var>contact list</var>-->.<br /> 
-				<img class="indent" src="/bjc-r/img/3-lists/find-contacts-with-name-Alphie-reporting.png" alt="find contacts with name: (Alphie) reporting" title="find contacts with name: (Alphie) reporting" />
+                <strong>En esta página,</strong> desarrollará código para un botón "Buscar contacto" para ubicar contactos en la lista<!--develop An "Find Contact" button for accessing specific contacts in your <var>contact list</var>-->.<br /> 
+				<img class="indent" src="/bjc-r/img/3-lists/find-contacts-with-name-Alphie-reporting.png" alt="encontrar contactos con nombre: (Alphie) informes" title="encontrar contactos con nombre: (Alphie) informes" />
             </p>
         </div>
         
         <div class="comment">DAT-2.D.3</div>
-        <p>As you add more contacts to your list, it will become less and less realistic to find the one you want by reading through the whole list. So building a search feature will become essential for finding the desired information efficiently. Lists, adding and removing items from lists, and searching lists are common features in many programs.</p>
+        <p>A medida que agregue más contactos a su lista, será cada vez menos realista encontrar el que desea al leer toda la lista. Por lo tanto, la creación de una función de búsqueda se volverá esencial para encontrar la información deseada de manera eficiente. Las listas, la adición y eliminación de elementos de las listas y la búsqueda de listas son características comunes en muchos programas.</p>
         
-        <div class="todo">BH and Mary want to use this again and mention tables and include images of both in snap and discuss how to change back and forth between the two views. --MF, 4/9/19<p>Each new contact is a list (item 1 is a name and item 2 should be a phone number), so the list of contacts is a <em>list of lists</em>.</p></div>
+        <div class="todo">BH y Mary quieren usar esto nuevamente y mencionar tablas e incluir imágenes de ambos en un instante y discutir cómo cambiar de un lado a otro entre las dos vistas. --MF, 4/9/19<p>Cada nuevo contacto es una lista (el elemento 1 es un nombre y el elemento 2 debe ser un número de teléfono), por lo que la lista de contactos es una <em>lista de listas</em >.</p></div>
         
 		<div class="forYouToDo" id="first">
             <ol>
-				<li>If it isn't open already, open your U3L2-ContactList project.</li>
+				<li>Si aún no está abierto, abra su proyecto U3L2-ContactList.</li>
                 <li>
-					Write a <img src="/bjc-r/img/3-lists/find-contacts-with-name.png" alt="find contacts with name: ()" title="find contacts with name: ()" /> block that takes a text string as input and reports either a list of the contacts whose name includes that string or an empty list if no such name is in <var>contact list</var>.
+					Escribe un <img src="/bjc-r/img/3-lists/find-contacts-with-name.png" alt="encontrar contactos con nombre: ()" title="encontrar contactos con nombre:()" /> bloque que toma una cadena de texto como entrada y reporta una lista de los contactos cuyo nombre incluye esa cadena o una lista vacía si no hay tal nombre en <var> lista de contactos</var>.
                     <div class="narrower">
-                        <strong>Use these blocks:</strong>
+                        <strong>Usa estos bloques:</strong>
                         <ol type="a">
-                            <li><img class="inline" src="/bjc-r/img/3-lists/string-contains.png" alt="string () contains () ?" title="string () contains () ?" />, which reports <code>true</code> if the first string (for example, a contact's name in the list) contains the second string (for example, a name or part of a name)</li>
-                            <div class="sidenote">You learned about <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Keeping Items from a List"><code>keep</code> in Unit 2</a>.</div>
+                            <li><img class="inline" src="/bjc-r/img/3-lists/string-contains.png" alt="cadena () contiene () ?" title="cadena () contiene() ?" />, que informa <code>verdadero</code> si la primera cadena (por ejemplo, el nombre de un contacto en la lista) contiene la segunda cadena (por ejemplo, un nombre o parte de un nombre)</li>
+                            <div class="sidenote">Aprendiste sobre <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Mantener elementos de una lista"><code>mantener</code> en la Unidad 2</a>.</div>
                             <li><img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items 'predicate input slot' from 'list input slot'" title="keep items 'predicate input slot' from 'list input slot'">, which reports only the items that make the function true</li>
-                            <li><img class="inline" src="/bjc-r/img/blocks/empty.png" alt="is 'list input slot' empty?" title="is 'list input slot' empty?" />, which returns <code>true</code> if the list is empty and <code>false</code> otherwise</li>
-                            <li>Selector <img class="inline" src="/bjc-r/img/3-lists/name-selector.png" alt="name from contact: ()" title="name from contact: ()" /></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/empty.png" alt="la 'ranura de entrada de la lista' está vacía?" title="la 'ranura de entrada de la lista' está vacía?" />, que devuelve <code>true</code> si la lista está vacía y <code>false</code> en caso contrario</li>
+                            <li>Selector <img class="inline" src="/bjc-r/img/3-lists/name-selector.png" alt="nombre del contacto: ()" title="nombre del contacto: ()" /></li>
                         </ol>
                     </div>
                 </li>
                 <li>
-                    Develop a "Find Contact" button.
+                    Desarrolle un botón "Buscar contacto".
                     <ol>
-                        <li>Make the script ask the user whose contact to search for and have the sprite <code>say</code> each of the matching contacts.</li>
-                        <li>If the contact is not in the list, make the sprite say "not found."</li>
+                        <li>Haga que el script le pregunte al usuario cuyo contacto buscar y haga que el sprite <code>decir</code> cada uno de los contactos coincidentes.</li>
+                        <li>Si el contacto no está en la lista, haz que el sprite diga "no encontrado."</li>
 					</ol>
                 </li>
-                <li><strong>Debug.</strong> Make sure everything works the way you want it to before going on.</li>
+                <li><strong>Depurar.</strong> Asegúrate de que todo funcione como quieres antes de continuar.</li>
                 <div class="comment">CRD-2.D</div>
-                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
-                <li><img class="inline" src="/bjc-r/img/icons/write-in-journal-mini.png" alt="Write In Your Journal" title="Write In Your Journal" />What is the output of this program?</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Guarda tu trabajo" title="Guarda tu trabajo" />
+                <li><img class="inline" src="/bjc-r/img/icons/write-in-journal-mini.png" alt="Escribe en tu diario" title="Escribe en tu diario" />¿Cuál es la salida de este programa?</li>
 			</ol>
 		</div>
         
         <div class="vocabFullWidth">
             <div class="comment">AAP-3.B.2, AAP-3.B.3</div>
-            <p><strong>Modularity</strong> is the process of breaking a programming project up into separate sub-problems. For example on page 2 of this lab, you built code to add a contact to your app, and on this page, you built code to find contacts.</p>
+            <p><strong>Modularidad</strong> es el proceso de dividir un proyecto de programación en subproblemas separados. Por ejemplo, en la página 2 de este laboratorio, creó un código para agregar un contacto a su aplicación y, en esta página, creó un código para encontrar contactos.</p>
         </div>
 		
         <div class="ifTime">
 			<ol start="6">
 				<li>
-                    Develop a "Delete Contact" button. 
+                    Desarrolle un botón "Eliminar contacto".
                     <ol>
-                        <li>Move the "Delete Contact" button onto the stage.</li>
-                        <li>Make the script ask the user to "Enter the name of the contact(s) you wish to delete."</li>
-                        <li>Then, use your <code>find contacts</code> block to find all the matching contacts.</li>
-                        <li>Give the user the list of matching contacts and ask them for confirmation to delete (so the user won't accidentally delete their contact).</li>
-                        <li>If the user confirms that they want to delete these contacts, replace the <var>contact list</var> with a list of all contacts whose name does <em>not</em> match the input name.</li>
+                        <li>Mueva el botón "Eliminar contacto" al escenario.</li>
+                        <li>Haga que el script le pida al usuario que "Ingrese el nombre de los contactos que desea eliminar".</li>
+                        <li>Luego, use su bloque <code>buscar contactos</code> para encontrar todos los contactos coincidentes.</li>
+                        <li>Proporcione al usuario la lista de contactos coincidentes y pídale confirmación para eliminar (para que el usuario no elimine accidentalmente su contacto).</li>
+                        <li>Si el usuario confirma que desea eliminar estos contactos, reemplace la <var>lista de contactos</var> con una lista de todos los contactos cuyo nombre <em>no</em> coincide con el nombre ingresado.</li>
                     </ol>
                 </li>
                 <li>
-                    Modify your "Delete Contact" script so that it lets the user choose which contact they want to delete when
-                    <code>find</code> reports more than one.
+                    Modifique su secuencia de comandos "Eliminar contacto" para que le permita al usuario elegir qué contacto desea eliminar cuando
+                    <code>encontrar</code> informa más de uno.
                     <ol>
-                        <li>Write a helper block <code>delete contact</code> that takes a contact as input and removes that contact from <var>contact list</var>.</li>
-                        <li>Modify "Delete Contact" so that, if more than one contact matches the user's name input, it displays a list of the matching names and asks the user to select one by number.  (The item numbers are automatically displayed in the name list, so you don't have to worry about that part.)  Give the user a way to cancel the request instead of choosing a name.</li>
-                        <li>If <em>exactly one</em> contact matches, instead of displaying the one-item list of names, just ask the user to confirm or cancel deleting it.  (Optional.)</li>
+                        <li>Escriba un bloque auxiliar <code>eliminar contacto</code> que tome un contacto como entrada y lo elimine de la <var>lista de contactos</var>.</li>
+                        <li>Modifique "Eliminar contacto" para que, si más de un contacto coincide con la entrada de nombre del usuario, muestre una lista de los nombres coincidentes y le pida al usuario que seleccione uno por número. (Los números de artículo se muestran automáticamente en la lista de nombres, por lo que no tiene que preocuparse por esa parte). Proporcione al usuario una forma de cancelar la solicitud en lugar de elegir un nombre.</li>
+                        <li>Si <em>exactamente un</em> contacto coincide, en lugar de mostrar la lista de nombres de un elemento, simplemente pídale al usuario que confirme o cancele la eliminación. (Opcional.)</li>
                     </ol>
                 </li>
 			</ol>
 		</div>
         
         <div class="takeItFurther">
-            <p>This set of exercises requires that you've already done the Take It Further exercises on page 2.  <strong>Open your project U3L2-TIF.</strong></p>
+            <p>Este conjunto de ejercicios requiere que ya hayas realizado los ejercicios de Take It Further en la página 2. <strong>Abre tu proyecto U3L2-TIF.</strong></p>
 		    <ol type="A">
-			    <li>Write a predicate function that takes two contacts as inputs.  It should return True if the first contact belongs before the second one in a sorted contact list. That is, you'll have to extract the names (in sorted form) from the two contacts, and then use <code>&lt;</code> to compare them.  Respect the data abstractions.</li>
+			    <li>Escriba una función de predicado que tome dos contactos como entradas. Debería devolver True si el primer contacto pertenece antes que el segundo en una lista de contactos ordenados. Es decir, tendrá que extraer los nombres (ordenados) de los dos contactos y luego usar <code>&lt;</code> para compararlos. Respete las abstracciones de datos.</li>
 			    <li>
-                    Make a block to sort the contact list.  To do the actual sorting, you can load the "List utilities" library.  It has a block
-				    <img src="/bjc-r/img/blocks/sort-block.png" width="242" alt="sort 'list input slot' ordering with 'predicate input slot'" title="sort 'list input slot' ordering with 'predicate input slot'" />.
-                    Use the contact list as the first input.  The second input should be the predicate function you just wrote. (Leave its two input slots empty.)  The <code>sort</code> block will report a new, sorted contact list.
+                    Haz un bloque para ordenar la lista de contactos. Para realizar la clasificación real, puede cargar la biblioteca "Lista de utilidades". tiene un bloque
+				    <img src="/bjc-r/img/blocks/sort-block.png" width="242" alt="ordenar 'ranura de entrada de lista' ordenando con 'ranura de entrada de predicado'" title="ordenar 'ranura de entrada de lista' ordenando con 'ranura de entrada de predicado'" />.
+                    Utilice la lista de contactos como la primera entrada. La segunda entrada debe ser la función de predicado que acaba de escribir. (Deje sus dos espacios de entrada vacíos). El bloque <code>ordenar</code> informará una nueva lista de contactos ordenada.
                 </li>
-				<li>Test what you've done so far.</li>
+				<li>Prueba lo que has hecho hasta ahora.</li>
 				<li>
-                    <img class="inline" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
-                    We've been sloppy so far in talking about name formats. Most people in the United States say their given name (the one their parents chose for them) first, and their family name last.  But in China, for example, the family name comes first. So "Sun Yat-sen" is a member of the Sun family.
+                    <img class="inline" src="/bjc-r/img/icons/tough-stuff.png" alt="Cosas difíciles" title="Cosas difíciles" />
+                    Hemos sido descuidados hasta ahora al hablar de formatos de nombres. La mayoría de las personas en los Estados Unidos dicen su nombre de pila (el que sus padres eligieron para ellos) primero y su apellido al final. Pero en China, por ejemplo, el apellido es lo primero. Así que "Sun Yat-sen" es miembro de la familia Sun.
                     <ul>
-                        <li>How should the name "Sun Yat-sen" be displayed to the user?</li>
-                        <li>How should "Sun Yat-sen" look in order to sort contacts by family name?</li>
-                        <li>What about someone with a middle name, such as Martin Luther King?  Is the middle name a family name or a given name?</li>
+                        <li>¿Cómo se debe mostrar al usuario el nombre "Sun Yat-sen"?</li>
+                        <li>¿Cómo debe verse "Sun Yat-sen" para ordenar los contactos por apellido?</li>
+                        <li>¿Qué pasa con alguien con un segundo nombre, como Martin Luther King? ¿El segundo nombre es un apellido o un nombre de pila?</li>
                     </ul>
                 </li>
 				<li>
-                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
-				    Here's the tricky part:  To make this all work correctly, a name (as defined by the <code>name</code> ADT) has to know whether it's a given-first name such as Betsy Anderson or a family-first name such as Sun Yat-Sen.  <strong>Redefine your Name ADT</strong> to make it a list of <em>three</em> items.  The first will be either the text 'given-first' or 'family-first'.  This first item is called a <em>type tag.</em>  The second item will be the given name (or names), and the third will be the family name (or names).
+                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Cosas difíciles" title="Cosas difíciles" />
+				    Esta es la parte complicada: para que todo funcione correctamente, un nombre (según lo define el ADT <code>name</code>) debe saber si es un nombre de pila, como Betsy Anderson, o un nombre de familia, como como Sun Yat-Sen. <strong>Redefina su Nombre ADT</strong> para convertirlo en una lista de <em>tres</em> elementos. El primero será el texto 'dado primero' o 'familia primero'. Este primer elemento se denomina etiqueta de tipo <em>.</em> El segundo elemento será el nombre (o nombres) de pila y el tercero será el nombre (o nombres) de la familia.
                     <div class="endnote">
-                        You've been using type tags all along without knowing it. Many programming languages, including Snap<i>!</i>, attach type tags to every value, saying "I am a list" or "I am a number" and so on.  The user (i.e., you) doesn't see the type tags, unless you provide a bad input to a primitive block, and you see a message like "Expecting list but getting text."
+                        Has estado usando etiquetas de tipo todo el tiempo sin saberlo. Muchos lenguajes de programación, incluido Snap<i>!</i>, adjuntan etiquetas de tipo a cada valor, diciendo "Soy una lista" o "Soy un número", etc. El usuario (es decir, usted) no ve las etiquetas de tipo, a menos que proporcione una entrada incorrecta a un bloque primitivo y vea un mensaje como "Esperando lista pero recibiendo texto".
                     </div>
                 </li>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
-                    <strong>Reading a name:</strong> Find where you ask the user for first and last name, and change the code to ask for given name(s) and family name.  Also ask which comes first. You might want to have two name constructors, <img class="inline" src="/bjc-r/img/3-lists/given-first-constructor.png" alt="contact name, given-first, from given: () family: ()" title="contact name, given-first, from given: () family: ()" /> and <img class="inline" src="/bjc-r/img/3-lists/family-first-constructor.png" alt="contact name, family-first, from given: () family: ()" title="contact name, family-first, from given: () family: ()" />.
+                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Cosas difíciles" title="Cosas difíciles" />
+                    <strong>Leyendo un nombre:</strong> Encuentre dónde le pide al usuario el nombre y el apellido, y cambie el código para que le pida el(los) nombre(s) de pila y el apellido. También pregunte cuál viene primero. Es posible que desee tener dos constructores de nombres,<img class="inline" src="/bjc-r/img/3-lists/given-first-constructor.png" alt="nombre de contacto, dado primero, de dado: () familia: ()" title="nombre de contacto, dado primero, de dado: () familia: ()" /> y <img class="inline" src="/bjc-r/img/3-lists/family-first-constructor.png" alt="nombre de contacto, primero la familia, de dado: () familia: ()" title="nombre de contacto, primero la familia, de dado: () familia: ()" />.
                 </li>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Writing a name:</strong> Modify your  <img class="inline" src="/bjc-r/img/3-lists/name-display-form-from-contact.png" alt="name, display form, from contact 'list input slot" title="name, display form, from contact 'list input slot" /> and <img class="inline" src="/bjc-r/img/3-lists/name-sort-form-from-contact.png" alt="name, sort form, from contact 'list input slot'" title="name, sort form, from contact 'list input slot'" /> so that they check the type tag of the name (the first item) when necessary. Be careful about when to add a comma.
+                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Cosas difíciles" title="Cosas difíciles" /><strong>Escribiendo un nombre:</strong> Modifique su  <img class="inline" src="/bjc-r/img/3-lists/name-display-form-from-contact.png" alt="name, display form, from contact 'list input slot" title="nombre, formulario de visualización, desde la ranura de entrada de la lista de contactos" /> y <img class="inline" src="/bjc-r/img/3-lists/name-sort-form-from-contact.png" alt="nombre, formulario de visualización, desde la ranura de entrada de la lista de contactos'" title="nombre, formulario de visualización, desde la ranura de entrada de la lista de contactos'" /> para que comprueben la etiqueta de tipo del nombre (el primer elemento) cuando sea necesario. Tenga cuidado acerca de cuándo agregar una coma.
                 </li>
 				<li>
-                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
-				    Make sure your <code>find contacts</code> block and your sorting of the contact list still work with a contact list containing both kinds of names.
+                    <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Cosas difíciles" title="Cosas difíciles" />
+				    Asegúrate de que tu bloque <code>buscar contactos</code> y tu clasificación de la lista de contactos aún funcionen con una lista de contactos que contenga ambos tipos de nombres.
                 </li>
 		    </ol>
         </div>
