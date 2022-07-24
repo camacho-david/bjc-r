@@ -2,6 +2,11 @@
 
 The Beauty and Joy of Computing labs resource repository.
 
+## Viewing the Current State of the Translation
+If you are interested in viewing the BJC-es in your web browser, please visit the following link:
+https://camacho-david.github.io/bjc-r/course/bjc4nyc.html
+
+
 ## Cloning this Repo
 We use a project called "llab" to be able to display the lab content nicely. It's contained in the "submodule" `llab` which somewhat changes the way you need to work with `git`.
 
