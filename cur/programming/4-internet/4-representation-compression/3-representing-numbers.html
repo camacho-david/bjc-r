@@ -3,21 +3,21 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 4 Lab 4: Data Representation and Compression, Page 3</title>
+		<title>Unidad 4 Laboratorio 4: Representación y compresión de datos, página 3</title>
 	</head>
 
 	<body>
-		<h2>Representing Whole Numbers</h2>
+		<h2>Representación de números enteros</h2>
         <div class="todo">
             <p>BH: Keep... But with my original wording in TIF A.</p>
             <p>MF: lightly clean up to make the text more concise; do we really need to teach width and word??</p>
         </div>
         
         <div class="learn">
-        	<p><strong>On this page,</strong> you'll learn how computers store nonnegative integers.</p> 
+        	<p><strong>En esta página,</strong> aprenderá cómo las computadoras almacenan enteros no negativos.</p> 
         </div>
         
-        <p>As you know, numbers show up everywhere in computer algorithms&mdash;even if numbers aren't the topic. For example, the user may be interested in a picture, but that picture is an abstraction over numbers. Numbers are also used to find a specific item in a list. Over the next several pages, you'll look more closely at numbers inside the computer.</p>
+        <p>Como saben, los números aparecen en todas partes en los algoritmos informáticos.&mdash;incluso si los números no son el tema. Por ejemplo, el usuario puede estar interesado en una imagen, pero esa imagen es una abstracción sobre los números. Los números también se utilizan para encontrar un elemento específico en una lista. En las siguientes páginas, observará más de cerca los números dentro de la computadora.</p>
         
         <div class="forYouToDo" id="first">
 			<ol>
@@ -43,62 +43,62 @@
         </div>
         
         
-		<h3>Fixed Width Computer Hardware</h3>
+		<h3>Hardware de computadora de ancho fijo</h3>
         <div class="vocabBig">
-        	<p><strong>width</strong>: the number of bits that a CPU processes at a time</p>
-            <p><strong>word</strong>: a binary sequence of that many bits</p>
+        	<p><strong>Ancho</strong>: the number of bits that a CPU processes at a time</p>
+            <p><strong>palabra</strong>: una secuencia binaria de tantos bits</p>
         </div>
-        <p>So why did Snap<em>!</em> display 20! in ordinary whole number representation but 30! in scientific notation? Every computer model is designed with a certain<strong> width</strong>, the number of bits that the processor reads from memory or writes into memory at a time. That number of bits is called a <strong>word</strong>. As of 2016, most new computers are 64 bits wide. The first microcomputer, sold in 1971, was four bits wide!</p>
-		<div class="endnote">If you got an answer in scientific notation for 20!, you're using a 32-bit computer.</div>
+        <p>Entonces, ¿por qué Snap<em>!</em> pantalla 20! en la representación ordinaria de números enteros pero 30! en notación científica? Cada modelo de computadora está diseñado con un cierto<strong> ancho</strong>, el número de bits que el procesador lee de la memoria o escribe en la memoria a la vez. Ese número de bits se denomina <strong>palabra</strong>. A partir de 2016, la mayoría de las computadoras nuevas tienen 64 bits de ancho. ¡La primera microcomputadora, vendida en 1971, tenía cuatro bits de ancho!</p>
+		<div class="endnote">Si obtuviste una respuesta en notación científica para 20!, estás usando una computadora de 32 bits.</div>
         <div class="comment">DAT-1.B.1</div>
-        <p>A 64-bit word represents 2<sup>64</sup> different values. We use half for negative numbers, one for zero, and the rest for positives. Half of 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is about 9 &times; 10<sup>18</sup>. That means that the 19 digits of 20! just barely fit in a 64-bit word. But the 33 digits of 30! don't. So the computer hardware reports an <em>overflow</em> error, and Snap<em>!</em> computes an approximation.</p>
+        <p>Una palabra de 64 bits representa 2<sup>64</sup> diferentes valores. Usamos la mitad para los números negativos, uno para el cero y el resto para los positivos. La mitad de 2<sup>64</sup> (que es 2<sup>63</sup> = 9,223,372,036,854,775,808) es aproximadamente 9 &times; 10<sup>18</sup>. ¡Eso significa que los 19 dígitos de 20! apenas cabe en una palabra de 64 bits. ¡Pero los 33 dígitos de 30! No. Por lo tanto, el hardware de la computadora informa de un <em>desbordamiento</em> error, and Snap<em>!</em> calcula una aproximación.</p>
             
         <div class="endnote">
         	<a href="#hint-power-2" data-toggle="collapse" title="Are processor widths always powers of two?">Are processor widths always powers of two?</a>
-            <div id="hint-power-2" class="collapse">Processor widths don't have to be a power of two. Some old computers&mdash;the kind you see in old movies that filled a large room&mdash;used 12-bit, 36-bit, and 60-bit words. But modern personal computers started at 8 bits and the widths have been doubling with each new generation.</div>
+            <div id="hint-power-2" class="collapse">Los anchos de procesador no tienen que ser una potencia de dos. Algunos ordenadores antiguos&mdash;del tipo que se ve en películas antiguas que llenaban una habitación grande&mdash;usaban palabras de 12-bit, 36-bit, y 60-bit. Pero las computadoras personales modernas comenzaron en 8 bits y los anchos se han duplicado con cada nueva generación.</div>
         </div>
 		
         <div class="forYouToDo">
             <ol start="2">
-                <li>Experiment in Snap<em>!</em>. What's the <em>first</em> integer whose factorial doesn't fit in a word?</li>
+                <li>Experimenta en Snap<em>!</em>. ¿Cuál es el <em>primer</em> numero entero cuyo factorial no cabe en una palabra?</li>
             </ol>
         </div>
 
-		<h3>Bignums</h3><div class ="sidenote"> A multiple-word integer is called a <strong>bignum</strong>. </div>
+		<h3>Bignums</h3><div class ="sidenote"> Un numero entero de varias palabras se denomina <strong>bignum</strong>. </div>
         <div class="comment">DAT-1.B.2</div>
-        <p>Why can't programming languages just use more than one word to represent an integer? They can. It's just that a single machine language instruction can only add one-word numbers. A programming language must work a little harder to make addition work with multiple-word values. Not all languages do this, but the highest-level languages do. </p>
+        <p>¿Por qué los lenguajes de programación no pueden usar más de una palabra para representar un entero? Pueden. Es solo que una sola instrucción de lenguaje de máquina solo puede agregar números de una palabra. Un lenguaje de programación debe trabajar un poco más duro para que la adición funcione con valores de varias palabras. No todos los idiomas hacen esto, pero los idiomas de más alto nivel sí. </p>
         <div class="takeItFurther">
             <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
             <ol type="A">
-            	<li>A great example of a high-level programming language is <a href="http://groups.csail.mit.edu/mac/projects/scheme/index.html" title="MIT: Scheme" target="_blank">Scheme</a>. You can learn it from the free, online book <a href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html" title="Structure and Interpretation of Computer Programs" target="_blank">Structure and Interpretation of Computer Programs</a>.</li>
+            	<li>Un gran ejemplo de un lenguaje de programación de alto nivel es<a href="http://groups.csail.mit.edu/mac/projects/scheme/index.html" title="MIT: Scheme" target="_blank">Scheme</a>. Puedes aprenderlo del libro gratuito en línea <a href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html" title="Structure and Interpretation of Computer Programs" target="_blank">Estructura e interpretación de los programas informáticos</a>.</li>
             </ol>
 
         </div>  
         
-        <div class="takeNote">The design of a programming language isn't just a question of taste; it can be a matter of life and death. Between 1985 and 1987, a therapeutic X-ray machine   killed four patients and seriously injured two more because of several bugs in its software; one of the bugs was that a   counter that was kept in an eight-bit-wide variable would reach its maximum value of 127 and then <em>overflow</em> to zero instead of 128. When the variable was zero, an important safety check was not performed. This would not have happened if the   software had been written in a better programming language.</div>
+        <div class="takeNote">El diseño de un lenguaje de programación no es solo una cuestión de gustos; puede ser una cuestión de vida o muerte. Entre 1985 y 1987, una máquina terapéutica de rayos X mató a cuatro pacientes e hirió gravemente a dos más debido a varios errores en su software; uno de los errores era que un contador que se mantenía en una variable de ocho bits de ancho alcanzaría su valor máximo de 127 y luego <em>desbordamiento</em> a cero en lugar de 128. Cuando la variable era cero, no se realizaba una comprobación de seguridad importante. Esto no habría sucedido si el software hubiera sido escrito en un mejor lenguaje de programación.</div>
 
         <div class="forYouToDo">
             <ol start="3">
-                <div class="sidenoteBig">You can use bignums in any Snap<em>!</em> project by importing the "Bignums, exact rationals, complex #s" library. <div class="todo"><p>You learned to import libraries on the <a href="/bjc-r/cur/programming/6-computers/1-abstraction/04-software-libraries.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Software Domain: Libraries">Libraries</a> page.</p> They did not. --MF, 6/13/19</div></div>
+                <div class="sidenoteBig">Puedes usar bignums en cualquier Snap<em>!</em> proyecto importando la biblioteca "Bignums, racionales exactos, complejos #s". <div class="todo"><p>Aprendiste a importar bibliotecas en el<a href="/bjc-r/cur/programming/6-computers/1-abstraction/04-software-libraries.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Software Domain: Libraries">Libraries</a> page.</p> They did not. --MF, 6/13/19</div></div>
                 <li>
-                    Click on this block in the scripting area:<br />
+                    Haga clic en este bloque en el área de scripting:<br />
                     <img class="indent" src="/bjc-r/img/4-internet/bignums-true.png" alt="USE BIGNUMS (true)" title="USE BIGNUMS (true)" /> 
                 </li>
                 <li>
-                	Now try <code>30!</code> again.<br />
+                	Ahora pruebe <code>30!</code> otra vez.<br />
                     <img class="indent" src="/bjc-r/img/4-internet/bang30-bignum.png" alt="30! reporting 265252859812191058636308480000000" title="30! reporting 265252859812191058636308480000000" />
-                    <div class="endnote">This (exactly correct) value is different from the (rounded off) <strong>floating point</strong> value above. (More about floating point in a moment.)</div>
+                    <div class="endnote">Este valor (exactamente correcto) es diferente del (redondeado) <strong>punto flotante</strong> valor anterior. (Más sobre el punto flotante en un momento).</div>
                 </li>
                 <li>
-                    Try <code>200!</code>. The reported result won't fit on your screen, but you can see it this way:
+                    Prueba <code>200!</code>. El resultado reportado no encajará en tu pantalla, pero puedes verlo de esta manera:
                     <ol type="a">
-                        <li>Hold down the control key and click the <img class="inline" src="/bjc-r/img/4-internet/200-factorial.png" alt="() !" title="() !" /> block.</li>
-                        <li>In the menu that appears, choose "result pic."</li>
-                        <li>An image will download onto your computer or open in a new tab. You should be able to zoom in on it to read the digits.</li>
+                        <li>Mantenga pulsada la tecla de control y haga clic en el botón <img class="inline" src="/bjc-r/img/4-internet/200-factorial.png" alt="() !" title="() !" /> bloque.</li>
+                        <li>En el menú que aparece, elija "imagen de resultado".</li>
+                        <li>Una imagen se descargará en su computadora o se abrirá en una nueva pestaña. Debería poder acercarse a él para leer los dígitos.</li>
                     </ol>
                     <div class="todo">Please remind me again why this is worth doing. It feels clunky after a whole page of super abstract and ungrounded (i.e., "I can forget this as soon as the test is over") stuff that I only need to learn "because the teacher said so." --MF, 5/31/20<br />It's much less clunky now.  And the point is to demonstrate that there's no good excuse for any programming language to give approximate results to integer computations. -bh</div>
                 </li>
-                <li>How many digits are there in <code>200!</code>? (Don't count by hand; you have a computer.)</li>
+                <li>¿Cuántos dígitos hay en <code>200!</code>? (No cuentes a mano; tiene una computadora.)</li>
             </ol>
         </div>
         
