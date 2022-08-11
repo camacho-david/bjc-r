@@ -138,15 +138,15 @@
             <ul><li>I had written n^m into <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/2-math-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">U2 Math Tools</a>, but it's now a primitive. --MF, 4/5/19</li></ul>
         </div>
         
-        <p>Here's Betsy's code for the <code>segments in tree</code> function:</p>
+        <p>Aquí está el código de Betsy para la función <code>segmentos en arbol</code>:</p>
 
         <img class="indent" src="/bjc-r/img/8-recursive-reporters/bettycode.png" alt="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}"  title="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}" />
-        <div class="takeNote">The <code>report</code> block only connects to the blocks <em>above</em> it. That's because <code>report</code> returns the result of its input slot, immediately, as the output of the <code>segments in tree</code> reporter block. No further code is executed in a reporter after a <code>report</code> block.</div>
+        <div class="takeNote">El bloque <code>report</code> solo se conecta a los bloques <em>superiores</em>. Esto se debe a que <code>reportar</code> devuelve el resultado de su espacio de entrada, inmediatamente, como la salida del bloque reporter <code>segmentos en arbol</code>. No se ejecuta más código en un reporter después de un bloque <code>reportar</code>.</div>
         
         <div class="forYouToDo">
             <ol start="5">
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is the base case condition?  What does the program do in that case? Why is the base case necessary?</li>
-                <li>The <code>tree</code> command had two recursive calls, but this code has only one. Why?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> ¿Cuál es la condición del caso base? ¿Qué hace el programa en ese caso? ¿Por qué es necesario el caso base?</li>
+                <li>El comando <code>tree</code> tenía dos llamadas recursivas, pero este código solo tiene una. ¿Por qué?</li>
             <!--</ol>
         </div>
         
@@ -155,8 +155,8 @@
         <div class="forYouToDo">
             <ol start="3">-->
                 <li>
-                    <div class="sidenoteBig">Re-read the code for the triangle fractal, and use it to help you build this recursive reporter.</div>
-                	<a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Triangle Fractal">In Unit 7</a>, you built a <code>triangle fractal</code> block. Build a block that reports the <em>total number of triangles</em> formed in a level <var>n</var> triangle fractal:<br />
+                    <div class="sidenoteBig">Vuelve a leer el código del fractal triangular y utilízalo como ayuda para construir este reportero recursivo.</div>
+                	<a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Triangle Fractal">En la Unidad 7</a>, construiste un bloque <code>triángulo fractal</code>. Cree un bloque que informe el <em>número total de triángulos</em> formados en un fractal de triángulos de nivel <var>n</var>:<br />
                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png" alt="triangles in level (5) fractal reporting 121" title="triangles in level (5) fractal reporting 121"/>
                 </li>
 				<li><div class="saveAs"><span class="text">"U8L1-Recursive-Reporters"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U8L1-Recursive-Reporters" title="Save your work as U8L1-Recursive-Reporters" /></div></li>
