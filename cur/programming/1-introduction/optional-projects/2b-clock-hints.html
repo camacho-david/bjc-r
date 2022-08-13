@@ -8,19 +8,19 @@
     
     <body>
         <h2>Pistas para Construir tu propio Reloj</h2>
-        <p>Notice that there is a tick mark on the clock every 6&deg;. This is because there are 360&deg; in a full circle and there are 60 seconds in a minute, so there are 60 tick marks with 360&deg; / 60 = 6&deg; between each mark. </p>
+        <p>Observe que hay una marca en el reloj cada 6&deg;. Esto se debe a que hay 360&deg; en un círculo completo y hay 60 segundos en un minuto, por lo que hay 60 marcas con 360&deg; / 60 = 6&deg; entre cada marca. </p>
         <p>
-            Now write the code for second hand. First center the second hand sprite in the middle of the screen, and make sure that it is displayed at the front, above the minute and hour hands. Then have the second hand point in the appropriate direction based on the <code>current second</code>: 6&deg; for every second.<br />
-            <img class="indent" src="/bjc-r/img/1-introduction/Clock_img/secondsCodewithTick.png" width="420" alt="when green flag clicked{go to x:(0) y:(0); go to front; forever{point in direction(6Xcurrent(second)); play sound(Tick); wait(1) secs}}" title="when green flag clicked{go to x:(0) y:(0); go to front; forever{point in direction(6Xcurrent(second)); play sound(Tick); wait(1) secs}}"/>
+            Ahora escriba el código de segunda mano. Primero, centre el sprite de la manecilla de segundos en el medio de la pantalla y asegúrese de que se muestre al frente, arriba de las manecillas de minutos y horas. Luego haga que la manecilla de segundos apunte en la dirección apropiada según el <code>segundo actual</code>: 6&deg; por cada segundo.<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/Clock_img/secondsCodewithTick.png" width="420" alt="cuando se hace clic en la bandera verde{ir a x:(0) y:(0); ir al frente; para siempre{apuntar en dirección(6Xactual(segundo)); reproducir sonido (tick); esperar(1) segundos}}" title="cuando se hizo clic en la bandera verde{ir a x:(0) y:(0); ir al frente; para siempre{apuntar en dirección(6Xactual(segundo)); reproducir sonido (tick); esperar (1) segundos}}"/>
         </p>
         <p>
-            It may be helpful to remember that in Snap<em>!</em> positive angles are measured clockwise from the 0&deg;, up direction:<br />
-            <img class="indent noshadow" src="/bjc-r/img/1-introduction/Clock_img/Directions.png" width="303"  alt="Directions in Snap!: 0, 90, 180, 270" title="Directions in Snap!: 0, 90, 180, 270"/>
+            Puede ser útil recordar que en Snap<em>!</em> los ángulos positivos se miden en el sentido de las agujas del reloj desde el 0&deg; hacia arriba:<br />
+            <img class="indent noshadow" src="/bjc-r/img/1-introduction/Clock_img/Directions.png" width="303"  alt="Direcciones en Snap!: 0, 90, 180, 270" title="Direcciones en Snap!: 0, 90, 180, 270"/>
         </p>
-        <p>In the code for second hand you also need to make sure that the “clock ticking” sound is played continuously. The <code>wait 1 secs</code> block is there to make sure that there is a pause after playing the sound and that the ticking occurs once every second.</p>
+        <p>En el código de segunda mano, también debe asegurarse de que el sonido del "tictac del reloj" se reproduzca continuamente. El bloque <code>espera 1 segundo</code> está ahí para asegurarse de que haya una pausa después de reproducir el sonido y que el tictac se produzca una vez cada segundo.</p>
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Now, write the code for the minute and the hour hands on your own. The code will be very similar to the second hand code and will differ only slightly. Note that only the second hand need to play the ticking sound.</li>
+                <li>Ahora, escriba el código para las manecillas de minutos y horas por su cuenta. El código será muy similar al código de segunda mano y solo se diferenciará ligeramente. Tenga en cuenta que solo la manecilla de segundos necesita reproducir el sonido de tictac.</li>
             </ol>
         </div>
         
