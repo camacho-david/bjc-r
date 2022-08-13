@@ -3,16 +3,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unidad 8 Lab 3: Proyectos de Reportero Recursivo, Página 4</title>
+        <title>Unidad 8 Práctica de laboratorio 2: Conversión de bases, Página 2</title>
     </head>
     
     <body>
         <h2>Base Conversion</h2>
         <div class="todo">
-            <p>BH: End of lab 4.</p>
-            <p>MF: I want to review/revise.</p>
+            <p>MF: I want to review/revise. (potentially into a 1-page lab? maybe not...)</p>
+			<p>Pages or lab needs renaming so they aren't duplicative. --MF, 6/15/20</p>
+		</div>
+		<div class="learn">
+            <p><strong>En esta página,</strong> generalizará desde la conversión base con binario a la conversión con <em>cualquier</em> base.</p>
         </div>
-        
+     
+
         <p>Aquí hay una solución para la conversión binaria de enteros no negativos:</p>
         <p><img class="indent" src="/bjc-r/img/8-recursive-reporters/tobinary.png" alt="decimal->binary(number){if(number<2){report(number)}else{report(join(decimal->binary(floor(number/2)))(number mod 2))}}" title="decimal->binary(number){if(number<2){report(number)}else{report(join(decimal->binary(floor(number/2)))(number mod 2))}}"/></p>
         <p>Si un número se puede representar con un solo dígito, lo usamos como caso base. Para el binario, los únicos números que se pueden representar con un solo dígito son el 0 y el 1, por lo que probamos para ver si el número es menor que 2. Si es así, lo reportamos.</p>
@@ -46,7 +50,7 @@
                 <img class="indent" src="/bjc-r/img/8-recursive-reporters/common.png" alt="(32562)base(15), reporting 99ac" title="(32562)base(15), reporting 99ac" />
                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/w00zy.png" alt="(53749006)base(36) reporting w00zy" title="(53749006)base(36) reporting w00zy" />
                 </li>
-                <li>Mejore el bloque <code>from base</code> para admitir bases hasta 36 de la misma manera.</li>
+                <li>Mejore el bloque <code>desda la base</code> para admitir bases hasta 36 de la misma manera.</li>
             </ol>
         </div>
 
