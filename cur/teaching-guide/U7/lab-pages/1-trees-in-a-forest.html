@@ -15,17 +15,17 @@
 		<p>The reason why we do not start with <em>tail recursion,</em> in which the sole recursive call comes at the tail end, like this</p>
 		<img class="indent" src="/bjc-r/img/7-recursion/tail-countdown.png" alt="countdown(num){if (num=0) {say(Blastoff!)} else {say (num) for (1) secs; countdown(num-1)}}" title="countdown(num){if (num=0) {say(Blastoff!)} else {say (num) for (1) secs; countdown(num-1)}}" />
         <p>is that students often misunderstand the recursive call at the end to mean "go back to the beginning." This wrong mental model  works for tail recursive blocks, but fails when students confront (or must design) a recursive call that can't be at the end of the definition. Embedded recursion, in which the recursive call <em>isn't</em> the last thing in the script, provides a more resilient introduction.</p>
-        <p>The repetition on page 1 of is deliberate: the tactile experience of building almost the same script repeatedly helps students notice its structure, and helps them see the virtue of combining them into a single script using recursion. Resist the temptation to teach them shortcuts, like duplicating scripts and adjusting them.)</p> 
+        <p>The repetition on page 1 of is deliberate: the tactile experience of building almost the same script repeatedly helps students notice its structure, and helps them see the virtue of combining them into a single script using recursion. Resist the temptation to teach them shortcuts, like duplicating scripts and adjusting them.)</p>
 
 		<h3>Pacing</h3>
 		<div>
 			The 5 lab pages could be split across 2 or 3 days (<strong>75-140 minutes</strong>). Expected times to complete follow:
 			<ul>
-				<li>30-50 minutes (~1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/1-recursive-tree.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Recursive Tree">Recursive Tree</a></li>
-				<li>30-50 minutes (~1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/2-base-case.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="The Base Case">The Base Case</a></li>
-                <li>about 15 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/3-tree-input-self-check.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Self-Check: Tree Input">Self-Check: <code>Tree</code> Input</a></li>
-                <li>about 15 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/4-tree-variations-self-check.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Self-Check: Tree Variations">Self-Check: <code>Tree</code> Variations</a></li>
-                <li>5-40 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/5-vary-your-tree.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Vary Your Tree">Vary Your Tree</a> (depending on which problems are undertaken)</li>
+				<li>30-50 minutes (~1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/1-recursive-tree.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Recursive Tree">Recursive Tree</a></li>
+				<li>30-50 minutes (~1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/2-base-case.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.es.html&novideo&noassignment" title="The Base Case">The Base Case</a></li>
+                <li>about 15 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/3-tree-input-self-check.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Self-Check: Tree Input">Self-Check: <code>Tree</code> Input</a></li>
+                <li>about 15 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/4-tree-variations-self-check.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Self-Check: Tree Variations">Self-Check: <code>Tree</code> Variations</a></li>
+                <li>5-40 minutes (&lt;1 day) on <a href="/bjc-r/cur/programming/7-recursion/1-trees/5-vary-your-tree.html?topic=nyc_bjc%2F7-recursion-trees-fractals.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Vary Your Tree">Vary Your Tree</a> (depending on which problems are undertaken)</li>
 			</ul>
 		</div>
 
@@ -60,7 +60,7 @@
                 </li>
             </ul>
         </div>
-        
+
         <h3>Lab Pages</h3>
         <div>
         	<ul>
@@ -77,7 +77,7 @@
                         <li>
                         	<strong>Discussion Questions:</strong>
                             <ul>
-                                <li>What is <strong>state transparency</strong>? Why is it important? Have you run into issues with state transparency before? What happened and how did you resolve it? <!--THIS PAGE HAS BEEN CUT. --MF, 7/10/17 Students may remember < a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Debugging Blocks within Blocks in Unit 1</a>, where a script intended to draw five blocks in a row by using a <code>draw square</code> block five times fails because the <code>draw square</code> block leaves the sprite in a different orientation than it started.--></li>
+                                <li>What is <strong>state transparency</strong>? Why is it important? Have you run into issues with state transparency before? What happened and how did you resolve it? <!--THIS PAGE HAS BEEN CUT. --MF, 7/10/17 Students may remember < a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Debugging Blocks within Blocks in Unit 1</a>, where a script intended to draw five blocks in a row by using a <code>draw square</code> block five times fails because the <code>draw square</code> block leaves the sprite in a different orientation than it started.--></li>
                                 <li>Project the <code>tree 2</code> block definition together with an image of the result and ask students to describe the role of each block on the resulting drawing. Do the same for <code>tree 3</code>.</li>
                                 <li>
                                     These questions encourage students to attend  closely to the details of how the trees are drawn and which aspects are essential to the structure and which are simply aesthetic choices:
@@ -128,7 +128,7 @@
 						<li><strong>Debugging:</strong> <a href="https://docs.google.com/document/d/1UiveZpSSNUtYTwxZ8HzbZ_eTaGAp3LCKDaJVVvboyi8/edit?usp=sharing" target="_blank" title="Debugging: Random Tree">Random Tree</a></li>
                     </ul>
                 </li>
-                
+
 			</ul>
     </div>
 
@@ -136,11 +136,11 @@
 		<!--<h3>Assignments:</h3>
 		<div><ul><li>...</li></ul></div>
 
-			
+
 		<!--<h3>Look For:</h3>
 		<div><ul><li>...</li></ul></div>-->
 
-			
+
 		<h3>Related Resources:</h3>
 		<div>
             <p>These resources spend a lot of time with examples that could be done iteratively. They are provided as additional reading for teachers but not recommended for students.</p>
@@ -151,22 +151,22 @@
             </ul>
         </div>
 
-			
+
 		<!--<h3>Tips:</h3>
 		<div><ul><li>...</li></ul></div>-->
 
-			
+
 		<h3>Solutions</h3>
 		<div><ul>
-        
+
        <li><a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U7L1p1-RecursiveTree&editMode" target="_blank">Page 1: Recursive Tree</a></li>
        <li><a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U7L1p2-TheBaseCase&editMode" target="_blank">Page 2: The Base Case</a></li>
        <li><a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U7L1p3-SelfCheckTreeInput&editMode" target="_blank">Page 3: Self-Check: Tree Input</a></li>
        <li><a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U7L1p4-SelfCheckTreeVariations&editMode" target="_blank">Page 4: Self-Check: Tree Variations</a></li>
        <li><a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U7L1p5-VaryYourTree&editMode" target="_blank">Page 5: Vary Your Tree</a></li>
        </ul></div>
-			
-			
+
+
 		<!--MARY TOOK THIS OUT BECAUSE U7/U8 HAPPEN AFTER THE EXAM, SO THESE DON'T COUNT. THIS WAS DONE IN DISCUSSION WITH BRIAN. --MF, 12/29/17
         <h3>Correlation with AP CS Principles Framework:<a name="AP" class="anchor">&nbsp;</a></h3>
 		<div class="apStandards">
@@ -191,7 +191,7 @@
                 <li><strong>E K 5.3.1A</strong> Procedures are reusable programming abstractions.</li>
                 <li><strong>E K 5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
 			</ul>
-		</div>	-->		
+		</div>	-->
 
 
 	</body>

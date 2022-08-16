@@ -10,16 +10,16 @@
 		<h2>Lab 2: Sorting Data</h2>
 		<p>This lab continues work on the Contact List developed in Lab 1. Here our goal is to sort the list by name; this is the payoff for the "sorting form" vs. "display form" selectors on names.</p>
 		<p>Although the lab includes several occasions to use the higher order functions <code>map</code>, <code>keep</code>, and <code>combine</code>, sorting is a problem that cannot be solved entirely with these HOFs, because they deliberately pay no attention to the position of a value within a list, and sorting is very much about positioning. So the major new content introduced here is the writing and use of <strong>recursive reporters</strong>.</p>
-		<p>The first page reviews the recursive triangle-fractal command from U2L4p2 and introduces simple recursive reporters. The second page teaches the selection sort algorithm and implements it as a recursive reporter, but sorting only simple data that can be compared using the <code>&lt;</code>block. The third page adds the remarkably small change that's needed to sort Contacts by name.</p> 
-		
+		<p>The first page reviews the recursive triangle-fractal command from U2L4p2 and introduces simple recursive reporters. The second page teaches the selection sort algorithm and implements it as a recursive reporter, but sorting only simple data that can be compared using the <code>&lt;</code>block. The third page adds the remarkably small change that's needed to sort Contacts by name.</p>
+
 
 		<h3>Pacing</h3>
 		<div>
 			The 3 lab pages could be split across 3-5 days (<strong>95-190 minutes</strong>). Expected times to complete follow:
 			<ul>
-				<li>50-100 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/1-recursion.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Recursion Revisited</a></li>
-				<li>30-60 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/2-selection-sort.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Selection Sort</a></li>
-				<li>15-30 minutes (&lt;1 class period) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/3-sort-by-name.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Sorting Contacts by Name</a></li>
+				<li>50-100 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/1-recursion.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment">Recursion Revisited</a></li>
+				<li>30-60 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/2-selection-sort.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment">Selection Sort</a></li>
+				<li>15-30 minutes (&lt;1 class period) on <a href="/bjc-r/cur/programming/3-lists/old/2-sorting/3-sort-by-name.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment">Sorting Contacts by Name</a></li>
 			</ul>
 		</div>
 
@@ -46,7 +46,7 @@
                             </ul>
                         </li>
                         <li>
-                            <strong>Tips:</strong>						
+                            <strong>Tips:</strong>
                             <ul>
                                 <li><strong>Domain and range.</strong> Does this block take a list or a single number as input? Does it report a list or a single number? One common bug is to get this right in the recursive case but not in the base case — for <code>sum of</code>, for example, reporting an empty list if the input is an empty list.</li>
                                 <li>
@@ -56,7 +56,7 @@
                                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/bad-rec-reporter.png" alt="bad (multi-report) recursive reporter pattern" /><br />
                                     But a block can <code>report</code> only once.  So instead, we need a <em>combiner</em> function:<br />
                                     <img src="/bjc-r/img/8-recursive-reporters/rec-reporter.png" alt="correct recursive reporter pattern"><br />
-                                    Don't show these pictures to students in a lecture, especially not before they do the lab!  Abstract patterns will make            
+                                    Don't show these pictures to students in a lecture, especially not before they do the lab!  Abstract patterns will make
                                     much more sense to them <em>after</em> they have some experience at least trying to build recursive reporters. But you'll be better able to help students debug if <em>you</em> understand the reason for combiner functions before students do the lab.
                                 </li>
                             </ul>
@@ -93,7 +93,7 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Page 3: Sorting Contacts by Name.</strong> 
+                    <strong>Page 3: Sorting Contacts by Name.</strong>
                     <ul>
                         <li>
                             <strong>Learning Goals:</strong>
@@ -132,15 +132,15 @@
 			</ul>
 		</div>-->
 
-			
+
 		<h3>Solutions</h3>
 		<div>
 			<ul>
 				<li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=BJCSolutions&ProjectName=U3L2%20Sorting%20%28answer%20file%29" target="_blank">U3L2 Sorting (answer file)</a></li>
 			</ul>
 		</div>
-			
-			
+
+
 		<h3>Correlation with AP CS Principles Framework (forthcoming)<a name="AP" class="anchor">&nbsp;</a></h3>
 		<!--<div class="apStandards">
 			<!--<h4>Computational Thinking Practices:</h4>
@@ -161,7 +161,7 @@
 			<ul>
 				<li>Coming soon...</li>
 			</ul>
-		</div>	-->		
+		</div>	-->
 
 
 	</body>

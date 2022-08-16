@@ -5,7 +5,7 @@
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 2 Lab 3 Teacher Guide</title>
     </head>
-    
+
     <body>
         <h2>Lab 3: Making Decisions</h2>
         <p>
@@ -19,20 +19,20 @@
 			<img class="indent" src="/bjc-r/img/2-complexity/17-mod-5-reporting-2.png" alt="(17) mod (5) reporting 2" title="(17) mod (5) reporting 2" /> <br />
             Then they learn to combine their predicates into more complex predicate expressions using Boolean operators (<code>and</code>, <code>or</code>, and <code>not</code>), so that they can  select list items that meet multiple criteria.
         </p>
-        
-        
+
+
 		<h3>Pacing</h3>
         <p>Coming soon...</p>
         <div class="todo">
 		<div>
 			The 5 lab pages could be split across 4-8 days (<strong>165-330 minutes</strong>). Expected times to complete follow:
 			<ul>
-				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="What's a Predicate?">What's a Predicate?</a></li>
-				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/2-combining-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Combining Predicates">Combining Predicates</a></li>
+				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment" title="What's a Predicate?">What's a Predicate?</a></li>
+				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/2-combining-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Combining Predicates">Combining Predicates</a></li>
 				<li>?? minutes (1-2 class periods) on Combining Conditionals</li>
-			  <li>25-50 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/4-boolean-experiments.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Boolean Expression Experiments">Boolean Expression Experiments</a></li>
-				<li>20-40 minutes (less than 1 class period) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Keeping Items from a List"><code>Keep</code>ing Items from a List</a></li>
-				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/6-solving-word-puzzle.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Solving a Word Puzzle">Solving a Word Puzzle</a></li>
+			  <li>25-50 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/4-boolean-experiments.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Boolean Expression Experiments">Boolean Expression Experiments</a></li>
+				<li>20-40 minutes (less than 1 class period) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Keeping Items from a List"><code>Keep</code>ing Items from a List</a></li>
+				<li>40-80 minutes (1-2 class periods) on <a href="/bjc-r/cur/programming/2-complexity/3-predicates/6-solving-word-puzzle.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Solving a Word Puzzle">Solving a Word Puzzle</a></li>
 			</ul>
 		</div>
         </div>
@@ -56,7 +56,7 @@
 							<strong>Learning Goals:</strong>
 							<ul>
 								<li>Formalize understanding of predicates and conditionals.</li>
-                                <li>Use relational operators with conditionals to control the colors in a drawing project.</li> 
+                                <li>Use relational operators with conditionals to control the colors in a drawing project.</li>
                             </ul>
 						</li>
                         <img class="imageRight" src="/bjc-r/img/2-complexity/draggable-check-box.png" alt="draggable box checked" title="draggable box checked">
@@ -73,7 +73,7 @@
 				<li>
                 	<strong>Page 2: Combining Predicates.</strong>
                     <ul>
-						<li><strong>Learning Goal:</strong> 
+						<li><strong>Learning Goal:</strong>
                             <ul>
                                 <li>Learn about, use, and interpret expressions with Boolean functions (<code>and</code>, <code>or</code>, and <code>not</code>).</li>
                                 <li>Develop several versatile predicates: <code>≤</code>, <code>≥</code>, <code>≠</code>, and <code>between?</code>.</li>
@@ -81,7 +81,7 @@
                                 <li>Compare different correct algorithms for the same task (<code>&ge;</code>).</li>
                             </ul>
                         </li>
-						<li><strong>Tip:</strong> 
+						<li><strong>Tip:</strong>
                             <ul>
                                 <li>In English, "or" can be either <em>inclusive</em> (meaning and/or) or <em>exclusive</em> (meaning one or the other, but not both) as the examples on the lab page describe. In computer science, <code>or</code> is inclusive (if either or both of the inputs are true, the result is true), and a separate function, <strong>xor</strong> (pronounced x-or, for "exclusive or"), is used when two true inputs must result in a false output. Exclusive or is not included in Snap<em>!</em> and is not taught in BJC. Only two (<code>and</code> and <code>or</code>) of the 16 possible Boolean operators are included. Interested students may wish to do additional research on the other Boolean operators (such as <strong>nand</strong> meaning <code>not (and)</code>; <strong>xnor</strong> meaning <code>not (</code><strong>xor</strong><code>)</code>, etc.). <!--However, a Take It Further activity on this page invites students to explore the others.--></li>
                                 <li>Technically, an <em>operator</em> is a function of two inputs, like <code>+</code>. Snap<em>!</em> uses the term loosely, so not everything in the "Operators" palette is a two-input function. So, technically, <code>not</code> isn't a operator. </li>
@@ -91,7 +91,7 @@
 				</li>
 				<li><strong>Page 3: Combining Conditionals.</strong><!--This only becomes an issue if a student does the Take It Further about how many Boolean operators there are; that's asking about two-input functions.--></li>
 				<ul>
-				  <li><strong>Learning Goals:</strong> 
+				  <li><strong>Learning Goals:</strong>
 				    <ul>
 				      <li>
 				        What is the primary difference between the first two examples of ways to define <code>&ge;</code> (shown below)? The goal of this discussion is for students to see that a good optimization is that you never need to program <code>if <em>some predicate</em> report (true) else report (false)</code>, you can just do <code>report (<em>some predicate</em>)</code>.<br />
@@ -134,7 +134,7 @@
                 	<strong>Page 5: <code>Keep</code>ing Items from a List.</strong>
                     <ul>
 						<li>
-                            <strong>Learning Goal:</strong> 
+                            <strong>Learning Goal:</strong>
                             <ul>
                                 <li>Understand that the <code>keep</code> block uses predicates to select items from a list.</li>
                                 <li>Practice using <code>keep</code>.</li>
@@ -189,8 +189,8 @@
 			</ul>
 		</div>
         </div>
-			
-			
+
+
 		<h3>Correlation with 2020 AP CS Principles Framework<a name="AP" class="anchor">&nbsp;</a></h3>
         <div class="apStandards">
             <h4>Computational Thinking Practices: Skills</h4>
@@ -237,7 +237,7 @@
                 <li><strong>AAP-2.A.4:</strong> Every algorithm can be constructed using combinations of sequencing, selection, and iteration.</li>
                 <li><strong>AAP-2.B.1:</strong> <em>Sequencing</em> is the application of each step of an algorithm in the order in which the code statements are given.</li>
                 <li>
-                    <strong>AAP-2.E.2:</strong> The exam reference sheet provides the following relational operators: <pre class="inline">=, ≠, &gt;, &lt;, ≥, and ≤</pre>. 
+                    <strong>AAP-2.E.2:</strong> The exam reference sheet provides the following relational operators: <pre class="inline">=, ≠, &gt;, &lt;, ≥, and ≤</pre>.
                     <ul>
                         <li><pre class="inline">a = b</pre></li>
                         <li><pre class="inline">a ≠ b</pre></li>
@@ -250,7 +250,7 @@
                 </li>
                 <li><strong>AAP-2.F.1:</strong> The exam reference sheet provides the logical operators <pre class="inline">NOT</pre>, <pre class="inline">AND</pre>, and <pre class="inline">OR</pre>, which evaluate to a Boolean value.</li>
                 <li><strong>AAP-2.F.2:</strong> The exam reference sheet provides <pre class="inline">NOT condition</pre>, which evaluates to <pre class="inline">true</pre> if <pre class="inline">condition</pre> is <pre class="inline">false</pre>; otherwise it evaluates to <pre class="inline">false</pre>.</li>
-                <li><strong>AAP-2.F.3:</strong> The exam reference sheet provides <pre class="inline">condition1 AND condition2</pre>, which evaluates to <pre class="inline">true</pre> if both <pre class="inline">condition1</pre> and <pre class="inline">condition2</pre> are <pre class="inline">true</pre>; otherwise it evaluates to <pre class="inline">false</pre>.</li> 
+                <li><strong>AAP-2.F.3:</strong> The exam reference sheet provides <pre class="inline">condition1 AND condition2</pre>, which evaluates to <pre class="inline">true</pre> if both <pre class="inline">condition1</pre> and <pre class="inline">condition2</pre> are <pre class="inline">true</pre>; otherwise it evaluates to <pre class="inline">false</pre>.</li>
                 <li><strong>AAP-2.F.4:</strong> The exam reference sheet provides <pre class="inline">condition1 OR condition2</pre>, which evaluates to <pre class="inline">true</pre> if <pre class="inline">condition1</pre> is <pre class="inline">true</pre> or if <pre class="inline">condition2</pre> is <pre class="inline">true</pre> or if both <pre class="inline">condition1</pre> and <pre class="inline">condition2</pre> are true; otherwise it evaluates to <pre class="inline">false</pre>.</li>
                 <li><strong>AAP-2.F.5:</strong> The operand for a logical operator is either a Boolean expression or a single Boolean value.</li>
                 <li><strong>AAP-2.G.1:</strong> <em>Selection</em> determines which parts of an algorithm are executed based on a condition being <pre class="inline">true</pre> or <pre class="inline">false</pre>.</li>

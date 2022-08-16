@@ -8,27 +8,27 @@
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
     </head>
-    
+
     <body>
         <h2>Programming Lab 4: Abstraction</h2>
         <p>Students begin with a drawing project, "Brick Wall,"  then build a complex number-guessing game (which they will extend and improve significantly in a later unit), and finally take another step toward completing Tic Tac Toe (and other  games played on arrays). In each case, they  focus  on ideas of <strong>abstraction</strong> to serve the goals or writing clear, debuggable, improvable code—essential for developing complex programs. This is not the first time they used abstraction—they encountered it when they first built the game board for Tic Tac Toe (and other games) and when they built "specialist blocks" for making plurals. But this <em>is</em> where they begin to analyze the various uses of abstraction, for example, a case in which it is useful to build a  block that seems only to be a new name for a block they already have.</p>
 		<p>Students are given very specific goals for Brick Wall, guidance on <em>structuring</em> it, and rationale for that structure. For the number-guessing-game, they are again given suggestions for features to add, one at a time, but are on their own to think about how to structure these extensions and modifications so that the code works and remains clear.</p>
         <p>There is no new Snap<em>!</em> code in Lab 4. Even the idea of abstraction—analyzing a task to find its chunks or component parts or special cases and then build blocks that <em>specialize</em> in each of them—is not new. But making a <em>habit</em> of analyzing and chunking tasks takes time and experience.</p>
-        
-        
+
+
         <h3>Pacing:</h3>
         <div>
 			The 2 required lab pages could be split across 3-4 days (<strong>90-180 minutes</strong>). Expected times to complete follow:
 			<ul>
-				<li>If used, 25-50 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/1-abstraction-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Brick Wall (Teacher's Choice)</a></li>
-				<li>30-60 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/2-abstraction-developing-a-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Number Guessing Game</a></li>
-				<li>60-120 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/3-abstraction-developing-a-board-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Board Game</a></li>
+				<li>If used, 25-50 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/1-abstraction-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Brick Wall (Teacher's Choice)</a></li>
+				<li>30-60 minutes (about 1 class period) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/2-abstraction-developing-a-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Developing a Number Guessing Game</a></li>
+				<li>60-120 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/1-abstraction/old/3-abstraction-developing-a-board-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Developing a Board Game</a></li>
 			</ul>
 		</div>
         <!--
         <div>
             <ul>
-                <li>The first three pages of this lab (<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/temp-hodgepodge/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Board Game</a>, <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Number Guessing Game</a>, and <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Brick Wall</a>) are the most important. Plan with the hopes of doing the last three pages as well, but if students get involved in extensions of the first three pages, give that the priority and feel free to  condense the last three.</li>
+                <li>The first three pages of this lab (<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/temp-hodgepodge/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Developing a Board Game</a>, <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Developing a Number Guessing Game</a>, and <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html&novideo&noassignment">Brick Wall</a>) are the most important. Plan with the hopes of doing the last three pages as well, but if students get involved in extensions of the first three pages, give that the priority and feel free to  condense the last three.</li>
                 <li>Ideally, the last three pages. all short, could be done in a single period, with page 6 done before page 5. The <strong>Tips</strong> section below suggests how.</li>
             </ul>
         </div>-->
@@ -43,7 +43,7 @@
         <!--<div class="sidenoteBig">
         	<strong>Looking Ahead</strong>
         	<ul>
-            	<!-- Used in U1 
+            	<!-- Used in U1
                 <li>The tools developed in this unit anticipate a variety of games that students will be able to develop: tic-tac-toe, magic-square games, and others. More powerful programming techniques&mdash;particularly <strong>lists</strong> which are the major new programming idea in Unit 3&mdash;are useful in completing these games.</li>
             </ul>
         </div>-->
@@ -54,8 +54,8 @@
                 <li>Make significant further progress on the Tic Tac Toe game.</li>
             </ul>
 		</div>
-        
-        
+
+
         <h3>Goals for the Lab:</h3>
         <div>
             <ul>
@@ -81,8 +81,8 @@
                 </li>
             </ul>
         </div>
-        
-        
+
+
         <h3>Assignments</h3>
         <div>
             <ul>
@@ -92,8 +92,8 @@
                 </li>
             </ul>
         </div>
-        
-        
+
+
         <h3>Tips:</h3>
         <div>
         	<ul>
@@ -114,7 +114,7 @@
 					<strong>Page 3: Developing a Board Game.</strong>
 					<ul>
 						<li><em>Do this page yourself before class.</em></li>
-                        <li>The <code>move to tile</code> block may be the greatest challenge. Students  may need your help  puzzling through the logic and mathematics of this problem. Discuss how to use <code>mod</code>  (introduced in <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Unit 1 Lesson 4, Expressions and Operations</a>) to determine the column from the tile number. <code>(tile number) mod (number of tiles)</code><em>almost</em> does the right thing. Encourage students to <em>experiment</em> to see what case(s) it gets wrong and what adjustment to make.</li>
+                        <li>The <code>move to tile</code> block may be the greatest challenge. Students  may need your help  puzzling through the logic and mathematics of this problem. Discuss how to use <code>mod</code>  (introduced in <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Unit 1 Lesson 4, Expressions and Operations</a>) to determine the column from the tile number. <code>(tile number) mod (number of tiles)</code><em>almost</em> does the right thing. Encourage students to <em>experiment</em> to see what case(s) it gets wrong and what adjustment to make.</li>
                         <li>This program shows up again in Unit 3 in a very important role. You may want to have successful students present their work on this to the class so that other students who struggle with the reasoning are able to complete the lab.</li>
                         <li>
                             <strong>Mathematics Note: Locating the Cell.</strong>
@@ -236,7 +236,7 @@
 							In each case, the formula gives a number which, when rounded <em>up</em>, gives the column number.  A little reasoning shows that this will always be the case.  And there is a <a href="/bjc-r/cur/teaching-guide/U2/lab-pages/old/3-tools-techniques.html?topic=nyc_bjc%2F2-teaching-guide.topic&course=bjc4nyc_teacher.html&novideo&noassignment#round">"round up" operator</a>: it's called <strong>ceiling</strong> (it's under the sqrt operator).  Hence, you can get the column number from the <em>x</em>-position:
 <br />
                             <img class="indent" src="/bjc-r/img/2-complexity/ceilingapprox.png" alt="ceiling of ((x position + 150) / (100))" title="ceiling of ((x position + 150) / (100))" /><br />
-                            And it's the same structure for an 5 by 5 board or an <em>n</em> by <em>n</em> board.  The only change is that the width of the column (the chunk moved over each time) changes from 100 to 300/<em>n</em>, so that you can make a general <strong>column</strong> block that takes an input <em>n</em> the size of the game board and returns the number of the column where the sprite happens to reside. 
+                            And it's the same structure for an 5 by 5 board or an <em>n</em> by <em>n</em> board.  The only change is that the width of the column (the chunk moved over each time) changes from 100 to 300/<em>n</em>, so that you can make a general <strong>column</strong> block that takes an input <em>n</em> the size of the game board and returns the number of the column where the sprite happens to reside.
 <br />
                             <img class="indent" src="/bjc-r/img/2-complexity/coln.png" alt="col (n): {ceiling of ((x position + 150) / (300 / n))}" title="col (n): {ceiling of ((x position + 150) / (300 / n))}" /><br />
                             Finding the row number involves similar reasoning:  Try some numerical experiments, make tables, and abstract off what you see and what you are doing.  The finished product might look like this:<br />
@@ -259,7 +259,7 @@
                                 <li>
                                     Given (<em>row</em>, <em>col</em>) for a cell on an <em>n</em> by <em>n</em> board, the center of the cell (<em>xCenter</em>, <em>yCenter</em>) is given by:
                                     <span class="katex-block">xCenter = (-150+\frac{300/n}{2}) +  (\frac{300}{n})(col-1)</span>
-									<span class="katex-block">yCenter =(150-\frac{300/n}{2}) - (\frac{300}{n})(row-1)</span>                                    
+									<span class="katex-block">yCenter =(150-\frac{300/n}{2}) - (\frac{300}{n})(row-1)</span>
                                 </li>
                             </ul>
 							Someone looking at these with no context may wonder where they came from and who could possibly come up with them. The purpose of the first part of this note is to show how they can emerge from careful experiments and abstraction.
@@ -271,14 +271,14 @@
                 This  is the most complicated project in units 1 and 2, but students are given enough subtasks to make it likely that, <em>working together</em>, they can succeed. Working together is key. Some will figure out how to solve certain parts, and others will figure out how to solve other parts. Sharing, they will learn from each other.</li>
 				<li>
                 	<em>What do I do when a student asks how to solve a problem?</em> There will almost certainly be parts of some of these projects that <em>you</em> don't quickly see how to do. But even when you <em>do</em> know how to solve the problem, the most useful answer you can give is often one of these
-                    <ol> 
+                    <ol>
                         <li>Show me what you've already figured out.</li>
                         <li>What are the <em>parts</em> of the problem that need to be built? </li>
                         <li>Is there a good starting place (or a thing to do next), something really simple that will get us a bit closer?</li>
                     </ol>
                 </li>
 				<li>To avoid overloading the text, the orange box about abstraction doesn't  mention  that even building the board out of boxes is an abstraction-based design decision. That's not how you draw a tic-tac-toe board by hand; you draw long intersecting lines. We could have done that here, too, but wanted a <code>draw tile</code> block that could be modified later.</li>-->
-				
+
             </ul>
 		</div>
 
@@ -296,7 +296,7 @@
             </ul>
         </div>
 
-            
+
    		<h3>Solutions:</h3>
         <div>
             <ul>
@@ -311,8 +311,8 @@
                 <li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=BJCsolutions&ProjectName=U2L4%20Tic%20Tac%20Toe%20(answer%20file)" target="_blank">Page 3: Developing a Board Game</a></li>
             </ul>
         </div>
-            
-            
+
+
 		<h3>Correlation with AP CS Principles Framework:<a name="AP" class="anchor">&nbsp;</a></h3>
         <div class="apStandards">
             <!--<h4>AP CS Principles Computational Thinking Practices:</h4>
@@ -381,7 +381,7 @@
                 <li><strong>E K 5.5.1F</strong> Compound expressions using <em>and</em>, <em>or</em>, and <em>not</em> are part of most programming languages.</li>
                 -->
             </ul>
-        </div>            
+        </div>
 
 
 	</body>
