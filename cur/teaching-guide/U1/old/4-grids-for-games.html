@@ -5,7 +5,7 @@
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 1 Lab 4 Teacher Guide</title>
     </head>
-    
+
     <body>
         <h2>Programming Lab 4: Building Grids for Games</h2>
 		<p>Students begin a project—building a Tic Tac Toe game and other games that are played by placing marks (X or O, or a number) on a square array of tiles. This project will develop over the course of a few units. In this lab, students get as far as creating the grid, getting it automatically to fit the screen regardless of the number of tiles, and placing marks on the grid (but not yet with the computer checking to see if the moves are legal or if a player has won). In doing this, students continue to use ideas (and new levels) of abstraction, and learn also how to use a variety of math reporters—four basic operations (<code>+</code>, <code>-</code>, <code>×</code>, <code>÷</code>), and <code>mod</code>&mdash;to create new reporter blocks, <em>functions</em> to perform specialized calculations for them.</p>
@@ -13,14 +13,14 @@
         <h3>Pacing:</h3>
         <p>
         	The 2 lab pages could take about 1-2 days (<strong>40-80 minutes</strong>). Expected times to complete follow: <ul>
-                <li>30-60 <!-- time not listed in Y1 --><a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Building Tic Tac Toe and Other Board Games</a></li>
-                <li>10-20<!-- was 10-15 in Y1 --> minutes on <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Expressions and Operations</a></li>
-                <!--<li>5-10 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-block-types-calculations/1-sprite-position-direction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Sprite Position and Direction</a></li>-->
-                <!--<li>10-15 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-block-types-calculations/3-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Predicates and Logic</a></li>-->
-                <!--<li>10-15 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-random-self-check.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><code>Random</code> Block Self Check</a></li>-->
+                <li>30-60 <!-- time not listed in Y1 --><a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Building Tic Tac Toe and Other Board Games</a></li>
+                <li>10-20<!-- was 10-15 in Y1 --> minutes on <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Expressions and Operations</a></li>
+                <!--<li>5-10 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-block-types-calculations/1-sprite-position-direction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Sprite Position and Direction</a></li>-->
+                <!--<li>10-15 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-block-types-calculations/3-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment">Predicates and Logic</a></li>-->
+                <!--<li>10-15 minutes on <a href="/bjc-r/cur/programming/1-introduction/temp-hodgepodge/5-random-self-check.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html&novideo&noassignment"><code>Random</code> Block Self Check</a></li>-->
             </ul>
         </p>
-		
+
         <h3>Prepare</h3>
         <div>
         	<ul>
@@ -37,8 +37,8 @@
 				<li>Build tools that anticipate a variety of games: tic-tac-toe, magic-square games, and others. More powerful programming techniques&mdash;particularly <strong>lists</strong> which are the major new programming idea in Unit 3&mdash;are useful in completing these games.</li>
 
             </ul>
-        </div> 
-        
+        </div>
+
         <h3>Goals for the Lab:</h3>
 		<div>
 			<ul>
@@ -62,14 +62,14 @@
                 </li>
             </ul>
         </div>
-        
-        
-<hr />       
-        
+
+
+<hr />
+
         <h3>As a Class:</h3>
         <div>
         	<ul>
-				<li>To launch <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html" target="_blank">Expressions and Operations</a>&ndash;Discuss the difference between these two blocks: <img src="/bjc-r/img/1-introduction/operator-fytd-01.png" alt="(5 + 4) &middot; 3" title="(5 + 4) &middot; 3" /> and <img src="/bjc-r/img/1-introduction/operator-fytd-02.png" alt="5 &middot; (4 + 3)" title="5 &middot; (4 + 3)" /></li>
+				<li>To launch <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.es.html" target="_blank">Expressions and Operations</a>&ndash;Discuss the difference between these two blocks: <img src="/bjc-r/img/1-introduction/operator-fytd-01.png" alt="(5 + 4) &middot; 3" title="(5 + 4) &middot; 3" /> and <img src="/bjc-r/img/1-introduction/operator-fytd-02.png" alt="5 &middot; (4 + 3)" title="5 &middot; (4 + 3)" /></li>
 				<li>Make a Prediction: <a href="https://docs.google.com/document/d/1gyCjRr8s4accbi84Q0Xy76NlrlzxM95erzN3c-4nsQk/edit?usp=sharing" target="_blank">If Mouse Down?, Go to Mouse X Mouse Y</a></li>
                 <li>Debugging: <a href="https://docs.google.com/document/d/1Sr0fUHNv0aDlMzMbEUdNaS3tnUMIwKzIPzpoA6A3wqk/edit?usp=sharing" target="_blank">Make and Odd Number</a></li>
 				<img class="imageRight" src="/bjc-r/img/1-introduction/sum-odds.png" alt="set sum to 0, for i = 1 to 5 [set sum to (sum + ((2 &middot; i) - 1))]" title="set sum to 0, for i = 1 to 5 [set sum to (sum + ((2 &middot; i) - 1))]" />
@@ -77,10 +77,10 @@
                 	Advanced Make a Prediction: <a href="https://docs.google.com/document/d/1aextB0jtP5SJWJl8hylI5b1fgphYGhw8TAXcw375gcU/edit?usp=sharing" target="_blank">Sum Odd from 1-9</a>:<br />
                     <ul>
                     	<li>
-                        	This script uses a variable, <code>sum</code>, to tally the sum of the <em>odd</em> numbers from 1 to 9. Discuss why the <code>for</code> loop was given the inputs 1 and 5, and how the nested green Operations blocks support the goal of the task. This activity previews <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html" target="_blank">Unit 2 Lab 3: Developing more complex programs, Input Types</a>.<br />
+                        	This script uses a variable, <code>sum</code>, to tally the sum of the <em>odd</em> numbers from 1 to 9. Discuss why the <code>for</code> loop was given the inputs 1 and 5, and how the nested green Operations blocks support the goal of the task. This activity previews <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.es.html" target="_blank">Unit 2 Lab 3: Developing more complex programs, Input Types</a>.<br />
                         </li>
                     </ul>
-                </li>                 
+                </li>
                 <li>
                     <strong>Share!</strong> Ask students to explain their creative solutions and extensions to the various projects in the unit, including:
 					<div class="sidenote">Review the Beauty and Joy Teaching Support <a href="/bjc-r/cur/teaching-guide/U1/general-support/sharing.html" target="_blank">Sharing Files and Ideas</a>.</div>
@@ -88,14 +88,14 @@
                         <li>Building an App in Lab 1</li>
                         <li>Drawing Polygons in Labs 2 and </li>
                         <li>Drawing Sprials in Labs 3 and 4</li>
-                        <li>Flowers in Lab 4</li>	
+                        <li>Flowers in Lab 4</li>
                         <li>Bug Dance Animation in the Investigation</li>
                     </ul>
                 </li>
             </ul>
         </div>
-        
-        
+
+
         <h3>Discussion/Writing Prompts<a name="discussion" class="anchor">&nbsp;</a></h3>
         <div>
             <ul>
@@ -103,7 +103,7 @@
                     Types of Blocks:
                     <ul>
                         <li>What kinds of blocks have you learned about so far?</li>
-                        <li>How are each kind of block visually distinguished from the others?</li>	
+                        <li>How are each kind of block visually distinguished from the others?</li>
                         <li>What is an example of using a reporter within a command block?</li>
                         <li>What is an example of using a predicate within a conditional?</li>
                     </ul>
@@ -127,7 +127,7 @@
         <div>
         	<ul>
                 <li>Encourage students to suggest their own ideas for programming projects based on the material they have learn so far. If a project idea is too advanced for this time, offer suggestions for elements of the larger goal that could be tackled now with a smaller project.</li>
- 
+
  <!-- NONW OF THESE LINKS POINT TO WHERE THEY SAY
  THEY DO!  AND I'M TOO TIRED TO CHASE THEM DOWN.
                 <li>
@@ -182,7 +182,7 @@
                         <li>This is the most complicated project in Unit 1, but students are given enough subtasks to make it likely that, <em>working together</em>, they can succeed. Working together is key. Some will figure out how to solve certain parts, and others will figure out how to solve other parts. Sharing, they will learn from each other.</li>
                         <li>
                             <em>What do I do when a student asks how to solve a problem?</em> There will almost certainly be parts of some of these projects that <em>you</em> don't quickly see how to do. But even when you <em>do</em> know how to solve the problem, the most useful answer you can give is often one of these:
-                            <ul> 
+                            <ul>
                                 <li>Show me what you've already figured out.</li>
                                 <li>What are the <em>parts</em> of the problem that need to be built? </li>
                                 <li>Is there a good starting place (or a thing to do next), something really simple that will get us a bit closer?</li>
@@ -244,17 +244,17 @@
 							<p>So, given any two integers <span class="katex">a</span> and <span class="katex">b</span> (or real numbers, really) you can calculate the quotient <span class="katex">\frac{b}{a}</span> and then the floor of their quotient <span class="katex">\text{floor}(\frac{b}{a})</span>. Let's call this quotient <span class="katex">q</span>. Then, <span class="katex">b</span> will equal <span class="katex">aq</span> plus the little left over that we lost by using floor (the remainder, which we'll call <span class="katex">r</span>). So now, <span class="katex">b = aq + r</span> much like <span class="katex">7 = 5 \times 1 + 2</span>.</p>
                             <p>That remainder is what Snap<em>!</em> and most programming languages report for <code>mod(b, a)</code> and this explains the signs of the outputs when one or both inputs are negative.</p>
 							<p class="center">
-                            	For example: 
-                                <img class="inline" src="/bjc-r/img/1-introduction/-7div5reporting-1.4.png" alt="-7 ÷ 5 reporting -1.4" title="-7 ÷ 5 reporting -1.4" />, so 
+                            	For example:
+                                <img class="inline" src="/bjc-r/img/1-introduction/-7div5reporting-1.4.png" alt="-7 ÷ 5 reporting -1.4" title="-7 ÷ 5 reporting -1.4" />, so
                                 <img class="inline" src="/bjc-r/img/1-introduction/floor(-7div5)reporting2.png" alt="floor (-7 ÷ 5) reporting 2" title="floor (-7 ÷ 5) reporting 2" /><br />
-                                and <span class="katex">-7=5\times(-2)+3</span>, so 
+                                and <span class="katex">-7=5\times(-2)+3</span>, so
                                 <img class="inline" src="/bjc-r/img/1-introduction/-7mod5reporting3.png" alt="-7 mod 5 reporting 3" title="-7 mod 5 reporting 3" />.
 							</p>
 							<p class="center">
-                            	Another example: 
-                                <img class="inline" src="/bjc-r/img/1-introduction/-7div-5reporting1.4.png" alt="-7 ÷ -5 reporting 1.4" title="-7 ÷ -5 reporting 1.4" />, so 
+                            	Another example:
+                                <img class="inline" src="/bjc-r/img/1-introduction/-7div-5reporting1.4.png" alt="-7 ÷ -5 reporting 1.4" title="-7 ÷ -5 reporting 1.4" />, so
                                 <img class="inline" src="/bjc-r/img/1-introduction/floor(-7div-5)reporting1.png" alt="floor (-7 ÷ -5) reporting 1" title="floor (-7 ÷ -5) reporting 1" /><br />
-                                and <span class="katex">-7=-5\times(1)+-2</span>, so 
+                                and <span class="katex">-7=-5\times(1)+-2</span>, so
                                 <img class="inline" src="/bjc-r/img/1-introduction/-7mod-5reporting-2.png" alt="-7 mod -5 reporting -2" title="-7 mod -5 reporting -2" />.
 							</p>                            <!--Examples probably help more than the symbols:
 							<p class="center"><span class="katex">\frac{7}{5} = 1.4</span>, so <span class="katex">floor(\frac{7}{5})= 1</span></p><br />
@@ -272,17 +272,17 @@
                     </ul>
                 </li>
             </ul>
-		</div>            
+		</div>
 
-        
+
         <h3>Solutions:</h3>
 		<div>
             <ul>
             	<li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U1L4%20Building%20Grids%20for%20Games%20(answer%20file)&editMode&noRun" target="_blank">Building Grids for Games&mdash;Draw Tile, Draw Row, Draw Square Board, Go To Starting Place, Draw Square Board</a></li>
             </ul>
         </div>
-        
-        
+
+
         <h3>Correlation with AP CS Principles Framework</h3>
         <div class="apStandards">
         	<!--<h4>Computational Thinking Practices:</h4>
@@ -321,7 +321,7 @@
 
             </ul>
         </div>
-        
-        	
+
+
     </body>
 </html>

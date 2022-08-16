@@ -24,67 +24,67 @@ function setup_mysql() {
 	$username = "root";
 	$password = "";
 	$dbname = "Crawl_Standards_List";
-	
+
 	// make DB connection
 	global $conn;
 	$conn = new mysqli($servername, $username, $password, $dbname);
-	
+
 	// Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
-	} 
-	
+	}
+
 	// Check for EU table & either create it or clear it
 	$sql = "SELECT * FROM information_schema.tables WHERE table_schema = 'Crawl_Standards_List' AND table_name = 'EUs'";
-	$result = $conn->query($sql);	
+	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		mysqli_query($conn, "DELETE FROM EUs");
 	} else {
 		$sql = "CREATE TABLE EUs (Filename VARCHAR(150), Standard VARCHAR(20), PageName VARCHAR(100), WholeStandard VARCHAR(300))";
-		$result = $conn->query($sql);	
+		$result = $conn->query($sql);
 	}
-	
+
 	// Check for LO table & either create it or clear it
 	$sql = "SELECT * FROM information_schema.tables WHERE table_schema = 'Crawl_Standards_List' AND table_name = 'LOs'";
-	$result = $conn->query($sql);	
+	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		mysqli_query($conn, "DELETE FROM LOs");
 	} else {
 		$sql = "CREATE TABLE LOs (Filename VARCHAR(150), Standard VARCHAR(20), PageName VARCHAR(100), WholeStandard VARCHAR(300))";
-		$result = $conn->query($sql);	
+		$result = $conn->query($sql);
 	}
-	
+
 	// Check for EK table & either create it or clear it
 	$sql = "SELECT * FROM information_schema.tables WHERE table_schema = 'Crawl_Standards_List' AND table_name = 'EKs'";
-	$result = $conn->query($sql);	
+	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		mysqli_query($conn, "DELETE FROM EKs");
 	} else {
 		$sql = "CREATE TABLE EKs (Filename VARCHAR(150), Standard VARCHAR(20), PageName VARCHAR(100), WholeStandard VARCHAR(300))";
-		$result = $conn->query($sql);	
+		$result = $conn->query($sql);
 	}
-	
+
 } // end function definition
 
-// make global definitions 
+// make global definitions
 initialize_vars();
 function initialize_vars(){
 	global $seed_url;
-	$seed_url = "http://localhost/bjc-r/course/bjc4nyc.html";
+	$seed_url = "http://localhost/bjc-r/course/bjc4nyc.es.html";
 	global $found_urls;
 	$found_urls = array($seed_url);
 	global $crawled_urls;
 	$crawled_urls = array();
 	global $unit;
 	$unit = "";
-	
+
 	global $all_covered_EUs;
 	$all_covered_EUs = array();
 	global $all_covered_LOs;
 	$all_covered_LOs = array();
 	global $all_covered_EKs;
 	$all_covered_EKs = array();
-	
+
 	global $all_EUs;
 	$all_EUs = array("1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "3.1", "3.2", "3.3", "4.1", "4.2", "5.1", "5.2", "5.3", "5.4", "5.5", "6.1", "6.2", "6.3", "7.1", "7.2", "7.3", "7.4", "7.5");
 	global $all_LOs;
@@ -106,7 +106,7 @@ crawl_for_links($seed_url);
 function crawl_for_links($input_url) {
 	// initialize local array
 	$urls = array();
-	
+
 	// check if $input_url is HTML or TOPIC page and dump links into $urls array
 	if (substr($input_url, -4) == "html") {
 		// crawl for links in HTML pages
@@ -123,49 +123,49 @@ function crawl_for_links($input_url) {
 			if (substr($line, 1, 8) == "resource" or substr($line, 1, 4) == "quiz") {
 				$urls[$line_num] = substr(strchr(substr($line, 0, stripos($line, "]")), "["), 1); 	// adds link to $urls array
 				$urls = array_values($urls);    // re-indexes $urls
-			}	
+			}
 		}
 	}
-		
+
 	// set local constants for server address and address length
 	$server = "http://".$_SERVER['HTTP_HOST'];
 	$server_len = strlen($server);
-		
+
 	// clean up $found_urls
 	foreach ($urls as $i => $found_url) {
-		
+
 		//	make internal links non-relative
 		if (substr ($found_url, 0, 6) == "/bjc-r") {
 			$urls[$i] = $server.$found_url;
 		}
-		
+
 		// remove external links
 		if (substr($urls[$i], 0, $server_len) != $server) {
 			unset($urls[$i]);
 		}
-		
-		// remove topic.html?topic= from TOPIC file URLs 
+
+		// remove topic.html?topic= from TOPIC file URLs
 		if (substr($found_url, -5) == "topic" and strstr($urls[$i], "topic.html?topic=") != "") {
 			$urls[$i] = substr($urls[$i], 0, stripos($urls[$i], "topic.html?topic=")).substr(strstr($urls[$i], "topic.html?topic="), 17, strlen($urls[$i]));
-		} elseif (strstr($found_url, "?topic=nyc_bjc") != "") { 
-		
+		} elseif (strstr($found_url, "?topic=nyc_bjc") != "") {
+
 		// remove other HTML file TOPIC suffixes
 			$urls[$i] = substr($urls[$i], 0, stripos($urls[$i], "?topic=nyc_bjc")); //cuts everything after "?topic=nyc_bjc"
 			//NOTE: TO FIX: this breaks if there is a URL of http://bjc.edc.org; why does line 56-59 not work here?
 		}
-	
+
 		// remove MISC files
 		if (ends_with($found_url, "xml") or ends_with($found_url, "pdf") or ends_with($found_url, "png") or ends_with($found_url, "pptx") or ends_with($found_url, "csv")) {
 			unset($urls[$i]);
 		}
-		
+
 		// remove Specific files
 		if (ends_with($found_url, "ap-standards.html") or ends_with($found_url, "video-list-scratch.html") or ends_with($found_url, "video-list.html") or ends_with($found_url, "updates.html")) {
 			unset($urls[$i]);
 		}
-		
+
 	} //end foreach
-	
+
 	// drop hash (#) signs
 	foreach ($urls as $i => $url){
 		if (stripos($url, "#")) {
@@ -181,7 +181,7 @@ function crawl_for_links($input_url) {
 			unset($urls[$i]);
 		}
 	}
-	
+
 	// update global lists
 	global $found_urls;
 	$found_urls = array_merge($found_urls, $urls); // adds found $urls to $found_urls
@@ -192,13 +192,13 @@ function crawl_for_links($input_url) {
 	// sort global lists
 	asort($found_urls);
 	asort($crawled_urls);
-	
+
 	// remove duplicates from global lists
 	$found_urls = array_unique($found_urls);
 	$crawled_urls = array_unique($crawled_urls);
-	
+
 	// re-index $found_urls
-	$found_urls = array_values($found_urls); 	
+	$found_urls = array_values($found_urls);
 
 	// crawl any found pages that haven't been crawled yet (recursive step)
 	foreach ($found_urls as $found_url) {
@@ -258,13 +258,13 @@ function crawl_all_urls_for_stnds($input_stnd, &$input_covered_list) {
 	   case "LO": $stnd_length = 8; break;
 	   case "EK": $stnd_length = 9; break;
 	}
-	
+
 	global $crawled_urls;
 	foreach ($crawled_urls as $crawled_url) {
 		$found_standards = array(); // initialize
 		crawl_page_for_standards($crawled_url, $input_stnd); //crawl page for EUs
 		global $found_standards;
-	
+
 		// Getting TG vs. Student Pages filename
 		if (strpos($crawled_url, "/lab-pages/") >= 1) {
 			$filename = substr($crawled_url, strpos($crawled_url, "/lab-pages/") + 11);
@@ -272,7 +272,7 @@ function crawl_all_urls_for_stnds($input_stnd, &$input_covered_list) {
 			$filename_noprogramming = substr($crawled_url, strpos($crawled_url, "/programming/") + 13);
 			$filename = substr($filename_noprogramming, strpos($filename_noprogramming, "/") + 1);
 		}
-		
+
 		if (count($found_standards) >= 1){
 			//report all found standards
 			global $unit;
@@ -296,7 +296,7 @@ function crawl_all_urls_for_stnds($input_stnd, &$input_covered_list) {
 // define function to crawl one URL for standards (populates $found_standards array)
 function crawl_page_for_standards($input_url, $standard) {
 	global $found_standards;
-	
+
 	// dump standards on HTML pages into array
 	if (substr($input_url, -4) == "html") {
 		// crawl for links in HTML pages
@@ -334,13 +334,13 @@ function crawl_for_title($input) {
 	$html = file_get_html($input);
 	$title = $html->find('title',0);
 	return $title->plaintext;
-	
+
 } // end crawl_for_title definition
 
 /*function make_section_footer($input_unit) {
 	global $active_unit;
 	if ($input_unit != $active_unit) {
-		echo "</div>\n"; // end hidden toggle div		
+		echo "</div>\n"; // end hidden toggle div
 	}
 }*/
 
@@ -348,7 +348,7 @@ function crawl_for_title($input) {
 function cleanup_stnds_list(&$input_covered_list){
 	asort($input_covered_list);
 	$input_covered_list = array_unique($input_covered_list);
-	$input_covered_list = array_values($input_covered_list); 
+	$input_covered_list = array_values($input_covered_list);
 } // end cleanup_stnds_list definition
 
 // define function display and tally covered standards (and calc what missing should be)
@@ -377,7 +377,7 @@ function show_and_count_missing_stnds (&$input_stnd_list, $input_covered_list, $
 	}
 	echo "<br /><strong>Total Found Missing " . $input_stnd . "s: " . $missing_stnds . "</strong><br />";
 	} // end show_and_count_missing_stnds definition
-	
+
 function lastchr($input) { if (strlen($input) > 0){ return substr($input, strlen($input)-1); } }
 function re_to_AP($input) { if ($input == "re") { return "Performance Tasks"; } else { return $input; } }
 
@@ -415,7 +415,7 @@ function populate_stnds_list ($standard, $type){
 				}
 			}
 		}
-	}	
+	}
 	return $stnd_units;
 } // end populate_stnds_list definition
 

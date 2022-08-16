@@ -20,10 +20,10 @@
         </div>
         <div class="todo">
             <strong>Former purpose ramblings</strong>
-            <p>This lab does not introduce new ideas, but gives students practice applying MAP, KEEP, and COMBINE in several contexts, in order to master the use of these powerful tools and to learn to think in terms of what they can do.</p> 
-            <p>Lists of same-size lists can function as tables or matrices. Tic-Tac-Toe... Magic Squares gives students a game context in which to practice further their use of lists and list processing functions.</p> 
+            <p>This lab does not introduce new ideas, but gives students practice applying MAP, KEEP, and COMBINE in several contexts, in order to master the use of these powerful tools and to learn to think in terms of what they can do.</p>
+            <p>Lists of same-size lists can function as tables or matrices. Tic-Tac-Toe... Magic Squares gives students a game context in which to practice further their use of lists and list processing functions.</p>
         </div>
-        
+
 		<p>Anything that can be handled by creating and manipulating a list can also be done without lists, just by working with the individual elements and keeping track of that process. But list processing—especially list processing with  the higher order functions <code>map</code>, <code>keep</code>, and <code>combine</code> (and, later in this course, recursion)—is powerful. It lets the programmer focus on the purpose and meaning of the program—what the program is intended to do—and not on tiny local details of how to do it, details that essentially reinvent  a clumsy equivalent of lists and ways to work sequentially through them.</p>
         <p>Becoming facile with list processing takes practice, and initially requires contexts in which the meaning of the lists and the purpose and meaning of the functions that process them are clear.  One subtlety of working with lists is that it requires thinking simultaneously about the list as a <em>single object</em> and, at the same time, recognizing that much of what one wants to do with the list involves processing some or all of the <em>elements</em> of the list. That is also part of the subtlety of the higher-order functions, which take an entire list as a single object and handle the individual elements of the list in various ways, as determined by the programmer. <em>Composing</em> higher order functions is yet more powerful, but also more challenging, because each one does so much that the programmer needs to picture large effects and the interactions of these large effects.</p>
         <p>This lab gives students practice applying <code>map</code>, <code>keep</code>, and <code>combine</code>  in several contexts to build their facility with these powerful tools and to learn to think in terms of what they can do. It does not introduce new ideas, but focuses on mastery and application.</p>-->
@@ -36,13 +36,13 @@
         <div>
 			The 2 lab pages could be split across 3-4 days (<strong>110-160 minutes</strong>). Expected times to complete follow:
 			<ul>
-				<li>If used, 30-40 minutes (1 class period) on <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/1-find-ties.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Remembering the Moves">Remembering the Moves</a>*</li>
-				<li>If used, 80-120 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/2-find-wins.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Detecting Wins and Ties">Detecting Wins and Ties</a>*</li>
+				<li>If used, 30-40 minutes (1 class period) on <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/1-find-ties.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Remembering the Moves">Remembering the Moves</a>*</li>
+				<li>If used, 80-120 minutes (2-3 class periods) on <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/2-find-wins.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Detecting Wins and Ties">Detecting Wins and Ties</a>*</li>
 			</ul>
 		</div>
-		<div w3-include-html="/bjc-r/utilities/includes/asterisk.txt"></div><script>w3.includeHTML();</script>        
+		<div w3-include-html="/bjc-r/utilities/includes/asterisk.txt"></div><script>w3.includeHTML();</script>
         </div>
-        
+
 
 		<h3>Lab Pages</h3>
 		<div>
@@ -60,7 +60,7 @@
 						<li>
 							<strong>Tips:</strong>
 							<ul>
-								
+
 								<li>The purpose of  the preparatory activities on this page may not be immediately clear to students.  Why do we need to have each square sprite have its own unique <var>square number</var> variable?  Why do we create a global <var>board</var> variable when each sprite already knows if it has been clicked?  The purpose should become clear on the next page, where students will learn how to use the global state of the board in order to detect wins and ties. If students seem to be losing the plot, ask them to think, without writing code, about how a program would know when someone has won the game.</li>
 							</ul>
 						</li>
@@ -99,10 +99,10 @@
                                     <img src="/bjc-r/img/3-lists/U3ImageVideoAddendum_img/containswithlistoflist.png"  height="50" alt="(list{list{X,O,X},list{X,X,X}}) contains (list{X,X,X}) reporting true" title="(list{list{X,O,X},list{X,X,X}}) contains (list{X,X,X}) reporting true"/><br />
 If this is an issue, encourage them not to think of a list of lists as a special case; lists are values, just as numbers are values, and a list can include any values.
 								</li>
-                                
+
                                <!-- <li>Create blocks to use with higher order list functions to perform complicated data lookups and modifies.</li>
                                 <li>Refine the Tic-Tac-Toe game to keep track of the players' moves and detect tie games.</li>-->
-                                
+
                                 <li>Refining this game builds on students' understanding of lists and list operations including higher order functions. This is likely to feel very satisfying to students, a major accomplishment. It is! <!--You may wish to review some list blocks by asking students to describe the expected behavior of a few short scripts or expressions.--></li>
 							</ul>
 						</li>
@@ -134,8 +134,8 @@ If this is an issue, encourage them not to think of a list of lists as a special
                 </li>
         	</ul>
         </div>-->
-        
-			
+
+
 		<h3>Solutions</h3>
         <p>Coming soon...</p>
         <div class="todo">
@@ -147,10 +147,10 @@ If this is an issue, encourage them not to think of a list of lists as a special
 			</ul>
 		</div>
         </div>
-			
+
         <h3>Correlation with 2020 AP CS Principles Framework<a name="AP" class="anchor">&nbsp;</a></h3>
         <p>There are no AP CSP standards connected to this lab.</p>
-        
-        
+
+
 	</body>
 </html>

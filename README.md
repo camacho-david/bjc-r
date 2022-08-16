@@ -4,7 +4,7 @@ The Beauty and Joy of Computing labs resource repository.
 
 ## Viewing the Current State of the Translation
 If you are interested in viewing the BJC-es in your web browser, please visit the following link:
-https://camacho-david.github.io/bjc-r/course/bjc4nyc.html
+https://camacho-david.github.io/bjc-r/course/bjc4nyc.es.html
 
 
 ## Cloning this Repo
@@ -29,7 +29,7 @@ git submodule update
 ## Viewing the Site
 The main "production" server for labs is hosted at Berkeley, [here][main].
 
-We also sometimes use CS10 students as lab rats, and you can view beta labs on 
+We also sometimes use CS10 students as lab rats, and you can view beta labs on
 the CS10 [site][cs10].
 
 However, the repository is setup so that any fork can be run using GitHub pages.
@@ -75,4 +75,3 @@ Of course, submitting issues is always welcome and encouraged! These issues can 
 [llab]: http://github.com/beautyjoy/llab
 [localhost]: http://localhost:8000/bjc-r
 [main]: http://bjc.eecs.berkeley.edu/bjc-r/
-
