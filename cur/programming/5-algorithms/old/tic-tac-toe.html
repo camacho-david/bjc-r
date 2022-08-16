@@ -28,7 +28,7 @@ In Unit 3, they made a program that can detect wins and ties, but doesn't genera
 This starter
 
 
-project is just like the one you made in <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/1-find-ties.html">Unit 3</a> except for one change:  An empty square in the board is represented by its square number, instead of by the word &quot;Empty.&quot; You'll see soon why that's important.</p>
+project is just like the one you made in <a href="/bjc-r/cur/programming/3-lists/3-tic-tac-toe/1-find-ties.es.html">Unit 3</a> except for one change:  An empty square in the board is represented by its square number, instead of by the word &quot;Empty.&quot; You'll see soon why that's important.</p>
 <div class="forYouToDo">
 <ol>
 <li>Play part of a game, and then click on each of the following expressions.  Discuss with your partner what the expression does, and what algorithm it uses.  (Edit the block to remind yourself if you're not sure.)
@@ -106,20 +106,20 @@ It's like <code>keep</code>, except that it reports just one matching item, rath
 <li>Program more rules to make the computer a better player.  This will involve looking more than one move ahead.  There are various ways to do it, and what follows is just one suggestion.
   <ol type="a">
     <li>It's not good enough just to look for a winning move for yourself two moves from now. If you can see such a move, so can your opponent, who'll move to block you. So what you have to find is a <em>fork: </em>two triples in which you have one appearance and your opponent has none, and which have a free square in common. This is much easier to see with a picture:
-      
+
       <p><img src="/bjc-r/img/hof/fork.png" alt="board with fork" title="board with fork" /></p>
-      
+
       <p>X opened the game with the standard opening move, in the center. O  responded very badly, on the top edge, and is therefore about to lose the game. X played in the top left corner. O had to respond in the bottom right corner in order to block an immediate win for X. It's X's turn. There is no winning combination with two Xs, nor with two Os. But X can find <em>two</em> winning combinations, the ones marked with the red lines, both of which have one X and two free squares, <em>with one of the free squares in common. </em>In the picture, the common square is 4, the left edge square, and so that's where X should move.</p></li>
     <li>Trick question to make sure you're paying attention: Wouldn't it be better to find a fork in which X has <em>two</em> apperances in each triple? Discuss this with your partner if you don't have a good answer.</li>
     <li>The point of the fork is that if X moves in square 4, then X has two winning combinations for next time. It's O's turn, but O can block only one of the two wins, and so X fills out the remaining winning combination two moves from now. For example, if O moves in square 6 to block the center row, then X moves in square 7 to win in the left column. Conversely, if O moves in 7, then X moves in 6 and wins.</li>
     <li>Find all the triples (that is, report a <em>list of triples</em>) in which the computer has one square, and the other two are empty and store in a variable called <var>singles</var>.</li>
-<div class="sidenoteBig">"Atom" is a technical term for a value that isn't a list. A list contains a bunch of items, just as a molecule contains a bunch of atoms.</div>    
+<div class="sidenoteBig">"Atom" is a technical term for a value that isn't a list. A list contains a bunch of items, just as a molecule contains a bunch of atoms.</div>
     <li>Make one big list of all the letters and numbers from the triples:
       <br />
       <img src="/bjc-r/img/hof/ttt-flatten.png" alt="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" title="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" /><br />
       You don't have the <code>append</code> block in your palette, but it's in one of the Snap<em>!</em> libraries. Click on the file menu icon, and choose "Libraries...", then choose "List utilities" from the new menu that appears.</li>
-      <div class="sidenoteBig">You wrote a <code>duplicates in</code> block in 
-      <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.html" title="List Processing Algorithms">Unit 5 Lab 1</a>.</div>
+      <div class="sidenoteBig">You wrote a <code>duplicates in</code> block in
+      <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.es.html" title="List Processing Algorithms">Unit 5 Lab 1</a>.</div>
       <li>Now find a number that appears more than once in <code>atoms</code>.<br /><br /></li></ol>
 </li>
                 <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />

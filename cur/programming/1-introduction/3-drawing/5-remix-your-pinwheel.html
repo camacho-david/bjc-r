@@ -38,15 +38,15 @@
             <p>PG: Why is "remix" a useful, or even appropriate term here?  Edit?  Modify?</p>
 			<p>It comes from Scratch by way of Selim.  But Scratch uses it to mean modifying <i>someone else's</i> project, which is also what it means in its original context of music. -bh</p>
         </div>
-        
+
 
         <div class="learn">
         	<strong>En esta página</strong> vas a utilizar el código de <code>molinillo</code> para hacer nuevos bloques <code>asterisco</code> y <code>póligono</code>.<br />
             <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" height="250" alt="Animation cycle from Asterisk to Polygon" title="Animation cycle from Asterisk to Polygon"/>
         </div>
-      
+
 		<p>Puedes usar el procedimiento molinillo con propósito <em>general</em> para crear otro, un procedimiento más simple con propósito <em>especial</em> que realice un trabajo concreto.</p>
-        
+
         <div class="forYouToDo" id="first">
         <!--<div class="todo">ST-Teachers in the <a href="https://drive.google.com/file/d/1w7c783CVhXM35vc-V-fMoMWrpxv40mt_/view">Unit1 Survey</a> complained that this multi-colored image on right below was confusing.  They expected an asterisk single colored and with equal spacing of spikes.  I agree that the point of this image as a superimposition of asteriskes of various inputs is too subtle and easily missed.</div>-->
 			<!--<img class="imageRight" src="/bjc-r/img/1-introduction/asterisk.png" alt="superimposed result of asterisks with 2, 4, 5, 6, and 7 branches" title="superimposed result of asterisks with 2, 4, 5, 6, and 7 branches" />-->
@@ -56,37 +56,37 @@
                 <li>
                     Usa el código del bloque <code>pinwheel</code> para crear un bloque más especializado llamado <code>asterisk</code>.
                     <ol>
-                        <li>El primer paso es crear un nuevo bloque llamado <code>asterisk</code> con dos parámetros: uno es <var>número de ramas</var> y otro llamado <var>largo</var> de cada rama. Para recordar la forma de crear un nuevo bloque visitar: <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 4: Making Your Own Block">Unidad 1 Lab 2 Página 4: Creando un nuevo bloque</a>.</li>
-                        <img src="/bjc-r/img/1-introduction/asterisk-using-pinwheel.png" width="507" height="106" alt="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" title="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}"/> 
+                        <li>El primer paso es crear un nuevo bloque llamado <code>asterisk</code> con dos parámetros: uno es <var>número de ramas</var> y otro llamado <var>largo</var> de cada rama. Para recordar la forma de crear un nuevo bloque visitar: <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.es.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 4: Making Your Own Block">Unidad 1 Lab 2 Página 4: Creando un nuevo bloque</a>.</li>
+                        <img src="/bjc-r/img/1-introduction/asterisk-using-pinwheel.png" width="507" height="106" alt="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" title="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}"/>
                         <li>Ahora introduce los valores a <code>pinwheel</code> para que pueda dibujar correctamente un asterisco.</li>
-                        
+
                     </ol>
                 </li>
             </ol>
         </div>
-        		
-		<img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+
+		<img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
 
         <div class="forYouToDo">
 			<ol start="3">
-				
+
                 <li>
                 	De una forma similar, ahora es el turno de escribir un bloque <code>polygon</code> que haga uso de <code>pinwheel</code> con los valores apropiados para dibujar un polígono que reciba el número de lados y el largo del lado.<br />
                 </li>
 			</ol>
 		</div>
-        
+
         <div class="takeNote">
             <div class="sidenoteBig">
-                <p>En la página <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unidad 1 Lab 2 Página 2: Haciendo que los programas hablen</a> has aprendido acerca de la <em>abstracción procedural:</em> darle un nombre a un segmento de código (haciendo un bloque). De esta forma es posible hacer llamadas al bloque más de una vez en lugar de copiar y pegar el código cada nueva vez que se necesita.</p>
+                <p>En la página <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.es.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unidad 1 Lab 2 Página 2: Haciendo que los programas hablen</a> has aprendido acerca de la <em>abstracción procedural:</em> darle un nombre a un segmento de código (haciendo un bloque). De esta forma es posible hacer llamadas al bloque más de una vez en lugar de copiar y pegar el código cada nueva vez que se necesita.</p>
             </div>
             <div class="todo">Mary, please fix CSS so that &lt;code&gt; comes out with style="color: #f0f" and something for var and also side/endnotes come out color:black.</div>
             <div class="comment">AAP-3.B.4</div>
             <p>Aquí se presenta otra clase de <em>abstracción</em>: nos damos cuenta que ambos <code>asterisk</code> y <code>polygon</code> son un tipo de molinillo. Procedemos a escribir un bloque <code>pinwheel</code> más general que tome como entrada valores que puedan ser usados para hacer asteriscos, polígonos u otros diseños interesantes.</p>
-            <div class="comment">AAP-3.B.5</div>            
+            <div class="comment">AAP-3.B.5</div>
             <p>Est es un ejemplo de <strong>abstracción por generalización</strong>: observamos porciones de código que son <em>muy parecidos</em> para luego escribir un bloque que <em>utilice ciertos parámetros</em> para diferencias los diferentes casos o variaciones.</p>
         </div>
-        
+
 		<div class="forYouToDo">
 			<ol start="4">
                 <li>Si ves detenidamente dentro del código de <code>pinwheel</code> y analizas la forma en que se usa en <code>polygon</code>, es posible darse cuenta que hay algunos pasos que no son necesarios realizarlos para este caso en particular. Escribe otra versión de <code>polygon</code> que sea construido directamente de los bloques primitivos (<code>move</code>, <code>turn</code> y similares). ¿Qué tan simple lo puedes hacer?</li>
@@ -98,7 +98,7 @@
 		</div>
 
 		<img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
-        
+
         <div class="ifTime">
             <ol start="5">
                 <li>Usa el bloque <code>pinwheel</code> una última vez para crear un bloque <code>círculo</code> que reciba como entrada el tamaño del radio.</li>
@@ -108,24 +108,24 @@
                 </li>
             </ol>
         </div>
-        
-        
+
+
         <div class="takeItFurther">
             <ol type="A">
                 <li>
                     <strong>Reto:</strong> Crea un programa que dibuje un cuadrado azul de tamaño 100, y luego dibuje un círculo que se ajuste perfectamente dentro del cuadrado.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/red-circle-in-blue-square.png" alt="círculo rojo dentro de un recuadro azul" title="círculo rojo dentro de un recuadro azul" /><br />
-                </li>		
+                </li>
                 <li>
                     En cada uno de los retos que se presentan abajo necesitas escribir un código que permita llevar un automóvil que viaja desde el punto (A) hasta su destino final. Haz clic en cada una de las imágenes para cargar el proyecto en Snap<em>!</em>.<br />
                     <a class="run" href="/bjc-r/prog/1-introduction/U1L6-archimedean-racetrack1-student.xml" target="_blank"><img class="indent" src="/bjc-r/img/1-introduction/PolygonalRacetracks_img/ArchTess1.png"  height="250" alt="Triangle and square tesselation path" title="Triangle and square tesselation path"/></a>
                     <a class="run" href="/bjc-r/prog/1-introduction/U1L6-archimedean-racetrack2-student.xml" target="_blank"><img src="/bjc-r/img/1-introduction/PolygonalRacetracks_img/ArchTess2.png"  height="250" alt="Triangle, square and hexagon tesselation path " title="Triangle, square and hexagon tesselation path"/></a>
                     <a class="run" href="/bjc-r/prog/1-introduction/U1L6-archimedean-racetrack3-student.xml" target="_blank"><img src="/bjc-r/img/1-introduction/PolygonalRacetracks_img/ArchTess3.png"  height="250" alt="Octagon and square tesselation path" title="Octagon and square tesselation path"/></a>
                 </li>
-               
+
             </ol>
         </div>
-        
+
 
 	</body>
 </html>

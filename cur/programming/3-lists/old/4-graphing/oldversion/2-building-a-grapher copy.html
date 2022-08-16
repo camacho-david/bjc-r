@@ -39,7 +39,7 @@ good reason to leave the sprite at the desired point rather than one step away,
 but state transparency isn't the reason.
 </div>
             <div class="comment">It's <em>not</em> state transparent!  That would be if it remembered the point where the sprite was before running this block.  It just leaves the sprite someplace predictable.</div>
-            <div class="sidenoteBig">Notice that the last block returns the sprite to its original location. This keeps the block <em>state transparent</em>&mdash;leaving things where they are when you started. You want each procedure to do its thing and otherwise leave things the same so you don't have any surprises. <!--(You saw an example of a bug from a program that was <em>not state transparent</em> in <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Unit 1</a>.)- -></div>-->
+            <div class="sidenoteBig">Notice that the last block returns the sprite to its original location. This keeps the block <em>state transparent</em>&mdash;leaving things where they are when you started. You want each procedure to do its thing and otherwise leave things the same so you don't have any surprises. <!--(You saw an example of a bug from a program that was <em>not state transparent</em> in <a href="/bjc-r/cur/programming/1-introduction/4-grids-for-games/1-building-tic-tac-toe.es.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Unit 1</a>.)- -></div>-->
             <img class="indent" src="/bjc-r/img/5-algorithms/PlotPoint-simple.png" alt="PlotPoint block using go to x y, pendown, move 1, penup">
 		</p>
         <p>Then you could graph a whole list of data points by inventing a block like <img src="/bjc-r/img/5-algorithms/GraphDatapoints.png" alt="Graph datapoints (pointlist)"> that uses <code>for each</code> to apply <code>PlotPoint</code> to each point in the list. Depending on the kind of graph you want, you could even connect the dots.</p>
@@ -49,7 +49,7 @@ but state transparency isn't the reason.
         </p>
 		<p>The <em>x</em>-values can't be plotted because they are completely off of Snap<em>!</em>'s stage. And the <em>y</em>-values 0, 0.1, 0.2, 0.3, etc., are so close to each other that they would all look the same. We wouldn't see the huge increase in popularity between 1960 and 1980 at all. </p>
         <div class="takeNote">A good graphing app needs to let the user set the <strong>scale</strong> of the screen, to specify where to focus attention&mdash;where to zoom in. </div>
-        
+
         <div class="ifTime" id="first">
             <ol>
                 <li>
@@ -76,7 +76,7 @@ but state transparency isn't the reason.
                 <li>
                   <div class="commentBig">I made several changes here too&mdash; both for clarity and to set the student up for the next step. Please review as I'm not 100% sure I interpreted your intentions correctly. --MF</div>Experiment with various inputs to <code>set window scale</code> to see where it puts the axes and how it represents the &quot;substitutes&quot; for the axes, when the axes can't be shown. Then, change the inputs of <code>set window scale</code> back to (1927, 2014, 0, 0.5).</li>
                 <li>
-                	Build <img src="/bjc-r/img/5-algorithms/go-to-scaled-point-x-y.png" alt="go to scaled point">. 
+                	Build <img src="/bjc-r/img/5-algorithms/go-to-scaled-point-x-y.png" alt="go to scaled point">.
                     <p>On the baby name graph for Derek, the point (1971, 0.25) is roughly in the middle of the screen.  Check to see if <img src="/bjc-r/img/5-algorithms/go-to-scaled-point-x(1971)-y(0.25).png" alt="go-to-scaled-point-x(1971)-y(0.25)"> is working as you expect it to.</p>
 					<img class="indent" src="/bjc-r/img/5-algorithms/PercentageOfDerekByYear.png" alt="percentage of births named Derek by year" title="percentage of births named Derek by year" />
 				</li>
@@ -88,12 +88,12 @@ but state transparency isn't the reason.
                 </li>
             </ol>
         </div>
-  
+
         <div class="takeItFurther">
             <ol type="A">
                 <li>Invent a way to tell your graphing app, for each graph you make, whether to connect the points  or not.</li>
             </ol>
         </div>
-    
+
     </body>
 </html>

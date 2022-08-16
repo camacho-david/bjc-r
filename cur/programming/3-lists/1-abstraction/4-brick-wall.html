@@ -16,7 +16,7 @@
             <p><strong>En este proyecto,</strong> utilizarás la abstracción para dibujar una pared de ladrillos.</p>
 			<img border="0" class="indent" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/abstraction/new-brickwall/wall.png" />
         </div>
-            	
+
         <h3>Dibujar un Ladrillo</h3>
         <p>
             Una imagen de un ladrillo es solo un rectángulo con un color rojo ladrillo. Sin embargo, no hay bloque <code>dibujar rectángulo</code> en <span class="snap">snap</span>. Una forma de dibujar uno es pensar en un rectángulo como una línea muy gruesa. Aquí está la idea:<br />
@@ -30,19 +30,19 @@
 					<img class="indent" src="/bjc-r/img/3-lists/drawBrickCode.png"  alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}"/><br />
 					<a class="run" href="/bjc-r/prog/3-lists/U3L1-brickwall.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" width="550" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a> Ejecute el código. ¿Hace lo que esperabas?
 				</li>
-                <div class="endnote"> 
+                <div class="endnote">
                     <p>Normalmente, Snap<em>!</em> dibuja extremos redondeados en líneas gruesas: <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" alt="line with round ends" title="line with round ends">. Esa es a menudo la mejor opción, y puede ver por qué a continuación. Pero para ladrillos, queremos extremos de<em>línea plana</em> :<img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" alt="flat line ends" title="flat line ends">, Y así lo usaremos <img src="/bjc-r/img/blocks/set-flat-line-ends.png" alt="set (flat line ends) to 'predicate input slot'" title="set (flat line ends) to 'predicate input slot'"> para activar los extremos de las líneas planas.</p>
                     <div style="display: grid; grid-template-columns: auto auto;" class="center">
                         <div class="pseudop center"><img src="/bjc-r/img/2-complexity/flat-line-ends-why.jpg" alt="Square with flat line ends versus square with round line ends" title="Square with flat line ends versus square with round line ends" /><br />extremos de línea <strong>planos</strong> contra <strong>redondeados</strong> </div>
                         <div><img class="inline" src="/bjc-r/img/blocks/set-video-with-menu.png" alt="set [video capture] to 'predicate input slot' with menu open showing: turbo mode, flat line ends, video capture, mirror video" title="set [video capture] to 'predicate input slot' with menu open showing: turbo mode, flat line ends, video capture, mirror video" /></div>
                     </div>
-                </div>            
+                </div>
             </ol>
         </div>
-        
+
         <div class="vocabFullWidth">: <strong>Abstracción</strong>
             <div class="comment">AAP-3.B.1, AAP-3.B.5</div>
-            <p>Como aprendiste en<a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unidad 1 Laboratorio 2 Página 2: Hacer que los Programas Hablen">Unidad 1 Laboratorio 2 Página 2: Hacer que los programas hablen</a>, <strong>abstracción procesal</strong> es el proceso de desarrollar un programa dividiendo un gran problema en subproblemas más pequeños.</p>
+            <p>Como aprendiste en<a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.es.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unidad 1 Laboratorio 2 Página 2: Hacer que los Programas Hablen">Unidad 1 Laboratorio 2 Página 2: Hacer que los programas hablen</a>, <strong>abstracción procesal</strong> es el proceso de desarrollar un programa dividiendo un gran problema en subproblemas más pequeños.</p>
             <p>Creación de un <code>ladrillo de dibujo</code> bloque le permite pensar en términos de un procedimiento con un nombre relacionado con el problema que está resolviendo. Esto hace que su código sea más fácil de leer, y una vez que haya codificado y depurado el bloque, no necesita pensar en cómo funciona cada vez que lo usa. Esa es la belleza de la abstracción procedimental.</p>
 		</div>
 
@@ -67,7 +67,7 @@
         	<ol start="2">
                 <div class="comment">AAP-3.C</div>
                 <li>Usar  <code>ladrillo de dibujo</code>hacer bloques <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-row-A.png" alt="draw row A" title="draw row A"/> and <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-row-B.png" alt="draw row B" title="draw row B"/>.</li>
-                <div class="endnote"> 
+                <div class="endnote">
                     <img class="inline" src="/bjc-r/img/icons/read-more-mini.png" alt="Read More" title="Read More" />
                     <a href="#hint-too-much" data-toggle="collapse" title="¿Demasiada abstracción?">¿Demasiada abstracción?</a>
                     <div id="hint-too-much" class="collapse">
@@ -91,7 +91,7 @@
                 <li>
                     Escribe y prueba el <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw brick wall, rows: (7)" title="draw brick wall, rows: (7)"/> bloque.
                     <div class="endnote">
-                        Es posible que desee utilizar el <code>¿extraño?</code> predicado de su U2L4-MathLibrary. Aprendiste sobre exportar e importar bloques en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="What's a Predicate?">Unidad 2 Laboratorio 3 Página 1: ¿Qué es un predicado?</a>
+                        Es posible que desee utilizar el <code>¿extraño?</code> predicado de su U2L4-MathLibrary. Aprendiste sobre exportar e importar bloques en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="What's a Predicate?">Unidad 2 Laboratorio 3 Página 1: ¿Qué es un predicado?</a>
                     </div>
                 </li>
 				<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
@@ -102,8 +102,8 @@
                 </li>
     		</ol>
 		</div>
-        
-       
+
+
         <div class="ifTime">
             <ol start="6">
                 <li>
@@ -118,6 +118,6 @@
                 </li>
             </ol>
         </div>
-    
+
     </body>
-</html>    
+</html>

@@ -14,7 +14,7 @@
         <div class="learn">
             <p><strong>En esta p&aacute;gina</strong>, har&aacute;s y responder&aacute;s preguntas m&aacute;s exigentes sobre tu conjunto de datos y aprender&aacute;s nuevas herramientas.</p>
         </div>
-        
+
         <p>
             </p><div class="comment">DAT-2.D.4</div>
             Puedes hacer preguntas acerca de un subconjunto espec&iacute;fico de datos <em>filtrándolos </em>usando el bloque <code>mantener</code>. El filtro es una poderosa t&eacute;cnica para encontrar informaci&oacute;n y reconocer patrones en los datos. Por ejemplo, te puede ayudar a responder preguntas como "&iquest;C&uacute;al es el promedio de millas por galón (MPG) <em>solo para los carros de marca Subaru</em> de esta base de datos?"<br>
@@ -29,7 +29,7 @@
                         Puedes utilizar la funci&oacute;n de <code>tubería</code> de la biblioteca "An&aacute;lisis de distribuci&oacute;n de frecuencia" para trabajar a trav&eacute;s del an&aacute;lisis de datos una funci&oacute;n a la vez:<br>
                         </p><div class="comment">BH, please review revised alt/title text on this image. --MF, 6/27/19</div>
                         <img class="indent" src="/bjc-r/img/5-algorithms/pipe-cars-reporting.png" alt="tubería (data of table (cars)) &rarr; (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..." title="tubería (data of table (cars)) &rarr; (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..."><br>
-                        La funci&oacute;n <code>tubería</code> env&iacute;a los <code>datos de la tabla (</code><var>carros</var><code>)</code> a trav&eacute;s del filtro <code>mantener</code> para obtener solo los carros de la marca Subaru, a través de la <code>columna (1) de tabla</code> se obtiene solo el valor de "MPG en ciudad" para esos carros, y finalmente a trav&eacute;s del<code><span style="font-family: serif;"> </span>promedio</code> se obteniene el promedio de los valores de MPG de los carros de marca Subaru.  
+                        La funci&oacute;n <code>tubería</code> env&iacute;a los <code>datos de la tabla (</code><var>carros</var><code>)</code> a trav&eacute;s del filtro <code>mantener</code> para obtener solo los carros de la marca Subaru, a través de la <code>columna (1) de tabla</code> se obtiene solo el valor de "MPG en ciudad" para esos carros, y finalmente a trav&eacute;s del<code><span style="font-family: serif;"> </span>promedio</code> se obteniene el promedio de los valores de MPG de los carros de marca Subaru.
                     <p></p>
                     <p>Recuerda que los espacios de entrada vac&iacute;os en cada funci&oacute;n se llenan con la salida de la funci&oacute;n anterior (o el conjunto de datos de inicio en el caso de la primera funci&oacute;n): Los espacios vac&iacute;os de la funci&oacute;n <code>mantener</code>&nbsp; son ocupados por los <code>datos de la tabla (</code><var><span style="font-family: monospace;">carros</span></var><code>)</code>; los espacios vac&iacute;a de la <code>columna (1) de la tabla</code> son ocupados por la salida de <code>mantener</code>; y el espacio vac&iacute;a de entrada de <code>promedio</code> es completada con la salida de la <code>columna (1) de la tabla</code>. Es como un tubo de piezas conectadas entre s&iacute;; los datos van en un extremo y funcionan a trav&eacute;s de cada funci&oacute;n, procesando un nuevo valor en cada paso.</p>
                 </div>
@@ -51,13 +51,13 @@
                             <li>&iquest;Cu&aacute;ntos carros del a&ntilde;o <em>2009</em> tienen transmisi&oacute;n manual en esta base de datos? </li>
                         </ul>
                         <p>Observa que la columna que usas para filtrar los datos (como el a&ntilde;o) no tiene que ser la columna sobre la que est&aacute;s preguntando (como la transmisi&oacute;n).</p>
-                        <p>Contruiste <code>promedio</code> en <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unidad 2 Lab 4 Página 3: Otros reportes matemáticos">Unidad 2 Laboratorio 4 P&aacute;gina 3: Otros reportes matem&aacute;ticos</a>.</p>
+                        <p>Contruiste <code>promedio</code> en <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unidad 2 Lab 4 Página 3: Otros reportes matemáticos">Unidad 2 Laboratorio 4 P&aacute;gina 3: Otros reportes matem&aacute;ticos</a>.</p>
                     </div>
                 </div>
 			</ol>
 		</div>
         <p>
-            Algunas veces, quieres mantener un subconjunto de tus datos (como "&iquest;Qu&eacute; carros fueron hechos en el 2010?"), pero otras veces, s&oacute;lo quieres un elemento que coincida con tus requerimientos (como "&iquest;Qu&eacute; carro fue hecho en 2010?"). Snap<em>!</em> tiene una funci&oacute;n de orden superior <img class="inline nopadtb" src="/bjc-r/img/blocks/find-first.png" alt="find first item () in 'list input slot'" title="find first item () in 'list input slot'">que funciona similar a <code>mantener</code>, pero s&oacute;lo informa el primer elemento que encuentra. 
+            Algunas veces, quieres mantener un subconjunto de tus datos (como "&iquest;Qu&eacute; carros fueron hechos en el 2010?"), pero otras veces, s&oacute;lo quieres un elemento que coincida con tus requerimientos (como "&iquest;Qu&eacute; carro fue hecho en 2010?"). Snap<em>!</em> tiene una funci&oacute;n de orden superior <img class="inline nopadtb" src="/bjc-r/img/blocks/find-first.png" alt="find first item () in 'list input slot'" title="find first item () in 'list input slot'">que funciona similar a <code>mantener</code>, pero s&oacute;lo informa el primer elemento que encuentra.
         </p>
         <div class="endnote"><br>
 <div class="todo">Images need alt/title text. --MF, 6/27/19</div>
@@ -69,7 +69,7 @@
                 </div>
             <p></p>
         </div>
-    
+
         <div class="comment">DAT-2.D.6</div>
         <p>Puedes acceder o modificar a los datos para crear nueva informaci&oacute;n utilizando:
             </p>
@@ -80,7 +80,7 @@
                 <li>Herramientas de visualizaci&oacute;n para presentar el conjunto de datos en un diagrama, gr&aacute;fico u otra representaci&oacute;n visual (por ejemplo utilizando un <code>histograma</code>, el cual aprender&aacute;s en la siguiente p&aacute;gina)</li>
             </ul>
         <p></p>
-            
+
         <div class="forYouToDo">
 	  <ol start="4">
                 <div class="comment">DAT-2.D</div>

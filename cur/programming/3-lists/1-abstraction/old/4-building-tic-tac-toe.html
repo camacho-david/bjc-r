@@ -5,7 +5,7 @@
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
         <title>Unit 2 Lab 4: Dealing with Complexity, Page 4</title>
     </head>
-    
+
     <body>
     	<h2>Building a Tic-Tac-Toe Board</h2>
 <!--        <div class="todo">
@@ -18,7 +18,7 @@
                     </ul>
                 </li>
                 <li>
-                	Problem 2: 
+                	Problem 2:
                 	<ul>
                     	<li>Is it necessary (from the student perspective) to specify the type of input to draw tile?</li>
                 		<li>Has anything been discussed about state invariance?</li>
@@ -35,22 +35,22 @@
                 <li>#4: Also, we aren't saying anything about the <code>point in direction</code> block, which is needed as much as <code>go to x y</code>. Perhaps it should also be in the <code>go to starting place</code> block, and maybe we could even call it <code>initialize</code> (or just <code>set up sprite to draw grid</code>).</li>
                 <li>#5: This won't work if students put <code>clear</code> inside their <code>draw square board</code> block, which they will likely be inclined to do since we asked them to put <code>go to starting place</code> inside it; if the sprite isn't already at the starting place, they'll get drag marks if they don't either have the pen up or clear after moving to the starting place. It would be better to suggest using <code>draw tile</code> (and why draw a 1-1 array with a more complicated block when you can use a much simpler block?).</li>
             </ul>
-            
+
         </div>
         <img class="inline" src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner" />   -->
         <div class="learn">
             <strong>On this page</strong>, you'll  build an interactive display for a simple Tic-Tac-Toe game between two human players.<br />
             <img class="indent" src="/bjc-r/img/1-introduction/Simpler-TicTacToe-video.gif" width="312" alt="Tic Tac Toe video"><br />
-            <!--         <img src="/bjc-r/img/1-introduction/Rani-game.gif" width="315" alt="Rani's game"> 
+            <!--         <img src="/bjc-r/img/1-introduction/Rani-game.gif" width="315" alt="Rani's game">
             <img src="/bjc-r/img/1-introduction/SudokuBoard.png" width="306" alt="sudoku board">  -->
             In later units, you'll use this as the starting point for an ongoing project working toward playing against the computer.
         </div>
-        
+
         <div class="forYouToDo" id="first">
           <ol>
                 <li>
                     <img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-                    First, <a href="/bjc-r/prog/2-complexity/U2L4-TicTacToe.xml" class="run">load this file</a>. It has two costumes and one brief script.   
+                    First, <a href="/bjc-r/prog/2-complexity/U2L4-TicTacToe.xml" class="run">load this file</a>. It has two costumes and one brief script.
                     <ul>
                         <li>Read the code, and experiment by dragging the sprite around the stage to see what the script does.</li>
                         <!--I editted out this aspect of the page because I found it confusing and I needed a solution to that. --MF
@@ -60,27 +60,27 @@
                 </li>
                 <li>
                     Tic-Tac-Toe can be played on a board that is three rows of three squares each. You'll start by drawing a single square, then use that to draw a row of squares, and then use that to draw the entire board.
-                      <ol> 
+                      <ol>
 			        <li>
                             <div class="sidenoteBig">If you use squares of size 100, the entire board will fit nicely on the stage. </div>
-                            Build <img src="/bjc-r/img/2-complexity/draw-a-tile.png" alt="draw a tile"> to make a single square tile. You can import and use any <code>draw square</code> or <code>draw polygon</code> block that you've created earlier, or use primitive blocks directly.  Leave all control of the pen (such as <code>pen down</code>) outside of this block. 
-                            
+                            Build <img src="/bjc-r/img/2-complexity/draw-a-tile.png" alt="draw a tile"> to make a single square tile. You can import and use any <code>draw square</code> or <code>draw polygon</code> block that you've created earlier, or use primitive blocks directly.  Leave all control of the pen (such as <code>pen down</code>) outside of this block.
+
                             <div class="takeNote">
-                                <strong>Why abstraction?</strong> 
-                                Why build <code>draw a tile</code><!--<img src="/bjc-r/img/1-introduction/tile(size).png" alt="tile of size (size)">--> when you could use <code>draw square</code><!--<img src="/bjc-r/img/1-introduction/draw-square-block-with-empty-input.png" alt="draw square">--> or just the script inside it? Some projects, like building a 9x9 Sudoku board, can need more than one size of square with different thicknesses of borders. If you later decide to create a tile differently (maybe changing border or fill color), <!--<img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette">--> it makes sense to edit just <code>draw a tile</code>; changing <code>draw square</code> would change <em>all</em>  squares in your project, not just board tiles. 
+                                <strong>Why abstraction?</strong>
+                                Why build <code>draw a tile</code><!--<img src="/bjc-r/img/1-introduction/tile(size).png" alt="tile of size (size)">--> when you could use <code>draw square</code><!--<img src="/bjc-r/img/1-introduction/draw-square-block-with-empty-input.png" alt="draw square">--> or just the script inside it? Some projects, like building a 9x9 Sudoku board, can need more than one size of square with different thicknesses of borders. If you later decide to create a tile differently (maybe changing border or fill color), <!--<img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette">--> it makes sense to edit just <code>draw a tile</code>; changing <code>draw square</code> would change <em>all</em>  squares in your project, not just board tiles.
                         </div>
                         </li>
                         <li>
                             Build <img src="/bjc-r/img/2-complexity/draw-a-row.png" alt="draw a row"> using your <code>draw a tile</code> block to draw one row of  tiles, like this:<br />
                             <img class="indent" height="121" src="/bjc-r/img/2-complexity/three-tiles.png" alt="(three tiles in a row)" title="(three tiles in a row)" />
 							<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" /><br />
-                            <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                            <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
                         </li>
 						<li>Build <img src="/bjc-r/img/2-complexity/draw-the-board.png" alt="draw the board"> using <code>draw a row of tiles</code>. It will help to pay attention to where <code>draw a row</code> leaves the sprite.  If <code>draw the board</code> doesn't draw what you want, debug by testing each block by itself.</li>
-						
+
 					</ol>
                 </li>
-                
+
                 <li>Set the sprite to start drawing in the right place.
                             <ul>
                               <li>Experiment (or calculate) to find a good starting place that centers the board on the stage with tiles of size 100, and build <img src="/bjc-r/img/1-introduction/go-to-starting-place.png" alt="go to starting place for board" title="go to starting place for board" /> set the sprite there.</li>
@@ -88,10 +88,10 @@
                                 <li>After <code>draw the board</code> finishes drawing, have it move the sprite back to its starting position at (-200, 160).</li>
                             </ul>
     </li>
-<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />  
-                        
+<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
+
     <!--            <li>Figure out what else you may need to do to try your program. Debug any problems, and discuss  changes you could make to improve the game. </li>  -->
-                
+
                 <li>
                     <!-- This didn't make sense to me --MF: Return to the script for the second sprite. -->
                     To keep track of legal moves and wins, you'll need to know where each player moved. Import your <code>between?</code> predicate from your "U2L3-Predicates" project, and use it to write a <code>which tile</code> reporter. (It'll require more than one <code>if</code> block.)<!--(It'll require nine <code>if</code> tests.)--> Test it by having the sprite <code>say</code> which square it's in for a second when dropped.<br >
@@ -101,7 +101,7 @@
                 <li>Once you have <code>which tile</code> debugged, instead of <code>say</code>ing the tile number, move the sprite to the center of the tile before stamping:
                 <ol type="a">
                 <li>Make a global variable named <var>centers</var>.</li>
-                <li>In the same script that draws the board to start a game, set <var>centers</var> to a list of nine points (using the abstract data type from <a href="/bjc-r/cur/programming/2-complexity/optional-projects/future/2-data-types.html">Lab 2</a>), each of which is the center of the corresponding tile.</li>
+                <li>In the same script that draws the board to start a game, set <var>centers</var> to a list of nine points (using the abstract data type from <a href="/bjc-r/cur/programming/2-complexity/optional-projects/future/2-data-types.es.html">Lab 2</a>), each of which is the center of the corresponding tile.</li>
                 <li>In the <code>when I am dropped</code> script, if the sprite was dropped in a tile, move to its center before <code>stamp</code>ing it. (If it <em>wasn't</em> dropped inside a tile, don't stamp it and don't change costumes.)</li></ol>
 				<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
                 <li><strong>Check for illegal moves.</strong> You're already checking for dropping the sprite outside the board, but it's also illegal to drop the sprite inside a tile that's already occupied. To check for this, you'll have to keep track of the moves:
@@ -113,11 +113,11 @@
                 </ol>
               </li></ol>
 </div>
-        
+
         <p>
             In Unit 3, you will teach the computer to check for wins and ties; and, still later, you will teach the computer how to be an intelligent player.
         </p>
-        
+
         <div class="ifTime">
             <ol start="7">
                 <li>
@@ -126,13 +126,13 @@
                 </li>
             </ol>
         </div>
-        
+
         <div class="takeItFurther">
             <ol type="A">
             <li>Modify your project so that it can draw boards other than 3x3, such as 9x9 for Sudoku. You will have to make some design decisions about the size of cells and the position of the board, not just write code. Save the result under a different project name.</li>
-            	<li>A <a href="/bjc-r/cur/programming/2-complexity/optional-projects/4-tic-tac-toe.html">completely different approach</a> to creating the Tic-Tac-Toe board puts sprites in each of the nine boxes. Compare these, and think about which way you'd prefer as a basis for actually playing the game.</li>
+            	<li>A <a href="/bjc-r/cur/programming/2-complexity/optional-projects/4-tic-tac-toe.es.html">completely different approach</a> to creating the Tic-Tac-Toe board puts sprites in each of the nine boxes. Compare these, and think about which way you'd prefer as a basis for actually playing the game.</li>
             </ol>
         </div>
-        
+
 	</body>
 </html>

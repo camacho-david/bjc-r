@@ -5,7 +5,7 @@
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 3 Lab 5: Data Part I</title>
     </head>
-    
+
     <body>
     	<h2>GPS: Introduction</h2>
         <div class="todo">
@@ -14,7 +14,7 @@
                 <li>GH Feedback 8/12: Too much math for high school freshman. Was fun for us to do tho.</li>
             </ul>
         </div>
-        
+
         <!--<p>Big Burgers is coming to New York City, and asked people to share their location to decide where to put their new restaurants. Hundreds of people have shared their locations through GPS coordinates.</p>
 
         >>>Replace this with link to bigger dataset, right? --MF
@@ -86,16 +86,16 @@
         <div class="takeNote"> Note when <em>writing</em> GPS coordinates, the convention is that the first number is <em>latitude</em>, the north-south measurement, and the second, <em>longitude</em>, is measures east-west. <span class="katex-block">latitude, longitude$$ $$40.7488051,-73.9854167$$ However, when <em>plotting</em> GPS coordinates, the convention is that <em>longitude</em>, which is plotted on the horizontal <em>x</em>-axis, is first, and <em>latitude</em>, which is measures vertical location on the <em>y</em>-axis is second. $$(longitude, latitude)$$  $$(-73.9854167, 40.7488051) </span> When plotting GPS coordinates, plot them as (longitude, latitude), reversing the written order.</div>
             <p></p>
 
-    
+
     <h3>Making the data useful</h3>
-    
+
     <div class="comment">*need to build this, think about whether to switch lat and long now, think about whether the data-read-in is relevant*</div>
     <p>
     	GPS data isn't very useful as a list of numbers; the data is far more useful if we can <em>visualize</em> it. Here are the coordinates as a list of lists: <br />
     	<a class="run" href="/bjc-r/prog/3-lists/old/U3Lab5GPS.xml"><img class="indent" src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br />
     	When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.
     </p>
-    
+
     <div class="forYouToDo">
         <ol>
             <li>
@@ -107,19 +107,19 @@
             <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Why can't you see all the points?</li>
         </ol>
     </div>
-    
+
     <h3>Transform the data</h3>
-    <div class="sidenoteBig">You can do it your own way instead if you like.</div>    
+    <div class="sidenoteBig">You can do it your own way instead if you like.</div>
     To display all the points, you'll need to <em>transform</em> them. These problems will lead you through one way to do this.
-    
+
     <div class="forYouToDo">
     <ol start="2">
       <div class="sidenote">Subtracting -74 is the same as adding 74.</div>
       <li>Every point's longitude is around -74 and every point's latitude is around 40. This does not help us tell the points apart. Subtract -74 from every <em>x</em>-coordinate and subtract 40 from every <em>y</em>-coordinate, <strong>using a <a href="">higher-order function</a></strong>.</li>
       <li>Now the first <em>x</em>-coordinate is BLAH. There are many choices we could make to turn this into a "nicer" number. One choice is to multiply every <em>x</em>- and <em>y</em>-coordinate by BLAH. Adjust your higher-order function to do this calculation as well.</li>
-      
+
       <div class="sidenoteBig">Making Snap<em>!</em> do the work is better, because then the program can be used on <em>any</em> set of GPS points in this area, and not just these. That's abstraction.</div>
-      <div class="sidenoteBig">Recall that you made a block called <code>average</code> in <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/combine.html">Lab 2 ("Combine with")</a>.</div>
+      <div class="sidenoteBig">Recall that you made a block called <code>average</code> in <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/combine.es.html">Lab 2 ("Combine with")</a>.</div>
       <li>Now the first <em>x</em>-coordinate is BLAH, which we still can't see on the grid. Let's center the coordinates around the <em>average</em> <em>x</em>- and <em>y</em>-coordinate. Subtract the average of all the <em>x</em> values from each of the <em>x</em>-coordinates, and subtract the average of all the&nbsp;<em>y</em> values from each of the <em>y</em>-coordinates. Make Snap<em>!</em> do the work.</li>
       <li>Once you have these transformed coordinates, use your script from problem 1 to plot the points.</li>
     </ol>

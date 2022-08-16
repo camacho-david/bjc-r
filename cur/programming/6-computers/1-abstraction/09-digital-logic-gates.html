@@ -14,9 +14,9 @@
             <p>MF: lightly clean up to make the text more concise</p>
             <p>Do we have any interest in salvaging the logic gates/XOR project that Selim and I worked on? --MF, 3/25/19</p>
         </div>
-        
+
 		<div class="learn"><strong>En esta página,</strong> revisaras tres operadores booleanos (<code>y</code>, <code>o</code>, y <code>no</code>) y aprendera cómo se relacionan con los circuitos electrónicos.</div>
-        
+
 		<p>En un circuito con miles de millones de transistores, o incluso miles de transistores, los diseñadores de hardware no pueden pensar en cada transistor individual. Del mismo modo que los programadores usan la abstracción, los arquitectos de hardware usan abstracciones, en las que un grupo de transistores y otros elementos del circuito se consideran una sola cosa. Que tipo de cosas? Básicamente hay dos tipos, uno para la memoria y otro para el cálculo.</p>
         <div class="endnote">
         	<a href="#hint-memory" data-toggle="collapse" title="Aprende más sobre la memoria">Aprende más sobre la memoria.</a>
@@ -24,11 +24,11 @@
                 <p>La memoria está hecha de <em>flip-flops.</em> Un flip-flop es un circuito que tiene dos estados estables, encendido y apagado. Una señal de entrada puede indicarle que se encienda, apague o cambie su estado. Una vez que eso sucede, el flip-flop permanece en el nuevo estado hasta que recibe otra señal. Tiene una salida que refleja su estado: encendido si el flip-flop está encendido, apagado si está apagado.</p>
             </div>
         </div>
-        
+
         <h3>Operadores booleanos</h3>
         <p>Los circuitos para hacer cálculos son más interesantes. Estos calculan <em>funciones,</em> al igual que los reporteros en Snap<em>!</em>. Dado que las computadoras hacen mucha aritmética, podrías pensar que los circuitos básicos de funciones serían la suma, la resta, la multiplicación y la división, pero ese no es el caso. Por supuesto, <em>hay</em> circuitos para hacer esas cosas, pero están hechos de <em>compuertas lógicas:</em> circuitos que calculan <strong>funciones booleanas</strong>: <code>y</code>, <code>o</code>, y <code>no</code>.</p>
         <p>La razón por la que las funciones booleanas se consideran más fundamentales es que sus entradas y salidas se pueden representar con un solo cable que entra o sale del circuito. Eso no es asi en las funciones aritméticas. Si consideras que un voltaje en un cable significa 1, y ningún voltaje significa 0, entonces debes ver que un sumador tendrá <em>tres</em> posibles valores de salida, porque 1+1=2, que no es ni 0 ni 1. Por el contrario, si considera que un voltaje en un cable significa Verdadero y ningún voltaje significa Falso, entonces la salida de una función booleana de dos entradas solo puede ser Verdadero o Falso, por lo que solo se necesita un cable de salida.</p>
-		<p>Viste algunos ejemplos en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="¿Qué es un predicado?">Unidad 2 Lab 3: Tomando decisiones usando predicados</a>: <code>Y</code>, <code>O</code>, y <code>NO</code>:<br />
+		<p>Viste algunos ejemplos en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="¿Qué es un predicado?">Unidad 2 Lab 3: Tomando decisiones usando predicados</a>: <code>Y</code>, <code>O</code>, y <code>NO</code>:<br />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.png" alt="(verdadero) Y (verdadero) reporta verdadero" title="(verdadero) Y (verdadero) reporta verdadero" />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.png" alt="(verdadero) Y (falso) reporta falso" title="(verdadero) Y (falso) reporta falso" />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.png" alt="(falso) Y (falso) reporta falso" title="(falso) Y (falso) reporta falso" />
@@ -53,7 +53,7 @@
                         </p>
                     </div>
                     <div class="sidenote">
-                        
+
                         Este símbolo en los diagramas de circuito representa una batería.<br />
                         <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/BatterySymbol.png" height="75" alt="Símbolo de batería en un circuito" title="Símbolo de batería en un circuito"/>
                         <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/Battery.png" height="75" alt="Batería" title="Batería"/>
@@ -247,23 +247,23 @@
                 </li>
 			</ul>
         </div>
-        
-        
+
+
         <h2>Compuertas lógicas</h2>
         <p>Dentro de una computadora, las operaciones booleanas se implementan en circuitos físicos utilizando compuertas lógicas. (Una sola compuerta implementa una de las funciones básicas <code>y</code>, <code>o</code>, or <code>no</code>.) Los circuitos lógicos a menudo se representan con dibujos que ayudan a los ingenieros a ver cómo fluirá la información a través de un circuito. Por ejemplo, el siguiente diagrama de un circuito lógico con dos compuertas representa la expresión booleana <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="A o (A y B)" title="A o (A y B)" />. Puedes ver como?</p>
-        
+
         <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="diagrama de compuerta lógica de (A o (A y B))" title="diagrama de compuerta lógica de (A o (A y B))" />
-        
+
         <div class="forYouToDo" id="first">
 			<ol>
 				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Habla con un compañero" title="Habla con un compañero" /> Mira el circuito lógico dibujado arriba. ¿Para qué valores de A y B la salida será <code>verdadero</code>?</li>
             </ol>
         </div>
-        
-		<div class="takeNote">En la página anterior, aprendiste sobre tungsteno y estaño, y aquí estamos hablando de funciones booleanas. ¿En qué sentido es esto menos abstracto? <strong>Desde el punto de vista del diseñador de chips, las compuertas lógicas son los bloques de construcción fundamentales de un circuito digital.</strong> (La fabricación real de chips físicos se encuentra en un nivel aún más bajo de abstracción, en el dominio analógico).</div>		
 
-		
-        
+		<div class="takeNote">En la página anterior, aprendiste sobre tungsteno y estaño, y aquí estamos hablando de funciones booleanas. ¿En qué sentido es esto menos abstracto? <strong>Desde el punto de vista del diseñador de chips, las compuertas lógicas son los bloques de construcción fundamentales de un circuito digital.</strong> (La fabricación real de chips físicos se encuentra en un nivel aún más bajo de abstracción, en el dominio analógico).</div>
+
+
+
         <div class="forYouToDo">
 			<ol start="2">
                 <li>
@@ -336,7 +336,7 @@
                 </li>
 			</ol>
 		</div>
-        
+
         <div class="endnote">
         	<a href="#hint-target" data-toggle="collapse" title="¿Cómo dibujan los ingenieros las compuertas lógicas?">¿Cómo dibujan los ingenieros las compuertas lógicas?</a>
 			<div id="hint-target" class="collapse">
@@ -347,22 +347,22 @@
                 <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69" alt="compuerta-NO" title="compuerta-NO"/><br />
                 Por ejemplo, los ingenieros dibujarían el circuito lógico que se muestra a la derecha de esta manera: <br />
 				<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250" alt="Versión de puerta lógica de un ingeniero de (no y) y (o)" title="Versión de puerta lógica de un ingeniero de (no y) y (o)"/><br />
-                Haz una <a href="https://www.google.com/search?q=diagramas+compuertas+logicas&tbm=isch" target="_blank" title="Google Image Search for: logic gate diagrams">búsqueda de imágenes de "diagramas de compuerta lógica"</a> para ver más ejemplos. 
+                Haz una <a href="https://www.google.com/search?q=diagramas+compuertas+logicas&tbm=isch" target="_blank" title="Google Image Search for: logic gate diagrams">búsqueda de imágenes de "diagramas de compuerta lógica"</a> para ver más ejemplos.
             </div>
         </div>
 
 		<div class="todo">There is a commented out ifTime here that would link to the adder project. I think we should add it back in as a TIF once that optional project is done. --MF, 11/30/17</div>
-		
-        
+
+
 <!--        <div class="ifTime">
 			<ol start="3">
-				<li>Learn about other Boolean operators and how comptuers perform binary addition in the <a href="">Building a Binary Adder</a> optional project.</li>				   
+				<li>Learn about other Boolean operators and how comptuers perform binary addition in the <a href="">Building a Binary Adder</a> optional project.</li>
 			</ol>
 		</div>    -->
 
 <!--        <div class="commentBig">I don't think this kind of thing helps here at the end of the page. Kids will expect the green section to be the end. I'd cut this last sentence. --MF, 11/8/17</div>
 		<p>In Lab 2 of this unit, you'll learn how numbers are represented using groups of wires, using <em>binary</em> representation, and how logic gates can be combined to do arithmetic.</p>-->
-		
-		
+
+
 	</body>
 </html>

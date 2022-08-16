@@ -8,19 +8,19 @@
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
     </head>
-    
+
     <body>
-    	<h2>Representación binaria</h2>        
-        
+    	<h2>Representación binaria</h2>
+
         <p>Hemos visto cómo el número de bits utilizados para representar un entero afecta lo grande que puede ser. Ahora pasamos a la forma específica en que un entero de una sola palabra se codifica como bits.</p>
         <div class="vocab">: <strong>Bit</strong>
             <div class="todo">DAT-1.A.3</div>
             <p>La palabra "bit" es una abreviatura de <em><strong>bi</strong>nary digi<strong>t</strong>.</em></p>
-        </div> 
-            
+        </div>
+
         <div class="comment">DAT-1.C.1</div>
         <p>Las personas generalmente usan dígitos de base diez (decimales) para escribir números. Las computadoras usan la base dos (binaria).</p>
-		
+
         <div class="comment">DAT-1.C.3</div>
 		<p>
             En <strong>base 10</strong>, hay diez dígitos (0-9), y cada lugar vale <em>diez</em> veces tanto como el lugar a su derecha. <br />
@@ -32,7 +32,7 @@
             <img class="indent noshadow" src="/bjc-r/img/4-internet/binary-places.jpg" alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" />
         </p>
         <div class="endnote">El subíndice 2 en 1101<sub>2</sub> significa que el 1101 está en la base 2. Los números normalmente se escriben en base 10, por lo que un subíndice 10 solo se usa cuando es necesario para mayor claridad.</div>
-        
+
         <h3>Leeyendo Binario</h3>
         <div class="comment">DAT-1.C.5</div>
         <p>En <strong>base 10</strong> notación, cada valor de lugar representa un <strong>potencia de diez</strong>: el lugar de las unidades (10<sup>0</sup> = 1), el lugar de las decenas (10<sup>1</sup> = 10), los cientos lugar (10<sup>2</sup> = 100), los miles de lugares (10<sup>3</sup> = 1000), etc. Así, por ejemplo,:</p>
@@ -44,7 +44,7 @@
         </p>
         <p align="center">10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 &times; 2<sup>4</sup></strong>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <strong>1 &times; 2<sup>1</sup></strong> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18<sub>10</sub></p>
 
-        
+
         <div class="takeNote">
             <p>Para traducir desde binario (por ejemplo), 101101<sub>2</sub>) a base 10, <strong>primero, escriba el número en un papel. A continuación, escriba los valores de lugar binario duplicando la izquierda desde el lugar de las unidades</em>:</p>
             <div class="sidenoteBig">101101<sub>2</sub> tiene solo seis dígitos, por lo que no necesitamos potencias de dos a la izquierda de eso..</div>
@@ -74,7 +74,7 @@
             </table>
 			<p>Esto significa que este número es, en base 10,  32 + 8 + 4 + 1 = 45.   Entonces, 101101<sub>2</sub> = 45<sub>10</sub>.</p>
         </div>
-        
+
 		<div class="forYouToDo">
             <ol start="1">
                 <div class="comment">DAT-1.C part a</div>
@@ -136,14 +136,14 @@
             <div class="todo">I'm confused about why the arrow is going from right to left. Will that confuse students? Most of the work happens going left to right. Maybe there should be another arrow below the table that goes the other way... --MF, 2/12/18  It may be left over from when we were using the correct algorithm, which does go right to left. -bh</div>
             <p>Ahora, lea el número desactivado: 1011001<sub>2</sub> = 89<sub>10</sub>.</p>
 		</div>
-        
+
         <p>
             Aquí hay una descripción más precisa de esto <em>algoritmo</em>  to find the base 2 representation of any positive integer:
             <ol type="a">
                 <li>Primero, encuentre la mayor potencia de dos que sea menor que el número.</li>
                 <li>Luego, reste esa potencia de 2 del número, mantenga el nuevo número y registre un 1 en el lugar para esa potencia de 2.</li>
-                <!--                <div class="sidenote">You could <a href="/bjc-r/cur/programming/6-computers/1-number-representation/5-binary-counter.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">create a program</a> based on an algorithm like this.</div>   -->
-                <div class="comment">Hay <a href="/bjc-r/cur/programming/4-internet/4-representation-compression/5b-binary-alternate.html" target="_blank">Another Algorithm for Converting to Binary</a>.<br />(Change from a "comment" to a "sidenote" when page is complete.) --MF, 11/20/17</div>
+                <!--                <div class="sidenote">You could <a href="/bjc-r/cur/programming/6-computers/1-number-representation/5-binary-counter.es.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">create a program</a> based on an algorithm like this.</div>   -->
+                <div class="comment">Hay <a href="/bjc-r/cur/programming/4-internet/4-representation-compression/5b-binary-alternate.es.html" target="_blank">Another Algorithm for Converting to Binary</a>.<br />(Change from a "comment" to a "sidenote" when page is complete.) --MF, 11/20/17</div>
                 <li>
                     A continuación, determine si la siguiente potencia mayor de 2 que es menor que el nuevo número, y:
                     <ul>
@@ -210,7 +210,7 @@
                 </li>
             </ol>
         </div>
-	
-    
+
+
 	</body>
 </html>

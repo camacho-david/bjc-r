@@ -8,7 +8,7 @@
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
     </head>
-    
+
     <body>
     	<h2>Binary Representation</h2>
         <div class="todo">
@@ -21,7 +21,7 @@
             2.1.1E At one of the lowest levels of abstraction, digital data is represented in binary (base 2) using only combinations of the digits zero and one.<br />
         </div>
 		<p>While people typically work with numbers using the base 10 (decimal) numeral system, other systems are relevant in computer science, including binary (base 2) and hexadecimal (base 16). Computers manage data packed as sequences of bits (<strong>bi</strong>nary digi<strong>ts</strong>),  which are all zeros or ones. People are most familiar with base 10, so we write software that allows people to use base 10 to communicate with the computer.</p>
-		
+
 		<p>
             In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times the place to its right. <br />
           <img class="indent noshadow" src="/bjc-r/img/4-internet/decimal-places.jpg" alt="place values in decimal" title="place values in decimal" />
@@ -31,18 +31,18 @@
             <div class="sidenoteBig">The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers are normally written in base 10, so a subscript 10 is only used when needed for clarity.</div>
             <img class="indent noshadow" src="/bjc-r/img/4-internet/binary-places.jpg" alt="place values in binary" title="place values in binary" />
         </p>
-        
+
         <div class="forYouToDo" id="first">
 			<ol>
 				<li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     Watch this Binary Timer Snap<em>!</em> program run. Write a description of the binary counter's behavior. Explain what you see going on.<br />
                     <img class="indent" data-gifffer="/bjc-r/img/4-internet/bin-timer-preview.gif" alt="binary coutner Snap! project" title="binary coutner Snap! project" />
                 </li>
             </ol>
         </div>
 
-        
+
         <h3>Reading Binary</h3>
         <div class="endnote">
             <p>In <strong>base 10</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:</p>
@@ -53,16 +53,16 @@
             </p>
 			<p align="center">10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 &times; 2<sup>4</sup></strong>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <strong>1 &times; 2<sup>1</sup></strong> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18<sub>10</sub></p>
         </div>
-        
+
 		<p>
         	Here's a video from a different version of BJC. It cuts off just before talking about base 16. (You'll see more about reading hexadecimal soon.)<br />
         	<img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
         </p>
-		
+
         <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/SqhbDWVOLvk" target="_blank">watch the video here</a>, but you only need to watch the first 3:10&mdash;up to (but not including) the part about hexadecimal.</div>
         <div class="sidenote">There is a <strong>mistake in the video</strong> at 2:50. Do you see why? (Also, not everyone learns base 10 place values in kindergarten!)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SqhbDWVOLvk?rel=0&end=190" frameborder="0" allowfullscreen class="indent"></iframe><br />
-        
+
         <div class="takeNote">
           <p>To translate from binary (like <span class="katex">101101_2</span>) to base 10, <strong>first, write the number out on paper. Then write out the binary place values</strong> by <em>doubling left from the units place</em>:</p>
           <div class="sidenoteBig">101101<sub>2</sub> has only six digits, so we don't need powers of two to the left of that.</div>
@@ -91,7 +91,7 @@
             </table>
 			<p>This means this number is 32 + 8 + 4 + 1. So, <span class="katex">101101_2 = 45_{10}</span>.</p>
         </div>
-        
+
 		<div class="forYouToDo">
             <ol start="2">
                 <li>
@@ -145,19 +145,19 @@
             </table><br clear="all" />
             <p>Now, read the number off: <span class="katex">1011001_2=89_{10}</span>.</p>
 		</div>
-        
+
         <p>Here's another video. (It also cuts off before talking about base 16.)</p>
         <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/rVIq_bol1Es" target="_blank">watch the video here</a>, but you only need to watch the first 3:14&mdash;up to (but not including) the part about hexadecimal. </div>
 		<img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/rVIq_bol1Es?rel=0&end=194" frameborder="0" allowfullscreen class="indent"></iframe><br />
-        
+
         <div class="takeNote">
         	Here's an <em>algorithm</em> you can follow to find the base 2 representation of any base 10 integer:
             <ol type="a">
                 <div class="sidenote">You'll learn about how other real numbers are stored soon.</div>
                 <li>First, find the largest power of two that fits inside the number.</li>
                 <li>Then, subtract that power of 2 from the number, keep the new number, and record a 1 in the place for that power of 2.</li>
-                <div class="sidenote">You could <a href="/bjc-r/cur/programming/4-internet/optional-projects/1-binary-counter.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">create a program</a> based on an algorithm like this.</div>
+                <div class="sidenote">You could <a href="/bjc-r/cur/programming/4-internet/optional-projects/1-binary-counter.es.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">create a program</a> based on an algorithm like this.</div>
                 <div class="sidenote">There is another  method and another explanation of this method described on  <a href="http://www.wikihow.com/Convert-from-Decimal-to-Binary" target="_blank">wikihow.com</a>.</div>
                 <li>
                     Then, determine if the next largest power of 2 fits inside the new number, and:
@@ -186,7 +186,7 @@
                 </li>
             </ol>
         </div>
-	
-    
+
+
 	</body>
 </html>

@@ -17,12 +17,12 @@
             <p><strong>In this lab</strong> you will sort your contact list alphabetically by name.</p>
             <p><strong>On this page</strong> you will review the technique of <em>recursion</em>.</p>
         </div>
-        
+
         <h3>Recursive Graphics</h3>
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
-                    In <a href="/bjc-r/cur/programming/3-lists/1-abstraction/2-fractal-art.html">Unit 2</a> you wrote a recursive program to draw this picture:<br />
+                    In <a href="/bjc-r/cur/programming/3-lists/1-abstraction/2-fractal-art.es.html">Unit 2</a> you wrote a recursive program to draw this picture:<br />
                     <img class="indent" src="/bjc-r/img/3-lists/gasket.png"  alt="Sierpinski gasket"><br />
                     Open your project <strong>U2L4-FractalArt</strong> and save it as <strong>U3L2-Recursion</strong>. Then look inside the <code>nested triangle</code> block.
                     Your solution may not be exactly this, but it's probably close:<br />
@@ -33,7 +33,7 @@
                     <p><br />
                     A <strong>top-level script</strong> is one that's in the scripting area, not inside the definition of a block.</p>
                     <p>An <strong>invocation</strong> is a use of a block. For example, <img src="/bjc-r/img/3-lists/7+8+1.png" alt="(7+8)+1"> makes two invocations of <code>+</code>. The verb form is <strong>invoke</strong>.</p>
-                </div>              
+                </div>
                 <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                 <li>When you invoke <code>nested triangle</code> from a top-level script, how many times does <em>that invocation</em> (not counting invocations within invocations) run the purple block that invokes <code>nested triangle</code>?</li>
                 <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
@@ -47,13 +47,13 @@
                 <li>What is the purpose of the <code>if</code> block in this code? (If you're not sure, you might try editing <code>nested triangle</code> to remove it, and see what happens.)</li>
             </ol>
         </div>
-        
+
         <div class="takeNote">
             <p>A recursive <em>problem</em> (the thing you're trying to do, not the code to do it) is one in which the desired result includes a smaller version of itself, such as the green (or red or blue) fractal inside the bigger fractal.  A recursive <em>procedure</em> (the actual code) is one that calls itself inside its definition. Do you see why a recursive procedure is likely to be a good solution to a recursive problem?</p>
             <p>If a recursive procedure calls itself, and that call also calls itself, and <em>that</em> call also calls itself... the result will be an <em>infinite loop</em>, which means that the program will keep running forever (or until it runs out of memory). To avoid that bug, every recursive procedure must have a <em>base case,</em> a simple input for which the procedure can do its job without calling itself. (The base case of <code>nested triangle</code> happens when <var>size</var> ≤ 2; in that case the procedure doesn't have to do anything.)</p>
         </div>
         <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
-            
+
         <h3>Recursive Reporters</h3>
         <p>The general pattern for a recursive <em>command</em> is</p>
         <p><img src="/bjc-r/img/8-recursive-reporters/rec-command.png" alt="if (base case?) then [do something simple] else [[do something] [recursive call] [do something]]"></p>
@@ -86,7 +86,7 @@
                 </li>
 </ol></div>
 
-Combining the items of a list is such a common thing to do that there's a higher-order function for it.                         
+Combining the items of a list is such a common thing to do that there's a higher-order function for it.
 <div class="forYouToDo"><ol start="7">
  <img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
               <li>
@@ -126,14 +126,14 @@ Combining the items of a list is such a common thing to do that there's a higher
                 <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
             </ol>
         </div>
-        
+
         <div class="takeItFurther">
         	<ol type="A">
                 <li>
                     An <strong>acronym</strong> is a "word" made up of the first letters of every capitalized word in a phrase. For example, the acronym for United States of America is USA, and SUNY is an acronym for State University of New York. Create a reporter block that takes a phrase as input and reports an acronym made of the first letters of <em>only from the capitalized words</em>. It should work like this:<br/>
                     <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  />
                     <img class="indent" src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> <br />
-                    The steps below suggest <em>one</em> way: 
+                    The steps below suggest <em>one</em> way:
                     <ol style="list-style-type:lower-roman;">
                         <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
                         <li>The input phrase is a string of characters. Break it up into a list of words. </li>
@@ -152,7 +152,7 @@ Combining the items of a list is such a common thing to do that there's a higher
                 </li>
             </ol>
         </div>
-        
-    
+
+
     </body>
 </html>

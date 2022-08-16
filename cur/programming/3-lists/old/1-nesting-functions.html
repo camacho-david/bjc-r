@@ -4,40 +4,40 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 3 Optional Projects, Page 7</title>
-    </head>   
-      
+    </head>
+
 	<body>
         <img class="imageRight" src="/bjc-r/img/icons/teachers-choice.png" alt="Teacher's Choice" title="Teacher's Choice" />
         <h2>Nesting Function Calls (Teacher's Choice)</h2>
   <!--      <div class="todo">
             <ul>
                 <li>GH Feedback 10/28/15: The popsicle and ice cream cone prices at the bottom do not match with the prices given in the Snap project that is linked.</li>
-                <li>GH Feedback 1/31/16: It would be useful to explain unicode. The students have no idea what it is.<ul><li>Perhaps this should also be <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">in U2.</a> --MF</li></ul></li>
+                <li>GH Feedback 1/31/16: It would be useful to explain unicode. The students have no idea what it is.<ul><li>Perhaps this should also be <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">in U2.</a> --MF</li></ul></li>
                 <li>GH Feedback 3/2/16: For the Take It further question, are they supposed to make a lot of assumptions to figure out the sales for the year? Only 8 days worth of data is given, and we don't know what kind of seasons will happen. Is that the point, to generate discussion? I feel the answer to this question can hardly be wrong, as we don't know enough information.</li>
             </ul>
         </div>  -->
-        
+
 		<p>
         	Here are 3 powerful higher-order functions (functions that take other functions as input):
         	<ul>
             	<li>
                     <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
-                	<code>Map</code> <em>performs a function</em> on each item in a list and outputs a <em>list</em>, which you first saw in <a href="/bjc-r/cur/programming/2-complexity/old/3-first-list-experience.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Using Lists to Write <code>Vowel?</code></a>.<br />
+                	<code>Map</code> <em>performs a function</em> on each item in a list and outputs a <em>list</em>, which you first saw in <a href="/bjc-r/cur/programming/2-complexity/old/3-first-list-experience.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Using Lists to Write <code>Vowel?</code></a>.<br />
 					<img class="indent" src="/bjc-r/img/2-complexity/map(join-a-or-an-with())over(list-elephant-lion-eel-mouse-anteater).png" alt="map(join-a-or-an-with())over(list-elephant-lion-eel-mouse-anteater)" title="map(join-a-or-an-with())over(list-elephant-lion-eel-mouse-anteater)" /><br />
 
 				</li>
                 <li>
-	                <code>Keep</code> <em>chooses</em> specific items and outputs a <em>list</em>, which you first saw in <a href="/bjc-r/cur/programming/2-complexity/old/5-plurals1.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Block That Makes Plurals</a>.<br />
+	                <code>Keep</code> <em>chooses</em> specific items and outputs a <em>list</em>, which you first saw in <a href="/bjc-r/cur/programming/2-complexity/old/5-plurals1.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Developing a Block That Makes Plurals</a>.<br />
 					<img class="indent" src="/bjc-r/img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"><br />
                 </li>
                 <li>
-                    <code>Combine</code> <em>calls a combining function</em> (a function with two inputs) across all items in the set and outputs an object that may be a  <em>number, string, or list</em>, depending on the combiner, which you may have seen in <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Script Variable Projects</a>.<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n"> 
+                    <code>Combine</code> <em>calls a combining function</em> (a function with two inputs) across all items in the set and outputs an object that may be a  <em>number, string, or list</em>, depending on the combiner, which you may have seen in <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Script Variable Projects</a>.<br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n">
 				</li>
             </ul>
             The three can be used together to build more advanced functions.
         </p>
-        
+
   <!--      <div class="todo">
         	<p><strong>Maybe for next year</strong>, a version of "Composing HOF's" from: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></p>
 			<p>PUTTING IT ALL TOGETHER: Now that you're a map, keep and combine expert you're ready to use map, keep, and combine to make a very useful function block: remove pattern. Remove pattern takes a string str and a pattern x and removes the the pattern x everywhere from str. For example. For example if str is the string abracadabra and your removal pattern x is the letter a, then remove pattern(abracadabra, a) = brcdbr.</p>
@@ -45,14 +45,14 @@
             	Here is some pseudocode to help with this:
 <pre>remove pattern( str, x )
 script variables: tokens
-set tokens to the result of split str using the pattern x 
+set tokens to the result of split str using the pattern x
 set tokens to the result of keep tokens with length &gt; 0  {got rid of empty tokens}
 report the result of join list on tokens   {join list is the combine based function that you created in problem 6}</pre>
 			</p>
 			<p>Make sure to leave an example in your script that shows your remove pattern function works.</p>
 		</div>  -->
-        
-                
+
+
         <h3>Character Encoding</h3>
 	<!--	<div class="todo">
         	<ul>
@@ -71,7 +71,7 @@ report the result of join list on tokens   {join list is the combine based funct
             </ul>
         </div>  -->
 		<p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, such as !, @, #, &ouml;, &lambda;, &clubs;, and the space bar.</p>
-        
+
         <div class="sidenote">ASCII is a small subset of Unicode that includes letters, numbers, and a few symbols. The list of <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters#Latin_script" target="_blank">Unicode characters</a> is much longer.</div>
         <div class="commentBig">I included this because 1) I think it's nice to get a visual sense of what's going on here. It's not rocket science, it's just a little cipher. And 2) it prepares them for what they will see on the exam.<br /><br />
         <br />AC:  I can imagine kids getting confused because the chart doesn't contain integers > 70.<br />
@@ -87,12 +87,12 @@ report the result of join list on tokens   {join list is the combine based funct
 		<!--		<div class="sidenote"><code>map</code> and <code>combine</code> will be helpful here. </div>	-->
                 <li>Use those blocks, along with the higher-order functions from the previous lab, to decode this message:<br /><a class="run" href="/bjc-r/prog/3-lists/old/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
                 <li>
-				<div class="sidenoteBig">You may have built a unicode encode block in <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.html#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.  If so, compare the technique you used then with the technique you used now with lists.  How do they differ?</div>
+				<div class="sidenoteBig">You may have built a unicode encode block in <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.es.html#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.  If so, compare the technique you used then with the technique you used now with lists.  How do they differ?</div>
 Write a block <code>encode (message)</code> that takes an input message (a sentence), tears it into letter-sized chunks, gets the unicode, adds 1 to each letter, and reports the encoded message.</li>
                 <li>Build a <code>decode (message)</code> block to reverse <code>encode (message)</code>.</li>
             </ol>
         </div>
-        
+
         <div class="takeItFurther">
                 <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                 <div class="sidenoteBig">You could use <code>mod</code> to make the letters of the alphabet loop around to the beginning. You will need to take into account that A is 65.</div>
@@ -102,7 +102,7 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
             </ol>
         </div>
 
-            
+
         <h3>Acronym Generator</h3>
         <div class="todo">
             <ul>
@@ -121,7 +121,7 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
         <div class="forYouToDo">
             <ol start="6">
                 <li>
-                    Create a reporter that takes a phrase as input and reports an acronym made of the first letters of the capitalized words. The steps below suggest <em>one</em> way: 
+                    Create a reporter that takes a phrase as input and reports an acronym made of the first letters of the capitalized words. The steps below suggest <em>one</em> way:
                     <ol>
                         <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
                         <li>The input phrase is a string of characters. Break it up into a list of words. </li>
@@ -135,8 +135,8 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
                 </li>
             </ol>
         </div>
-        
-        
+
+
         <div class="takeItFurther">
      <!--       <div class="todo">
             	<ul>
@@ -145,14 +145,14 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
                     <li><strong>Should we eliminate this TIF entirely?</strong> --MF</li>
                 </ul>
             </div>  -->
-            <ol type="A" start="3">        
+            <ol type="A" start="3">
 	<!--            <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>  -->
             <li>
-                Click the picture to load this database project:<br />                
+                Click the picture to load this database project:<br />
                 <a class="run" href="/bjc-r/prog/3-lists/old/U3L4-database.xml"><img class="indent" src="/bjc-r/img/3-lists/microshaft-database.png" width="493" height="249" alt="database of name, job, salary"></a><br />
                 This is the list of employees of a small company.  <small>(Taken from <em>Structure and Interpretation of Computer Programs</em> by Abelson and Sussman. Creative Commons licensed.)</small> Each of the smaller lists contains a person's name, job title, and yearly salary.
                 <p>"This company spends more money on the big bosses than on the people who do the work," says Alyssa one day.  Is she right?  Write an expression to compute the total salaries of everyone paid less than $100,000 per year.  Then find the total for everyone paid more than $100,000 per year.</p>
-    		</li>   
+    		</li>
             <li>Ben suggests that the results will be more convincing in the form of a list containing that total and all the names of the people in that category (paid less than $100,000, for example). So, if there are five people in that category, your list will have six items: first the total of the salaries, and then the names of the people. Try this both for less than $100,000 and for more than $100,000.
             <li>Find the <em>average</em> salary of people paid less than $100,000 per year.
 
@@ -164,7 +164,7 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
         <h3>Statistics: Sums of Squares</h3>
         <div class="todo">The sum of the squares does interest me, if we are doing a mathematical investigation, but we're not: just making a procedure that does that feels unmotivated--PG</div>
         <p>In statistics, the sum the squares of the... </p>
-        
+
         <div class="forYouToDo">
             <ol start="7">
                 <li>Using <code>map</code>, create a block that takes a list of positive integers as input and reports the list of the squares of its elements.</li>
@@ -173,7 +173,7 @@ Write a block <code>encode (message)</code> that takes an input message (a sente
                 <div class="endnote">For example, if the input list is <code>{1, 4, 5}</code>, then the output should be <code>42</code> (the sum of 1, 16, and 25).</div>
 			</ol>
 		</div>
-        
+
         <div class="todo">
         <p><br />
   Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br />
@@ -192,26 +192,26 @@ Don't be confused about which inputs do and don't have rings. It's the square <u
 
 </p>
 </div>
-        
+
         <div class="takeItFurther">
 	        <div class="todo">Needs review (from GS) --MF</div>
             <ol type="A">
-                <li> 
+                <li>
                     <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     The reporter <code>sq?</code> takes a positive integer as input.  What does it do?<br />
                     <img class="indent" src="/bjc-r/img/3-lists/sq.png" alt="sq?: report(sqrt of (n) = floor of (sqrt of (n)))" title="sq?: report(sqrt of (n) = floor of (sqrt of (n)))" />
-                    
+
                 </li>
-                
+
                 <li>Create a block that takes a list of positive integers as input and reports the list of all perfect squares contained in the input list.</li>
                 <div class="endnote">For example, if the input list is <code>{6, 16, 21, 36}</code>, then the output list should be <code>{16, 36}</code>.</div>
                 <li>Create a block that takes a list of positive integers as input and reports the sum of all the perfect squares contained in the input list.</li>
                 <div class="endnote">For example, if the input list is <code>{2, 9, 13, 25}</code>, then the output should be <code>34</code> (the sum of 9 and 25).</div>
-            </ol>            
+            </ol>
         </div>
         </div>
-        
-        
+
+
         <h3>Sales Data Analysis</h3>
         <div class="todo">
             <ul>
@@ -219,17 +219,17 @@ Don't be confused about which inputs do and don't have rings. It's the square <u
                 <li>Mary: I don't mind it here as a TIF. I made some edits.</li>
                 <li>We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</li>
                 <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
-                <li>[It] might be ok and maybe should be left, but it feels more like C than like BJ. --PG</li> 
+                <li>[It] might be ok and maybe should be left, but it feels more like C than like BJ. --PG</li>
                 <li>It's a TIF now, and I've made changes over time. <strong>Ok to leave in ?</strong> --MF</li>
             </ul>
         </div>
-                    
+
         <div class="takeItFurther">
-            <ol type="A">        
+            <ol type="A">
 	            <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                 <li>
                 	Here are some made-up data from 8 days of sales at an ice cream stand: <br />
-                    
+
                     <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
 					Each of the smaller lists represents one day's data at the stand:
 					<ol style="list-style:decimal;">
@@ -237,7 +237,7 @@ Don't be confused about which inputs do and don't have rings. It's the square <u
                         <li>The second is the number of Popsicles sold.</li>
                         <li>The third number is the number of ice cream cones sold.</li>
                     </ol>
-                    Imagine that popsicles sell for $2.75 each and ice cream cones sell for $5.75 each. 
+                    Imagine that popsicles sell for $2.75 each and ice cream cones sell for $5.75 each.
                     <ol style="list-style:lower-roman;">
                         <div class="sidenote"><strong>Analyze</strong>: Based on these figures, how many employees would you expect this business to have?</div>
                     	<li>Build a single block that calculates the stand's total sales in these eight days.</li>

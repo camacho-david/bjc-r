@@ -4,8 +4,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 3 Lab 3: Three Key List Operations, Page 3</title>
-	</head>  
-	
+	</head>
+
 	<body>
 		<img class="imageRight" src="/bjc-r/img/icons/teachers-choice.png" alt="Teacher's Choice" title="Teacher's Choice" />
         <h2>The <code>Keep</code> Block (Teacher's Choice)</h2>
@@ -14,7 +14,7 @@
 				<li>See also KEEP ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
             </ul>
 		</div>
-        
+
 		<p>
             The <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items 'predicate input slot' from 'list input slot'" title="keep items 'predicate input slot' from 'list input slot'" /> block takes a predicate (with a blank input slot) and a list as input and creates a new list keeping only those items from the input list that match some criterion, such as "begins with a vowel," "is less than five characters long," "is even," or "is a vegetable." For example:
             <img class="indent" src="/bjc-r/img/3-lists/keep-example-1.png" alt="keep items such that (is () a (number)?) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" title="keep items such that (is () a (number)?) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" /><br />
@@ -23,14 +23,14 @@
         </p>
 
 		<p>You write the predicate that does the checking, and <code>keep</code> applies that predicate to each item in the input list and reports the list of elements that make your predicate true.</p>
-        
-        
+
+
         <div class="todo">Keep is ok, but it could be augmented to foreshadow some other stuff. For example, if kids imported a data set (so that they did not have to create it themselves), they could keep all the points that are higher than whatever.  Could be grades, but it'd be nice if they could actually answer some useful question by performing some list operation.  Count the entire list; keep all the values that are over some level; count that list; compare?  (not brilliant, come up with something better)</div>
-		
-        
-		<div class="todo"><h3>Music problem was moved to <a href="/bjc-r/cur/programming/3-lists/optional-projects/4-music-project.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Music Project</a> --MF, 6/1/17</h3></div>
-		
-        
+
+
+		<div class="todo"><h3>Music problem was moved to <a href="/bjc-r/cur/programming/3-lists/optional-projects/4-music-project.es.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Music Project</a> --MF, 6/1/17</h3></div>
+
+
         <h3>Filtering Data</h3>
         <div class="ifTime">
 			<ol start="2">
@@ -43,26 +43,26 @@
             </ol>
         </div>
 
-        
-    <!--<p><br />You may have played Geography, the game in which one player says 
-a place name and the next player has to name another place whose first 
-letter is the last letter of the previous place: Newark, Kentucky, 
-Yonkers, San Francisco, Oklahoma. Have you ever gotten stuck on the 
-letter "A"? Oklahoma, Alabama, Asia, Alaska, America, Alameda... and so 
+
+    <!--<p><br />You may have played Geography, the game in which one player says
+a place name and the next player has to name another place whose first
+letter is the last letter of the previous place: Newark, Kentucky,
+Yonkers, San Francisco, Oklahoma. Have you ever gotten stuck on the
+letter "A"? Oklahoma, Alabama, Asia, Alaska, America, Alameda... and so
 on, forever.</p>
 
 How many states start and end with the same letter? To find out, we first need a list of all the states. -->
 
-        
+
 		<p>
 			Click on the script to open a new file.<br>
 			<a class="run" href="/bjc-r/prog/3-lists/old/U3Lab2Keep.xml"> <img class="indent" src="/bjc-r/img/3-lists/states.png" alt="Alabama, Alaska, ... Wisconsin, Wyoming" title="Alabama, Alaska, ... Wisconsin, Wyoming" /> </a>
 		</p>
-	
+
 		<div class="sidenote">Notice that this gray ring's inner boundary is hexagonal, which means you should use a <i>predicate </i>function, which is a function that reports <code>true</code> or <code>false</code>.</div>
-	
+
 		<p>Alphie and Betty discuss using <code>keep</code>: <img title="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" alt="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" src="/bjc-r/img/3-lists/keep_block.png" border="0"/></p>
-	
+
 		<div class="dialogue">
 			<div><span>Alphie:</span> Let's figure out how <code>keep</code> works. Which states do we want to keep?</div>
 			<div><span>Betty:</span> Let's get a list of the states that begin and end with the same letter.</div>
@@ -73,29 +73,29 @@ How many states start and end with the same letter? To find out, we first need a
 			<div><span>Betty:</span> Oh, right, so we can do this:</div>
 				<div class="stagedir"><img title="keep(letter_1=letter(length))from(states)" alt="keep(letter_1=letter(length))from(states)" src="/bjc-r/img/3-lists/keep_letter1equalsletter(length)from(states).png" /></div>
 			<div><span>Alphie:</span> Each item of <code>states</code> goes in the empty spaces. So, let's try an example. I'll pick a state... "new york". Letter 1 of "new york" is "n".</div>
-			<div class="sidenote">The space in "new york" counts as a character. So "new york" has a length of 8 and the eighth letter is "k".</div>	
+			<div class="sidenote">The space in "new york" counts as a character. So "new york" has a length of 8 and the eighth letter is "k".</div>
 			<div><span>Betty:</span> And that equals... Well, <code>length of</code> "new york" is 8, and <code>letter <var>8</var> of</code> "new york" is "k". The condition is false because "n" doesn't equal "k". So "new york" doesn't show up in the list. We'll keep only the states that have the same first and last letter.</div>
 		</div>
-	
+
 		<div class="ifTime">
 			<ol start="7">
-				<li>			
-					<ol>		
+				<li>
+					<ol>
 						<li>
                             Define a block that will keep all the states that start with a given letter. Here's an example of the block in action:<br />
                             <img class="indent" title="states with S -&gt; south carolina, south dakota" alt="states with S -&gt; south carolina, south dakota" src="/bjc-r/img/3-lists/s-states.png" border="0"/>
                         </li>
-						<!--	<div class="sidenote">If you need some inspiration for problem 3, look again at <a href="/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html#fmapcon">problem 5 on the Getting Started</a> for this lab.</div> --->
+						<!--	<div class="sidenote">If you need some inspiration for problem 3, look again at <a href="/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.es.html#fmapcon">problem 5 on the Getting Started</a> for this lab.</div> --->
 						<li>Write an expression that will select all the states whose names are at least seven letters long.</li>
 						<!--	<img title="KEEP(vowels_contains_blank)from(states)" alt="KEEP(vowels_contains_blank)from(states)" src="/bjc-r/img/3-lists/keep_vowelsfromstates.png" /> -->
 					</ol>
 				</li>
 			</ol>
 		</div>
-		  
+
 		<h3>Using <code>Map</code> and <code>Keep</code> to Access a Database</h3>
         <p>A <strong>database</strong> is a list of <em>records</em>. Each record is a list of its own (the "data" for that record). For example, a database of people in New York might consist of records that contain first name, last name, address, and phone number. To be useful, a database needs <strong>selectors</strong> that pull out individual pieces of information from each record.</p>
-	
+
 		<div class="ifTime" >
 			<ol start="8">
 				<li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss how <code>map</code> and <code>keep</code> might be useful in selecting and organizing data from a database.</li>
@@ -107,29 +107,29 @@ How many states start and end with the same letter? To find out, we first need a
 							<img class="indent" src="/bjc-r/img/3-lists/database.png" alt="data_from_class" title="data_from_class" />
 						</li>
 						<li>
-							Make your selectors. You need four of them; you could call them 
+							Make your selectors. You need four of them; you could call them
  <code>firstname</code>, <code>lastname</code>, <code>age</code>, and <code>height</code>. Here's how <code>age</code> might work:<br />
  							<img class="indent" src="/bjc-r/img/3-lists/agesel.png" alt="age_sasha" title="age_sasha" />
 						</li>
-						<li> 
+						<li>
 							Search your database and create a list of all classmates who are...
 							<ol style="list-style:lower-roman;">
 								<li>The same age as you</li>
 								<li>Taller than you</li>
 								<li>Younger than you</li>
 							</ol>
-						</li> 
+						</li>
 						<li> Search your database and create a list of all classmates whose...
 							<ol style="list-style:lower-roman;">
 								<li>Last name has the same first letter as yours</li>
 								<li>First name starts with a letter that comes before yours in the alphabet</li>
 							</ol>
-						</li> 
+						</li>
 					</ol>
 				</li>
 			</ol>
 		</div>
-		
+
 		<div class="takeItFurther">
 			<ol type="A">
 				<li>Make a block that takes your database and reports a rearrangement of the records so that the last names of your classmates are in alphabetical order.</li>
@@ -165,7 +165,7 @@ How many states start and end with the same letter? To find out, we first need a
                     Correct.
                 </div>
             </div>
-            
+
             <div class="responseDeclaration" identifier="resp3">
                 <div class="correctResponse" identifier="c2"></div>
             </div>

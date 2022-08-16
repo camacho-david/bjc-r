@@ -33,7 +33,7 @@
     <img class="imageRight" src="/bjc-r/img/7-recursion/tree-level9.jpg" alt="imagen de árbol fractal"
         title="imagen de árbol fractal" />
     <p>En Unidad 7, tu construiste <a
-            href="/bjc-r/cur/programming/7-recursion/1-trees/1-recursive-tree.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment"
+            href="/bjc-r/cur/programming/7-recursion/1-trees/1-recursive-tree.es.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment"
             title="Recursive Tree">árboles recursivos</a>. Cada árbol está hecho de segmentos de línea.</p>
     <div class="forYouToDo" id="first">
         <ol>
@@ -117,7 +117,7 @@
     <p>Ha creado y trabajado con bloques recursivos de <em>command</em>. La recursividad también se puede utilizar en
         <em>reporteros</em>.
     </p>
-        
+
     <div class="forYouToDo">
         <ol start="4">
             <li>
@@ -131,50 +131,50 @@
             </li>
         </ol>
     </div>
-        
+
         <div class="todo">The following is all from a second page and needs to be properly integrated by Mary. --MF, 6/17/20</div>
         <div class="todo">
             <p>PG: Drastic change, based on whatever we do with "counting branches" (not trees—there's only one tree), this should change. The reporter is so special-purpose, whereas a n^m block is both /less/ complex (more straightforward) and /more/ generally useful, e.g., for counting the triangle's children.</p>
-            <ul><li>I had written n^m into <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/2-math-predicates.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">U2 Math Tools</a>, but it's now a primitive. --MF, 4/5/19</li></ul>
+            <ul><li>I had written n^m into <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/2-math-predicates.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">U2 Math Tools</a>, but it's now a primitive. --MF, 4/5/19</li></ul>
         </div>
-        
+
         <p>Aquí está el código de Betsy para la función <code>segmentos en arbol</code>:</p>
 
         <img class="indent" src="/bjc-r/img/8-recursive-reporters/bettycode.png" alt="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}"  title="segments in tree(n){if(n=1){report(1)}else{report(1+2*segments in tree(n-1))}}" />
         <div class="takeNote">El bloque <code>report</code> solo se conecta a los bloques <em>superiores</em>. Esto se debe a que <code>reportar</code> devuelve el resultado de su espacio de entrada, inmediatamente, como la salida del bloque reporter <code>segmentos en arbol</code>. No se ejecuta más código en un reporter después de un bloque <code>reportar</code>.</div>
-        
+
         <div class="forYouToDo">
             <ol start="5">
                 <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> ¿Cuál es la condición del caso base? ¿Qué hace el programa en ese caso? ¿Por qué es necesario el caso base?</li>
                 <li>El comando <code>tree</code> tenía dos llamadas recursivas, pero este código solo tiene una. ¿Por qué?</li>
             <!--</ol>
         </div>
-        
+
         <p>You've built and worked with recursive <em>command</em> blocks. Recursion can also be used in <em>reporters</em>. Thinking and programming with recursive reporters can often help solve otherwise complicated problems. </p>
-        
+
         <div class="forYouToDo">
             <ol start="3">-->
                 <li>
                     <div class="sidenoteBig">Vuelve a leer el código del fractal triangular y utilízalo como ayuda para construir este reportero recursivo.</div>
-                	<a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Triangle Fractal">En la Unidad 7</a>, construiste un bloque <code>triángulo fractal</code>. Cree un bloque que informe el <em>número total de triángulos</em> formados en un fractal de triángulos de nivel <var>n</var>:<br />
+                	<a href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.es.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment" title="Triangle Fractal">En la Unidad 7</a>, construiste un bloque <code>triángulo fractal</code>. Cree un bloque que informe el <em>número total de triángulos</em> formados en un fractal de triángulos de nivel <var>n</var>:<br />
                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png" alt="triangles in level (5) fractal reporting 121" title="triangles in level (5) fractal reporting 121"/>
                 </li>
 				<li><div class="saveAs"><span class="text">"U8L1-Recursive-Reporters"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U8L1-Recursive-Reporters" title="Save your work as U8L1-Recursive-Reporters" /></div></li>
-                
+
                 <div class="todo">Do we need this commented out content? --MF, 6/22/20</div>
 
                 <!--            <div class="sidenote" style="position:relative;top:730px;">What exactly is Tony's <code>map</code> block doing?</div>
                 <div class="sidenote" style="position:relative;top:1000px;">
-                <strong>Derman:</strong> Yours is more complicated.<br /> 
+                <strong>Derman:</strong> Yours is more complicated.<br />
                 <strong>Sasha:</strong> But that pattern was easier to spot (for me).
                 </div>
                 <li>This block takes two whole numbers as input. Download it and figure out what it does.
                 <p><a class="run" href="/bjc-r/prog/7-recursive-reporters/rangefrom.xml"><img src="/bjc-r/img/7-recursive-reporters/rangefrom.png" alt="range from ( ) to ( )"></a></p>
                 </li>
                 <ol>
-                
+
                 <li>
-                
+
                 <li>
                 <div class="dialogue">
                 <div class="stagedir">Episode 2</div>
@@ -213,7 +213,7 @@
                             <li>Any reason that we are making them construct lists to run through these blocks rather than just giving them a list? Seems like there is no benefit to that use of their time. --MF</li>
 							<li>Leaving as-is for this pass, but valid concerns. -BK
 							<li>
-MF and BH both feel that the rest of this page should be removed, so I'm doing it.						</li>	
+MF and BH both feel that the rest of this page should be removed, so I'm doing it.						</li>
 							</li>
                         </ul>
                     </div>
@@ -235,6 +235,6 @@ MF and BH both feel that the rest of this page should be removed, so I'm doing i
             </ol>
         </div> -->
 
-    
+
 	</body>
 </html>

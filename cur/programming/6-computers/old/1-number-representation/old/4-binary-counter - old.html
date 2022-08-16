@@ -7,8 +7,8 @@
 	</head>
 
 	<body>
-    
-     
+
+
 	<h2>Binary Counter</h2>
     <div class="todo">
         	Correct All the links to latest versions and Snap! in xml
@@ -16,21 +16,21 @@
           <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/BinaryClock.png" width="25%" alt=""/><br>
          In this project you will create a timer that reports the number of seconds elapsed in both decimal and binary notations. <br><br>
 		<div class="forYouToDo" id="first">
-       
-			<ol>
-           
-				<li>Study the Binary Counter <a href="/bjc-r/cur/programming/6-computers/old/1-number-representation/old/1-binary-counter-preview.html" target="_blank">linked here</a> to gain some instinct how the binary system relates to the decimal system.</li>	
-            
-            
 
-  <li>Review the examples in the <a href="/bjc-r/cur/programming/4-internet/optional-projects/1c-binarycounter-appendix.html" target="_blank">Appendix</a>, if needed, and discuss as a class how you can convert a number in base 10 to its equivalent in base 2.  Come up with a simple algorithm for this procedure.</li>
+			<ol>
+
+				<li>Study the Binary Counter <a href="/bjc-r/cur/programming/6-computers/old/1-number-representation/old/1-binary-counter-preview.es.es.html" target="_blank">linked here</a> to gain some instinct how the binary system relates to the decimal system.</li>
+
+
+
+  <li>Review the examples in the <a href="/bjc-r/cur/programming/4-internet/optional-projects/1c-binarycounter-appendix.es.es.html" target="_blank">Appendix</a>, if needed, and discuss as a class how you can convert a number in base 10 to its equivalent in base 2.  Come up with a simple algorithm for this procedure.</li>
 
 <li>Examine the student file <a class="run" href="/bjc-r/prog/4-internet/U4L1-BinaryClock_Student.xml" target="_blank">linked here</a> with which you will be working. Note that 3 sprites representing the decimal digits, 8 sprites representing the binary digits, with all the necessary code and costumes have been created for you.  To see the actual costumes, you will need to go to the Costumes area for each sprite.  Another sprite representing the “Timer” has also been created for which you will need to fill in some code. </li>
 
 </ol>
 </div>
 
-           
+
 <p>In this project you will generate the binary number representation of decimal numbers 0 through 255.  While it takes 3 digits to represent 255 in base 10, it will require 8 digits in base 2.  (Why?)  </p>
 
 <p>If you look at the Timer sprite code, you will see that Snap<em>!</em>’s own “timer” block (from the “Sensing” menu) is used as a time keeper.  The decimal and binary digits are computed and stored in lists and then a broadcast is made to the sprites representing the digits to put on the appropriate costumes (0 and 1 for the binary digits and 0 through 9 for the decimal digits)<br>
@@ -39,7 +39,7 @@
 </p>
 The “warp” block is used to ensure that all the computation within the block is finalized prior to the refreshing of the screen .
  <div class="forYouToDo" id="second">
-       
+
 			<ol start="4">
 <li>Now write the code for extracting the digits of a given number in base 10. This may seem somewhat redundant but is done to be a model for the less intutitive process in base 2. <br>
 <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/getDecimalDigitsCode.png" width="50%"  alt="getDecimalDigits Code" title="getDecimalDigits Code"/><br>
@@ -54,7 +54,7 @@ Note that last part of the code is used to pad the front of the number with zero
 <p>Note “join” block ensures that the digit is interpreted as a text so that costume with that name is called. The digit is not used as a number here because Snap! will always have the “Turtle” costume as the first costume by default.</p>
 
 <div class="forYouToDo" id="third">
-       
+
 			<ol start="5">
 <li>Now review and understand the code for the rest of the sprites representing the decimal digits.  Check that your timer works in the decimal notation.</li>
 

@@ -4,8 +4,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 3 Lab 3: Three Key List Operations, Page 4</title>
-    </head>   
-    
+    </head>
+
     <body>
 	    <img class="imageRight" src="/bjc-r/img/icons/teachers-choice.png" alt="Teacher's Choice" title="Teacher's Choice" />
         <h2>The <code>Combine</code> Block (Teacher's Choice)</h2>
@@ -20,7 +20,7 @@ JOIN WORDS.  So, I don't know, you could write camelCase that takes a
 sentence, capitalizes all but the first word (with map), and then
 combines them with join.  You could write list-&gt;sentence and list-&gt;word,
 even though they're in the tools library. Combine just isn't as versatile as the others! --BH</li>
-				<li>Remind them <a href="/bjc-r/cur/programming/2-complexity/old/temp-hodgepodge/2-script-variables/4-analyzing-debugging-simplifying.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">what they used to have to do to sum (#2) and max (#4)</a>(also <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">sum (#6)</a>)</li>
+				<li>Remind them <a href="/bjc-r/cur/programming/2-complexity/old/temp-hodgepodge/2-script-variables/4-analyzing-debugging-simplifying.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">what they used to have to do to sum (#2) and max (#4)</a>(also <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/2-script-variable-projects.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">sum (#6)</a>)</li>
                 <li>Call the block <code>combine</code> not <code>combine</code>.</li>
                 <li>Don't use the word "binary" here - just in the TG</li>
                 <li>See COMBINE ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
@@ -33,13 +33,13 @@ even though they're in the tools library. Combine just isn't as versatile as the
                 </li>
             </ul>
 	    </div>
-        
+
         <div class="todo">These COMBINE example images are out of date. --MF, 6/11/21</div>
 		<p>
             The <img class="inline" src="/bjc-r/img/blocks/combine.png" alt="combine 'list input slot' using 'reporter input slot'" title="combine 'list input slot' using 'reporter input slot'" /> block takes an operation (with <em>two</em> blank input slots) and a list as input and reports a single result: the combination for all of the elements of the list when using the given operation. For example: <img class="indent" src="/bjc-r/img/3-lists/combine-example-1.png" alt="combine with (()+()) items of (list {5,6,2,3}) reporting 16" title="combine with (()+()) items of (list {5,6,2,3}) reporting 16" /><br />
             <img class="indent" src="/bjc-r/img/3-lists/combine-example-2.png" alt="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" title="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" />
 		</p>
-		
+
 		<p>You choose the operation (with two input slots), and <code>combine</code> performs that operation between all the items in the input list and reports the result.</p>
 
 		<div class="ifTime" id="first">
@@ -48,15 +48,15 @@ even though they're in the tools library. Combine just isn't as versatile as the
                     <li>BH: I'm not sure I like the first exercise.  The fact that you can use the same value in more than one input slot with map is an obscure secondary feature; I'd rather kids see that map expects a single input slot, whereas combine requires (exactly) two input slots.  I'm too tired right now to try to craft an alternative, though.  :-(</li>
                     <li>JK's response: We have kids find squares of numbers earlier in the lab so they've seen it... Maybe the new sidenote below helps enough that we can keep the problem?</li>
                     <li>  AC:  I think I've seen # 1 before</li>
-            
+
                 </ul>
             </div>
-        
+
             <ol>
 				<li>
                 	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
 					Discuss what <code>combine</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" />
-                </li>                
+                </li>
 				<div class="sidenote">Even if there are two blanks in <code>map</code>, there's still only <em>one</em> input</div>
                 <li>Make a block <img border="0" src="/bjc-r/img/3-lists/max_of.png" alt="max of () and ()" title="max of () and ()" /> that returns the larger of two inputs. </li>
                 <li>Make <img border="0" src="/bjc-r/img/3-lists/maxpict.png" alt="map max over list 1 4 9 5 " title="map max over list 1 4 9 5" /> and <img border="0" src="/bjc-r/img/3-lists/maxpict1.png" alt="combine with max (1,4,9,5)" title="combine with max (1,4,9,5)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank  spaces for <code>max</code>? What seems to be going in the blanks for <code>combine</code>? </li>
@@ -64,17 +64,17 @@ even though they're in the tools library. Combine just isn't as versatile as the
         </div>
 
         <div class="takeNote">
-        <!---	<div class="sidenote">Note that these are all <em>two-input</em> functions.</div>---> 
+        <!---	<div class="sidenote">Note that these are all <em>two-input</em> functions.</div>--->
             <p>
             	<strong>Ways to Think About It.</strong> When you see this:<br />
-            	<div class="sidenote">The gray ring around the addition signals that you're going to apply the addition <em>function</em> to all of the elements of the list.</div>  
+            	<div class="sidenote">The gray ring around the addition signals that you're going to apply the addition <em>function</em> to all of the elements of the list.</div>
             	<div class="todo">Mary, the semicolons in the combine page should be commas.  Feel free to change, but only if we're even keeping the examples.  I see "non-associative blocks" and "factorial" and know that this would be great in a mathematics course because it's so concrete—we can actually build the things we're talking about—but this is not a mathematics course.  All the calculations should come in—we want this course to help kids with their mathematics, so the ideas of applying functions to numbers, building calculations that do what we want, etc., should all be there—but that notion of building calculations that we want means that we need to want them for something. They can't just be arbitrary, just as we wouldn't want them to be arbitrary in our mathematics curricula.
 </div>
                 <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" /><br />
             	think "I'm going to combine all the elements of <var>{1, 2, 3, 4}</var> using addition."<br />
             	In other words, "I'm going to add up all the elements of <var>{1, 2, 3, 4}</var>"
-            </p> 
-            
+            </p>
+
             <p>
                 <code>Combine</code> is used with functions that take two inputs like:<br />
                 <img class="indent" src="/bjc-r/img/3-lists/sum.png" alt="sum block" title="sum block" />
@@ -84,17 +84,17 @@ even though they're in the tools library. Combine just isn't as versatile as the
                 <img src="/bjc-r/img/3-lists/and.png" alt="and predicate block" title="and predicate block" />
                 <img src="/bjc-r/img/3-lists/or.png" alt="or predicate block" title="or predicate block" />or  the <code>max</code> function that you defined above.
             </p>
-            
+
             <!--- <div class="comment">JK: BH says "The join words example in the orange box is really confusing.  It has to be join words (join words (the) (cat)) (sat) = join words (the) (join words (cat) (sat))" But I think that's more confusing. You're allowed to put phrases in join words... I'd like to keep it as is... Any other opinions out there?</div>--->
-            
+
             <p>These operations are <em>associative</em>, which means that the result is the same no matter how the items are grouped. For example, (3 + 4) + 5 = 3 + (4 + 5) and <code>join words</code>("the cat")("sat") = <code>join words</code>("the")("cat sat").</p>
             <!--The expression <img border="0" src="/bjc-r/img/3-lists/combine_minus_345.png" alt="combine with (subtraction) 3,4,5" title="combine with (subtraction) 3,4,5" /> actually gives the result of 3 - (4 - 5).-->
         </div>
 
         <div class="ifTime">
-            <ol start="4"> 
+            <ol start="4">
                 <li>What happens if you drag non-associative blocks such as <img border="0" src="/bjc-r/img/3-lists/difference.png" alt="difference block" title="difference block" /> or <img border="0" src="/bjc-r/img/3-lists/quotient.png" alt="quotient block" title="quotient block" /> into <code>combine</code>? Try it.</li>
-				<div class="endnote"> <strong>Moral of the story:</strong> don't use subtraction or division in <code>combine</code> because the grouping of the items matters in these cases. For example, (3 – 4) – 5 &ne; 3 – (4 – 5). </div> 
+				<div class="endnote"> <strong>Moral of the story:</strong> don't use subtraction or division in <code>combine</code> because the grouping of the items matters in these cases. For example, (3 – 4) – 5 &ne; 3 – (4 – 5). </div>
                 <li>Build a block <code>sum</code> that takes a list of numbers and reports their sum.</li>
                 <li>
                     <!--<div class="sidenote">average<br />= (sum of numbers) / (number of numbers)</div>-->
@@ -108,17 +108,17 @@ even though they're in the tools library. Combine just isn't as versatile as the
         <div class="takeItFurther">
             <ol type="A">
                 <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Try this experiment. Make <img border="0" src="/bjc-r/img/3-lists/map_add_1234.png" alt="map addition over (1,2,3,4)" title="map addition over (1,2,3,4)" /> and <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" />.  What is going into the blank addition spaces for <code>map</code>? What seems to be going in the blanks for <code>combine</code>? </li>
-                <div class="comment">Al was concerned that we removed <a href="/bjc-r/cur/programming/3-lists/2-contact-list/old/1.5-countdown.html">countdown</a> because it previewed this factorial problem. --MF</div>
+                <div class="comment">Al was concerned that we removed <a href="/bjc-r/cur/programming/3-lists/2-contact-list/old/1.5-countdown.es.html">countdown</a> because it previewed this factorial problem. --MF</div>
                 <li>
                     <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                    You met the <em>factorial</em> function before (see <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/1-script-variables.html#factorial" target="_blank">this example</a>). It takes a positive integer input <em>n</em> and reports the product of all the positive integers between 1 and <em>n</em>. Make a block <code>factorial</code> that models this using  <code>combine</code>.  
-                    <!--- <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html#countdown">Hint.</a>--->
-                    <!---<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html#factorial"></a>  --->     
-                    <p><img class="indent" src="/bjc-r/img/3-lists/factpict.png" alt="factorial of 5" title="factorial of 5" /></p>      
-                </li>  
+                    You met the <em>factorial</em> function before (see <a href="/bjc-r/cur/programming/2-complexity/old/old-script-variables/1-script-variables.es.html#factorial" target="_blank">this example</a>). It takes a positive integer input <em>n</em> and reports the product of all the positive integers between 1 and <em>n</em>. Make a block <code>factorial</code> that models this using  <code>combine</code>.
+                    <!--- <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.es.html#countdown">Hint.</a>--->
+                    <!---<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.es.html#factorial"></a>  --->
+                    <p><img class="indent" src="/bjc-r/img/3-lists/factpict.png" alt="factorial of 5" title="factorial of 5" /></p>
+                </li>
             </ol>
         </div>
-    
+
 
 <!--<p><br />Let's say you have a list of numbers, such as all the students' grades on a quiz. You want to find the average grade. There are two steps: First, add up all the numbers; then divide that sum by the number of numbers &#45 that is, by the length of the list.<br />
 <img border="0" src="/bjc-r/img/list/hof/average.png" alt="average uses COMBINE WITH +" title="average uses COMBINE WITH +"/>
@@ -142,7 +142,7 @@ The two-input <code>max</code> block is an example; try using that to find the l
 </b><br />
 We should try out the <code>average</code> block:<br />
 <img border="0" src="/bjc-r/img/list/hof/avg781.png" alt="average of the list 7,8,1 iw 5.333333" title="average of the list 7,8,1 iw 5.333333"/>
-<br />Is that the answer you'd expect?<br /><br />  
+<br />Is that the answer you'd expect?<br /><br />
   </p>-->
 
 
@@ -153,7 +153,7 @@ We should try out the <code>average</code> block:<br />
         responseIdentifier="resp1" shuffle="true">
             <div class="prompt">
                 <p>
-                    Use this list of squares: <br /> 
+                    Use this list of squares: <br />
                     <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /><br />
                     Which of these expressions will report a <strong>list</strong>?<br />
                     Choose <strong>all</strong> that apply.
@@ -181,7 +181,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)">
                 </div>
                 <div class="feedback">
-                    No, + reports a number, so in this case <code>combine</code> will report a number. 
+                    No, + reports a number, so in this case <code>combine</code> will report a number.
                 </div>
             </div>
             <div class="choice" identifier="c1">
@@ -197,7 +197,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map (()+()) over (squares)" title="map (()+()) over (squares)">
                 </div>
                 <div class="feedback">
-                    Correct. 
+                    Correct.
                 </div>
             </div>
             <div class="choice" identifier="c3">
@@ -205,7 +205,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with (join ()()) items of (squares)" title="combine with (join ()()) items of (squares)">
                 </div>
                 <div class="feedback">
-                    No. <code>join</code>(1,4) will report 14. 
+                    No. <code>join</code>(1,4) will report 14.
                 </div>
             </div>
             <div class="choice" identifier="c1">
@@ -213,7 +213,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map ((0)-()) over (squares)" title="map ((0)-()) over (squares)">
                 </div>
                 <div class="feedback">
-                    Correct. 
+                    Correct.
                 </div>
             </div>
             <div class="choice" identifier="c1">
@@ -221,7 +221,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map (()-()) over (squares)" title="map (()-()) over (squares)">
                 </div>
                 <div class="feedback">
-                    Correct. 
+                    Correct.
                 </div>
             </div>
 
@@ -229,7 +229,7 @@ We should try out the <code>average</code> block:<br />
                 <div class="correctResponse" identifier="c1"></div>
             </div>
         </div>
-        
+
 		<!-- question 2 (was #2 on Self Check Page) -->
         <div class="assessment-data"
         type="multiplechoice" identifier="squares"
@@ -237,7 +237,7 @@ We should try out the <code>average</code> block:<br />
         responseIdentifier="resp2" shuffle="true">
             <div class="prompt">
                 <p>
-                    Use the same list of squares: <br /> 
+                    Use the same list of squares: <br />
                     <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /><br />
                     The expressions in this problem are the same as you saw in question 1.<br />
                     Which of these statements are <strong>true</strong>?<br />
@@ -266,7 +266,7 @@ We should try out the <code>average</code> block:<br />
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that ((letter (length of ()) of ())=1) from (squares)" title="keep items such that ((letter (length of ()) of ())=1) from (squares)" /> reports the list <var>{1, 16, 100, 121, 144, 169, and 196}</var>.
                 </div>
                 <div class="feedback">
-                    No, this doesn't mean "keep numbers in which the first<em></em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1." 
+                    No, this doesn't mean "keep numbers in which the first<em></em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1."
                 </div>
             </div>
             <div class="choice" identifier="c4">
@@ -285,7 +285,7 @@ We should try out the <code>average</code> block:<br />
                     No. One of these lists is made up of 15 items that are all zero.
                 </div>
             </div>
-            
+
             <div class="responseDeclaration" identifier="resp2">
                 <div class="correctResponse" identifier="c1"></div>
             </div>

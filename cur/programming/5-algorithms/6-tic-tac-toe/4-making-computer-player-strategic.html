@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-        
+
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
@@ -11,18 +11,18 @@
 		<!--<title>Unit 5 Lab X: Tic-Tac-Toe with a Strategic Computer Player, Page 2</title>-->
         <title>Unidad 5 Laboratorio 6: Tic-Tac-Toe con un reproductor de computadora, página 4</title>
     </head>
-    
+
     <body>
         <h2>Haciendo que la computadora juegue con estrategia</h2>
         <div class="todo">
             <p>PG: Long and hard.</p>
             <p>MF: Project still needs to be wrapped up and updated online</p>
         </div>
-        
+
         <div class="learn">
             <p><strong>En esta p&aacute;gina</strong>, implementar&aacute;s las reglas de estrategia del juego tres en l&iacute;nea para hacer que la computadora juegue estrat&eacute;gicamente.</p>
         </div>
-        
+
         <p>Crear&aacute;s un bloque <img src="/bjc-r/img/5-algorithms/next-move.png" alt="next move for computer" title="next move for computer">&nbsp; puedes enviar un mensaje a todos los clones acerca de la posici&oacute;n en la que la computadora se mover&aacute;. Como antes, s&oacute;lo el clon que coincida con el <var>n&uacute;mero de posici&oacute;n</var> har&aacute; el movimiento.</p>
         <p>
         	El c&oacute;digo para el <code>siguiente movimiento para la computadora</code> implementar&aacute; las siguientes tres reglas de estrategia:
@@ -34,7 +34,7 @@
             </ul>
 		<p></p>
         <div class="endnote">Construir&aacute;s el bloque <code>siguiente movimiento para la computadora</code> utilizando dos nuevos bloques: <code>&iquest;puedo ganar ahora?</code> y <code>casilla ganadora</code>, que a&uacute;n no est&aacute;n escritos. Para empezar a crear el bloque <code>siguiente movimiento para la computadora</code>, crear&aacute;s los otros dos bloques, pero en realidad no har&aacute;n nada. S&oacute;lo ser&aacute;n para establecer el c&oacute;digo para <code>siguiente movimiento para la computadora</code>, m&aacute;s tarde los utilizar&aacute;s.</div>
-        
+
         <div class="forYouToDo" id="first">
 			<ol>
 				<li>Si a&uacute;n no est&aacute; abierto, abre el proyecto U5-Tresenlinea.</li>
@@ -59,19 +59,19 @@
                 <li>Juega una partida contra la computadora, y aseg&uacute;rate que el juego a&uacute;n funciona.</li>
             </ol>
         </div>
-        
+
         <p>Puedes revisar el <code>estado de todos los triples ganados</code> para un triple que permitir&aacute; al jugador controlado por la computadora ganar en el siguiente turno, pero no podr&aacute;s decir la <em>posici&oacute;n</em> de la casilla a la cu&aacute;l se mover&aacute; el jugador. Para hacerlo posible, necesitar&aacute;s iniciar los espacios de la variable en el <var>tablero</var> con los n&uacute;meros de 1 a 9 en lugar de colocar nueve copias de la palabra "vac&iacute;a." Luego <img class="inline" src="/bjc-r/img/5-algorithms/winning-square-for-player.png" alt="winning square for player" title="winning square for player"> puede seleccionar el n&uacute;mero de posici&oacute;n del triple ganador.</p>
-        
+
         <div class="forYouToDo">
             <ol start="5">
 				<li>
                     Cambia la instrucci&oacute;n inicial de la variable del <var>tablero</var> a la lista de n&uacute;meros del 1al 9.
-                    
+
 
 <div class="endnote">Puedes escribir los n&uacute;meros de uno en uno o utilizar <img class="inline" src="/bjc-r/img/blocks/numbers-from-to.png" alt="numbers from () to ()" title="numbers from () to ()">.</div>
                 </li>
 				<li><strong>Depurando.</strong> Juega una partida.&nbsp; Identifica las partes de tu c&oacute;digo que causan los problemas, y encuentra una soluci&oacute;n.
-                
+
 
 <div class="endnote">
                 	<!--<p><a href="#hint-tie-bug" data-toggle="collapse" title="Click for a hint about what's causing the error with the board variable.">Click for a hint about what's causing the error.</a></p>
@@ -82,13 +82,13 @@
                 </li>
 			</ol>
 		</div>
-		
+
         <p>Ahora empezar&aacute;s a trabajar en los bloques&nbsp; <img class="inline" src="/bjc-r/img/5-algorithms/winning-square-for-player.png" alt="winning square for player" title="winning square for player"> y <img class="inline" src="/bjc-r/img/5-algorithms/can-player-win-now.png" alt="can player () win now?" title="can player () win now?"> . El bloque <code>&iquest;puedo ganar ahora? </code>puede comprobar si hay una casilla ganadora comprobando los resultados de <code>casilla ganadora</code>, as&iacute; que primero, crear&aacute;s el c&oacute;digo para <code>casilla ganadora</code>.</p>
         <p>Empezar&aacute;s construyendo un bloque triple ganador para que el jugador identifique el contenido de las tres casillas del tablero donde el jugador podr&iacute;a ganar en su pr&oacute;ximo turno. Luego la, <code>casilla ganadora</code> seleccionar&aacute; la posici&oacute;n correcta de ese triple.<br>
             <img class="indent" src="/bjc-r/img/5-algorithms/winning-triple-for-player-reporting.png" alt="winning triple for player reporting {3, O, O}" title="winning triple for player reporting {3, O, O}">
             <img class="indent" src="/bjc-r/img/5-algorithms/winning-square-for-player-o-reporting.png" alt="winning square for player O reporting 3" title="winning square for player O reporting 3">
         </p>
-        
+
         <div class="forYouToDo">
             <ol start="7">
 				<li>
@@ -101,7 +101,7 @@
                 </li>
                 <li>
                 	Crea un bloque&nbsp; <img src="/bjc-r/img/5-algorithms/winning-triple-for-player.png" alt="winning triple for player ()" title="winning triple for player ()"> . Debe reportar el primer triple que encuentre que contenga un lugar donde el jugador pueda ganar.
-                    
+
 
 <div class="endnote">
                     	Te puede ser &uacute;til inventar estos bloques:<br>
@@ -110,7 +110,7 @@
                         <p><a href="#hint-winning-triple" data-toggle="collapse" title="Click here for a hint about winning triple for player.">Da clic aqu&iacute; para ver una pista acerca de <code>ganando un triple</code>.</a></p>
                         <div class="collapse" id="hint-winning-triple">
                             <img class="indent" src="/bjc-r/img/5-algorithms/winning-triple-for-player-hint.png" alt="item (1) of (keep items such that ('The code is missing. Plain text says: You build the predicate.') from (status of all winning triples))" title="item (1) of (keep items such that ('The code is missing. Plain text says: You build the predicate.') from (status of all winning triples))">
-                            <p>Aprendiste acerca de utilizar <code>mantener</code> con predicados en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unidad 2 Laboratorio 3 P&aacute;gina 5: <code>manteniendo </code></a><span style="color: #0000ee;">elementos de una lista.<br></span></p>
+                            <p>Aprendiste acerca de utilizar <code>mantener</code> con predicados en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unidad 2 Laboratorio 3 P&aacute;gina 5: <code>manteniendo </code></a><span style="color: #0000ee;">elementos de una lista.<br></span></p>
                             <p><a href="#hint-winning-triple2" data-toggle="collapse" title="Click here for abother hint about winning triple for player.">Da clic aqu&iacute; para ver otra pista acerca de <code>triple ganador</code>. <br></a></p>
 							<div id="hint-winning-triple2" class="collapse">El jugador debe aparecer dos veces en el triple, pero el oponente no debe aparecer en absoluto.</div>
                         </div>
@@ -128,24 +128,24 @@
 				</div>
                 <li>Juega parte de un juego, prueba la <code>casilla ganadora</code> para ambos jugadores, y arregla cualquier error.</li>
                 <li>Implementa <img class="inline" src="/bjc-r/img/5-algorithms/can-player-win-now.png" alt="can player () win now?" title="can player () win now?"> utilizando tu bloque <code>casilla ganadora</code>.</li>
-		
+
                 <li>Juega varios partidas contra el programa. Arregla cualquier error. Aseg&uacute;rate de que la computadora usa tres reglas.</li>
             </ol>
         </div>
-        
+
         <div class="ifTime">
             <ol start="15">
                 <li>Modifica el programa para que la computadora pueda jugar X o O. Cuando el juego comience, p&iacute;dele al jugador humano que elija X u O.</li>
 				<li>Crea una forma para que el jugador decida si quiere jugar contra otro humano o contra el ordenador.</li>
             </ol>
-        </div> 
-        
+        </div>
+
         <div class="takeItFurther">
             <ol type="A">
                 <li>Juega contra la computadora, y encuentra una estrategia que te permita ganar el juego. (Esto no es trivial; s&oacute;lo que las reglas de la computadora que ya tienes son bastante buenas.)</li>
                 <li>
                     programa m&aacute;s reglas para que la computadora sea una mejor jugadora.Esto implicar&aacute; mirar m&aacute;s de un movimiento hacia adelante. Hay varias maneras de hacerlo, y la siguiente es solo una sugerencia.
-                    
+
 
 <ol type="a">
                         <li>
@@ -159,19 +159,19 @@
                             <img class="indent" src="/bjc-r/img/hof/ttt-flatten.png" alt="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" title="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))"><br>
                             No tienes el bloque <code>anexar</code> en tu paleta, pero hay una en tu librer&iacute;a de Snap<em>!</em>. Da clic en el icono del men&uacute; de archivo, and choose "Librer&iacute;as..", luego elige "Lista de utilidades" en el men&uacute; para que aparezca.
                         </li>
-                        <div class="endnote">"&Aacute;tomo" es un t&eacute;rmino t&eacute;cnico para un valor que no es una lista. Una lista contiene un mont&oacute;n de elementos, al igual que una mol&eacute;cula contiene un mont&oacute;n de &aacute;tomos.</div>    
+                        <div class="endnote">"&Aacute;tomo" es un t&eacute;rmino t&eacute;cnico para un valor que no es una lista. Una lista contiene un mont&oacute;n de elementos, al igual que una mol&eacute;cula contiene un mont&oacute;n de &aacute;tomos.</div>
                         <li>Ahora encuentra un n&uacute;mero que aparezca m&aacute;s de una vez en&nbsp; <code>&aacute;tomos</code>.</li>
                         <div class="endnote">
                             <div class="todo">Need to update page number. --MF, 3/29/19</div>
-                            Tu escribist&eacute; el bloque de <code>duplicados en</code> <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.html" title="Unit 5 Lab 1 Page 7: List Processing Algorithms">Unidad 5 Laboratorio 1 P&aacute;gina 7: Lista Procesando Algoritmos</a>.
+                            Tu escribist&eacute; el bloque de <code>duplicados en</code> <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.es.html" title="Unit 5 Lab 1 Page 7: List Processing Algorithms">Unidad 5 Laboratorio 1 P&aacute;gina 7: Lista Procesando Algoritmos</a>.
                         </div>
-                        
+
                     </ol>
                 </li>
             </ol>
-        </div>       
-        
-    
-    
+        </div>
+
+
+
 
 </body></html>

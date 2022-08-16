@@ -21,11 +21,11 @@
                 </li>
             </ul>
         </div>
-        
+
 
     <p>Cryptography of the process of writing (encryption) and solving (decryption) codes. Just as TCP enables reliable transmission over an unreliable network, cryptography enables verifiable, secure transmission over an insecure network.</p>
 		<div class="endnote">
-	        <p>In <a href="/bjc-r/cur/programming/2-complexity/old/6-encryption/2-secret-keys.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Unit 3</a>, you saw some methods for coding messages before, and you looked a bit at some ideas about security and public key.  You'll now look at a general method for coding messages that shows how it's possible to let everyone know what your coding process is while still making the decoding process very difficult to figure out.</p>	
+	        <p>In <a href="/bjc-r/cur/programming/2-complexity/old/6-encryption/2-secret-keys.es.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Unit 3</a>, you saw some methods for coding messages before, and you looked a bit at some ideas about security and public key.  You'll now look at a general method for coding messages that shows how it's possible to let everyone know what your coding process is while still making the decoding process very difficult to figure out.</p>
         </div>
 
         <div class="forYouToDo" id="first">
@@ -38,13 +38,13 @@
         </div>
 
         <div class="takeNote">
-            <p><em>Symmetric</em> cryptography, uses the <em>same secret key to encode and decrypt</em> a message. Symmetric cryptography has been around for thousands of years. The trouble with symmetric cryptography is: <em>how can we keep the key secret?</em></p> 
+            <p><em>Symmetric</em> cryptography, uses the <em>same secret key to encode and decrypt</em> a message. Symmetric cryptography has been around for thousands of years. The trouble with symmetric cryptography is: <em>how can we keep the key secret?</em></p>
 			<div class="endnote">Long before computers,  riders on horseback could swallow the key to a message if they were captured. Now, messages <em>and keys</em> are sent over the  Internet, so symmetric cryptography won't work.</div>
 			<p><em>Public key (asymmetric)</em> cryptography was created by mathematicians in the 1970s.  It uses <em>two different keys for encryption and decryption</em>, and knowing the encryption key doesn't let you figure out the decryption key.</p>
 			<div class="endnote">For example, banks each have a public key, and when users enter their password on the bank web site, the user's browser encrypts the password with the bank's key before sending it over the Internet. Then, only the bank can decrypt that message.</div>
     <p>When you make a secure HTTP connection (the URL starts "https://" and a lock icon appears in the browser's URL bar), the browser uses a protocol called Transport Layer Security (TLS) or an older version called Secure Sockets Layer (SSL) based on public key cryptography. The site to which you're connecting sends its public key, and your browser uses it to encrypt whatever information you send (such as your password for that site).</div>
 
-				
+
         <!-- I still like this, but I pulled it for this year. --MF
         <div class="forYouToDo" id="first">
             <ol>
@@ -55,14 +55,14 @@
 				</li>
 			</ol>
 		</div>-->
-	
-        
+
+
         <div class="ifTime">
         	<div class="endnote">It's also possible to use the private key for encryption and the public key for decryption.  That's no good for secret messages (why not?), but it's useful for <em>digital signatures</em>.  I use my private key to encrypt a message; you use my public key to decrypt it.  If you get a meaningful message as the result, that proves that the message was encrypted with my private key.  (If I want both secrecy and digital signing, I encrypt the message with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is a nice example of <em>composition of functions:</em> the output from the first encryption is the input to the second encryption.</div>
-		</div>    
-		
+		</div>
+
         <div class="todo">The following set of exercises confuses me somewhat, for two reasons: (1) It's not specifically about public key, which is what I expect at this point in the narrative...[some comments and excercises moved to encryption page. -MF]</div>
-        
+
 		<h3>The Mathematics behind Cryptography</h3>
         <p>Cryptography uses mathematical ideas. The security in public key encryption relies on choosing an encryption key that is a difficult function to invert (undo). These one-way functions offer security because </p>
         <div class="endnote">
@@ -87,7 +87,7 @@
                 <p>Here, <span class="katex">N</span> is a product of 2 huge primes <span class="katex">p</span> and <span class="katex">q</span>. That is, <span class="katex">N=pq</span>. And <span class="katex">e</span> is relatively prime to (has no common factors with) the product <span class="katex">(p-1)(q-1)</span>.</p>
                 <p>The public key is then the pair <span class="katex">(N,e)</span> and the secret key is the number <span class="katex">d</span> so that <span class="katex">ed \equiv (p-1)(q-1) \text{ mod } N</span>.</p>
 			</div>
-            <div class="sidenote">You can review the mathematical function <em>mod</em> in <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#mod">Unit 1</a>.</div>
+            <div class="sidenote">You can review the mathematical function <em>mod</em> in <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.es.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#mod">Unit 1</a>.</div>
             <ol start="4">
             	<li>
                 	Watch the rest of this video:<br />
@@ -95,6 +95,6 @@
                 </li>
             </ol>
         </div>-->
-		
+
 </body>
 </html>
