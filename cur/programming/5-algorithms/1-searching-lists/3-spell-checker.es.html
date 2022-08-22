@@ -16,7 +16,7 @@
         <div class="learn">
             <p><strong>En esta p&aacute;gina</strong>, utilizar&aacute;s un algoritmo de <em>b&uacute;squeda binaria</em> para buscar eficientemente en una lista <em>ordenada</em>.</p>
         </div>
-        <p>Responder esta pregunta es f&aacute;cil en Snap<em>!</em>, porque puedes solo preguntar <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/100000-words-contains-seperate.png" alt="100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)">. Pero <em>"f&aacute;cil" no significa r&aacute;pido</em>. El bloque <code>contiene</code> todav&iacute;a tiene que buscar cada elemento de la lista hasta que encuentre el que est&aacute; buscando (y decir <code>verdadero</code>) o alcanzar el final de la lista (y decir <code>falso</code>). </p>
+        <p>Responder esta pregunta es f&aacute;cil en Snap<em>!</em>, porque puedes solo preguntar <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/100000-words-contains-seperate.es.png" alt="100000-words-contains-seperate.es.png" title="(100,000 words) contains (seperate)">. Pero <em>"f&aacute;cil" no significa r&aacute;pido</em>. El bloque <code>contiene</code> todav&iacute;a tiene que buscar cada elemento de la lista hasta que encuentre el que est&aacute; buscando (y decir <code>verdadero</code>) o alcanzar el final de la lista (y decir <code>falso</code>). </p>
         <p>Cuando est&aacute;s buscando <em>una</em> sola cosa en una lista (por ejemplo, revisando si una palabra en particular est&aacute; escrita correctamente) en vez de encontrar <em>todas</em> las palabras con algunas caracter&iacute;sticas (por ejemplo, buscar todas las palabras de cinco letras), puedes utilizar la estrategia de <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.es.html?topic=nyc_bjc%2F5-algorithms.es.topic&amp;course=bjc4nyc.es.html&amp;novideo&amp;noassignment" title="Page 1: Guess My Number to make your algorithm faster.">P&aacute;gina 1: Adivina mi n&uacute;mero</a> para hacer tu algoritmo m&aacute;s r&aacute;pido. La mejor estrategia para ese problema es un algoritmo de <em>b&uacute;squeda binaria</em>: siempre&nbsp; adivina el valor <em>medio</em>. De esa manera, eliminas la mitad de las posibilidades con cada adivinanza. Podemos utilizar una estrategia similar para buscar una palabra en una lista de palabras.</p>
         <div class="endnote">Podr&iacute;as haber escrito un programa de adivinanza de n&uacute;meros m&aacute;s sencillo: la computadora podr&iacute;a adivinar el n&uacute;mero 1, luego el 2, luego el 3, y as&iacute; sucesivamente hasta encontrar el n&uacute;mero. Eso ser&iacute;a un algoritmo de <em>b&uacute;squeda lineal</em>; es m&aacute;s f&aacute;cil de codificar, pero tarda m&aacute;s en ejecutarse porque cada vez que hace una adivinanza err&oacute;nea, elimina s&oacute;lo esa adivinanza. Con la b&uacute;squeda binaria, cada adivinanza incorrecta elimina la <em>mitad </em>de posibilidades a la vez.</div>
         <div class="vocabFullWidth">:<strong> B&uacute;squeda binaria</strong>
@@ -31,9 +31,9 @@
         <div class="forYouToDo" id="first">
 	  <ol>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos">
+                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.es.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos">
                     Compara&nbsp; el bloque de <code>b&uacute;squeda binaria</code> con tu c&oacute;digo de <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.es.html?topic=nyc_bjc%2F5-algorithms.es.topic&amp;course=bjc4nyc.es.html&amp;novideo&amp;noassignment" title="Page 1: Guess My Number to make your algorithm faster.">P&aacute;gina 1: Adivina mi n&uacute;mero</a>. &iquest;Qu&eacute; partes son iguales? &iquest;Qu&eacute; partes son diferentes?<br>
-                    <img class="indent" src="/bjc-r/img/5-algorithms/binary-search-block-definition.png" alt="binary search for (value) in (data) {
+                    <img class="indent" src="/bjc-r/img/5-algorithms/binary-search-block-definition.es.png" alt="binary search for (value) in (data) {
             script variables (low) (high) (current index) (current item)
             set (low) to (1)
             set (high) to (length of (data))
@@ -67,15 +67,15 @@
                     <div class="todo">TG: The crucial difference is that you find the average position on in the list but them to see if you are high or low, you have to look at the actual item in the list, not just the position number.</div>
                     <div class="endnote">&nbsp;
                         El bloque <code>&gt;</code>&nbsp; (as&iacute; como los bloques <code>&lt;</code> y <code>=</code> ) compara las palabras alfab&eacute;ticamente: <br>
-                        <img class="indent" src="/bjc-r/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true">
-                        <img class="indent" src="/bjc-r/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false">
+                        <img class="indent" src="/bjc-r/img/5-algorithms/carrot-gt-banana-reporting.es.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true">
+                        <img class="indent" src="/bjc-r/img/5-algorithms/apple-gt-banana-reporting.es.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false">
                     </div>
                 </li>
 				<li>Responde la pregunta: &iquest;"separar" est&aacute; escrito correctamente? utilizando la&nbsp; <code>b&uacute;squeda binaria</code> para buscarlo en la lista de&nbsp; <var>100,000 palabras (ordenadas)</var>.</li>
 				<li>Intenta la <code>b&uacute;squeda binaria</code> con algunas palabras que sabes que est&aacute;n escritas correctamente y otras que sabes que son incorrectas. </li>
 				<li>Ahora utiliza la <code>b&uacute;squeda binaria</code>&nbsp; para buscar las mismas palabras en las <var>100,000 palabras </var>sin clasificar.</li>
                 <div class="comment">AAP-2.P.2</div>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Por qu&eacute; funciona en una lista pero no en la otra?</li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Por qu&eacute; funciona en una lista pero no en la otra?</li>
 			</ol>
 		</div>
 
@@ -179,8 +179,8 @@
         <div class="ifTime">
 			<ol start="7">
 				<li>Construye un corrector ortogr&aacute;fico.</li>
-                <div class="endnote">Utiliza <img class="inline" src="/bjc-r/img/blocks/split-by-whitespace.png" alt="split () by (whitespace)" title="split () by (whitespace)" width="190"> para convertir el texto de entrada en una lista.</div>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Debe tu corrector ortogr&aacute;fico buscar en el diccionario cada palabra del texto o buscar en el texto cada palabra del diccionario?</li>
+                <div class="endnote">Utiliza <img class="inline" src="/bjc-r/img/blocks/split-by-whitespace.es.png" alt="split () by (whitespace)" title="split () by (whitespace)" width="190"> para convertir el texto de entrada en una lista.</div>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Debe tu corrector ortogr&aacute;fico buscar en el diccionario cada palabra del texto o buscar en el texto cada palabra del diccionario?</li>
 			</ol>
 		</div>
 

@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-        <img class="imageRight" src="/bjc-r/img/icons/teachers-choice.png" alt="Teacher's Choice" title="Teacher's Choice" />
+        <img class="imageRight" src="/bjc-r/img/icons/teachers-choice.es.png" alt="Teacher's Choice" title="Teacher's Choice" />
         <h2>Web Scraping Techniques (Teacher's Choice)</h2>
         <div class="ifTime">
 			<ol>
@@ -15,7 +15,7 @@
 			</ol>
             <p>Use the U4L3-HttpBlock file as a starter project for any web scraping app you build; it has <code>proxied http</code> and the <code>substring</code> blocks already installed.</p>
 		</div>
-		<img class="indent" src="/bjc-r/img/4-internet/empty-result.png" alt="http block reporting ()" title="http block reporting ()" /><br />
+		<img class="indent" src="/bjc-r/img/4-internet/empty-result.es.png" alt="http block reporting ()" title="http block reporting ()" /><br />
 		<div class="sidenoteBig">Most websites receive a request coming from Snap<em>!</em> and say "this isn't a real web browser query, so I'm not answering." The <code>proxied http</code> block uses proxy (replacement or stand-in) servers to call the URL you enter. The proxy server performs the request as a browser would and sends the information to Snap<em>!</em>.</div>
         <p>You likely got an <em>empty</em> result back. For security, a website (such as the Snap<em>!</em> server) is not allowed to send a request to another website. Servers expect browsers to send website requests.</p>
         <p>There is a JavaScript program in this Snap<em>!</em> project called <code>proxied http</code> that uses a proxy (stand-in) server to fool the requested web site into sending data it wouldn't normally send.</p>
@@ -26,8 +26,8 @@
         <div class="ifTime">
 			<ol start="2">
                 <li>
-                    <img class="imageRight" src="/bjc-r/img/4-internet/http-http.png" alt="Don't include the 'http://' in the http block input slot." title="Don't include the 'http://' in the http block input slot." />
-                    Try the <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http://"> block with your URL. This time, it <em>should</em> work. Be sure <em>not</em> to include the "http://" in the input slot.
+                    <img class="imageRight" src="/bjc-r/img/4-internet/http-http.es.png" alt="Don't include the 'http://' in the http block input slot." title="Don't include the 'http://' in the http block input slot." />
+                    Try the <img src="/bjc-r/img/4-internet/proxied-http.es.png" alt="proxied http://"> block with your URL. This time, it <em>should</em> work. Be sure <em>not</em> to include the "http://" in the input slot.
                 </li>
             </ol>
         </div>
@@ -43,7 +43,7 @@
         <div class="ifTime">
             <ol start="3">
                 <li>
-                	Try the <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http://"> block with the following URL, and use <img class="inline" src="/bjc-r/img/4-internet/split-by-line.png" alt="split () by (line)" title="split () by (line)" /> to create a list of the lines of HTML code from that page.<br />
+                	Try the <img src="/bjc-r/img/4-internet/proxied-http.es.png" alt="proxied http://"> block with the following URL, and use <img class="inline" src="/bjc-r/img/4-internet/split-by-line.es.png" alt="split () by (line)" title="split () by (line)" /> to create a list of the lines of HTML code from that page.<br />
                     <p class="center"><a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=New+York,NY" target="_blank">www.wunderground.com/cgi-bin/findweather/getForecast?query=New+York,NY</a></p>
                 </li>
                 <li>
@@ -52,7 +52,7 @@
                     <div class="todo">
                     	This image needs to be redone according to the Weather Underground instructions on this page as soon as PROXIED HTTP works. :/ --MF 2016-12-20<br />
                          The report of your script should look something like this:
-                         <img class="indent" src="/bjc-r/img/4-internet/weather-list.png" alt="output of 'www.weatherstreet.com/weather-forecast/New-York-NY-10001.htm' starting with '<!-- START OF CURRENT CONDITIONS'" title="output of 'www.weatherstreet.com/weather-forecast/New-York-NY-10001.htm' starting with '<!-- START OF CURRENT CONDITIONS'" />
+                         <img class="indent" src="/bjc-r/img/4-internet/weather-list.es.png" alt="output of 'www.weatherstreet.com/weather-forecast/New-York-NY-10001.htm' starting with '<!-- START OF CURRENT CONDITIONS'" title="output of 'www.weatherstreet.com/weather-forecast/New-York-NY-10001.htm' starting with '<!-- START OF CURRENT CONDITIONS'" />
 </div>
                 </li>
             </ol>
@@ -69,14 +69,14 @@
                 <div class="sidenoteBig">When you see <strong>https://</strong> instead of <strong>http://</strong> in the browser location bar, it means the information exchanged is secured via encryption.</div>
                 <div class="takeNote">Your URL may add some details, but one of the simplest formats is <a href="https://www.google.com/#q=snap" target="_blank">https://www.google.com/#q=snap</a>.</div>
                 <li>Build a small app that asks for a one-word search query, then displays the URL to use for that Google search, and the HTML of the results from the search. Warning: don't expect the HTML to be easy to read!</li>
-                <div class="endnote">Remember that the results of <code>ask</code> are available from a reporter called <em>answer</em>. As before, use the <img src="/bjc-r/img/4-internet/proxied-http.png" alt="Proxied HTTP block"> block to retrieve the HTML.</div>
+                <div class="endnote">Remember that the results of <code>ask</code> are available from a reporter called <em>answer</em>. As before, use the <img src="/bjc-r/img/4-internet/proxied-http.es.png" alt="Proxied HTTP block"> block to retrieve the HTML.</div>
 			</ol>
         </div>
         <div class="takeItFurther">
             <ol type="A">
             	<li>
                     Look inside <code>error reporting http</code>. How much of the JavaScript (JS) function can you read?
-                    <div class="endnote">JS uses <code>!</code> for <img class="" src="/bjc-r/img/blocks/not.png" alt="empty not predicate" title="empty not predicate" /> and <code>=</code> for <img class="" src="/bjc-r/img/blocks/set.png" alt="empty set predicate" title="empty set predicate" />, but <code>if else</code> and <code>return</code> work the same as in Snap<em>!</em>.</div>
+                    <div class="endnote">JS uses <code>!</code> for <img class="" src="/bjc-r/img/blocks/not.es.png" alt="empty not predicate" title="empty not predicate" /> and <code>=</code> for <img class="" src="/bjc-r/img/blocks/set.es.png" alt="empty set predicate" title="empty set predicate" />, but <code>if else</code> and <code>return</code> work the same as in Snap<em>!</em>.</div>
                 </li>
 				<li>Experiment to figure out how Google handles multiple-word web searches in URLs. Then edit your project so that it works for multiple-word searches.</li>
             </ol>
@@ -88,8 +88,8 @@
 
         <div class="ifTime">
             <ol start="8">
-                <li>Write a Snap<em>!</em> reporter <img src="/bjc-r/img/4-internet/my-ip-addr.png" alt="my IP address"> that retrieves the IP address of the local device from <a href="http://bot.whatismyipaddress.com/" target="_blank">bot.whatismyipaddress.com</a> and reports it. </li>
-                <li>Use Snap<em>!</em> to retrieve location information from <a href="http://ipinfo.io/" target="_blank">http://ipinfo.io/</a> by using the <code>proxied http</code> block:<img src="/bjc-r/img/4-internet/proxiedcombo.png" alt="Getting info about your IP"></li>
+                <li>Write a Snap<em>!</em> reporter <img src="/bjc-r/img/4-internet/my-ip-addr.es.png" alt="my IP address"> that retrieves the IP address of the local device from <a href="http://bot.whatismyipaddress.com/" target="_blank">bot.whatismyipaddress.com</a> and reports it. </li>
+                <li>Use Snap<em>!</em> to retrieve location information from <a href="http://ipinfo.io/" target="_blank">http://ipinfo.io/</a> by using the <code>proxied http</code> block:<img src="/bjc-r/img/4-internet/proxiedcombo.es.png" alt="Getting info about your IP"></li>
             </ol>
         <div class="endnote">Some Web sites also have handy ways for visitors to obtain more direct information. For example, <a href="http://ipinfo.io/72.229.28.185/loc" target="_blank">ipinfo.io/72.229.28.185/loc</a> returns just a latitude and longitude, instead of an HTML page; try <a href="http://ipinfo.io/72.229.28.185/city" target="_blank">/city</a> and <a href="http://ipinfo.io/72.229.28.185/postal" target="_blank">/postal</a> too. Sites that provide these features may have a page for developers, like <a href="http://ipinfo.io/developers" target="_blank">http://ipinfo.io/developers</a>.</div>
         </div>

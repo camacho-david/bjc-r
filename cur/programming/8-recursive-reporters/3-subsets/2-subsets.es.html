@@ -18,11 +18,11 @@
                 <li>Escribe todos los subconjuntos de {manzana, naranja, plátano}. ¿Cuántos hay?</li>
                 <li>Escribe todos los subconjuntos de {Pretzel, Manzana, Naranja, Plátano}. Trate de hacer esto con el menor trabajo posible.</li>
                 <div class="todo">Add a question that gets at how 2 is just an augmentation of 1. --MF, 6/17/20
-                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Hable con su socio" title="Hable con su socio" />Describe cómo lo hizo.</div>
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Hable con su socio" title="Hable con su socio" />Describe cómo lo hizo.</div>
                 <li>
                     <div class="todo">MARY Note to self: this is hard. for example, in base case (subsets of empty list), you have to report a list containing the empty list. Add a question that gets at the base case. </div>
                     Ahora crea un bloque <code>subsets</code> que toma una lista como entrada y reporta una <em>lista de listas</em> en la que cada elemento es un subconjunto de la lista de entrada original. El orden en que aparecen los subconjuntos en la lista de salida no importa, pero cada subconjunto debe aparecer exactamente una vez. El resultado podría verse así:<br />                    
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-example.png" alt="subsets(list{Apple, Orange, Banana}) reporting {{},{Banana}, {Orange}, {Banana, Orange},{Apple}, {Apple, Banana}, {Apple, Orange}, {Apple, Orange, Banana}}" title="subsets(list{Apple, Orange, Banana}) reporting {{},{Banana}, {Orange}, {Banana, Orange},{Apple}, {Apple, Banana}, {Apple, Orange}, {Apple, Orange, Banana}}" />
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-example.es.png" alt="subsets(list{Apple, Orange, Banana}) reporting {{},{Banana}, {Orange}, {Banana, Orange},{Apple}, {Apple, Banana}, {Apple, Orange}, {Apple, Orange, Banana}}" title="subsets(list{Apple, Orange, Banana}) reporting {{},{Banana}, {Orange}, {Banana, Orange},{Apple}, {Apple, Banana}, {Apple, Orange}, {Apple, Orange, Banana}}" />
                     <div class="endnote">
                         <p>Si está atascado después de probar tantas ideas como se le ocurren, <a href="#hint-subsets" data-toggle="collapse" title="haga clic aquí para obtener ayuda para crear subconjuntos">haga clic aquí para un poco de ayuda</a>.</p>                       
                          <div id="hint-subsets" class="collapse">
@@ -33,7 +33,7 @@
                                 <li>Describa "los subconjuntos de {Pretzel, Apple, Orange, Banana} que no contienen Pretzel" sin usar las palabras "no contienen".</li>
                                 <li>
                                     Esta es una versión de cómo se vería el código, con muchos espacios para llenar&hellip;<br />
-                                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/subsets-framework.png" alt="subsets(set){if(){report()}else{...; report(append()())}}" title="subsets(set){if(){report()}else{...; report(append()())}}"/>
+                                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/subsets-framework.es.png" alt="subsets(set){if(){report()}else{...; report(append()())}}" title="subsets(set){if(){report()}else{...; report(append()())}}"/>
                                 </li>
                             </ul>
                         </div>
@@ -54,7 +54,7 @@
         <p>
             <a href="#hint-solution" data-toggle="collapse" title="Here is one solution for the subsets block">Aquí hay una solución para el bloque <code>subsets</code>.</a>
             <div id="hint-solution" class="collapse">
-                <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-slow.png" alt="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" title="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" />
+                <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-slow.es.png" alt="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" title="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" />
             </div>
         </p>
         

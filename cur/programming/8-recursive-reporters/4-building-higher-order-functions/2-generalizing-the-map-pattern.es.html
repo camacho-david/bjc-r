@@ -23,22 +23,22 @@
             Regardless, I want help identifying better motivating examples, and then I want to revise this page. --MF,
             9/26/18</p>
     </div>
-    <img class="indent" src="/bjc-r/img/8-recursive-reporters/plurals.png"
+    <img class="indent" src="/bjc-r/img/8-recursive-reporters/plurals.es.png"
         alt="plurals (words){if(empty?(words)){report(list{})}else{report(join(item(1) of (words) (s) in front of (plurals(all but first of(words))))}}"
         title="plurals (words){if(empty?(words)){report(list{})}else{report(join(item(1) of (words) (s) in front of (plurals(all but first of(words))))}}" />
     <div class="sidenote">
         Su bloque <code>exaggerated word</code> puede verse muy diferente, pero aquí hay una versión:<br />
-        <img src="/bjc-r/img/8-recursive-reporters/exaggerate-word.png"
+        <img src="/bjc-r/img/8-recursive-reporters/exaggerate-word.es.png"
             alt="exaggerate word (word){if(is (word) a (number)?){report(2*word)}; if(word=good){report(great)}; if(word=bad){report(terrible)}; if(word=like){report(love)}; if(word=dislike){report(hate)}; report(word)}"
             title="exaggerate word (word){if(is (word) a (number)?){report(2*word)}; if(word=good){report(great)}; if(word=bad){report(terrible)}; if(word=like){report(love)}; if(word=dislike){report(hate)}; report(word)}" />
     </div>
-    <img class="indent" src="/bjc-r/img/8-recursive-reporters/squares.png"
+    <img class="indent" src="/bjc-r/img/8-recursive-reporters/squares.es.png"
         alt="squares(numbers){if(empty?(numbers)){report(list{})}else{(item(1)of(numbers)*item(1)of(numbers)) infront of(squares(all but first of(numbers))))}}"
         title="squares(numbers){if(empty?(numbers)){report(list{})}else{(item(1)of(numbers)*item(1)of(numbers)) infront of(squares(all but first of(numbers))))}}" /><br />
-    <img class="indent" src="/bjc-r/img/8-recursive-reporters/exaggerate.png"
+    <img class="indent" src="/bjc-r/img/8-recursive-reporters/exaggerate.es.png"
         alt="exaggerate(sentence){report(list->sentence(exagerate wordlist(sentence->list(sentence))))}"
         title="exaggerate(sentence){report(list->sentence(exagerate wordlist(sentence->list(sentence))))}" /><br />
-    <img class="indent" src="/bjc-r/img/8-recursive-reporters/exaggerate-wordlist.png"
+    <img class="indent" src="/bjc-r/img/8-recursive-reporters/exaggerate-wordlist.es.png"
         alt="exaggerate wordlist(words){if(empty? (words)){report(empty list)}else{report((exaggerate word(item(1) of (words))) in front of (exaggerate wordlist(all but first of (words))))}}"
         title="exaggerate wordlist(words){if(empty? (words)){report(empty list)}else{report((exaggerate word(item(1) of (words))) in front of (exaggerate wordlist(all but first of (words))))}}" />
     </p>
@@ -46,7 +46,7 @@
         <code>Plurals</code>, <code>squares</code> y <code>exaggerated wordlist</code> parecen casi
         idénticos:<br /><br />
     <div class="comment">This is too wide for one pic and should be broken into 3. --MF</div>
-    <img src="/bjc-r/img/8-recursive-reporters/map-examples.png"
+    <img src="/bjc-r/img/8-recursive-reporters/map-examples.es.png"
         alt="Image showing code for plurals, squares and exaggerate and highlighting that all three have 'item(1) of ...' being acted on by a particular function"
         title="Image showing code for plurals, squares and exaggerate and highlighting that all three have 'item(1) of ...' being acted on by a particular function" />
     </p>
@@ -54,7 +54,7 @@
         La única diferencia es la parte circular de arriba: la función particular que se aplica al
         <code>item 1 of</code> la
         lista de entrada. He aquí una generalización del patrón:<br />
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/map-start.png"
+        <img class="indent" src="/bjc-r/img/8-recursive-reporters/map-start.es.png"
             alt="map definition without function call: map (function) over (data){if (empty? (data)){report(empty list)} else{report(() in front of (map(function) over(all but first of (data))))}}"
             title="map definition without function call: map (function) over (data){if (empty? (data)){report(empty list)} else{report(() in front of (map(function) over(all but first of (data))))}}" />
     </p>
@@ -63,7 +63,7 @@
         Hay dos pequeños detalles que tienes que aprender para terminar esta definición. La primera es que la entrada
         <code>function</code> tiene que ser un reportero. Ya sabe cómo configurar una entrada para que sea de un tipo
         específico. Establecer esto como reportero no es diferente:<br />
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/reporter-type.png" alt="reporter type declaration"
+        <img class="indent" src="/bjc-r/img/8-recursive-reporters/reporter-type.es.png" alt="reporter type declaration"
             title="reporter type declaration" />
     </p>
     <p>La letra griega λ que aparece en el Editor de bloques junto a la palabra <code>function</code> en el óvalo
@@ -74,7 +74,7 @@
         la
         paleta Control y haga clic en su punta de flecha derecha para darle una segunda ranura de entrada. Luego
         complétalo así:<br />
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/map.png"
+        <img class="indent" src="/bjc-r/img/8-recursive-reporters/map.es.png"
             alt="map definition: map (function lambda) over (data){if (empty? (data)){report(empty list)} else{report((call(function) with inputs (item(1) of (data))) in front of (map(function) over(all but first of (data))))}}"
             title="map definition: map (function lambda) over (data){if (empty? (data)){report(empty list)} else{report(((call(function) with inputs (item(1) of (data))) in front of (map(function) over(all but first of (data))))}}" />
     </p>
@@ -102,7 +102,7 @@
                 pero
                 se acerca. En ese caso, no puede usar <code>map</code>, pero su comprensión del patrón aún
                 ayuda He aquí un ejemplo:<br />
-                <img class="indent" src="/bjc-r/img/8-reporteros-recursivos/odds.png"
+                <img class="indent" src="/bjc-r/img/8-reporteros-recursivos/odds.es.png"
                     alt="elementos impares de (datos){if(vacíos? (datos)){informe(lista vacía)} else{if(vacíos? (todos menos el primero de (datos))){informe(datos)} else{ informe((elemento(1) de (datos)) delante de (elementos impares de(todos menos el primero de (todos menos el primero de (datos)))))}}}"
                     title="elementos impares de (datos){if(vacíos? (datos)){informe(lista vacía)} else{if(vacíos? (todos menos el primero de (datos))){informe(datos)} else{ informe((elemento(1) de (datos)) delante de (elementos impares de(todos menos el primero de (todos menos el primero de (datos)))))}}}" /><br />
                 Completa los espacios en blanco: este script es como el patrón de mapa excepto por ______ (caso base) y
@@ -112,7 +112,7 @@
             <div class="todo">Shouldn't <code>pairup</code> come before <code>odd numbered</code>? --MF, 9/26/18</div>
             <li>
                 Construya el bloque <code>pairup</code>:<br />
-                <img class="indent" src="/bjc-r/img/8-reporteros-recursivos/pairup.png"
+                <img class="indent" src="/bjc-r/img/8-reporteros-recursivos/pairup.es.png"
                     alt="emparejar(listar{ahora, aquí, después, matemática}), informar {en ninguna parte, en el más allá, después}"
                     title="pairup(list{now, here, after, math}), reportando {en ninguna parte, en el más allá, secuelas}" />
             </li>

@@ -21,7 +21,7 @@
                 <li>Si aún no está abierto, abra su proyecto U3L1-FractalArt.</li>
                 <li>	
                     Crear un<code> </code>bloque llamado <code>triángulo anidado</code>que toma una entrada, <var>talla</var>, y, por ahora, solo dibuja un triángulo, pero solo si <var>talla</var> &gt; 9. (Omita el código sobre el cambio de colores.)
-                    <br /><img class="indent" src="/bjc-r/img/2-complexity/nested-tri-no-color-proto.png" alt="nested triangle, size: (size)" title="nested triangle, size: (size)">
+                    <br /><img class="indent" src="/bjc-r/img/2-complexity/nested-tri-no-color-proto.es.png" alt="nested triangle, size: (size)" title="nested triangle, size: (size)">
                     <div class="endnote">
                         <p><a href="#hint-purple" data-toggle="collapse" title="¿No debería ser azul?">¿No debería ser azul?</a></p>
                         <div id="hint-purple" class="collapse">
@@ -32,7 +32,7 @@
                             <ol type="a">
                                 <li>
                                     Usa tu primer guión triangular de la página anterior como modelo. Pero agrega una condición: dibuja el triángulo solo si es lo suficientemente grande:<br />
-                                    <img class="indent" src="/bjc-r/img/2-complexity/triangle.png" alt="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" title="if(size>9){repeat(3){move 100 steps; turn clockwise 120 degrees}}">
+                                    <img class="indent" src="/bjc-r/img/2-complexity/triangle.es.png" alt="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" title="if(size>9){repeat(3){move 100 steps; turn clockwise 120 degrees}}">
                                 </li>
                                 <li>Haga clic en el botón "Aplicar" en el Editor de Bloques para que el bloque aparezca en la paleta de la izquierda.</li>
                             </ol>
@@ -53,13 +53,13 @@
 			<ol start="4">
                 <li>
                     Desde la paleta, arrastre  <code>triángulo anidado</code> en la definición de <code>triángulo anidado</code> entre los <code>mover</code> y <code>girar</code> bloques. Haz su <var>tamaño</var> introduzca la mitad del valor actual de <var>talla</var>.<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/nested-tri-recur-no-color.png" alt="nested triangle, size: (size/2)" title="nested triangle, size: (size/2)">
+                    <img class="indent" src="/bjc-r/img/2-complexity/nested-tri-recur-no-color.es.png" alt="nested triangle, size: (size/2)" title="nested triangle, size: (size/2)">
                 </li>
                 <li>
                     Vuelva a probar su bloque con al menos las entradas 9, 18, 20 y 100 para asegurarse de que funciona como espera. 
                     <div class="endnote">Tu estas usando <code>triángulo anidado</code> en su propia definición; esto lo convierte en un procedimiento recursivo. La recursividad es una de las técnicas más poderosas en informática y aprenderá más sobre ella en proyectos posteriores.</div>
                 </li>
-                <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
+                <img class="inline" src="/bjc-r/img/icons/save-now.es.png" alt="Save your work" title="Save your work" />
             </ol>
 		</div>
             
@@ -68,9 +68,9 @@
                 <li>Utilice <code>triángulo anidado</code> como modelo para definir un bloque recursivo <code>cuadrado anidado</code>.</li>
                 <li>
                     Para dibujar el triángulo principal, el sprite debe girar 120&deg; entre lados. Para el fractal que acabas de crear, ese giro ocurre <em>después</em> de dibujar al niño, pero podrías girar <em>antes</em> de la llamada recursiva, o dividir el giro, con una parte antes y una parte después del llamada recursiva. Pruebe algunas modificaciones como estas:<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation01.png" alt="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" title="repeat(3){move(size) steps; turn clockwise (120) degrees; nested triangle, size:(size/2)}" /><br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation02.png" alt="repeat(3){move(size) steps; turn clockwise (60) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" title="repeat(3){move(size) steps; turn clockwise (60) degrees; nested triangle, size:(size/2); turn clockwise(60) degrees}" /><br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation03.png" alt="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; nested triangle, size:(size/2); turn clockwise(150) degrees}" title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation01.es.png" alt="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" title="repeat(3){move(size) steps; turn clockwise (120) degrees; nested triangle, size:(size/2)}" /><br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation02.es.png" alt="repeat(3){move(size) steps; turn clockwise (60) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" title="repeat(3){move(size) steps; turn clockwise (60) degrees; nested triangle, size:(size/2); turn clockwise(60) degrees}" /><br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/triangle-fractal-variation03.es.png" alt="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; nested triangle, size:(size/2); turn clockwise(150) degrees}" title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" />
                 </li>
             </ol>
 		</div>

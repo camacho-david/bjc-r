@@ -29,14 +29,14 @@
         <p>Los circuitos para hacer cálculos son más interesantes. Estos calculan <em>funciones,</em> al igual que los reporteros en Snap<em>!</em>. Dado que las computadoras hacen mucha aritmética, podrías pensar que los circuitos básicos de funciones serían la suma, la resta, la multiplicación y la división, pero ese no es el caso. Por supuesto, <em>hay</em> circuitos para hacer esas cosas, pero están hechos de <em>compuertas lógicas:</em> circuitos que calculan <strong>funciones booleanas</strong>: <code>y</code>, <code>o</code>, y <code>no</code>.</p>
         <p>La razón por la que las funciones booleanas se consideran más fundamentales es que sus entradas y salidas se pueden representar con un solo cable que entra o sale del circuito. Eso no es asi en las funciones aritméticas. Si consideras que un voltaje en un cable significa 1, y ningún voltaje significa 0, entonces debes ver que un sumador tendrá <em>tres</em> posibles valores de salida, porque 1+1=2, que no es ni 0 ni 1. Por el contrario, si considera que un voltaje en un cable significa Verdadero y ningún voltaje significa Falso, entonces la salida de una función booleana de dos entradas solo puede ser Verdadero o Falso, por lo que solo se necesita un cable de salida.</p>
 		<p>Viste algunos ejemplos en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="¿Qué es un predicado?">Unidad 2 Lab 3: Tomando decisiones usando predicados</a>: <code>Y</code>, <code>O</code>, y <code>NO</code>:<br />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.png" alt="(verdadero) Y (verdadero) reporta verdadero" title="(verdadero) Y (verdadero) reporta verdadero" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.png" alt="(verdadero) Y (falso) reporta falso" title="(verdadero) Y (falso) reporta falso" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.png" alt="(falso) Y (falso) reporta falso" title="(falso) Y (falso) reporta falso" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.png" alt="(verdadero) O (verdadero) reporta verdadero" title="(verdadero) O (verdadero) reporta verdadero" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.png" alt="(verdadero) O (falso) reporta verdadero" title="(verdadero) O (falso) reporta verdadero" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.png" alt="(falso) OR (falso) reporta falso" title="(falso) OR (falso) reporta falso" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-T-reporting.png" alt="NO (verdadero) reporta falso" title="NO (verdadero) reporta falso" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-F-reporting.png" alt="NO (falso) reporta verdadero" title="NO (falso) reporta verdadero" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.es.png" alt="(verdadero) Y (verdadero) reporta verdadero" title="(verdadero) Y (verdadero) reporta verdadero" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.es.png" alt="(verdadero) Y (falso) reporta falso" title="(verdadero) Y (falso) reporta falso" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.es.png" alt="(falso) Y (falso) reporta falso" title="(falso) Y (falso) reporta falso" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.es.png" alt="(verdadero) O (verdadero) reporta verdadero" title="(verdadero) O (verdadero) reporta verdadero" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.es.png" alt="(verdadero) O (falso) reporta verdadero" title="(verdadero) O (falso) reporta verdadero" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.es.png" alt="(falso) OR (falso) reporta falso" title="(falso) OR (falso) reporta falso" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-T-reporting.es.png" alt="NO (verdadero) reporta falso" title="NO (verdadero) reporta falso" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-F-reporting.es.png" alt="NO (falso) reporta verdadero" title="NO (falso) reporta verdadero" />
         </p>
 
 		<div class="endnote">
@@ -55,8 +55,8 @@
                     <div class="sidenote">
 
                         Este símbolo en los diagramas de circuito representa una batería.<br />
-                        <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/BatterySymbol.png" height="75" alt="Símbolo de batería en un circuito" title="Símbolo de batería en un circuito"/>
-                        <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/Battery.png" height="75" alt="Batería" title="Batería"/>
+                        <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/BatterySymbol.es.png" height="75" alt="Símbolo de batería en un circuito" title="Símbolo de batería en un circuito"/>
+                        <img src="/bjc-r/img/6-computers/LogicGates_img/Circuits/Battery.es.png" height="75" alt="Batería" title="Batería"/>
                     </div>
                     <img  class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/AND_Animation.gif" width="333" height="250" alt="Circuito eléctrico para Y: la animación muestra un solo bucle de cable que conecta una bombilla, una batería y dos interruptores en serie (uno tras otro). Cuando uno o ambos interruptores están abiertos, la luz está apagada, y cuando ambos interruptores están cerrados, la luz se enciende." title="Circuito eléctrico para Y: la animación muestra un solo bucle de cable que conecta una bombilla, una batería y dos interruptores en serie (uno tras otro). Cuando uno o ambos interruptores están abiertos, la luz está apagada, y cuando ambos interruptores están cerrados, la luz se enciende."/>
                     	<div class="sidenote">Estas dos tablas son idénticas. Uno solo muestra el mismo patrón con verdadero/falso y el otro con unos/ceros.</div>
@@ -250,13 +250,13 @@
 
 
         <h2>Compuertas lógicas</h2>
-        <p>Dentro de una computadora, las operaciones booleanas se implementan en circuitos físicos utilizando compuertas lógicas. (Una sola compuerta implementa una de las funciones básicas <code>y</code>, <code>o</code>, or <code>no</code>.) Los circuitos lógicos a menudo se representan con dibujos que ayudan a los ingenieros a ver cómo fluirá la información a través de un circuito. Por ejemplo, el siguiente diagrama de un circuito lógico con dos compuertas representa la expresión booleana <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="A o (A y B)" title="A o (A y B)" />. Puedes ver como?</p>
+        <p>Dentro de una computadora, las operaciones booleanas se implementan en circuitos físicos utilizando compuertas lógicas. (Una sola compuerta implementa una de las funciones básicas <code>y</code>, <code>o</code>, or <code>no</code>.) Los circuitos lógicos a menudo se representan con dibujos que ayudan a los ingenieros a ver cómo fluirá la información a través de un circuito. Por ejemplo, el siguiente diagrama de un circuito lógico con dos compuertas representa la expresión booleana <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.es.png" alt="A o (A y B)" title="A o (A y B)" />. Puedes ver como?</p>
 
-        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="diagrama de compuerta lógica de (A o (A y B))" title="diagrama de compuerta lógica de (A o (A y B))" />
+        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.es.png" alt="diagrama de compuerta lógica de (A o (A y B))" title="diagrama de compuerta lógica de (A o (A y B))" />
 
         <div class="forYouToDo" id="first">
 			<ol>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Habla con un compañero" title="Habla con un compañero" /> Mira el circuito lógico dibujado arriba. ¿Para qué valores de A y B la salida será <code>verdadero</code>?</li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.es.png" alt="Habla con un compañero" title="Habla con un compañero" /> Mira el circuito lógico dibujado arriba. ¿Para qué valores de A y B la salida será <code>verdadero</code>?</li>
             </ol>
         </div>
 
@@ -274,8 +274,8 @@
                         <div class="prompt">
                             ¿Cuál de las siguientes expresiones reporta <code>verdadero</code>?
                             <ol style="list-style:upper-roman;">
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png" alt="(T y F) y (no (T y F))" title="(T y F) y (no (T y F))" /></li>
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.png" alt="(no (T o F)) o (T o F)" title="(no (T o F)) o (T o F)" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.es.png" alt="(T y F) y (no (T y F))" title="(T y F) y (no (T y F))" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.es.png" alt="(no (T o F)) o (T o F)" title="(no (T o F)) o (T o F)" /></li>
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
@@ -307,8 +307,8 @@
 	                            <div class="sidenote">Este problema es probablemente <em>más difícil</em> que algo que verás en el examen, así que si puedes con este, ¡lo estás haciendo muy bien!</div>
                             	<table>
                                 	<tr>
-                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.png" alt="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" title="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" /></li></td>
-                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.png" alt="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" title="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" /></li></td>
+                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.es.png" alt="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" title="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" /></li></td>
+                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.es.png" alt="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" title="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" /></li></td>
                                     </tr>
                                 </table>
                             </ol>
@@ -340,13 +340,13 @@
         <div class="endnote">
         	<a href="#hint-target" data-toggle="collapse" title="¿Cómo dibujan los ingenieros las compuertas lógicas?">¿Cómo dibujan los ingenieros las compuertas lógicas?</a>
 			<div id="hint-target" class="collapse">
-                <img class="imageRight" src="/bjc-r/img/6-computers/logic-gates-example-circuit.png" alt="diagrama de compuerta lógica de (no y) y (o)" title="diagrama de compuerta lógica de (no y) y (o)" />
+                <img class="imageRight" src="/bjc-r/img/6-computers/logic-gates-example-circuit.es.png" alt="diagrama de compuerta lógica de (no y) y (o)" title="diagrama de compuerta lógica de (no y) y (o)" />
                 Los ingenieros generalmente dibujan compuertas lógicas horizontalmente y usan formas especiales que representan cada compuerta:<br />
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.png" width="151" height="80" alt="compuerta-Y" title="compuerta-Y"/>
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.png" width="156" height="81" alt="compuerta-O" title="compuerta-O"/>
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69" alt="compuerta-NO" title="compuerta-NO"/><br />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.es.png" width="151" height="80" alt="compuerta-Y" title="compuerta-Y"/>
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.es.png" width="156" height="81" alt="compuerta-O" title="compuerta-O"/>
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.es.png" width="126" height="69" alt="compuerta-NO" title="compuerta-NO"/><br />
                 Por ejemplo, los ingenieros dibujarían el circuito lógico que se muestra a la derecha de esta manera: <br />
-				<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250" alt="Versión de puerta lógica de un ingeniero de (no y) y (o)" title="Versión de puerta lógica de un ingeniero de (no y) y (o)"/><br />
+				<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.es.png" height="250" alt="Versión de puerta lógica de un ingeniero de (no y) y (o)" title="Versión de puerta lógica de un ingeniero de (no y) y (o)"/><br />
                 Haz una <a href="https://www.google.com/search?q=diagramas+compuertas+logicas&tbm=isch" target="_blank" title="Google Image Search for: logic gate diagrams">búsqueda de imágenes de "diagramas de compuerta lógica"</a> para ver más ejemplos.
             </div>
         </div>

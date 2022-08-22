@@ -32,14 +32,14 @@
         <h3>Boolean Operators</h3>
         <p>The circuits to do computation are more interesting. They compute <em>functions,</em> just like reporters in Snap<em>!</em>. Since computers do a lot of arithmetic, you might think that the basic circuit functions would be addition, subtraction, multiplication, and division, but that's not the case. Of course there <em>are</em> circuits to do those things, but they're made out of <em>logic gates:</em> circuits that compute <strong>Boolean functions</strong>: <code>and</code>, <code>or</code>, and <code>not</code>. The reason that Boolean functions are considered more fundamental is that their inputs and outputs can be represented with a single wire going into or out from the circuit.  That's not true about arithmetic functions.  If you consider a voltage on a wire as meaning 1, and no voltage as meaning 0, then you have to see that an adder will have <em>three</em> possible output values, because 1+1=2, which is neither 0 nor 1.  By contrast, if you consider a voltage on a wire as meaning True, and no voltage as meaning False, then the output from a Boolean function of two inputs can still only be True or False, so only one output wire is needed.</p>
 		<p>You saw some examples in <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.es.topic&course=bjc4nyc.es.html&novideo&noassignment">Unit 2 Lab 3: Making Decisions by Using Predicates</a>: <code>AND</code>, <code>OR</code>, and <code>NOT</code>:<br />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.png" alt="(true) AND (true) reporting true" title="(true) AND (true) reporting true" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.png" alt="(true) AND (false) reporting false" title="(true) AND (false) reporting false" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.png" alt="(false) AND (false) reporting false" title="(false) AND (false) reporting false" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-T-reporting.png" alt="NOT (true) reporting false" title="NOT (true) reporting false" />
-            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-F-reporting.png" alt="NOT (false) reporting true" title="NOT (false) reporting true" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.es.png" alt="(true) AND (true) reporting true" title="(true) AND (true) reporting true" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.es.png" alt="(true) AND (false) reporting false" title="(true) AND (false) reporting false" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.es.png" alt="(false) AND (false) reporting false" title="(false) AND (false) reporting false" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.es.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.es.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.es.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-T-reporting.es.png" alt="NOT (true) reporting false" title="NOT (true) reporting false" />
+            <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-F-reporting.es.png" alt="NOT (false) reporting true" title="NOT (false) reporting true" />
         </p>
 
 		<div class="endnote">
@@ -229,13 +229,13 @@
 
 
         <h2>Logic Gates</h2>
-        <p>Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic circuits are often represented with drawings that help engineers see how the information will flow through a circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean expression <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="A or (A and B)" title="A or (A and B)" />. Can you see how?</p>
+        <p>Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic circuits are often represented with drawings that help engineers see how the information will flow through a circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean expression <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.es.png" alt="A or (A and B)" title="A or (A and B)" />. Can you see how?</p>
 
-        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="logic gate diagram of (A or (A and B))" title="logic gate diagram of (A or (A and B))" />
+        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.es.png" alt="logic gate diagram of (A or (A and B))" title="logic gate diagram of (A or (A and B))" />
 
 		<div class="forYouToDo" id="first">
 			<ol>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the logic circuit drawn above. For what values of A and B will the output be <code>true</code>?</li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.es.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the logic circuit drawn above. For what values of A and B will the output be <code>true</code>?</li>
                 <div class="comment">These are a little advanced. Are they too advanced? (They are structured like <code>xor</code>.) --MF, 10/23/17</div>
                 <li>
                 	Review <code>AND</code>, <code>OR</code>, and <code>NOT</code> with the following questions, which are similar to the type of questions you will see on the AP CSP exam.
@@ -245,8 +245,8 @@
                         <div class="prompt">
                             Which of the following expressions will report <code>true</code>?
                             <ol style="list-style:upper-roman;">
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png" alt="(T and F) and (not (T and F))" title="(T and F) and (not (T and F))" /></li>
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.png" alt="(not (T or F)) or (T or F)" title="(not (T or F)) or (T or F)" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.es.png" alt="(T and F) and (not (T and F))" title="(T and F) and (not (T and F))" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.es.png" alt="(not (T or F)) or (T or F)" title="(not (T or F)) or (T or F)" /></li>
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
@@ -278,8 +278,8 @@
 	                            <div class="sidenote">This problem is probably <em>harder</em> than something you'll see on the exam, so if you can get this one, you are doing great!</div>
                             	<table>
                                 	<tr>
-                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.png" alt="logic gate diagram of (not ((T and F)) and (T and F))" title="logic gate diagram of (not ((T and F)) and (T and F))" /></li></td>
-                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.png" alt="logic gate diagram of ((T or F) or (not (T or F)))" title="logic gate diagram of ((T or F) or (not (T or F)))" /></li></td>
+                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.es.png" alt="logic gate diagram of (not ((T and F)) and (T and F))" title="logic gate diagram of (not ((T and F)) and (T and F))" /></li></td>
+                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.es.png" alt="logic gate diagram of ((T or F) or (not (T or F)))" title="logic gate diagram of ((T or F) or (not (T or F)))" /></li></td>
                                     </tr>
                                 </table>
                             </ol>

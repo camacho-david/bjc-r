@@ -37,7 +37,7 @@
                         <div class="prompt">
                             <div class="comment">CSN-2.A part b, CSN-2.A.5</div>
                             &iquest;Cu&aacute;nto tiempo tardar&aacute; este programa <em>secuencial</em> en ejecutarse?<br>
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-sequential.es.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)">
                         </div></div></li><li>
 <div class="assessment-data" type="multiplechoice" identifier="How long will this sequential script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true">
                         <div class="choice" identifier="c1">
@@ -75,9 +75,9 @@
                   <div class="prompt">
                             <div class="comment">CSN-2.A part b, CSN-2.A.6</div>
                             &iquest;Cu&aacute;nto tiempo tardar&aacute; este programa <em>paralelo</em> en ejecutarse?<br>
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.es.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.es.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.es.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
                     </div>
                         <div class="choice" identifier="c1">
                             <div class="text">18</div>
@@ -119,7 +119,7 @@
         <p>Escribir un programa que no hace nada m&aacute;s que esperar es, por supuesto, poco realista, pero lo que <em>es</em> real&iacute;stico es que en la mayor&iacute;a de los problemas, no hay una soluci&oacute;n que sea puramente paralela. Alguna parte de la computaci&oacute;n tiene que hacerse de forma secuencial. En la pregunta previa,&nbsp; la parte secuencial es modelada por <code>esperar 6 segs</code>. El paralelismo con este tonto ejemplo se siente trivial, pero imagina que trabajas para Google. Millones de consultas de b&uacute;squeda y ediciones de p&aacute;ginas web han ocurrido hoy en d&iacute;a, y es tu trabajo tener que procesarlos. Si no tuvieran enormes instalaciones de servidores con miles de computadoras en cada edificio, no podr&iacute;an seguir el ritmo en absoluto. La inform&aacute;tica distribuida te permite <em>escalar</em> a problemas muy grandes.</p>
         <div class="comment">CSN-2.A.6</div>
         <p>
-            <img class="noshadow imageRight" src="/bjc-r/img/5-algorithms/sequential-parallel-parts.png" alt="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" title="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" style="background: white;">Como un ejemplo m&aacute;s espec&iacute;fico, supongamos que quieres saber la longitud media de las palabras de una lista de 100.000 palabras. Puedes dividir la tarea entre varios ordenadores (uno para cada letra de inicio). Cada computadora suma las longitudes de todas las palabras que se le asignan (todas las palabras "A", todas las palabras "B", etc). Luego una computadora tiene que sumar los 26 resultados parciales y dividirlos por el n&uacute;mero total de palabras para encontrar el promedio. Para calcular el tiempo de ejecuci&oacute;n de esta soluci&oacute;n paralela, a&ntilde;adir&iacute;as el tiempo de ejecuci&oacute;n de la parte paralela m&aacute;s larga (el tiempo de ejecuci&oacute;n de la letra con m&aacute;s palabras) al tiempo de ejecuci&oacute;n de la parte secuencial (sumando los 26 resultados parciales y dividiendo la suma por el n&uacute;mero total de palabras).
+            <img class="noshadow imageRight" src="/bjc-r/img/5-algorithms/sequential-parallel-parts.es.png" alt="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" title="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" style="background: white;">Como un ejemplo m&aacute;s espec&iacute;fico, supongamos que quieres saber la longitud media de las palabras de una lista de 100.000 palabras. Puedes dividir la tarea entre varios ordenadores (uno para cada letra de inicio). Cada computadora suma las longitudes de todas las palabras que se le asignan (todas las palabras "A", todas las palabras "B", etc). Luego una computadora tiene que sumar los 26 resultados parciales y dividirlos por el n&uacute;mero total de palabras para encontrar el promedio. Para calcular el tiempo de ejecuci&oacute;n de esta soluci&oacute;n paralela, a&ntilde;adir&iacute;as el tiempo de ejecuci&oacute;n de la parte paralela m&aacute;s larga (el tiempo de ejecuci&oacute;n de la letra con m&aacute;s palabras) al tiempo de ejecuci&oacute;n de la parte secuencial (sumando los 26 resultados parciales y dividiendo la suma por el n&uacute;mero total de palabras).
         </p>
     
         
@@ -196,7 +196,7 @@
 <ol>
                         <li>Si tienes un procesador y a&ntilde;ades uno m&aacute;s, &iquest;cu&aacute;nto tiempo te ahorras?</li>
                         <li>Si tienes 240 procesadores y a&ntilde;ades 240 m&aacute;s, &iquest;cu&aacute;nto tiempo te ahorras?</li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Cu&aacute;ntos procesadores crees que vale la pena tener para este problema?</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Habla con tu compañero" title="Habla con tu compañero">&iquest;Cu&aacute;ntos procesadores crees que vale la pena tener para este problema?</li>
                     </ol>
                 </li>
                 <div class="endnote">
@@ -226,7 +226,7 @@
 <table class="bordered standard nowrap center" summary="Possible sequence of events when two ATM transactions happen in parallel">
                         <tbody>
 <tr>
-                            <td rowspan="9" style="vertical-align: middle; border-left: 0; border-top: 0; border-bottom: 0;"><img class="inline noshadow" src="/bjc-r/img/5-algorithms/time-arrow.png" alt="downward pointing arrow labeled 'time'" title="downward pointing arrow labeled 'time'"></td>
+                            <td rowspan="9" style="vertical-align: middle; border-left: 0; border-top: 0; border-bottom: 0;"><img class="inline noshadow" src="/bjc-r/img/5-algorithms/time-arrow.es.png" alt="downward pointing arrow labeled 'time'" title="downward pointing arrow labeled 'time'"></td>
                             <th scope="col">Cajero autom&aacute;tico 1</th>
                             <th scope="col">Cajero autom&aacute;tico 2</th>
                         </tr>
@@ -275,8 +275,8 @@
 			<ol start="5">
 				<div class="comment">CSN-2.B</div>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero"> Identifica algunos beneficios y desaf&iacute;os potenciales de la computaci&oacute;n paralela y distribuida.
-                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos">
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Habla con tu compañero" title="Habla con tu compañero"> Identifica algunos beneficios y desaf&iacute;os potenciales de la computaci&oacute;n paralela y distribuida.
+                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.es.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos">
                 </li>
 			</ol>
 		</div>
@@ -289,12 +289,12 @@
                         <div class="prompt">
                             &iquest;Cu&aacute;l es la <em>aceleraci&oacute;n</em> para esta soluci&oacute;n paralela en comparaci&oacute;n con la soluci&oacute;n secuencial?<br>
                             <ul>
-                                <li>Soluci&oacute;n secuencial: <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)"></li>
+                                <li>Soluci&oacute;n secuencial: <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-sequential.es.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)"></li>
                                 <li>
                                     Soluci&oacute;n paralela:
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.es.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.es.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.es.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
                                 </li>
                             </ul>
                         </div>

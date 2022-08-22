@@ -17,10 +17,10 @@
 	    
         <p>Recall that when you add two numbers (in base 10), you find the sum of each column <em>including</em> any carried value from the previous column.</p>
         <div class="comment">Need new, clearer, simpler image with only the right side and only "carry" not carry in/carry out.</div>
-        <img  class="indent noshadow" src="/bjc-r/img/6-computers/LogicGates_img/Adders/DecimalAddition.png" width="500" alt=""/><br />
+        <img  class="indent noshadow" src="/bjc-r/img/6-computers/LogicGates_img/Adders/DecimalAddition.es.png" width="500" alt=""/><br />
         <div class="comment">Need new, clearer, simpler image with only the right side and only "carry" not carry in/carry out.</div>
         <p>The same procedure is used to add two numbers in base 2.</p>
-        <img class="indent noshadow" src="/bjc-r/img/6-computers/LogicGates_img/Adders/BinaryAddition.png" width="500" alt=""/><br />
+        <img class="indent noshadow" src="/bjc-r/img/6-computers/LogicGates_img/Adders/BinaryAddition.es.png" width="500" alt=""/><br />
         <div class="takeNote">In order to perform addition, any algorithm must accomodate values carried over from lower place values to higher place values.</div>
 
         <h3>Half-Adder</h3>
@@ -32,11 +32,11 @@
             If you are having difficulty making sense of this table consider addition of binary digits:<br />
             0+0=0<br />0+1=1<br />1+0=1<br />1+1=2 which is 10 in binary with a units digit sum of 0 and a carry of 1.
         </div>
-        <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/HalfAdder_TruthTable01.png" height="200" alt="Half-Adder table with Sum and Carry" title="Half-Adder table with Sum and Carry"/><br />
+        <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/HalfAdder_TruthTable01.es.png" height="200" alt="Half-Adder table with Sum and Carry" title="Half-Adder table with Sum and Carry"/><br />
         <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/Half-Adder_Animation.gif" height="350" alt="Half-Adder" title="Half-Adder"/><br />
         <div class="forYouToDo" id="first">
             <ol>
-                <li><a class="run" href="/bjc-r/prog/6-computers/U6L2-HALF-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
+                <li><a class="run" href="/bjc-r/prog/6-computers/U6L2-HALF-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
                 <li>Examine the Snap<em>!</em> file and all its sprites.  For the sprites <code>SUM</code> and <code>CARRY</code> assemble some code blocks to emulate a half-adder.</li>
             </ol>
         </div>
@@ -44,18 +44,18 @@
         <h3>Full-Adder</h3>
         <div class="sidenote">
             If you are having difficulty making sense of this table consider addition of three binary digits:<br />
-            <img src="/bjc-r/img/6-computers/LogicGates_img/Adders/Full-Adder-Helper.png"  height="200" alt="Sum of three bits" title="Sum of three bits"/><br />
+            <img src="/bjc-r/img/6-computers/LogicGates_img/Adders/Full-Adder-Helper.es.png"  height="200" alt="Sum of three bits" title="Sum of three bits"/><br />
             For example, 1+1+1=3 which is 11 in binary with a ones digit of 1 and a carry out value of 1.
         </div>
         <p>A full-adder uses two half-adders to perform a full addition of binary digits accomodating a <em><strong>carry in</strong></em> value.  It reports the sum and <em><strong>carry out </strong></em> value.</p>
         
-        <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/FullAdder_TruthTable01.png"  height="250" alt="Full-Adder table with Carry In, Sum, Carry Out" title="Full-Adder table with Carry In, Sum, Carry Out"/><br />
+        <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/FullAdder_TruthTable01.es.png"  height="250" alt="Full-Adder table with Carry In, Sum, Carry Out" title="Full-Adder table with Carry In, Sum, Carry Out"/><br />
         <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/Full-Adder_Animation.gif" height="350" alt="Full-Adder" title="Full-Adder"/>
         
         <div class="forYouToDo" id="second">
             <ol start="3">
                 <li>Study the table and the full-adder schematic given above to explain how the full-adder performs the addition of two binary numbers with a <em><strong>carry in</strong></em> using two half-adders and an OR gate.</li>
-                <li><a class="run" href="/bjc-r/prog/6-computers/U6L2-FULL-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
+                <li><a class="run" href="/bjc-r/prog/6-computers/U6L2-FULL-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
                 <li>Examine the Snap<em>!</em> file and all its sprites.  Code for sprites <code>CARRY IN</code>, <code>A</code> and <code>B</code>, have been written for you.  For the sprites <code>SUM1</code>, <code>CARRY1</code>, <code>SUM OUT</code>, <code>CARRY2</code>, <code>CARRY OUT</code>, assemble some code blocks to emulate a full-adder.</li>
             </ol>
         </div>
@@ -64,7 +64,7 @@
             <ol>
                 <li>
                     Learn about <em>ripple carry adders</em> and explain how they use full-adders to add multi-digit binary numbers. Build a Snap<em>!</em> program to emulate the addition of two 4-digit binary numbers with a <em>ripple carry adder</em>.
-                    <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Adders/RippleCarryAdder.png"  height="200" alt=""/><br />Image Credit: Wikipedia user Cburnett
+                    <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Adders/RippleCarryAdder.es.png"  height="200" alt=""/><br />Image Credit: Wikipedia user Cburnett
                 </li>
                 <li>Learn how computers subtract and multiply binary numbers using logic gates and build Snap<em>!</em> programs to emulate these operations.</li>
             </ol>
@@ -86,27 +86,27 @@
                 <li>
                     <a href="#hint-and-nand" data-toggle="collapse" class="collapsed" title="Hint">Compare the reports of <code>and</code> and <code>nand</code>.</a>
                     <div id="hint-and-nand" class="collapse">
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.png" alt="(true) AND (true) reporting true" title="(true) AND (true) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-TT-reporting.png" alt="(true) NAND (true) reporting false" title="(true) NAND (true) reporting false" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.png" alt="(true) AND (false) reporting false" title="(true) AND (false) reporting false" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-TF-reporting.png" alt="(true) NAND (false) reporting true" title="(true) NAND (false) reporting true" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FT-reporting.png" alt="(false) AND (true) reporting false" title="(false) AND (true) reporting false" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-FT-reporting.png" alt="(false) NAND (true) reporting true" title="(false) NAND (true) reporting true" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.png" alt="(false) AND (false) reporting false" title="(false) AND (false) reporting false" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-FF-reporting.png" alt="(false) NAND (false) reporting true" title="(false) NAND (false) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.es.png" alt="(true) AND (true) reporting true" title="(true) AND (true) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-TT-reporting.es.png" alt="(true) NAND (true) reporting false" title="(true) NAND (true) reporting false" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.es.png" alt="(true) AND (false) reporting false" title="(true) AND (false) reporting false" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-TF-reporting.es.png" alt="(true) NAND (false) reporting true" title="(true) NAND (false) reporting true" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FT-reporting.es.png" alt="(false) AND (true) reporting false" title="(false) AND (true) reporting false" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-FT-reporting.es.png" alt="(false) NAND (true) reporting true" title="(false) NAND (true) reporting true" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-FF-reporting.es.png" alt="(false) AND (false) reporting false" title="(false) AND (false) reporting false" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nand-FF-reporting.es.png" alt="(false) NAND (false) reporting true" title="(false) NAND (false) reporting true" />
                     </div>
                 </li>
                 <li>
                     <a href="#hint-or-nor" data-toggle="collapse" class="collapsed" title="Hint">Compare the reports of <code>or</code> and <code>nor</code>.</a>
                     <div id="hint-or-nor" class="collapse">
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-TT-reporting.png" alt="(true) NOR (true) reporting false" title="(true) NOR (true) reporting false" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-TF-reporting.png" alt="(true) NOR (false) reporting false" title="(true) NOR (false) reporting false" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FT-reporting.png" alt="(false) OR (true) reporting true" title="(false) OR (true) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-FT-reporting.png" alt="(false) NOR (true) reporting false" title="(false) NOR (true) reporting false" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-FF-reporting.png" alt="(false) NOR (false) reporting false" title="(false) NOR (false) reporting false" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.es.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-TT-reporting.es.png" alt="(true) NOR (true) reporting false" title="(true) NOR (true) reporting false" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.es.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-TF-reporting.es.png" alt="(true) NOR (false) reporting false" title="(true) NOR (false) reporting false" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FT-reporting.es.png" alt="(false) OR (true) reporting true" title="(false) OR (true) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-FT-reporting.es.png" alt="(false) NOR (true) reporting false" title="(false) NOR (true) reporting false" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.es.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/nor-FF-reporting.es.png" alt="(false) NOR (false) reporting false" title="(false) NOR (false) reporting false" />
                     </div>
                 </li>
             </ol>
@@ -115,11 +115,11 @@
         <p>The <code>nand</code> and <code>nor</code> gates are called <strong>universal gates</strong> as each alone can emulate <code>not</code>, <code>and</code>, and <code>or</code> gates.</p>
         
         <div class="todo">
-        	<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NAND_TruthTableTF.png"  height="200" alt="Truth table for NAND with True/False" title="Truth table for NAND with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NAND_TruthTable01.png"  height="200" alt="Truth table for NAND with 1/0" title="Truth table for NAND with 1/0"/><br />
+        	<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NAND_TruthTableTF.es.png"  height="200" alt="Truth table for NAND with True/False" title="Truth table for NAND with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NAND_TruthTable01.es.png"  height="200" alt="Truth table for NAND with 1/0" title="Truth table for NAND with 1/0"/><br />
             
-            <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NOR_TruthTableTF.png"  height="200" alt="Truth table for NOR with True/False" title="Truth table for NOR with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NOR_TruthTable01.png" height="200" alt="Truth table for NOR with 1/0" title="Truth table for NOR with 1/0"/><br />
+            <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NOR_TruthTableTF.es.png"  height="200" alt="Truth table for NOR with True/False" title="Truth table for NOR with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/NOR_TruthTable01.es.png" height="200" alt="Truth table for NOR with 1/0" title="Truth table for NOR with 1/0"/><br />
             
-            <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/XOR_TruthTableTF.png"  height="200" alt="Truth table for XOR with True/False" title="Truth table for XOR with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/XOR_TruthTable01.png"  height="200" alt="Truth table for XOR with 1/0" title="Truth table for XOR with 1/0"/>
+            <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/XOR_TruthTableTF.es.png"  height="200" alt="Truth table for XOR with True/False" title="Truth table for XOR with True/False"/><img src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/XOR_TruthTable01.es.png"  height="200" alt="Truth table for XOR with 1/0" title="Truth table for XOR with 1/0"/>
         </div>
         
         
@@ -139,14 +139,14 @@
 				<li>
                 	<a href="#hint-or-xor" data-toggle="collapse" class="collapsed" title="Hint">Compare the reports of <code>or</code> and <code>xor</code>.</a>
                     <div id="hint-or-xor" class="collapse">
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-TT-reporting.png" alt="(true) XOR (true) reporting false" title="(true) XOR (true) reporting false" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-TF-reporting.png" alt="(true) XOR (false) reporting true" title="(true) XOR (false) reporting true" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FT-reporting.png" alt="(false) OR (true) reporting true" title="(false) OR (true) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-FT-reporting.png" alt="(false) XOR (true) reporting true" title="(false) XOR (true) reporting true" /><br />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
-                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-FF-reporting.png" alt="(false) XOR (false) reporting false" title="(false) XOR (false) reporting false" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TT-reporting.es.png" alt="(true) OR (true) reporting true" title="(true) OR (true) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-TT-reporting.es.png" alt="(true) XOR (true) reporting false" title="(true) XOR (true) reporting false" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-TF-reporting.es.png" alt="(true) OR (false) reporting true" title="(true) OR (false) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-TF-reporting.es.png" alt="(true) XOR (false) reporting true" title="(true) XOR (false) reporting true" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FT-reporting.es.png" alt="(false) OR (true) reporting true" title="(false) OR (true) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-FT-reporting.es.png" alt="(false) XOR (true) reporting true" title="(false) XOR (true) reporting true" /><br />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/or-FF-reporting.es.png" alt="(false) OR (false) reporting true" title="(false) OR (false) reporting true" />
+                        <img class="indent" src="/bjc-r/img/6-computers/logical-operators/xor-FF-reporting.es.png" alt="(false) XOR (false) reporting false" title="(false) XOR (false) reporting false" />
                     </div>
                 </li>
             </ol>
@@ -158,7 +158,7 @@
                     Build an <code>xor</code> predicate.
                     <div class="endnote">
                         <a href="#hint-xor-gate" data-toggle="collapse">Click here if you want a hint.</a>
-                        <div id="hint-xor-gate" class="collapse"><img class="indent" src="/bjc-r/img/6-computers/logic-gate-xor.png" alt="logic gate diagram for ((A or B) and (not (A and B)))" title="logic gate diagram for ((A or B) and (not (A and B)))" /></div>
+                        <div id="hint-xor-gate" class="collapse"><img class="indent" src="/bjc-r/img/6-computers/logic-gate-xor.es.png" alt="logic gate diagram for ((A or B) and (not (A and B)))" title="logic gate diagram for ((A or B) and (not (A and B)))" /></div>
                     </div>
                 </li>				   
 			</ol>
@@ -322,12 +322,12 @@ bits).</pre>
         <hr />
         
 	<!--<h2>Logic Gates: NAND, NOR, XOR </h2>
-<h3>NAND gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/NAND.png" width="173" height="85" alt="NAND-gate" title="NAND-gate"/> <em>not</em> AND</h3>
+<h3>NAND gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/NAND.es.png" width="173" height="85" alt="NAND-gate" title="NAND-gate"/> <em>not</em> AND</h3>
 A NAND gate is a logic gate that behaves exactly like the Boolean operator NAND which is the composition of NOT and AND operators.  The output of the NAND gate is 1 if and only if both of its inputs are 0, just as the output of the Boolean operator NAND is True if and only if both of its inputs are False.  In the truth tables below you can see the correspondence between the Boolean operator NAND and the NAND gate.  In the tables, A and B represent the two binary inputs (False/True and 0/1) which are represented by the two wires going into the NAND gate in the picture shown above.<br /><br />
 
 
 
-<h3>NOR gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOR.png" width="180" height="93" alt="NOR-gate" title="NOR-gate"/> <em>not</em> OR</h3>
+<h3>NOR gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOR.es.png" width="180" height="93" alt="NOR-gate" title="NOR-gate"/> <em>not</em> OR</h3>
 	A NOR gate is a logic gate that behaves exactly like the Boolean operator NOR which is the composition of NOT and OR operators.  The output of the NOR gate is 1 if and only if both of its inputs are 0, just as the output of the Boolean operator NOR is True if and only if both of its inputs are False.  In the truth tables below you can see the correspondence between the Boolean operator NOR and the NOR gate.  In the tables, A and B represent the two binary inputs (False/True and 0/1) which are represented by the two wires going into the NOR gate in the picture shown above.<br /><br />
 
    
@@ -337,11 +337,11 @@ A NAND gate is a logic gate that behaves exactly like the Boolean operator NAND 
 <ol start="5">
 <li>In the animation below you can see how NAND gates are used to respectively emulate NOT, AND and OR gates.  Explain how these work.  How can you similarly use only NOR gates to emulate NOT, AND and OR gates?</li>
 <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/NAND_UniversalGate_Animation.gif"  height="350" alt="NAND as universal gate" title="NAND as universal gate"/>
-<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-NAND-UniversalGate.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
+<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-NAND-UniversalGate.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
     <li>Examine the Snap<em>!</em> file and all its sprites.  For the  <code>NOT</code>, <code>AND</code>, <code>OR</code> sprites define the <code>nand</code> block and assemble some code using <code>nand</code> blocks to emulate the NOT, AND and OR gates.</li>
 </ol>
 </div>
-<h3>XOR gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/XOR.png" width="171" height="81" alt="XOR-gate" title="XOR-gate"/> Exclusive OR</h3>
+<h3>XOR gate:<img src="/bjc-r/img/6-computers/LogicGates_img/Gates/XOR.es.png" width="171" height="81" alt="XOR-gate" title="XOR-gate"/> Exclusive OR</h3>
 An XOR gate is a logic gate that behaves exactly like the Boolean operator XOR (which stands for "eXclusive OR).  The output of the XOR gate is 1 if and only if either but not both of its inputs are 1, just as the output of the Boolean operator XOR is True if and only if either but not both of its inputs are True.  In the truth tables below you can see the correspondence between the Boolean operator XOR and the XOR gate.  In the tables, A and B represent the two binary inputs (False/True and 0/1) which are represented by the two wires going into the XOR gate in the picture shown above.<br /><br />
 
 
@@ -368,30 +368,30 @@ You can create the XOR gate from AND, OR and NOT gates as shown below.  This set
 <p>A half-adder adds two binary digits and reports the sum and the carry over value.  If you look at the "SUM" column you will notice that it is identical to the output column of XOR and if you look at the "CARRY" column you will notice that it is identical to the output column of AND.</p>
 <div class="sidenote">If you are having difficulty making sense of this table consider addition of binary digits:<br />
 0+0=0<br />0+1=1<br />1+0=1<br />1+1=2 which is 10 in binary with a units digit sum of 0 and a carry of 1.</div>
-<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/HalfAdder_TruthTable01.png"  height="200" alt="Half-Adder table with Sum and Carry" title="Half-Adder table with Sum and Carry"/><br />
+<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/HalfAdder_TruthTable01.es.png"  height="200" alt="Half-Adder table with Sum and Carry" title="Half-Adder table with Sum and Carry"/><br />
 <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/Half-Adder_Animation.gif"  height="350" alt="Half-Adder"title="Half-Adder"/><br />
 <div class="forYouToDo" id="first">
     <ol>
   
-	<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-HALF-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
+	<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-HALF-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
     <li>Examine the Snap<em>!</em> file and all its sprites.  For the sprites <code>SUM</code> and <code>CARRY</code> assemble some code blocks to emulate a half-adder.</li>
     </ol>
     </div>
 
 <h3>Full-Adder</h3>
 <div class="sidenote">If you are having difficulty making sense of this table consider addition of three binary digits:<br />
-<img src="/bjc-r/img/6-computers/LogicGates_img/Adders/Full-Adder-Helper.png"  height="200" alt="Sum of three bits" title="Sum of three bits"/><br />
+<img src="/bjc-r/img/6-computers/LogicGates_img/Adders/Full-Adder-Helper.es.png"  height="200" alt="Sum of three bits" title="Sum of three bits"/><br />
 For example, 1+1+1=3 which is 11 in binary with a units digit sum of 1 and a carry of 1.</div>
 <p>A full-adder uses two half-adders to perform a full addition of binary digits with a carry in value.  It reports the sum and carry out value.</p>
 
 
-<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/FullAdder_TruthTable01.png"  height="250" alt="Full-Adder table with Carry In, Sum, Carry Out" title="Full-Adder table with Carry In, Sum, Carry Out"/><br />
+<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/TruthTables/FullAdder_TruthTable01.es.png"  height="250" alt="Full-Adder table with Carry In, Sum, Carry Out" title="Full-Adder table with Carry In, Sum, Carry Out"/><br />
 <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/Full-Adder_Animation.gif" height="350" alt="Full-Adder" title="Full-Adder"/>
 
 <div class="forYouToDo" id="second">
     <ol start="3">
   	<li>Study the table and the full-adder schematic given above to explain how the full-adder performs the addition of two binary numbers with carry in using two half-adders and an OR gate.</li>
-	<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-FULL-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
+	<li><a class="run" href="/bjc-r/prog/6-computers/U6L2-FULL-ADDER.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a></li>
     <li>Examine the Snap<em>!</em> file and all its sprites.  Code for sprites <code>CARRY IN</code>, <code>A</code> and <code>B</code>, have been written for you.  For the sprites <code>SUM1</code>, <code>CARRY1</code>, <code>SUM OUT</code>, <code>CARRY2</code>, <code>CARRY OUT</code>, assemble some code blocks to emulate a full-adder.</li>
     </ol>
     </div>

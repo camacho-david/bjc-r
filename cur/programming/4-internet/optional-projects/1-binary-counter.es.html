@@ -35,7 +35,7 @@
                         Choose one of the methods described and come up with a simple algorithm for this procedure.
                     </p>
               </div>
-                <li><a class="run" href="/bjc-r/prog/6-computers/U6-BinaryTimer.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Several sprites, blocks, and costumes have already been created for you. The <code>Get Binary Digits</code> block (in Timer) is the only place where you will need to fill in some code. </li>
+                <li><a class="run" href="/bjc-r/prog/6-computers/U6-BinaryTimer.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.es.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Several sprites, blocks, and costumes have already been created for you. The <code>Get Binary Digits</code> block (in Timer) is the only place where you will need to fill in some code. </li>
             </ol>
         </div>
 
@@ -44,7 +44,7 @@
             If you look at the Timer sprite code, you will see that the <code>timer</code> block (from the "Sensing" menu) is used as a time keeper.  The decimal and binary digits are computed and stored in lists, and then a broadcast is made to the sprites representing the digits to put on the appropriate costumes (0 and 1 for the binary digits and 0 through 9 for the decimal digits.)
             </p><br />
 
-            <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/TimerCode.png" height="400"  alt="when green flag clicked{reset timer; repeat until(round(timer)>(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}" title="when green flag clicked{reset timer; repeat until(round(timer)>(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}"/>
+            <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/TimerCode.es.png" height="400"  alt="when green flag clicked{reset timer; repeat until(round(timer)>(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}" title="when green flag clicked{reset timer; repeat until(round(timer)>(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}"/>
         </p>
         <p>The "warp" block is used to ensure that all the computation within the block is completed prior to the refreshing of the screen .</p>
         <p>The code for extracting the base 10 digits of a given number,<code>Get Decimal Digits</code>, is written for you. If you are using method 2 (<em>Descending Powers of Two and Subtraction</em>) to write <code>Get Binary Digits</code> you can ignore the code in <code>Get Decimal Digits</code>.  If you are using method 1 (<em>Short Division by Two with Remainder</em>) however, you can use this code as a model to write the <code>Get Binary Digits</code> code as it is based on method 1.  </p>
@@ -59,7 +59,7 @@
 		<div class="ifTime">
             <ol start="6">
                 <li>
-                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     In this project, you generated the binary number representation of decimal numbers 0 through 255. While it takes only 3 digits to represent the number 255 in base 10, it requires 8 digits to represent the same number in base 2. Can you explain why?
                 </li>
                 <li>Create a Hexadecimal Timer Project in Snap<em>!</em></li>
@@ -69,7 +69,7 @@
 		<div class="takeItFurther">
             <div class="sidenoteBig">
                         You might want to make use of the  <code>current</code> time block in the "Sensing" menu:<br />
-                        <img class="inline" src="/bjc-r/img/6-computers/BinaryClock_img/CurrentTime.png" alt="current time" title="current time"/>
+                        <img class="inline" src="/bjc-r/img/6-computers/BinaryClock_img/CurrentTime.es.png" alt="current time" title="current time"/>
                     </div>
                 	<ol type="A">
                 <li>
@@ -99,10 +99,10 @@
                     Try to do this without introducing 60 different costumes.
                 </li>-->
                 <li>
-					<img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+					<img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.es.png" alt="Tough Stuff" title="Tough Stuff" />
                     Create a reporter in Snap<em>!</em>  that converts a given number in a given base to its equivalent in another given base.<br />
 
-                    <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/BaseConverter.png" height="50" alt="number: (29) initial base: (10) final base: (3) reporting 'The number 29 in base 10 is 1002 in base 3'" title="number: (29) initial base: (10) final base: (3) reporting 'The number 29 in base 10 is 1002 in base 3'"/>
+                    <img class="indent" src="/bjc-r/img/6-computers/BinaryClock_img/BaseConverter.es.png" height="50" alt="number: (29) initial base: (10) final base: (3) reporting 'The number 29 in base 10 is 1002 in base 3'" title="number: (29) initial base: (10) final base: (3) reporting 'The number 29 in base 10 is 1002 in base 3'"/>
                 </li>
 
 

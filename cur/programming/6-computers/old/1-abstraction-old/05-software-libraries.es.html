@@ -33,11 +33,11 @@
 <p>Why <em>are</em> there so many picture formats, anyway? One  reason is the usefulness of different <strong>data compression algorithms</strong>.</p>
         <p>
             Here's a picture of the BJC logo:<br />
-            <img class="indent noshadow" src="/bjc-r/img/6-computers/bjc-logo-original.png" alt="BJC logo uncompressed" title="BJC logo uncompressed" />
+            <img class="indent noshadow" src="/bjc-r/img/6-computers/bjc-logo-original.es.png" alt="BJC logo uncompressed" title="BJC logo uncompressed" />
         </p>
         <p>This picture is 158 pixels wide, and 186 pixels tall, for a total of 29,388 pixels. The BMP (bitmap) format includes each of those pixels in the picture file, at four bytes per pixel, so the file size is about 120kB.</p>
         <p>This is an inefficient way to store the information. That's especially true for a cartoon-like picture such as this one. Think about the 158 pixels in the top row. </p>
-        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...<img src="/bjc-r/img/6-computers/top-row-of-pixels-in-bjc-logo.png" alt="top-row-of-pixels-in-bjc-logo">...</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...<img src="/bjc-r/img/6-computers/top-row-of-pixels-in-bjc-logo.es.png" alt="top-row-of-pixels-in-bjc-logo">...</p>
         <p>The first 60 or so are transparent. Then come five pixels of mustard yellow (the top slice of the "b").The rest are transparent. So instead of storing a representation for all 158 pixels, we could just store six values:</p>
         <table width="30%" border="4" cellspacing="8" alt="60, transparent, 5, mustard yellow, 93, transparent">
           <tr>
@@ -62,7 +62,7 @@
             <a href="#hint-run-length-encoding" data-toggle="collapse">Click to learn more about run-length encoding.</a>
       <div id="hint-run-length-encoding" class="collapse">
        Not all the rows are that simple. A slice across the picture near the top of the <em>j</em> looks like this.<br /> 
-        ... <img src="/bjc-r/img/6-computers/bjc-logo-original-middle-row.png" alt="bjc-logo-original-middle-row"> ... <br /> 
+        ... <img src="/bjc-r/img/6-computers/bjc-logo-original-middle-row.es.png" alt="bjc-logo-original-middle-row"> ... <br /> 
         Storing the length of each  color run would require 24 pieces of information. But even this is better than 158. 
                 <p>These days, the size of one picture isn't so significant, but think about every frame of a movie, and think about the time required to send the information over the Internet. Compression makes it easier to stream that movie to you.</p>
 </div>

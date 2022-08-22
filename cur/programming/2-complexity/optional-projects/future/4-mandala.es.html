@@ -35,9 +35,9 @@
         <div class="forYouToDo" id="first">
             <ol>
 				<li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.es.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     Before you open Snap<em>!</em>, figure out a possible algorithm for drawing this design:<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="200" alt="10-gon-with-diagonals" title="10-gon-with-diagonals" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.es.png" height="200" alt="10-gon-with-diagonals" title="10-gon-with-diagonals" />
                 </li>
             </ol>
         </div>
@@ -49,19 +49,19 @@
             <div class="stagedir">
                 Alphie opens their polygon project.<br />
                 <div class="comment">I'm not confident that this is what their polygon code will look like. Maybe that's ok... ? --MF, 3/25/19</div>
-                <img class="indent" src="/bjc-r/img/2-complexity/polygonCode.png" height="180" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" />
+                <img class="indent" src="/bjc-r/img/2-complexity/polygonCode.es.png" height="180" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" />
             </div>
             <div class="comment">These italics are confusing in terms of intent and not helping with the reading. --MF, 3/25/19</div>
             <div><span>Betsy:</span> So let's make our <code>polygon</code> block  store each vertex as a <code>point</code> <em>while</em> it draws the polygon. We  listed  points as <em>we</em> clicked on them. This is the same, but with the <em>program</em> generating the points.</div>
             <div class="todo">I wonder if it would help to use the term ADT in the previous sentence somewhere. --MF, 3/25/19</div>
-            <div><span> Gamal:</span> Right! Set up a empty list variable first, and then use <img src="/bjc-r/img/3-lists/add()to().png" height="44" alt="add() to ()" title="add() to ()" /> inside the <code>polygon</code> block.</div>
+            <div><span> Gamal:</span> Right! Set up a empty list variable first, and then use <img src="/bjc-r/img/3-lists/add()to().es.png" height="44" alt="add() to ()" title="add() to ()" /> inside the <code>polygon</code> block.</div>
             <div class="todo">No reason to use an image rather than just <code>add</code> here. --MF, 3/25/19  Maybe it's a reminder that they're using lists? -bh</div>
             <div><span>Alphie:</span> Global variable or a  script variable?</div>
             <div><span> Gamal:</span> Well, we need to use it inside <code>polygon</code> <em>and</em> in the script that draws the design, so I'd make it global so multiple scripts can access it.</div>
             <div><span> Betsy:</span> I have an idea for the part of the program that actually draws the diagonals.</div>
             <div class="stagedir">
 			<div class="comment">Technically, a side of a polygon isn't a diagonal. -bh<p>Yes, but isn't this referring to the line segments inside, which are diagonals? --MF, 5/31/19</p></div>
-            Betsy sketches this: <img src="/bjc-r/img/2-complexity/Mandala_img/Stage2.png" height="160" alt="Stage 2 of Mandala" title="Stage 2 of Mandala" />
+            Betsy sketches this: <img src="/bjc-r/img/2-complexity/Mandala_img/Stage2.es.png" height="160" alt="Stage 2 of Mandala" title="Stage 2 of Mandala" />
             </div>
             <div><span> Gamal:</span> Smart! We'll draw all the diagonals from <em>one</em> vertex as a subproblem.</div>
             <div><span> Alphie:</span> Perfect! Pick <em>one</em> vertex and use <code>for each</code> to connect <em>just that one</em> to each other vertex.  After that, it's easy! We can use that block on <em>each</em> vertex.</div>
@@ -77,7 +77,7 @@
             <div class="comment">AAP-3.C.1</div>
             <p>
                 The procedure definition for the custom <code>polygon</code> command<br />
-                <img class="indent" src="/bjc-r/img/2-complexity/polygonCode.png" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" /><br />
+                <img class="indent" src="/bjc-r/img/2-complexity/polygonCode.es.png" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" /><br />
                 would be written as<br />
                 <div class="sidenoteBig">The procedure <pre class="inline">turn_clockwise</pre> isn't built in to the AP's language so it is written in lower case like other programmer-defined procedures.</div>
                 <pre>
@@ -90,14 +90,14 @@ PROCEDURE polygon (numberOfSides, length)
     }
 }</pre>
             </p>
-            <p>Notice that the hat block, <img class="inline nopadtb" src="/bjc-r/img/2-complexity/polygon-hat-block.png" alt="polygon, sides: (number of sides) side length: (length)" title="polygon, sides: (number of sides) side length: (length)" />, would be written as <pre class="inline">PROCEDURE polygon (numberOfSides, length)</pre>. The word <pre class="inline">PROCEDURE</pre> tells you that that line of the code is like a hat block; the variable names in the parentheses on that line are the inputs that the procedure takes.</p>
+            <p>Notice that the hat block, <img class="inline nopadtb" src="/bjc-r/img/2-complexity/polygon-hat-block.es.png" alt="polygon, sides: (number of sides) side length: (length)" title="polygon, sides: (number of sides) side length: (length)" />, would be written as <pre class="inline">PROCEDURE polygon (numberOfSides, length)</pre>. The word <pre class="inline">PROCEDURE</pre> tells you that that line of the code is like a hat block; the variable names in the parentheses on that line are the inputs that the procedure takes.</p>
             <div class="todo">We could add an APblocktran image here, but I think that might be too much for this box. --MF, 4/19/19</div>
         </div>
         </div>
         <div class="takeNote">
-			<h4><strong>Debugging with <img src="/bjc-r/img/2-complexity/Debugging/pause-all-block.png"  height="42" alt="pause all" title="pause all"/></strong></h4>
+			<h4><strong>Debugging with <img src="/bjc-r/img/2-complexity/Debugging/pause-all-block.es.png"  height="42" alt="pause all" title="pause all"/></strong></h4>
             <div class="todo">BH, I edited this text so I could hide the video. --MF, 5/31/19</div>
-			<p>You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. When you run code with <code>pause all</code> in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/bjc-r/img/sys/play-button.png" alt="play button" title="play button"/>/<img src="/bjc-r/img/1-introduction/pause_button.png" alt="pause button" title="pause button"/>) to move through the code up until a <code>pause all</code> block is reached again. The <code>pause all</code> block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.
+			<p>You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. When you run code with <code>pause all</code> in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/bjc-r/img/sys/play-button.es.png" alt="play button" title="play button"/>/<img src="/bjc-r/img/1-introduction/pause_button.es.png" alt="pause button" title="pause button"/>) to move through the code up until a <code>pause all</code> block is reached again. The <code>pause all</code> block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.
             <a href="#hint-pauseall" data-toggle="collapse" title="Click for a video that shows how to use the PAUSE ALL block.">Click for a video that shows how.</a></p>
             <div id="hint-pauseall" class="collapse">
                 <img class="indent" data-gifffer="/bjc-r/img/2-complexity/Debugging/PauseAll.gif" width="800" height="358" alt="Animation on how to use pause all block" title="Animation on how to use pause all block"/>
@@ -106,7 +106,7 @@ PROCEDURE polygon (numberOfSides, length)
 
         <div class="forYouToDo">
             <ol start="2">
-                <li>Now build your own program to draw <img src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="100" alt="10-gon with diagonals" title="10-gon with diagonals" /> by decomposing the problem into manageable small parts.</li>
+                <li>Now build your own program to draw <img src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.es.png" height="100" alt="10-gon with diagonals" title="10-gon with diagonals" /> by decomposing the problem into manageable small parts.</li>
             </ol>
 		</div>
 
@@ -117,7 +117,7 @@ PROCEDURE polygon (numberOfSides, length)
 				</li>
                 <li>
 					Modify your program to draw diagrams with any number of sides:<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala4b.png" height="200" alt="Denser Mandala" title="Denser Mandala" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala4b.es.png" height="200" alt="Denser Mandala" title="Denser Mandala" />
                 </li>
 				<li>The ten-sided diagram has a point in the center where several diagonals meet.  Is this true for any number of sides?  If not, for which designs is it true?</li>
             </ol>
@@ -125,10 +125,10 @@ PROCEDURE polygon (numberOfSides, length)
 		<div class="ifTime">
 			<ol start="3">
 				<li>Adapt your program to make bigger designs:<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala2.png" height="200" alt="Four Mandalas" title="Four Mandalas" />
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala3b.png" height="200" alt="Mandala Ring" title="Mandala Ring"/>
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala3.png" height="200" alt="Colored Mandala Ring" title="Colored Mandala Ring" />
-                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala2.png" height="200" alt="Colored Four Mandalas" title="Colored Four Mandalas" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala2.es.png" height="200" alt="Four Mandalas" title="Four Mandalas" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/Mandala3b.es.png" height="200" alt="Mandala Ring" title="Mandala Ring"/>
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala3.es.png" height="200" alt="Colored Mandala Ring" title="Colored Mandala Ring" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala2.es.png" height="200" alt="Colored Four Mandalas" title="Colored Four Mandalas" />
 				</li>
 			</ol>
 		</div>

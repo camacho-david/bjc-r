@@ -60,7 +60,7 @@
             <code>tree</code>).
         </div>
         <div class="todo">Please no pseudosnap! --MF, 4/5/19</div>
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/rec-command.png"
+        <img class="indent" src="/bjc-r/img/8-recursive-reporters/rec-command.es.png"
             alt="recursion(input){if(base case?(input){do something simple} else{do stuff; recursion(smaller input); do stuff}}"
             title="recursion(input){if(base case?(input){do something simple} else{do stuff; recursion(smaller input); do stuff}}" />
         </p>
@@ -72,15 +72,15 @@
         <div class="sidenote">Ni siquiera puedes construir este script porque no se te permitirá conectar ningún bloque
             <em>debajo</em> un bloque <code>report</code>.
         </div>
-        <img class="indent" src="/bjc-r/img/8-recursive-reporters/bad-rec-reporter.png"
+        <img class="indent" src="/bjc-r/img/8-recursive-reporters/bad-rec-reporter.es.png"
             alt="Cannot do this: recursive reporter(input){if(base case?(input){report (something simple)} else{report something; report(recursive reporter(smaller input)); report something}}"
             title="Cannot do this: recursive reporter(input){if(base case?(input){report (something simple)} else{report something; report(recursive reporter(smaller input)); report something}}" />
         </p>
         <!--<p> Higher-order functions, mathematics operations, and other ways to combine information are often used.</p>
             <p>Instead, most of the time a recursive reporter call will be inside a <em>combiner</em> that attaches the result of the recursive call to some other value:</p>
-            <p><img src="/bjc-r/img/8-recursive-reporters/rec-reporter.png" alt="correct recursive reporter pattern with combiner" /></p>
+            <p><img src="/bjc-r/img/8-recursive-reporters/rec-reporter.es.png" alt="correct recursive reporter pattern with combiner" /></p>
             <p>The combiner can be an arithmetic operator such as <code>+</code> or <code>&times;</code>:</p>
-            <p><img src="/bjc-r/img/8-recursive-reporters/factorial.png" alt="factorial" /></p> -->
+            <p><img src="/bjc-r/img/8-recursive-reporters/factorial.es.png" alt="factorial" /></p> -->
     
         <div class="todo">BH suggests deleting #4-7 here. Discuss some other time? Or just dump it? I like this exercise.
         </div>
@@ -101,7 +101,7 @@
                     total
                     número de letras en todas las palabras. El bloque <code>all but first of</code> puede ser útil, pero hay
                     más de una manera de hacer esto.<br />
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/lettercount.png"
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/lettercount.es.png"
                         alt="letter count(list{We, the. People, of, the, United, States}) reporting 28"
                         title="letter count(list{We, the. People, of, the, United, States}) reporting 28" />
                 </li>
@@ -110,7 +110,7 @@
                         <div class="comment">I don't understand the above sidenote. I get that that's what we are doing, but what is this trying to tell me to do? --MF</div>-->
                     Crea tu propia versión del bloque <code>join words</code>. Este bloque ingresa una lista y genera una
                     oración de cadena, con espacios:<br />
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/myjoinwords.png"
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/myjoinwords.es.png"
                         alt="my join words(list{We, the. People, of, the, United, States}) reporting -We the People of the United States"
                         title="my join words(list{We, the. People, of, the, United, States})reporting -We the People of the United States" />
                 </li>
@@ -120,7 +120,7 @@
                         how to do." I don't think <code>my join words</code> works because it can be done so much more
                         quickly <em>non-recursively</em> by using <code>combine</code>. I <em>do</em> like
                         <code>letter count</code> though because it <em>does</em> simplify the code. --MF<br />
-                        <img class="indent" src="/bjc-r/img/8-recursive-reporters/recursive-letter-count.png"
+                        <img class="indent" src="/bjc-r/img/8-recursive-reporters/recursive-letter-count.es.png"
                             alt="letter count(list){if(length of list=0){report()};report(length of(item(1) of list)+(letter count(all but first of list))}"
                             title="letter count(list){if(length of list=0){report()};report(length of(item(1) of list)+(letter count(all but first of list))}" />
                     </p>
@@ -147,7 +147,7 @@
                     Cree este bloque <code>plurals</code>, luego describa cómo funciona. (Ya has construido una más simple
                     versión de <code>plurals</code> usando <code>map</code>; queremos que veas que el mismo problema puede
                     ser resuelto de múltiples maneras.)<br />
-                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/plurals.png"
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/plurals.es.png"
                         alt="plurals(words){if(empty?(words)){report(empty list)} else{report((join (item 1 of words)(s) in front of (plurals(all but first of (words)))}}"
                         title="plurals(words){if(empty?(words)){report(empty list)} else{report((join (item 1 of words)(s) in front of (plurals(all but first of (words)))}}" />
                 </li>

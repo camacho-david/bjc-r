@@ -36,14 +36,14 @@
             <p><strong>In this lab,</strong> you will learn that some ways to solve a problem are faster than others.</p>
             <p>
                 <strong>On this page,</strong> you will compare two algorithms for adding the numbers from 1 to an input number (as shown below).<br />
-                <img class="indent" src="/bjc-r/img/5-algorithms/sum-from-1-to-5-reporting.png" alt="sum from 1 to (5) reporting 15" title="sum from 1 to (5) reporting 15" />
+                <img class="indent" src="/bjc-r/img/5-algorithms/sum-from-1-to-5-reporting.es.png" alt="sum from 1 to (5) reporting 15" title="sum from 1 to (5) reporting 15" />
             </p>
         </div>
 
         <div class="dialogue">
             <div class="stagedir">
                 Alphie and Betsy are creating algorithms that take a positive integer as input and report the sum of all integers from 1 to the input number, like this: <br />
-                <img class="indent" src="/bjc-r/img/5-algorithms/sum-from-1-to-13-reporting.png" alt="sum from 1 to (13) reporting 91" title="sum from 1 to (13) reporting 91" /><br />
+                <img class="indent" src="/bjc-r/img/5-algorithms/sum-from-1-to-13-reporting.es.png" alt="sum from 1 to (13) reporting 91" title="sum from 1 to (13) reporting 91" /><br />
                 Their two different approaches always give the same outputs for the same inputs. Alphie and Betsy are discussing their different approaches.
             </div>
             <div><span>Alphie: </span> I made two new blocks. First, I created a reporter to list of all the integers between and including two integers, and then I used <code>combine</code> to add up the list.</div>
@@ -53,10 +53,10 @@
             <div class="todo">Formatting needs clean-up, no? This is a little overwhelming... --MF, 7/3/18</div>
 
             	<p>
-                    The <img class="inline" src="/bjc-r/img/blocks/combine.png" alt="combine with() items of ()" title="combine with() items of ()" /> block takes an operation (with <em>two</em> blank input slots) and a list as input, and it reports a single result (not a list): the combination of the elements in the list when using the given operation. For example:<br />
+                    The <img class="inline" src="/bjc-r/img/blocks/combine.es.png" alt="combine with() items of ()" title="combine with() items of ()" /> block takes an operation (with <em>two</em> blank input slots) and a list as input, and it reports a single result (not a list): the combination of the elements in the list when using the given operation. For example:<br />
                     <div class="sidenote">Read this out loud as "combine the elements of  the list {5, 6, 2, 3} with addition."</div>
-                    <img class="indent" src="/bjc-r/img/3-lists/combine-example-1.png" alt="combine with (()+()) items of (list {5,6,2,3}) reporting 16" title="combine with (()+()) items of (list {5,6,2,3}) reporting 16" />
-                    <!--<img class="indent" src="/bjc-r/img/3-lists/combine-example-2.png" alt="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" title="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" />- ->
+                    <img class="indent" src="/bjc-r/img/3-lists/combine-example-1.es.png" alt="combine with (()+()) items of (list {5,6,2,3}) reporting 16" title="combine with (()+()) items of (list {5,6,2,3}) reporting 16" />
+                    <!--<img class="indent" src="/bjc-r/img/3-lists/combine-example-2.es.png" alt="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" title="combine with (join words () ()) items of (list {apples, bananas, oranges, grapes}) reporting 'apples bananas oranges grapes'" />- ->
                 </p>
                 <div class="takeNote">
                 <div class="sidenoteBig"><code>Combine</code> is a <em>higher order function</em>. This means that it is a function that takes a function as input. You've seen some higher order functions already: <code>keep</code> (in <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.es.html?topic=nyc_bjc%2F2-conditionals-abstraction.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Keeping Items from a List">Unit 2 Lab 3</a>) and <code>map</code> (in <a href="/bjc-r/cur/programming/3-lists/2-contact-list/5-mapping-over-list.es.html?topic=nyc_bjc%2F3-lists.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Transforming Every List Item">Unit 3 Lab 1</a>).</div>
@@ -66,15 +66,15 @@
 
                 <div class="endnote">
                     Unlike <code>map</code> and <code>keep</code>, <code>combine</code> is mostly used with one of <em>only these six</em> functions:<br />
-                    <img class="indent" src="/bjc-r/img/3-lists/plus.png" alt="+" title="+" /> <img src="/bjc-r/img/3-lists/times.png" alt="&times;" title="&times;" /><br />
-                    <img class="indent" src="/bjc-r/img/3-lists/and-block.png" alt="and" title="and" /> <img src="/bjc-r/img/3-lists/or-block.png" alt="or" title="or" /><br />
-                    <img class="indent" src="/bjc-r/img/3-lists/join.png" alt="join" title="join" /> <img src="/bjc-r/img/3-lists/join-words.png" alt="join words" title="join words" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/plus.es.png" alt="+" title="+" /> <img src="/bjc-r/img/3-lists/times.es.png" alt="&times;" title="&times;" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/and-block.es.png" alt="and" title="and" /> <img src="/bjc-r/img/3-lists/or-block.es.png" alt="or" title="or" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/join.es.png" alt="join" title="join" /> <img src="/bjc-r/img/3-lists/join-words.es.png" alt="join words" title="join words" /><br />
                     Among blocks you might write yourself, there are only two likely candidates:<br />
-                    <img class="indent" src="/bjc-r/img/3-lists/max.png" alt="max" title="max" /> <img src="/bjc-r/img/3-lists/min.png" alt="min" title="min" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/max.es.png" alt="max" title="max" /> <img src="/bjc-r/img/3-lists/min.es.png" alt="min" title="min" /><br />
                     <a data-toggle="collapse" href="#hint-3">Why so few?</a>
                     <div id="hint-3" class="collapse">
                     	The function has to be <em>associative</em>, meaning that it doesn't matter what order you group the items in; (7&thinsp;+&thinsp;8)&thinsp;+&thinsp;1 is the same as 7&thinsp;+&thinsp;(8&thinsp;+&thinsp;1) (work it out yourself), but (7&thinsp;−&thinsp;8)&thinsp;−&thinsp;1 is different from 7&thinsp;−&thinsp;(8&thinsp;−&thinsp;1).
-                    	So <img src="/bjc-r/img/3-lists/combine-minus.png" alt="combine with (-) items of (list 7 8 1)"> would be ambiguous.
+                    	So <img src="/bjc-r/img/3-lists/combine-minus.es.png" alt="combine with (-) items of (list 7 8 1)"> would be ambiguous.
                     </div>
                 </div>
             </div>
@@ -83,8 +83,8 @@
             <div class="comment">This block is now built-in to Snap (as a tool). Images and instructions should be changed. --MF, 3/11/19</div>
             <div class="stagedir">
                 Alphie shows his work:<br />
-				<img src="/bjc-r/img/5-algorithms/list-from-1-to-7-reporting.png" alt="list from (1) to (7) reporting the list{1,2,3,4,5,6,7" title="list from (1) to (7) reporting the list{1,2,3,4,5,6,7}" /><br />
-				<img class="" src="/bjc-r/img/5-algorithms/sum-of-definition.png" alt="sum of (inputList){report(combine with(()+()) items of (inputList))}" title="sum of (inputList){report(combine with(()+()) items of (inputList))}" />
+				<img src="/bjc-r/img/5-algorithms/list-from-1-to-7-reporting.es.png" alt="list from (1) to (7) reporting the list{1,2,3,4,5,6,7" title="list from (1) to (7) reporting the list{1,2,3,4,5,6,7}" /><br />
+				<img class="" src="/bjc-r/img/5-algorithms/sum-of-definition.es.png" alt="sum of (inputList){report(combine with(()+()) items of (inputList))}" title="sum of (inputList){report(combine with(()+()) items of (inputList))}" />
 
             </div>
             <div><span>Betsy: </span> Great! I think we can do it another way too.</div>
@@ -194,9 +194,9 @@
             <ol>
                 <li>Discuss these two algorithms and make a hypothesis: Which algorithm do you think will be more efficient? Why?</li>
                 <li>
-					<div class="sidenoteBig">For Alphie’s method, use the block <code>numbers from () to ()</code> in the Variables palette. You'll need to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> to see it.</div>
+					<div class="sidenoteBig">For Alphie’s method, use the block <code>numbers from () to ()</code> in the Variables palette. You'll need to <img class="inline" src="/bjc-r/img/icons/import-tools.es.png" alt="Import Tools" title="Import Tools" /> to see it.</div>
                 	Implement a <code>sum from 1 to</code> algorithm. You can use Alphie’s method (using <code>combine</code> to code <code>sum</code>), you can use Betsy’s formula, or you can build it your own way.<br />
-                	<div class="saveAs inline"><span class="text">"U5L3-ReporterTimer"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U5L3-ReporterTimer" title="Save your work as U5L3-ReporterTimer" /></div>
+                	<div class="saveAs inline"><span class="text">"U5L3-ReporterTimer"</span><img src="/bjc-r/img/icons/save-this-as.es.png" alt="Save your work as U5L3-ReporterTimer" title="Save your work as U5L3-ReporterTimer" /></div>
                 </li>
                 <li>Work with another team to compare Alphie's and Betsy's algorithms across a variety of inputs. Determine which is more efficient (that is, which runs faster).</li>
                 <li>
