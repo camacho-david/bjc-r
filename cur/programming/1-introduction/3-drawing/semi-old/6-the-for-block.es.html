@@ -26,9 +26,9 @@
         	You've seen these ways to repeat a set of commands:
 			<ul>
                 <div class="sidenoteBig">The <code>forever</code> block generates an <em>infinite loop</em> that goes on forever.  An infinite loop can sometimes be the result of a bug, but in some interactive programs, you <em>want</em> the program to keep running until stopped by the user.</div>
-				<li><img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" />  repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/4-keeping-score.es.html?topic=nyc_bjc%2F1-intro-loops.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unit 1 Lab 1 Page 3: Make It a Game">Unit 1 Lab 1 Page 3: Make It a Game</a>.)</li>
-                <li><img class="inline" src="/bjc-r/img/1-introduction/repeat.png" alt="the repeat block" title="the repeat block" />  repeats them <em>a specific number of times</em>. (You used it to draw shapes in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.es.html?topic=nyc_bjc%2F1-intro-loops.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unit 1 Lab 3 Page 1: Exploring Motion">Unit 1 Lab 3 Page 1: Exploring Motion</a>.)</li>
-				<!--<li><img src="/bjc-r/img/blocks/repeat-until.png" alt="repeat until" title="repeat until" /> repeats until <em>some special condition</em> occurs.</li>-->
+				<li><img class="inline" src="/bjc-r/img/blocks/forever.es.png" alt="the forever block" title="the forever block" />  repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/4-keeping-score.es.html?topic=nyc_bjc%2F1-intro-loops.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unit 1 Lab 1 Page 3: Make It a Game">Unit 1 Lab 1 Page 3: Make It a Game</a>.)</li>
+                <li><img class="inline" src="/bjc-r/img/1-introduction/repeat.es.png" alt="the repeat block" title="the repeat block" />  repeats them <em>a specific number of times</em>. (You used it to draw shapes in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.es.html?topic=nyc_bjc%2F1-intro-loops.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unit 1 Lab 3 Page 1: Exploring Motion">Unit 1 Lab 3 Page 1: Exploring Motion</a>.)</li>
+				<!--<li><img src="/bjc-r/img/blocks/repeat-until.es.png" alt="repeat until" title="repeat until" /> repeats until <em>some special condition</em> occurs.</li>-->
             </ul>
         </p>
 
@@ -39,8 +39,8 @@
             <div class="comment">AAP-2.K.1</div>
             <p>
                 The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you'll see in Lab 5). <br />
-                <img class="indent" src="/bjc-r/img/1-introduction/repeat-4(move-100-turn-right-90).png" alt="repeat (4) (move (100), turn clockwise (90))" title="repeat (4) (move (100), turn clockwise (90))" />
-                <img class="indent" src="/bjc-r/img/1-introduction/move-tiny-no-hat.png" alt="repeat until (touching (Leader)?)
+                <img class="indent" src="/bjc-r/img/1-introduction/repeat-4(move-100-turn-right-90).es.png" alt="repeat (4) (move (100), turn clockwise (90))" title="repeat (4) (move (100), turn clockwise (90))" />
+                <img class="indent" src="/bjc-r/img/1-introduction/move-tiny-no-hat.es.png" alt="repeat until (touching (Leader)?)
 {
     point towards (Leader)
     move (1) steps
@@ -54,8 +54,8 @@
 
         <p>
             Sometimes the script inside a loop needs to know which time through the loop it's in (first, second, etc.).
-            You can use <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> to keep track, and you can use its counter (the default name is <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br />
-            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" />
+            You can use <img src="/bjc-r/img/prog/for.es.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> to keep track, and you can use its counter (the default name is <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br />
+            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.es.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" />
             &nbsp; &nbsp; &nbsp; to
             <img class="noshadow" src="/bjc-r/img/looping/for-loop-drag-i.gif" alt="for (i)= (1) to (10) {say (i) for (2) secs}" title="for (i)= (1) to (10) {say (i) for (2) secs}" />
 		</p>
@@ -67,7 +67,7 @@
             <ol>
                 <li>
                 	Build this script that makes the sprite say the numbers 1 through 10. <br />
-                	<img class="indent" src="/bjc-r/img/1-introduction/for-i-1-10-say-i.png" alt="for (i) = (1) to (10) {say (i) for (2) secs}" title="for (i) = (1) to (10) {say (i) for (2) secs}" />
+                	<img class="indent" src="/bjc-r/img/1-introduction/for-i-1-10-say-i.es.png" alt="for (i) = (1) to (10) {say (i) for (2) secs}" title="for (i) = (1) to (10) {say (i) for (2) secs}" />
                     <ol>
                         <li>Then modify it so that the sprite says 0, 2, 4, 6, 8, ... up through 30.</li>
                         <li>Discuss your solutions with another pair.</li>
@@ -79,7 +79,7 @@
 						<li>
                         	Build this script and try it out:<br />
                             <div class="sidenote">This design got the nickname "squiral" because it's a <strong>squ</strong>are sp<strong>iral</strong>. </div>
-                            <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}"><br />
+                            <img class="indent" src="/bjc-r/img/looping/squirral-script.es.png" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}"><br />
 						</li>
                         <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Make sure you can explain why the squiral spirals outward.</li>
                         <li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
@@ -135,13 +135,13 @@
                     <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                     <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                     This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br />
-                    <img class="indent" src="/bjc-r/img/1-introduction/inspi.png" height="150" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" />
+                    <img class="indent" src="/bjc-r/img/1-introduction/inspi.es.png" height="150" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" />
                     <ol>
                         <li>Try sketching what it will draw with an angle of 2.</li>
                         <li>
                             Then build it, and try each of these tests:<br />
                             <div class="sidenote">You can stop each test with the stop button (<img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button" title="stop button"/>) when you're sure nothing new will happen, but don't decide that too quickly!</div>
-                            <img class="indent" src="/bjc-r/img/1-introduction/inspi-tests.png" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" />
+                            <img class="indent" src="/bjc-r/img/1-introduction/inspi-tests.es.png" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" />
                         </li>
                         <!--<li>What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a id="hintbutton" onClick="document.getElementById('hintbutton').innerHTML='Think about divisibility.';">(Don't click unless you really, really need a super big hint.)</a></li>-->
                         <li>

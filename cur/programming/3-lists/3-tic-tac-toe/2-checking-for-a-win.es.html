@@ -26,7 +26,7 @@
             <p>Aprendiste sobre <code>map</code> en <a href="/bjc-r/cur/programming/3-lists/2-contact-list/5-mapping-over-list.es.html?topic=nyc_bjc% 2F3-lists.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unidad 3 Práctica de laboratorio 2, página 5: Transformación de todos los elementos de la lista">Unidad 3 Práctica de laboratorio 2, página 5: Transformación de todos los elementos de la lista</a>.</p>
             <p>
                 <code>Map</code> aplica la función del anillo gris a cada elemento de la lista de entrada e informa una lista de todos los resultados.<br />
-                <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" />
+                <img class="indent" src="/bjc-r/img/3-lists/map-example-2.es.png" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" />
             </p>
             <p>Recuerde que la ranura de entrada en blanco en la función dentro del anillo gris es donde va un elemento de la lista cada vez que se realiza la función.</p>
         </div>
@@ -36,7 +36,7 @@
                 <li>Haz click en <img src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green flag button" title="green flag button" /> para empezar un nuevo juego. Juega un juego, <em>dejando deliberadamente que <strong>x</strong> gane</em>. </li>
                 <li>
                     Luego construya esta expresión y vea lo que informa:<br />
-                    <img class="indent" src="/bjc-r/img/3-lists/map-item-board.png" alt="map (item ( ) of (board)) over (list{1, 2, 3})" title="map (item ( ) of (board)) over (list{1, 2, 3})"><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/map-item-board.es.png" alt="map (item ( ) of (board)) over (list{1, 2, 3})" title="map (item ( ) of (board)) over (list{1, 2, 3})"><br />
                     <div class="endnote">
                         <a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">¿Cómo funciona <code>map</code> aquí?</a>
                         <div id="hint-map-item" class="collapse">
@@ -56,7 +56,7 @@
                 </li>
                 <li>Si <code>{1, 2, 3}</code> no es el triple en el que <strong>x</strong> ganó el juego, reemplace la lista en la expresión <code>map</code> con el ganando el triple y haga clic en la expresión de nuevo.</li>
                 <li>
-                	Usa esta idea para hacer un bloque <img src="/bjc-r/img/3-lists/status-of-triple.png" alt="status of triple ( )" title="status of triple ( )"> eso toma un posible triple ganador (un triple como <img src="/bjc-r/img/3-lists/{1,2,3}.png" alt="list{1, 2, 3}" title= "list{1, 2, 3}">) como entrada e informa una lista de lo que está en esas tres posiciones (X, O o un número). Luego utilícelo para escribir una expresión en el área de secuencias de comandos cuyo valor será <code>True</code> si X ganó el juego <em>en el triple <img src="/bjc-r/img/3-lists/ {1,2,3}.png" alt="lista{1, 2, 3}" title="lista{1, 2, 3}">,</em> o <code>Falso</code> de lo contrario.
+                	Usa esta idea para hacer un bloque <img src="/bjc-r/img/3-lists/status-of-triple.es.png" alt="status of triple ( )" title="status of triple ( )"> eso toma un posible triple ganador (un triple como <img src="/bjc-r/img/3-lists/{1,2,3}.es.png" alt="list{1, 2, 3}" title= "list{1, 2, 3}">) como entrada e informa una lista de lo que está en esas tres posiciones (X, O o un número). Luego utilícelo para escribir una expresión en el área de secuencias de comandos cuyo valor será <code>True</code> si X ganó el juego <em>en el triple <img src="/bjc-r/img/3-lists/ {1,2,3}.png" alt="lista{1, 2, 3}" title="lista{1, 2, 3}">,</em> o <code>Falso</code> de lo contrario.
                     <div class="endnote">Aprendió a especificar el tipo de entrada de lista (<img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="tipo de entrada de lista: rectángulo con dos rectángulos naranjas más pequeños dentro" title="tipo de entrada de lista: rectángulo con dos rectángulos naranjas más pequeños dentro">) en <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.es.html? topic=nyc_bjc%2F2-conditionals-abstraction.es.topic&course=bjc4nyc.es.html&novideo&noassignment" title="Unidad 2, laboratorio 2, página 2: Planificación de una aplicación de prueba">Unidad 2, laboratorio 2, página 2: Planificación de una aplicación de prueba</a>.</div>
                 </li>
                 <li>
@@ -73,7 +73,7 @@
 	<p>
         Por ejemplo, el jugador O ganó el juego a continuación, y el bloque <code>status of all wining triples</code> encuentra el estado de cada posible triple. La computadora puede usar este bloque para buscar un triple ganador que tenga todo X o todo O.<br />
 	        <img class="indent noshadow" src="/bjc-r/img/3-lists/status-of-all-board.png" alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." />
-	        <img class="indent noshadow" src="/bjc-r/img/3-lists/status-of-all-reporting.png" alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." />
+	        <img class="indent noshadow" src="/bjc-r/img/3-lists/status-of-all-reporting.es.png" alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." />
         </p>
         <div class="endnote">El orden de sus triples y/o la numeración de las posiciones en su proyecto pueden ser diferentes. Esto está bien siempre que su proyecto funcione.</div>
         <div class="forYouToDo">
@@ -103,7 +103,7 @@
                         </p>
                     </div>
                 </div>
-                <li>Ahora haga un bloque <img src="/bjc-r/img/3-lists/wonQ.png" alt="won? ( )" title="won? ( )"> que tome la letra <strong>X</strong> o <strong>O</strong> como entrada y reporta <code>true</code> si y solo si ese jugador ha ganado el juego. </li>
+                <li>Ahora haga un bloque <img src="/bjc-r/img/3-lists/wonQ.es.png" alt="won? ( )" title="won? ( )"> que tome la letra <strong>X</strong> o <strong>O</strong> como entrada y reporta <code>true</code> si y solo si ese jugador ha ganado el juego. </li>
                 <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
                 <li>Modifique su programa para que cuando un jugador gane el juego, el programa <em>notifique</em> a los jugadores.</li>
                 <li>Juega el juego varias veces para comprobar que funciona y corregir cualquier error. Asegúrese de dejar que cada jugador gane al menos una vez.</li>

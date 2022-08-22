@@ -20,7 +20,7 @@
             <ol>
                 <li><div class="newProject inline"><span class="text">"U2L4-MathLibrary"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L4-MathLibrary" title="Start a New Project called U2L4-MathLibrary" /></div></li>
                 <li>
-                    Experimenta con el bloque <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()" title="() mod ()"/>.
+                    Experimenta con el bloque <img class="inline" src="/bjc-r/img/blocks/mod.es.png" alt="() mod ()" title="() mod ()"/>.
                     <ol style="list-style-type:lower-roman;">
                         <li><strong>Pruebe varias entradas</strong>.</li>
                         <li><strong>Mantenga el segundo número constante</strong> y pruebe varias entradas para el primer número.</li>
@@ -31,16 +31,16 @@
             </ol>
         </div>
 
-        <div class="takeNote">El bloque <code>residuo</code> <strong>informa el resto</strong> cuando la primera entrada se divide por la segunda. Por ejemplo, <img src="/bjc-r/img/1-introduction/17-mod-5.png" alt="(17) mod (5)" title="(17) mod (5)" /> informa 2 porque cuando 17 se divide por 5, el resto es 2. Cuando un número divide a otro por igual, el resto es 0. Entonces, por ejemplo, <img src="/bjc-r/img/1-introduction/15-mod-5.png" alt="(15) mod (5)" title="(15) mod (5)" /> reporta 0.</div>
+        <div class="takeNote">El bloque <code>residuo</code> <strong>informa el resto</strong> cuando la primera entrada se divide por la segunda. Por ejemplo, <img src="/bjc-r/img/1-introduction/17-mod-5.es.png" alt="(17) mod (5)" title="(17) mod (5)" /> informa 2 porque cuando 17 se divide por 5, el resto es 2. Cuando un número divide a otro por igual, el resto es 0. Entonces, por ejemplo, <img src="/bjc-r/img/1-introduction/15-mod-5.es.png" alt="(15) mod (5)" title="(15) mod (5)" /> reporta 0.</div>
         <div class="examFullWidth">
             <div class="pseudop">
                 <div class="sidenote">Diferentes lenguajes de programación tienen diferentes formas de manejar entradas negativas a la función mod. Por lo tanto, no verás ningún uso de residuo con un número negativo en el examen.</div>
-                <strong>El operador <code>residuo</code>:</strong> La expresion <img class="inline nopadtb" src="/bjc-r/img/1-introduction/17-mod-5.png" alt="(17) mod (5)" title="(17) mod (5)" /> se escribiría como <pre class="inline">17 RESIDUO 5</pre> en el examen. Si ves una expresión con variables como entrada para<code>residuo</code>, tal como <pre class="inline">a RESIDUO b</pre>, puedes asumir que <var>a</var> es cero o positivo, y <var>b</var> es estrictamente positivo (porque no se puede dividir por 0).
+                <strong>El operador <code>residuo</code>:</strong> La expresion <img class="inline nopadtb" src="/bjc-r/img/1-introduction/17-mod-5.es.png" alt="(17) mod (5)" title="(17) mod (5)" /> se escribiría como <pre class="inline">17 RESIDUO 5</pre> en el examen. Si ves una expresión con variables como entrada para<code>residuo</code>, tal como <pre class="inline">a RESIDUO b</pre>, puedes asumir que <var>a</var> es cero o positivo, y <var>b</var> es estrictamente positivo (porque no se puede dividir por 0).
             </div>
             <div class="comment">AAP-2.B.5, AAP-2.C.1, AAP-2.C.2, AAP-2.C.3, AAP-2.C.4</div>
             <div class="pseudop">En el examen, puede ver estos cuatro operadores aritméticos: <pre class="inline">+</pre>,  <pre class="inline">-</pre>,  <pre class="inline">*</pre>, <pre class="inline">/</pre> (más, menos, multiplicar, dividir) así como <pre class="inline">RESIDUO</pre>. Los operadores aritméticos son parte de la mayoría de los lenguajes de programación.  (La mayoría de los lenguajes de texto utilizan <pre class="inline">*</pre> más bien que <pre class="inline">&times;</pre> para la multiplicación porque<pre class="inline">&times</pre> no está en la mayoría de los teclados, y porque se parece demasiado a la letra x.)</div>
             <div class="comment">AAP-2.L.2</div>
-            <div class="pseudop"><strong>Orden de operaciones:</strong> En un lenguaje de bloques, la anidación de bloques determina el orden de las operaciones. Por ejemplo, en <img class="inline nopadtb" src="/bjc-r/img/6-computers/3-times(5+4).png" alt="3 × (5 + 4)" title="3 × (5 + 4)" /> puedes <em>ver</em> que el bloque <code>+</code> es una entrada al bloque <code>&times;</code>, entonces la expresión significa 3&times;(5+4). Similarmente, <img class="inline nopadtb" src="/bjc-r/img/6-computers/(3-times-5)+4.png" alt="(3 × 5) + 4" title="(3 × 5) + 4" />  significa (3&times;5)+4. En Snap<em>!</em>, es como si hubiera paréntesis alrededor de <em>todas</em> las operaciones.  Pero en lenguajes de texto, puedes escribir <pre class="inline">3 * 4 + 5</pre>
+            <div class="pseudop"><strong>Orden de operaciones:</strong> En un lenguaje de bloques, la anidación de bloques determina el orden de las operaciones. Por ejemplo, en <img class="inline nopadtb" src="/bjc-r/img/6-computers/3-times(5+4).es.png" alt="3 × (5 + 4)" title="3 × (5 + 4)" /> puedes <em>ver</em> que el bloque <code>+</code> es una entrada al bloque <code>&times;</code>, entonces la expresión significa 3&times;(5+4). Similarmente, <img class="inline nopadtb" src="/bjc-r/img/6-computers/(3-times-5)+4.es.png" alt="(3 × 5) + 4" title="(3 × 5) + 4" />  significa (3&times;5)+4. En Snap<em>!</em>, es como si hubiera paréntesis alrededor de <em>todas</em> las operaciones.  Pero en lenguajes de texto, puedes escribir <pre class="inline">3 * 4 + 5</pre>
                 sin paréntesis, entonces ahí si necesitas las reglas que aprendiste en la clase de matemáticas (multiplicación antes de la suma, etc.). El operador <code>residuo</code> es como la multiplicación y la división; ocurre <em>antes</em> de la suma y la resta. Así por ejemplo, <pre class="inline">7 + 5 RESIDUO 2 - 6</pre> significa <pre class="inline">7 + 1 - 6</pre>, que es, por supuesto, 2.</div>
         </div>
 
@@ -51,14 +51,14 @@
                     <img class="inline" src="/bjc-r/img/abstraction/new-brickwall/wall.png" alt="Sample image of brick wall" title="Sample image of brick wall" />
                 </div>
                 <li>
-                    Usa <code> residuo </code> para construir un <img class="nopadtb" src="/bjc-r/img/2-complexity/divisible-by.png" alt="is () divisible by () ?" title="is () divisible by () ?" /> predicado que prueba la divisibilidad.<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/15-divisible-by-3-reporting-true.png" alt="is (15) divisible by (3) ? reporting true" title="is (15) divisible by (3) ? reporting true" />
-                    <img class="indent" src="/bjc-r/img/2-complexity/15-divisible-by-6-reporting-false.png" alt="is (15) divisible by (6) ? reporting false" title="is (15) divisible by (6) ? reporting false" />
+                    Usa <code> residuo </code> para construir un <img class="nopadtb" src="/bjc-r/img/2-complexity/divisible-by.es.png" alt="is () divisible by () ?" title="is () divisible by () ?" /> predicado que prueba la divisibilidad.<br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/15-divisible-by-3-reporting-true.es.png" alt="is (15) divisible by (3) ? reporting true" title="is (15) divisible by (3) ? reporting true" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/15-divisible-by-6-reporting-false.es.png" alt="is (15) divisible by (6) ? reporting false" title="is (15) divisible by (6) ? reporting false" />
                 </li>
                 <li>
                     Utilice este predicado <code>¿divisible por?</code> para crear un predicado que pruebe si su entrada es par (divisible por 2).<br />
-                    <img class="indent" src="/bjc-r/img/2-complexity/even--22-reporting-true.png" alt="even? (-22) reporting true" title="even? (-22) reporting true" />
-                    <img class="indent" src="/bjc-r/img/2-complexity/even-7-reporting-false.png" alt="even? (7) reporting false" title="even? (7) reporting false" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/even--22-reporting-true.es.png" alt="even? (-22) reporting true" title="even? (-22) reporting true" />
+                    <img class="indent" src="/bjc-r/img/2-complexity/even-7-reporting-false.es.png" alt="even? (7) reporting false" title="even? (7) reporting false" />
                 </li>
                 <li><img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" /></li>
             </ol>
@@ -71,7 +71,7 @@
             </div>
             <div class="pseudop">
                 La expresión condicional
-                <img class="inline" src="/bjc-r/img/2-complexity/if-example-preview-fractal-art.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" />
+                <img class="inline" src="/bjc-r/img/2-complexity/if-example-preview-fractal-art.es.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" />
                 se escribiría como
                 <div class="pre-container"><pre class="inline">
 IF(tamaño &gt; 15)
@@ -152,7 +152,7 @@ IF(tamaño &gt; 15)
                     <div class="assessment-data" type="multiplechoice" identifier="What's the value of 11 MOD (2 + 3)?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="true">
                         <div class="prompt">
-                            ¿Cuál es el valor de <img class="inline" src="/bjc-r/img/2-complexity/11mod2+3.png" alt="11 mod (2 + 3)" title="11 mod (2 + 3)" />?
+                            ¿Cuál es el valor de <img class="inline" src="/bjc-r/img/2-complexity/11mod2+3.es.png" alt="11 mod (2 + 3)" title="11 mod (2 + 3)" />?
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text">1</div>
