@@ -4,7 +4,7 @@
 require 'nokogiri'
 
 IMAGE_SOURCE = '/Volumes/Michael/Users/michael/Desktop/bjc-images/All images'
-CUR_SOURCE = 'cur/programming/**/*.html'
+CUR_SOURCE = 'cur/**/*.es.html'
 DOC_ROOT = '/bjc-r'
 BJC_R = './'
 
@@ -21,9 +21,10 @@ def get_en_basefilename(src)
   File.basename(src).gsub('.es', '')
 end
 
-images = Dir.glob("#{IMAGE_SOURCE}/*.png")
-html_files = Dir.glob(CUR_SOURCE)
 def rename_html_paths
+  # Search for files that should be *.es.png without the language code.
+  images = Dir.glob("#{IMAGE_SOURCE}/*.png")
+  html_files = Dir.glob(CUR_SOURCE)
   html_files.each do |file_path|
     next if file_path.match(/\/old/)
     text = new_contents = File.read(file_path)
@@ -34,8 +35,6 @@ def rename_html_paths
       # puts "Replacing #{image_name} with #{transform_filename(image_name)}"
       new_contents = new_contents.gsub(image_name, transform_filename(image_name))
     end
-    # To merely print the contents of the file, use:
-    # puts new_contents
 
     if text != new_contents
       puts "Writing changes to: #{file_path}"
@@ -57,7 +56,7 @@ def move_image_files
     page.css('img').each do |img_node|
       src = (img_node.attributes['src'] || img_node.attributes['data-gifffer'])&.value
       if not src
-        puts "IMAGE MISSING FILE? #{img_node.to_s}"
+        puts "IMAGE MISSING SOURCE? #{img_node.to_s}"
         next
       end
       # Don't do anything to about images not in spanish
@@ -76,4 +75,5 @@ unless File.basename(working_dir) == 'bjc-r'
   raise "You must run this script from the root directory of the repo"
 end
 
+rename_html_paths
 move_image_files
