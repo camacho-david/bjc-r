@@ -70,10 +70,40 @@ def move_image_files
   end
 end
 
+def find_non_spanish_images
+  desination = "#{IMAGE_SOURCE}/../to_translate/"
+  `mkdir -p '#{desination}'`
+  html_files = Dir.glob(CUR_SOURCE)
+  html_files.each do |file_path|
+    next if file_path.match(/\/old/)
+    contents = File.read(file_path)
+    puts "Processing: #{file_path}"
+    page = Nokogiri::HTML(contents)
+    page.css('img').each do |img_node|
+      src = (img_node.attributes['src'] || img_node.attributes['data-gifffer'])&.value
+      if not src
+        puts "IMAGE MISSING SOURCE? #{img_node.to_s}"
+        next
+      end
+      # **SKIP** images translated to spanish
+      next if src.match(/\.es\.png/)
+      # src's are of the form /bjc-r/img/.../pic.png
+      repo_file = src.gsub('/bjc-r', '.')
+      puts "NON-TRANSLATED IMAGE: #{repo_file}"
+      local_name = get_en_basefilename(src)
+      command = "cp '#{repo_file}' '#{desination}/#{local_name}'"
+      # puts "Will run: #{command}"
+      `#{command}`
+    end
+  end
+end
+
 working_dir = ENV['PWD']
 unless File.basename(working_dir) == 'bjc-r'
   raise "You must run this script from the root directory of the repo"
 end
 
-rename_html_paths
-move_image_files
+# rename_html_paths
+# move_image_files
+
+find_non_spanish_images
